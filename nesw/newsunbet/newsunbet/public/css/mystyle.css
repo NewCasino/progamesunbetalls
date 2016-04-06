@@ -1,0 +1,1691 @@
+
+@font-face {
+    font-family: "SourceHanSansSC-Light";
+    src: url("../font/SourceHanSansCN-Light.otf");
+}
+@font-face {
+    font-family: "SourceHanSansSC-ExtraLight";
+    src: url("../font/SourceHanSansCN-ExtraLight.otf");
+}
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    border: 0 none;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #000000;
+    font-family: SourceHanSansSC-Light,STHeiti,Arial,Î¢Ü›ÕýºÚów,"Microsoft JhengHei",simsun,Verdana,Helvetica,sans-serif;
+}
+a {
+    color: #ffe2ab;
+    display: inline-block;
+    outline: medium none;
+    text-decoration: none;
+}
+a:link {
+    color: #ffe2ab;
+    outline: medium none;
+    text-decoration: none;
+}
+a:visited {
+    color: #ffe2ab;
+    outline: medium none;
+    text-decoration: none;
+}
+a:hover {
+    color: #ffe2ab;
+    outline: medium none;
+    text-decoration: none;
+}
+.title {
+    color: #ffe39e;
+}
+.content {
+    color: #a3a3a3;
+}
+.center-inline {
+    text-align: center;
+}
+.left-block {
+    float: left;
+}
+.right-block {
+    float: right;
+}
+.line_1 {
+    border-bottom: 1px solid #1a1a1a;
+    width: 100%;
+}
+.custom-btn {
+    background-color: black;
+    border: 1px solid #ffe39e;
+    color: #ffe39e;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 40px;
+    width: 160px;
+}
+.cbtn-lg {
+    font-size: 21px;
+    line-height: 46px;
+    margin: 24px;
+    width: 200px;
+}
+.paging {
+    position: fixed;
+    right: 10px;
+    top: 190px;
+    z-index: 1;
+}
+.paging li {
+    background-color: #4e4e4e;
+    border: 1px solid #939393;
+    border-radius: 6px;
+    cursor: pointer;
+    height: 10px;
+    margin: 20px;
+    width: 10px;
+}
+.paging li.active {
+    background-color: #dec99e;
+    border: 1px solid #dec99e;
+}
+.chr {
+    color: white;
+    font-size: 21px;
+    letter-spacing: 30px;
+    line-height: 34px;
+    margin: 30px auto;
+    max-width: 1275px;
+    width: 80%;
+}
+.gold {
+    color: #ffe39e;
+}
+.white {
+    color: white;
+}
+.mynavbar {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/bg.png");
+    background-position: left top;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border: medium none;
+}
+.mynavbar .navbar-nav > li > a {
+    color: white;
+    font-size: 20px;
+    line-height: 36px;
+    margin-bottom: 19px;
+    margin-top: 19px;
+    padding: 0;
+    text-align: center;
+    width: 150px;
+}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    background-color: transparent;
+    color: white;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    background-color: transparent;
+    color: white;
+}
+.mynavbar > .myfluid {
+}
+.mynavbar > .container-fluid .navbar-brand {
+    height: 75px;
+    margin: 0;
+    padding: 9px 46px 8px 32px;
+}
+.mynavbar > .container-fluid .mynav {
+    margin-right: 0;
+}
+.mynavbar > .container-fluid .mynav .nav-icon {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-position: 2% 50%;
+    background-repeat: no-repeat;
+}
+.mynavbar > .container-fluid .mynav .nav-icon.livegame {
+    background-image: url("../img/new/livegame.png");
+}
+.mynavbar > .container-fluid .mynav .nav-icon.sportbook {
+    background-image: url("../img/new/sportbook.png");
+}
+.mynavbar > .container-fluid .mynav .nav-icon.egame {
+    background-image: url("../img/new/egame.png");
+}
+.mynavbar > .container-fluid .mynav .nav-icon.gift {
+    background-image: url("../img/new/gift.png");
+}
+.mynavbar > .container-fluid .mynav .nav-icon.login {
+    background-image: url("../img/new/login.png");
+    background-position: 16% 50%;
+    background-size: 25% auto;
+    padding-left: 20px;
+}
+.mynavbar > .container-fluid .mynav .nav-btn {
+    background-color: #1a1a1a;
+    border: 1px solid #ccc;
+    margin-right: 15px;
+    width: 120px;
+}
+.footer .detail {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.footer .btn-con {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.footer .icon-con {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.footer .licence {
+    color: #d4d4d4;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.footer .copyright {
+    color: #d4d4d4;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.footer .divide {
+    display: inline-block;
+    font-size: 16px;
+    width: 20px;
+}
+.footer a {
+    color: #d4d4d4;
+    font-size: 16px;
+}
+.footer .icon-con a.icon {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    color: #d4d4d4;
+    display: inline-block;
+    font-size: 16px;
+    height: 30px;
+    margin: 4px;
+    width: 30px;
+}
+.footer .icon-con .icon1 {
+    background-image: url("../img/new/icon1.png");
+}
+.footer .icon-con .icon2 {
+    background-image: url("../img/new/icon2.png");
+}
+.footer .icon-con .icon3 {
+    background-image: url("../img/new/icon3.png");
+}
+#custom {
+    background-image: url("../img/new/cs_tiny.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    height: 266px;
+    left: 0;
+    position: fixed;
+    top: 30%;
+    width: 165px;
+}
+#custom .csbox {
+    bottom: 48px;
+    height: 30px;
+    left: 0;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    width: 165px;
+}
+#custom .csTel {
+    bottom: 9px;
+    height: 30px;
+    left: 0;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    width: 165px;
+}
+.section-a {
+    max-width: 1920px;
+    padding: 0;
+    position: relative;
+}
+.section-a #slides {
+    background: #5b4d3d none repeat scroll 0 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 18px;
+    line-height: 24px;
+    overflow: auto;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.3);
+    width: 100%;
+}
+.section-a #slides ul li {
+    background-size: 100% 100%;
+    box-shadow: 0 -3px 6px rgba(0, 0, 0, 0.1) inset;
+    display: block;
+    float: left;
+    list-style: outside none none;
+}
+.section-a #slides .dots {
+    bottom: 20px;
+    left: 0;
+    position: absolute;
+    right: 0;
+}
+.section-a #slides .dots li {
+    border: 2px solid #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    display: inline-block;
+    height: 10px;
+    margin: 0 4px;
+    opacity: 0.4;
+    text-indent: -999em;
+    transition: background 0.5s ease 0s, opacity 0.5s ease 0s;
+    width: 10px;
+}
+.section-a #slides .dots li.active {
+    background: #fff none repeat scroll 0 0;
+    opacity: 1;
+}
+.section-a .broadcast {
+    background-color: rgba(0, 0, 0, 0.6);
+    bottom: 0;
+    color: #decaa7;
+    height: 32px;
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+.section-a .broadcast .mymarquee {
+    overflow: hidden;
+    position: relative;
+}
+.section-a .broadcast .mymarquee .bullhorn {
+    background-image: url("../img/new/sound.png");
+    background-position: left top;
+    background-repeat: no-repeat;
+    display: block;
+    float: left;
+    font-size: 18px;
+    height: 24px;
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 28px;
+}
+.section-a .broadcast .mymarquee .bctext {
+    color: #d5d5d5;
+    font-size: 14px;
+    left: 20px;
+    margin-left: 44px;
+    margin-right: 0;
+    margin-top: 6px;
+    position: absolute;
+}
+.section-b {
+    margin-bottom: 60px;
+}
+.section-b .box {
+    border: 1px inset #ffe2ab;
+    border-radius: 5px;
+    display: block;
+    margin-top: 60px;
+    text-align: center;
+}
+.section-b .desktop {
+}
+.section-b .web {
+}
+.section-b .box .vimage {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    height: 90px;
+}
+.section-b .desktop .box .vimage {
+    background-image: url("../img/new/icon_desktop_app.png");
+}
+.section-b .web .box .vimage {
+    background-image: url("../img/new/icon_mobile_web.png");
+}
+.section-b .big .box .vimage {
+    background-image: url("../img/new/icon_mobile_app.png");
+}
+.section-b .box .title {
+    line-height: 35px;
+    margin: 0 !important;
+}
+.section-b .box .content {
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 16px;
+    padding: 0 10px;
+}
+.section-b .big .box .app {
+    padding: 0;
+}
+.section-b .big .box .qr {
+    border-left: 1px solid #2c2c2e;
+    height: 100%;
+    padding-top: 20px;
+    text-align: left;
+}
+.section-b .big .box .qr img {
+    margin-right: 10px;
+}
+.section-b .big .box .qr .content {
+    padding: 0;
+}
+.section-b .big .box .qr .app-icon {
+    display: inline-block;
+    height: 38px;
+    width: 32px;
+}
+.section-b .big .box .qr .app-icon.android-icon {
+    background-image: url("../img/new/android.png");
+}
+.section-b .big .box .qr .app-icon.iphone-icon {
+    background-image: url("../img/new/apple.png");
+}
+.section-c {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+.section-c .online-atm {
+    font-size: 30px;
+    line-height: 60px;
+    margin-left: 15px;
+}
+.section-c .online-contact {
+    font-size: 30px;
+    line-height: 60px;
+    margin-left: 15px;
+}
+#liveGame {
+    background-color: #1f032f;
+    margin: 0;
+    padding: 0;
+}
+#liveGame .game-container {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/bg-livegame.png");
+    background-position: center top;
+    background-repeat: repeat-x;
+    background-size: auto auto;
+}
+#liveGame .game-container > .title {
+    color: white;
+    font-size: 51px;
+    line-height: 70px;
+    padding-top: 115px;
+    text-align: center;
+}
+#liveGame .game-container > .title .icon {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/livegame.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 26px auto;
+    display: inline-block;
+    height: 26px;
+    padding: 3px 20px;
+    width: 26px;
+}
+#liveGame .chr {
+    color: white;
+    font-size: 21px;
+    letter-spacing: 30px;
+    line-height: 34px;
+    margin: 30px auto;
+    max-width: 1275px;
+    width: 80%;
+}
+#liveGame .game-container .baccarat {
+    width: 100%;
+}
+#liveGame .chr .hr {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/hr-white.png");
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-size: auto auto;
+}
+.chr .hr-title {
+    padding-left: 30px;
+    text-align: center;
+    width: 310px;
+}
+#liveGame .game-container .games {
+    margin: 24px auto;
+    max-width: 1375px;
+    text-align: center;
+}
+.visual-block {
+    display: inline-block;
+    left: 0;
+    position: relative;
+    top: 0;
+    vertical-align: top;
+    z-index: 0;
+}
+#liveGame .game-container .gamelist .games .visual-block {
+    left: 0;
+    position: relative;
+    top: 0;
+    z-index: 0;
+}
+#liveGame .game-container .gamelist.games .visual-block {
+    display: inline-block;
+    min-height: 420px;
+    vertical-align: top;
+}
+#liveGame .game-container .gamelist.baccarat .games .visual-block {
+    border: 1px solid #242424;
+    width: 300px;
+}
+#liveGame .game-container .gamelist.baccarat .games .visual-block .vimage {
+    height: 230px;
+    width: 100%;
+}
+.visual-block .voverlay {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/overlay.png");
+    background-position: left top;
+    background-repeat: repeat;
+    background-size: auto auto;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.visual-block .voverlay:hover {
+    opacity: 1;
+}
+.custom-btn {
+    background-color: black;
+    border: 1px solid #ffe39e;
+    color: #ffe39e;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 40px;
+    width: 160px;
+}
+.visual-block .title {
+    font-size: 25px;
+    line-height: 40px;
+    margin-top: 10px;
+}
+.visual-block .content {
+    font-size: 15px;
+    line-height: 22px;
+}
+#liveGame .game-container .gamelist .games .visual-block .content {
+    margin: 0 24px;
+}
+#liveGame .game-container .games .visual-block .rules_shorten {
+    display: none !important;
+}
+#liveGame .game-container .games .visual-block .vimage {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+}
+#liveGame .game-container .games .visual-block.ba .vimage {
+    background-image: url("../img/new/ba.png");
+}
+#liveGame .game-container .games .visual-block.bs .vimage {
+    background-image: url("../img/new/bs.png");
+}
+#liveGame .game-container .games .visual-block.MUBA .vimage {
+    background-image: url("../img/new/MUBA.png");
+}
+#liveGame .game-container .games .visual-block.bt .vimage {
+    background-image: url("../img/new/bt.png");
+}
+#liveGame .game-container .gamelist.other .visual-block {
+    min-height: 340px;
+    padding: 20px;
+    width: 340px;
+}
+#liveGame .game-container .gamelist.other .visual-block .vimage {
+    height: 80px;
+    width: 100%;
+}
+#liveGame .game-container .gamelist .games .visual-block.MUGAME .vimage {
+    background-image: url("../img/new/MUGAME.png");
+}
+#liveGame .game-container .gamelist .games .visual-block.dt .vimage {
+    background-image: url("../img/new/dt.png");
+}
+#liveGame .game-container .gamelist .games .visual-block.di .vimage {
+    background-image: url("../img/new/di.png");
+}
+#liveGame .game-container .gamelist .games .visual-block.ro .vimage {
+    background-image: url("../img/new/ro.png");
+}
+#liveGame .game-container .gamelist .games .visual-block.mj .vimage {
+    background-image: url("../img/new/mj.png");
+}
+#liveGame .game-container .gamelist .games .visual-block.tk .vimage {
+    background-image: url("../img/new/tk.png");
+}
+#liveGame .game-container .gamelist .games .visual-block.co .vimage {
+    background-image: url("../img/new/co.png");
+}
+#liveGame .game-container .gamelist.other .visual-block .voverlay .custom-btn {
+    margin-top: 105px;
+}
+#liveGame .voverlay .custom-btn {
+    margin-top: 240px;
+}
+#sportbook-container {
+    padding-top: 80px;
+}
+#sportbook-container .sportbook {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/bg_1.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#sportbook-container .sportbook .top-visual {
+    left: 0;
+    position: relative;
+    text-align: center;
+    top: 0;
+    z-index: 1;
+}
+.top-visual .description {
+    text-align: center;
+}
+#sportbook-container .sportbook .top-visual .description {
+    display: inline-block;
+    margin-top: 20px;
+}
+#sportbook-container .sportbook .top-visual .description .title, #sportbook-container .sportbook .top-visual .description .content {
+    color: #ffefd0;
+}
+#sportbook-container .sportbook .top-visual .description .title {
+    font-size: 51px;
+    line-height: 70px;
+}
+#sportbook-container .sportbook .top-visual .description .title .icon {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/sportbook-icon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 26px auto;
+    display: inline-block;
+    height: 26px;
+    padding: 3px 20px;
+    width: 26px;
+}
+.zh-TW #sportbook-container .sportbook .top-visual .description .content, .zh-CN #sportbook-container .sportbook .top-visual .description .content {
+    font-size: 40px;
+    line-height: 45px;
+}
+#sportbook-container .sportbook .middle-visual {
+    margin-top: 16px;
+    text-align: center;
+}
+#sportbook-container .sportbook .middle-visual .cimage {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/middle-visual.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 370px;
+    margin: 0 auto;
+    width: 360px;
+}
+#sportbook-container .sportbook .middle-visual > .content {
+    color: white;
+    display: inline-block;
+    max-width: 760px;
+}
+#sportbook-container .sportbook .middle-visual .option-container {
+    margin: 30px auto 0;
+    max-width: 1280px;
+    padding-bottom: 55px;
+    text-align: center;
+}
+#sportbook-container .sportbook .middle-visual .option-container .visual-block.today .vimage {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/today.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    display: inline-block;
+    height: 60px;
+    margin-top: 30px;
+    width: 60px;
+}
+#sportbook-container .sportbook .middle-visual .option-container .visual-block .voverlay {
+    border-radius: 5px;
+}
+#sportbook-container .sportbook .middle-visual .option-container .visual-block .voverlay .custom-btn {
+    margin-top: 105px;
+}
+#sportbook-container .sportbook .middle-visual .option-container .visual-block {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/overlay.png");
+    background-position: left top;
+    background-repeat: repeat;
+    background-size: auto auto;
+    border: 1px inset #ffe2ab;
+    border-radius: 5px;
+    height: 190px;
+    left: 0;
+    margin: 3px 0;
+    min-width: 290px;
+    position: relative;
+    top: 0;
+    width: 24%;
+    z-index: 0;
+}
+#sportbook-container .sportbook .middle-visual .option-container .visual-block.liveodds .vimage {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/liveodds.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    display: inline-block;
+    height: 60px;
+    margin-top: 30px;
+    width: 60px;
+}
+#sportbook-container .sportbook .middle-visual .option-container .visual-block.checkAcct .vimage {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/checkAcct.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    display: inline-block;
+    height: 60px;
+    margin-top: 30px;
+    width: 60px;
+}
+#sportbook-container .sportbook .middle-visual .option-container .visual-block.txn .vimage {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/txn.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    display: inline-block;
+    height: 60px;
+    margin-top: 30px;
+    width: 60px;
+}
+#egame-container {
+    width: 100%;
+}
+#egame-container .egame {
+    position: relative;
+}
+#egame-container .egame .top-visual {
+    background: transparent url("../img/new/visual-bg.jpg") no-repeat scroll center top / cover ;
+    height: 580px;
+    position: relative;
+}
+#egame-container .egame .top-visual .light {
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+#egame-container .egame .top-visual .light video {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/video.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    left: 0;
+    min-height: 100%;
+    min-width: 100%;
+    position: absolute;
+    top: 0;
+    width: auto;
+}
+#egame-container .egame .top-visual .light .overlay-pattern {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/visual-pattern.png");
+    background-position: left top;
+    background-repeat: repeat;
+    background-size: auto auto;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+#egame-container .egame .top-visual .dealer {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/visual-dealer.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+#egame-container .egame .top-visual .dice {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/visual-dice.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 650px;
+    position: absolute;
+    right: -54px;
+    top: -40px;
+    width: 55%;
+    z-index: 1;
+}
+#egame-container .egame .top-visual .description {
+    left: 128px;
+    position: absolute;
+    text-align: center;
+    text-shadow: 1px 2px #333333;
+    top: 116px;
+    width: 400px;
+    z-index: 1;
+}
+.top-visual .description .chr .hr-title, .top-visual .description .chr .hr {
+    height: 58px;
+    width: 130px;
+}
+.top-visual .description .chr .hr {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/hr-yellow.png");
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-size: auto auto;
+}
+#egame-container .egame .top-visual .description .hr-title {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/popup-icon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#egame-container .top-visual .description .title, #egame-container .top-visual .description .title {
+    font-size: 63px;
+    line-height: 120px;
+}
+.top-visual .description .content, .top-visual .description .content {
+    font-size: 40px;
+    line-height: 45px;
+}
+.top-visual .description .title, .top-visual .description .content {
+    color: #fdf2d4;
+}
+#egame-container .egame .top-visual .mobile-description {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/bg_3.png");
+    background-position: left top;
+    background-repeat: repeat;
+    background-size: auto auto;
+    bottom: 0;
+    box-sizing: border-box;
+    display: none;
+    font-size: 30px;
+    left: 0;
+    padding: 10px 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+}
+#egame-container .egame div.slider-con {
+    font-size: 0;
+    height: 1470px;
+    margin-left: 0;
+    width: 300%;
+}
+#egame-container .egame div.slider-con div.slider.venus {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#egame-container .egame div.slider-con div.slider {
+    display: inline-block;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    vertical-align: top;
+    width: 33.3333%;
+}
+#egame-container .egame .arrow-con {
+    height: 160px;
+    left: 0;
+    position: absolute;
+    top: 160px;
+    width: 100%;
+    z-index: 1;
+}
+#egame-container .egame .arrow-con .arrow {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    height: 160px;
+    width: 160px;
+}
+#egame-container .egame .arrow-con .arrow-left {
+    background-image: url("../img/new/arrow-left.png");
+    left: 14px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+}
+#egame-container .egame .arrow-con .text {
+    color: white;
+    font-size: 24px;
+    line-height: 160px;
+    text-align: center;
+}
+#egame-container .egame .arrow-con .arrow-left .text {
+    padding-left: 20px;
+}
+#egame-container .egame .arrow-con .text, #egame-container .egame .arrow-con .text {
+    letter-spacing: 12px;
+}
+#egame-container .egame .arrow-con .arrow {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    height: 160px;
+    width: 160px;
+}
+#egame-container .egame .arrow-con .arrow-right {
+    background-image: url("../img/new/arrow-right.png");
+    position: absolute;
+    right: 14px;
+    top: 0;
+    z-index: 1;
+}
+#egame-container .egame div.slider-con div.slider .logo {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    height: 380px;
+    margin: 40px;
+    width: 380px;
+}
+#egame-container .egame div.slider-con div.slider.venus .logo {
+    background-image: url("../img/new/logo_1.png");
+}
+#egame-container .egame div.slider-con div.slider .game-container > .title {
+    color: #393735;
+    font-size: 51px;
+    line-height: 70px;
+    margin-left: 14px;
+    text-align: center;
+}
+#egame-container .egame div.slider-con div.slider .game-container > .title .icon {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/title-icon.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 26px auto;
+    display: inline-block;
+    height: 26px;
+    padding: 3px 20px;
+    width: 26px;
+}
+#egame-container .egame div.slider-con div.slider .chr {
+    text-align: center;
+    width: 340px;
+}
+#egame-container .egame div.slider-con div.slider .chr .hr {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=");
+    background-position: center center;
+    background-repeat: repeat-x;
+    background-size: auto auto;
+    width: 80px;
+}
+#egame-container .egame div.slider-con div.slider .chr .hr-title {
+    color: black;
+    white-space: nowrap;
+    width: 160px;
+}
+#egame-container .egame div.slider-con div.slider .games {
+    font-size: 0;
+    height: 720px;
+    margin-top: 40px;
+    position: relative;
+    white-space: nowrap;
+}
+#egame-container .egame div.slider-con div.slider .games .game-pages {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+#egame-container .egame div.slider-con div.slider .games .page {
+    float: left;
+    vertical-align: top;
+    white-space: normal;
+    width: 100%;
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con {
+    margin: auto;
+    max-width: 1375px;
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block {
+    height: 180px;
+    width: 300px;
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block .vimage {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 130px;
+    width: 300px;
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.sword .vimage {
+    background-image: url("../img/new/sword.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.worldCup .vimage {
+    background-image: url("../img/new/worldCup.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.bigForHappy .vimage {
+    background-image: url("../img/new/bigForHappy.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.flydragon .vimage {
+    background-image: url("../img/new/flydragon.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.fightTiger .vimage {
+    background-image: url("../img/new/fightTiger.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.happyDoor .vimage {
+    background-image: url("../img/new/happyDoor.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.beijingPanda .vimage {
+    background-image: url("../img/new/beijingPanda.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.saveMaster .vimage {
+    background-image: url("../img/new/saveMaster.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.bigThreeDollar .vimage {
+    background-image: url("../img/new/bigThreeDollar.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.magicGem2 .vimage {
+    background-image: url("../img/new/magicGem2.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.macauPanda .vimage {
+    background-image: url("../img/new/macauPanda.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.meatGroup .vimage {
+    background-image: url("../img/new/meatGroup.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.getFortune .vimage {
+    background-image: url("../img/new/getFortune.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.shangheiPanda .vimage {
+    background-image: url("../img/new/shangheiPanda.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.magicGem .vimage {
+    background-image: url("../img/new/magicGem.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.flowerppl .vimage {
+    background-image: url("../img/new/flowerppl.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.oldChina .vimage {
+    background-image: url("../img/new/oldChina.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.hero .vimage {
+    background-image: url("../img/new/hero.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.bottleMei .vimage {
+    background-image: url("../img/new/bottleMei.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.chinaBeauty .vimage {
+    background-image: url("../img/new/chinaBeauty.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.westTravel .vimage {
+    background-image: url("../img/new/westTravel.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.nezha .vimage {
+    background-image: url("../img/new/nezha.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.prettyGirl .vimage {
+    background-image: url("../img/new/prettyGirl.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.pokerKing .vimage {
+    background-image: url("../img/new/pokerKing.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.redCliff .vimage {
+    background-image: url("../img/new/redCliff.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block.swornBrothers .vimage {
+    background-image: url("../img/new/swornBrothers.jpg");
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block .voverlay {
+    height: 130px;
+    margin: auto;
+    right: 0;
+    width: 270px;
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block .voverlay .custom-btn {
+    margin-top: 42px;
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con .visual-block .title {
+    color: black;
+    font-size: 18px;
+    margin: 0;
+}
+#egame-container .egame div.slider-con div.slider .games .page .block-con div.last {
+    display: inline-block;
+    width: 300px;
+}
+#egame-container .egame div.slider-con div.slider .games .page {
+    float: left;
+    vertical-align: top;
+    white-space: normal;
+    width: 100%;
+}
+#egame-container .egame div.slider-con div.slider ul.paging {
+    padding-top: 25px;
+    position: relative;
+    right: 0;
+    top: 0;
+}
+#egame-container .egame div.slider-con div.slider ul.paging li {
+    display: inline-block;
+    margin: 5px;
+}
+#promotions {
+    background-color: #1a1a1a;
+}
+#promotions .promotionTit {
+    color: white;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    text-align: center;
+}
+#promotions .promotionTit .titText {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/gift.png");
+    background-position: 26px 9px;
+    background-repeat: no-repeat;
+    border: 1px solid #fff;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 15px 30px 15px 60px;
+    position: relative;
+}
+#promotions .promotionTit .titText:hover, #promotions .promotionTit .titText.active {
+    background-image: url("../img/new/gift-gold.png");
+    border: 1px inset #ffe2ab;
+    color: #ffe2ab;
+}
+#promotions .promotionContent .promotionList .promotionImg a {
+    background-size: cover;
+    display: block;
+    height: 197px;
+    position: relative;
+    width: 100%;
+}
+#promotions .promotionContent .promotionList .promotionImg a .more-icon {
+    background-image: url("../img/new/arrow.png");
+    bottom: 22px;
+    height: 28px;
+    position: absolute;
+    right: 22px;
+    width: 28px;
+}
+#promotions .promotionContent ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+}
+#promotions .promotionContent ul li {
+    margin-bottom: 12px;
+}
+#promotions .promotionContent .promotionInfo {
+    background-color: #272727;
+    color: white;
+    display: none;
+    line-height: 36px;
+    padding: 40px 80px;
+    position: relative;
+}
+#promotions .promotionContent .promotionInfo .hide-icon {
+    background-image: url("../img/new/arrow-gold.png");
+    bottom: 30px;
+    cursor: pointer;
+    height: 12px;
+    position: absolute;
+    right: 30px;
+    width: 12px;
+}
+#goinus {
+    background-color: #1a1a1a;
+}
+#goinus .container {
+    padding-left: 95px;
+    padding-right: 95px;
+}
+#goinus .goinus-type {
+    font-size: 22px;
+    padding-bottom: 20px;
+    padding-top: 60px;
+    text-align: left;
+}
+#goinus .normal {
+    color: #cccccc;
+    font-family: SourceHanSansCN-ExtraLight,STHeiti,Arial,Î¢Ü›ÕýºÚów,"Microsoft JhengHei",simsun,Verdana,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+#goinus .line {
+    background-color: #cccccc;
+    height: 1px;
+    margin-top: 30px;
+    width: 100%;
+}
+#goinus .title {
+    font-size: 18px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+#goinus .bold {
+    color: white;
+    font-size: 18px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+#goinus table {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+#goinus .text-th {
+    color: white;
+    font-size: 18px;
+}
+#goinus .text-td {
+    color: #cccccc;
+    font-family: SourceHanSansCN-ExtraLight,STHeiti,Arial,Î¢Ü›ÕýºÚów,"Microsoft JhengHei",simsun,Verdana,Helvetica,sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+}
+#goinus .login-a {
+    background-attachment: scroll;
+    background-color: transparent;
+    background-image: url("../img/new/download-0.png");
+    background-position: 22px 10px;
+    background-repeat: no-repeat;
+    border: 1px inset white;
+    color: white;
+    float: left;
+    height: 52px;
+    line-height: 52px;
+    margin-right: 80px;
+    padding-left: 27px;
+    text-align: center;
+    width: 200px;
+}
+#goinus .login-a:hover {
+    background-image: url("../img/new/download.png");
+    border: 1px inset #ffe2ab;
+    color: #ffe2ab;
+}
+#register {
+    background-color: #161616;
+}
+#register .regBox {
+    background-color: #333333;
+    border: 1px solid #ffe2ab;
+    margin-bottom: 80px;
+    margin-top: 100px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+}
+#register .regBox .regTitle {
+    color: white;
+    font-size: 24px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center;
+}
+#register .regBox .regForm {
+}
+#register .regBox .regForm .regType {
+    color: white;
+    font-family: SourceHanSansCN-ExtraLight,STHeiti,Arial,Î¢Ü›ÕýºÚów,"Microsoft JhengHei",simsun,Verdana,Helvetica,sans-serif;
+}
+#register .regBox .regForm .text1 {
+    background-color: #333333;
+    border-color: #4a4a4a;
+    color: #c2c2c2;
+}
+#register .regBox .regForm .btn1 {
+    background-color: #000000;
+    border: 1px solid #ffe2ab;
+    color: #ffe2ab;
+}
+#register .regBox .regForm .help-block {
+    font-family: SourceHanSansCN-ExtraLight,STHeiti,Arial,Î¢Ü›ÕýºÚów,"Microsoft JhengHei",simsun,Verdana,Helvetica,sans-serif;
+    font-size: 14px;
+    line-height: 34px;
+    margin: 0;
+}
+#register .regBox .regForm .help-block.help-long {
+    line-height: 17px;
+}
+#register .regBox .regForm input:focus, #register .regBox .regForm button:focus, #register .regBox .regForm .form-control:focus {
+    border-color: rgba(255, 226, 171, 0.8);
+    box-shadow: 0 0 8px rgba(255, 226, 171, 0.6);
+    outline: 0 none;
+}
+#register .regBox .regForm .btn2, #register .regBox .regForm .btn3 {
+    background-color: #000000;
+    border: 1px solid #ffe2ab;
+    border-radius: 0;
+    color: #ffe2ab;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    width: 120px;
+}
+#register .regBox .regForm .btn2:hover, #register .regBox .regForm .btn3:hover {
+    background-color: #424242;
+    border-color: #ffe2ab;
+    color: #ffe2ab;
+}
+#register .regBox .regForm .btn2 {
+    float: right;
+}
+#register .regBox .regForm .btn3 {
+    float: left;
+}
+#register #registerNote {
+    display: none;
+}
+#register .registerNav {
+    left: -1px;
+    position: absolute;
+    top: -50px;
+}
+#register .registerNav .navBtn {
+    background-color: black;
+    border: 1px solid #ffe2ab;
+    color: #ffe2ab;
+    cursor: pointer;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 120px;
+}
+#register .registerNav .navBtnL {
+    border-right: 0 none;
+}
+#register .registerNav .navBtnL.active {
+    background-color: #333333;
+    border-color: #ffe2ab -moz-use-text-color #333333 #ffe2ab;
+    border-style: solid none solid solid;
+    border-width: 1px 0 1px 1px;
+    color: white;
+}
+#register .registerNav .navBtnL:hover {
+    background-color: #333333;
+}
+#register .registerNav .navBtnR.active {
+    background-color: #333333;
+    border-color: #ffe2ab #ffe2ab #333333;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+}
+#register .registerNav .navBtnR:hover {
+    background-color: #333333;
+}
+#register #registerNote {
+    color: white;
+}
+#register #registerNote .regTitle {
+    text-align: left;
+}
+#register #registerNote p {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+#register #registerNote p.que {
+    color: #ffe2ab;
+}
+#money {
+    background-color: #161616;
+}
+#money .moneyHead {
+    margin-top: 40px;
+}
+#money .moneyHead p.title {
+    font-size: 24px;
+    padding-bottom: 20px;
+    text-align: left;
+}
+#money .moneyHead p.info {
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+}
+#money .moneyHead a.cs {
+    font-size: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#money .moenyContent {
+    background-color: #333333;
+    border: 1px solid #ffe2ab;
+    margin-bottom: 50px;
+    margin-top: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    position: relative;
+}
+#money .moneyNav {
+    left: -1px;
+    position: absolute;
+    top: -50px;
+}
+#money .moneyNav .navBtn {
+    background-color: black;
+    border: 1px solid #ffe2ab;
+    color: #ffe2ab;
+    cursor: pointer;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    width: 120px;
+}
+#money .moneyNav .navBtnL {
+    border-right: 0 none;
+}
+#money .moneyNav .navBtnL.active {
+    background-color: #333333;
+    border-color: #ffe2ab -moz-use-text-color #333333 #ffe2ab;
+    border-style: solid none solid solid;
+    border-width: 1px 0 1px 1px;
+    color: white;
+}
+#money .moneyNav .navBtnL:hover {
+    background-color: #333333;
+}
+#money .moneyNav .navBtnC {
+    border-right: 0 none;
+}
+#money .moneyNav .navBtnC.active {
+    background-color: #333333;
+    border-color: #ffe2ab -moz-use-text-color #333333 #ffe2ab;
+    border-style: solid none solid solid;
+    border-width: 1px 0 1px 1px;
+    color: white;
+}
+#money .moneyNav .navBtnC:hover {
+    background-color: #333333;
+}
+#money .moneyNav .navBtnR.active {
+    background-color: #333333;
+    border-color: #ffe2ab #ffe2ab #333333;
+    border-style: solid;
+    border-width: 1px;
+    color: white;
+}
+#money .moneyNav .navBtnR:hover {
+    background-color: #333333;
+}
+#money .moenyContent .contentInfo {
+}
+#money .moenyContent #bankList {
+    padding: 50px 30px;
+}
+#money .moenyContent #bankList .bank-icon {
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#money .moenyContent #pay, #money .moenyContent #withdrawal {
+    display: none;
+}
+#money .moenyContent #pay {
+    padding: 50px;
+}
+#money .moenyContent #pay .title {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+#money .moenyContent #pay .payForm {
+}
+#money .moenyContent #pay .payForm .control-label {
+    color: white;
+}
+#money .moenyContent #pay .payForm .code {
+    border-radius: 4px;
+    height: 34px;
+    width: 120px;
+}
+#money .moenyContent #pay .payForm .form-control {
+    background-color: #333333;
+    border-color: #4a4a4a;
+    color: #c2c2c2;
+}
+#money .moenyContent #pay .payForm input:focus, #money .moenyContent #pay .payForm button:focus, #money .moenyContent #pay .payForm .form-control:focus {
+    border-color: rgba(255, 226, 171, 0.8);
+    box-shadow: 0 0 8px rgba(255, 226, 171, 0.6);
+    outline: 0 none;
+}
+#money .moenyContent #pay .payForm .submit {
+    background-color: #000000;
+    border: 1px solid #ffe2ab;
+    border-radius: 0;
+    color: #ffe2ab;
+    width: 120px;
+}
+#money .moenyContent #pay .payForm .submit:hover {
+    background-color: #424242;
+    border-color: #ffe2ab;
+    color: #ffe2ab;
+}
+#money .moenyContent #pay .payForm .radio-inline {
+    color: #c2c2c2;
+}
+#money .moenyContent #pay .payForm .help-block {
+    margin: 0;
+}
+#web {
+    background: rgba(0, 0, 0, 0) url("../img/new/banner_bg.png") no-repeat scroll center top;
+    color: #fff;
+}
+#web #topNav {
+    background: rgba(0, 0, 0, 0) url("../img/new/mobile_banner_sch.png") no-repeat scroll center center;
+    height: 470px;
+}
+#web #qrContainer {
+    margin-left: 82px;
+    margin-top: 270px;
+    position: absolute;
+    text-align: center;
+}
+#web #qrContainer .h6 {
+    color: rgba(0, 0, 0, 0);
+    font-size: 16px;
+    line-height: 32px;
+}
+#web #qrContainer .code {
+    background: rgba(0, 0, 0, 0) url("../img/new/qr.png") no-repeat scroll center center / contain ;
+    height: 100px;
+}
+#web #qrContainer .label {
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+}
+#web #mainNav {
+    background: rgba(0, 0, 0, 0) url("../img/new/content_bg.png") repeat scroll 0 0;
+    box-shadow: 10px -5px 6px -6px rgba(0, 0, 0, 0.5);
+    height: 720px;
+}
+#web #mainNav .title1 {
+    padding: 27px;
+}
+#web .h1 {
+    font-size: 36px;
+}
+#web .shadow {
+    text-shadow: 2px 2px 2px black;
+}
+#web .center {
+    text-align: center;
+}
+#web .yellow_text {
+    color: #ddcba5;
+}
+#web .h4 {
+    font-size: 24px;
+}
+#web .content1 {
+    padding: 0 17px 38px;
+}
+#web .h6 {
+    font-size: 16px;
+    line-height: 22px;
+}
+#web table {
+    border-spacing: 0;
+    text-align: center;
+    width: 100%;
+}
+#web .imgTab {
+    height: 350px;
+    width: 300px;
+}
+#web #gameVisual1 {
+    background: rgba(0, 0, 0, 0) url("../img/new/user_info_sch.png") no-repeat scroll center center / contain ;
+}
+#web #gameVisual2 {
+    background: rgba(0, 0, 0, 0) url("../img/new/bet_area_sch.png") no-repeat scroll center center / contain ;
+}
+#web #gameVisual3 {
+    background: rgba(0, 0, 0, 0) url("../img/new/road_map_sch.png") no-repeat scroll center center / contain ;
+}
+#web .imgTitle {
+    padding: 12px 25px;
+}
+#web #mainNav .imgDes {
+    line-height: 20px;
+    padding: 0 20px;
+    vertical-align: top;
+}
+#web #sysNav {
+    background: rgba(0, 0, 0, 0) url("../img/new/system_bg.png") no-repeat scroll center center / 100% 100%;
+    height: 400px;
+}
+#registration {
+    background-color: #161616;
+}
+#registration table {
+    color: rgb(213, 213, 213);
+    margin-top: 50px;
+}
+#registration .btnDiv {
+    margin-bottom: 50px;
+    text-align: center;
+}
+#registration .btnDiv .btn {
+    background-color: black;
+    border: 1px solid #d5d5d5;
+    color: #d5d5d5;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 30px;
+    width: 180px;
+}
+#registration .btnDiv .btn:hover, #registration .btnDiv .btn:focus {
+    border: 1px solid #ffe39e;
+    color: #ffe39e;
+}
+.tnc-modal-detail {
+    color: #999999;
+    font-family: "Microsoft YaHei","SimSun",Verdana,"Geneva",sans-serif;
+    height: 100%;
+    margin: auto;
+    overflow: auto;
+    width: 80%;
+}
+.tnc-modal-detail .ng-scope {
+}

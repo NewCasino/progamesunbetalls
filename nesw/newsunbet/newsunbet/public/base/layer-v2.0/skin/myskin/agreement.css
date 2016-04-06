@@ -1,0 +1,38 @@
+html #layui_layer_skinmyskinagreementcss{display:none; position: absolute; width:1989px;}
+
+body .agreement-class{
+    background-color: #333333;
+}
+body .agreement-class .layui-layer-title{
+    background-color: #333333;
+    color: #decaa7;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0 10px 0;
+    line-height: 50px;
+    height: 75px;
+    border: none;
+}
+body .agreement-class .layui-layer-content{
+    color: #999999;
+}
+body .agreement-class .layui-layer-btn{
+    padding-bottom: 20px;
+    text-align: center;
+}
+body .agreement-class .layui-layer-btn a{
+    width: 150px;
+    height: 33px;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 30px;
+    border: 1px solid #decaa7;
+    background-color: #000000;
+    cursor: pointer;
+    color: #decaa7;
+}
+body .agreement-class .layui-layer-btn a:hover{
+    background-color:#decaa7;
+    color:#333333
+}
