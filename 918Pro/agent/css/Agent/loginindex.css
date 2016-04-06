@@ -1,0 +1,59 @@
+﻿td img {display: block;}body,td,th {
+	font-size: 12px;
+	color: #999999;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	background-image: url();
+	background-color: #000000;
+}
+a:link {
+	color: #999999;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #999999;
+}
+a:hover {
+	text-decoration: none;
+	color: #FF9900;
+}
+a:active {
+	text-decoration: none;
+}
+
+.STYLE2 {color: #51393B}
+#demo {
+overflow:hidden;
+
+width: 270px;
+}
+#demo1 {float: left;
+}
+#demo2 {float: left;
+}
+#indemo {float: left;
+width: 800%;
+}
+
+.STYLE4 {
+	color: #E3D8B8;
+	font-weight: bold;
+	font-size: 14px;
+}
+.STYLE5 {color: #FFFFFF}
+.STYLE6 {
+	color: #FF3300;
+	font-weight: bold;
+	font-size: 18px;
+}
+.STYLE9 {color: #FFFF99}
+.STYLE10 {
+	color: #000000;
+	font-weight: bold;
+}
+.STYLE11 {color: #E3D8B8; font-weight: bold; font-size: 12px; }

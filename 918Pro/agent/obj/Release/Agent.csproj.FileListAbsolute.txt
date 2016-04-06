@@ -1,0 +1,14 @@
+C:\Users\asus\Desktop\918sun\918Pro\agent\bin\agent.dll.config
+C:\Users\asus\Desktop\918sun\918Pro\agent\bin\agent.dll
+C:\Users\asus\Desktop\918sun\918Pro\agent\bin\agent.pdb
+C:\Users\asus\Desktop\918sun\918Pro\agent\bin\BLL.dll
+C:\Users\asus\Desktop\918sun\918Pro\agent\bin\DAL.dll
+C:\Users\asus\Desktop\918sun\918Pro\agent\bin\Model.dll
+C:\Users\asus\Desktop\918sun\918Pro\agent\bin\Newtonsoft.Json.dll
+C:\Users\asus\Desktop\918sun\918Pro\agent\bin\MySql.Data.dll
+C:\Users\asus\Desktop\918sun\918Pro\agent\bin\BLL.pdb
+C:\Users\asus\Desktop\918sun\918Pro\agent\bin\DAL.pdb
+C:\Users\asus\Desktop\918sun\918Pro\agent\bin\Model.pdb
+C:\Users\asus\Desktop\918sun\918Pro\agent\obj\Release\Agent.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\918sun\918Pro\agent\obj\Release\agent.dll
+C:\Users\asus\Desktop\918sun\918Pro\agent\obj\Release\agent.pdb

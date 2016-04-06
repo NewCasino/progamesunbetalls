@@ -1,0 +1,500 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1">
+    <title>后台管理</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="/css/Default/globle.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/Guide.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/index.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/MasterPage.css" rel="stylesheet" type="text/css" />
+    <link href="css/Default/cupertino/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" src="js/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="js/jQueryCommon.js" type="text/javascript"></script>
+    <script language="javascript" type="text/JavaScript">
+
+        //-------------------------------自动刷新数据公告pT信息--------------------------------------------
+        var pd = 1;
+        function Countdown(time) {
+            //debugger
+            $("#timeUp").text("" + time);
+            if (parseInt(time) == 0) {
+                if ($("#timeHide").val() == "") {
+                    $("#timeHide").val("30");
+                    time = "30";
+                }
+                else {
+                    var a = /^([1-9]|[1-9][0-9])&/;
+                    if (!a.test($("#timeHide").val())) {
+                        time = "30";
+                        $("#timeHide").val("30");
+                    }
+                    else {
+                        time = $("#timeHide").val();
+                    }
+                }
+
+                getPTUserInfo();
+                if ($("#timeHide").val() != $("#timeTxt").val()) {
+                    if (parseInt($("#timeTxt").val()) < 5) {
+                        var setLang = "";
+                        setLang = $.SetOrGetLanguage(setLang, function () {
+                            languages = language;
+                            alert(languages["H1255"]);
+                        }, "/js/IndexGlobal/");
+                        $("#timeTxt").val("" + $("#timeHide").val());
+                    }
+                    $("#timeHide").val("" + $("#timeTxt").val());
+                    pd = 1;
+                }
+            }
+            else {
+                time = parseInt(time) - 1;
+            }
+            if (pd) {
+                if ($("#timeHide").val() == "") {
+                    time = "30";
+                }
+                else {
+                    time = $("#timeHide").val();
+                }
+                pd = 0;
+            }
+            setTimeout("Countdown(\"" + time + "\")", 1000);
+        }
+        function play() {
+            //注意文件路径，且文件大小一般10kb以内
+            //$('#bgs').attr("src", "http://www.10sun.in/425.wav");
+            //document.all.bgs.src = "http://www.10sun.in/425.wav";
+
+
+
+            $('#bgs').remove();
+            $('body').append('<BGSOUND balance=0 loop="3" id="bgs" src="/425.wav"  volume=0></BGSOUND>');
+        }
+        function play2() {
+            $('#bgs').remove();
+
+        }
+        function getPTUserInfo() {
+            var data = "";
+            $.AjaxCommon("/ServicesFile/UserService.asmx/getPTUserInfo", data, true, false, function (json) {
+
+                if (json.d != "") {
+                    var result = jQuery.parseJSON(json.d);
+                    var html = "";
+                    if (parseInt(result[0].aa1) > 0) {
+                        html += " <font color='blue'>(太阳城游戏平台)申请开通数:</font><font color='red' style='font-size:14px;font-weight:600'>" + result[0].aa1 + "笔&nbsp;&nbsp;</font>";
+                    }
+                    if (parseInt(result[0].aa2) > 0) {
+                        html += "  <font color='blue'> (太阳城游戏平台)修改密码数: </font><font color='red' style='font-size:14px;font-weight:600'>" + result[0].aa2 + "笔 &nbsp;&nbsp;</font> ";
+                    }
+                    if (parseInt(result[0].aa3) > 0) {
+                        html += " <font color='blue'> 总帐转款到(太阳城游戏平台)数:</font><font color='red' style='font-size:14px;font-weight:600'>" + result[0].aa3 + "笔 &nbsp;&nbsp;</font>  ";
+                    }
+
+                    if (parseInt(result[0].aa4) > 0) {
+                        html += " <font color='blue'>(太阳城游戏平台)转款到总帐数:</font><font color='red' style='font-size:14px;font-weight:600'>" + result[0].aa4 + "笔&nbsp;&nbsp;</font>    ";
+                    }
+                    if (parseInt(result[0].aa5) > 0) {
+                        html += "<font color='blue'>客户待存款申请:</font><font color='red' style='font-size:14px;font-weight:600'>" + result[0].aa5 + "笔 &nbsp;&nbsp;</font>";
+                    }
+                    if (parseInt(result[0].aa6) > 0) {
+                        html += "<font color='blue'>客户待取款申请:</font><font color='red' style='font-size:14px;font-weight:600'>" + result[0].aa6 + "笔</font>";
+                    }
+                    if (parseInt(result[0].aa7) > 0) {
+                        html += "<font color='blue'>客户红利待审核:</font><font color='red' style='font-size:14px;font-weight:600'>" + result[0].aa7 + "笔</font>";
+                    }
+                    if (html.length > 0) {
+                        $("#notice1").html("注：有以下待处理信息，请及时处理" + html);
+                        if (parseInt(result[0].aa1) == 0 && parseInt(result[0].aa2) == 0 && parseInt(result[0].aa3) == 0 && parseInt(result[0].aa4) == 0 && parseInt(result[0].aa5) == 0 && parseInt(result[0].aa6) > 0) {
+                            return;
+                        } else {
+                            play();
+                           
+                        }
+
+
+                    }
+                    else {
+                        play2();
+                        $("#notice1").html("");
+                        $('#vodiM').html("");
+                    }
+
+
+                }
+            });
+        }
+
+
+        //-------------------------------自动刷新数据公告结束-----------------------------------------------
+
+        function openwindow(url, name, iWidth, iHeight) {
+            var url;                            //转向网页的地址;
+            var name;                           //网页名称，可为空;
+            var iWidth;                         //弹出窗口的宽度;
+            var iHeight;                        //弹出窗口的高度;
+            //window.screen.height获得屏幕的高，window.screen.width获得屏幕的宽
+            var iTop = (window.screen.height - 30 - iHeight) / 2;       //获得窗口的垂直位置;
+            var iLeft = (window.screen.width - 10 - iWidth) / 2;        //获得窗口的水平位置;
+            window.open(url, name, 'height=' + iHeight + ',,innerHeight=' + iHeight + ',width=' + iWidth + ',innerWidth=' + iWidth + ',top=' + iTop + ',left=' + iLeft + ',toolbar=no,menubar=no,scrollbars=yes,resizeable=no,location=no,status=no');
+        }
+
+        jQuery(function ($) {
+            Countdown(jQuery("#timeTxt").val());
+            getPTUserInfo();
+            SetGlobal("");
+            goforit();
+            $("#selChLang").change(function () {  //多语言选择
+                SetGlobal(jQuery(this).val());
+                try {
+                    //main_right.SetGlobal(this.value);
+                    left.SetGlobal(jQuery(this).val());
+                    main_right.location.reload();
+                } catch (e) {
+                    alert("该页面并未设置多语言");
+                }
+            });
+
+            $("#txtHide").click(function () {
+                var url = "/ServicesFile/LoginService.asmx/LoginOut";
+                $.AjaxCommon(url, "", false, false, function (json) {
+                    if (json.d) {
+                        window.parent.location.replace("/login.htm");
+                    }
+                });
+            });
+
+            LoadManagerInfo();
+
+            window.setTimeout("ShowTip()", 1000);
+        });
+
+        function ShowTip() {
+            jQuery.MsgTip({ objId: "#divTip", msg: languages.H1490, delayTime: 8000 });
+        }
+
+        function LoadManagerInfo() {
+            var url = "/ServicesFile/LoginService.asmx/GetManageInfo";
+            $.AjaxCommon(url, "", true, false, function (json) {
+                if (json.d != "") {
+                    $("#spManagerId").text(json.d);
+                }
+            });
+
+        }
+
+        function LoginOut() {
+            var options = { divId: "divExit", titleStr: languages.系统提示, msgStr: languages.确定要退出吗 + "？", triggerId: "txtHide" }
+            //调用系统提示工具
+            $.SystemTip(options);
+            return;
+        }
+        var languages = ""; //设置动态语言
+        function SetGlobal(setLang) {
+
+            setLang = $.SetOrGetLanguage(setLang, function () {
+                languages = language;
+                $("#spSelectLanguage").html(languages.选择语言);
+                $("#spWelcome").html(languages.欢迎您);
+                $("#spSafe").html("[" + languages.安全退出 + "]");
+                $("#switchPoint").attr("title", languages.关闭左栏);
+                $("#SpanChannelMenu_Menu0").text(languages.H1414);
+                $("#SpanChannelMenu_Menu1").text(languages.体育类);
+                $("#SpanChannelMenu_Menu2").text(languages.娱乐场);
+                $("#liuhecai").html(languages.六合彩);
+                $("#qixingcai").html(languages.七星彩);
+                $("#f11").html(languages.H1489);
+                document.title = "10sun后台系统登录";
+
+            });
+
+            $("#selChLang").val(setLang);
+
+        }
+    </script>
+    <script language="javascript" src="js/time.js" type="text/javascript"></script>
+    <script language="javascript" src="js/AdminIndex.js" type="text/javascript"></script>
+    <script language="javascript" src="js/FrameTab.js" type="text/javascript"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta content="MSHTML 6.00.3790.0" name="GENERATOR" />
+</head>
+<body id="Indexbody" onload="onload(),goforit();">
+    <div id="vodiM"> <bgsound balance=0 loop="3" id="bgs" volume=0></bgsound></div>
+    <form id="myform" name="myform" action="" method="post">
+        <input type="hidden" id="txtHide" />
+        <div>
+        </div>
+        <script type="text/JavaScript">
+            function show(id) {
+                var obj;
+                obj = document.getElementById('PopMenu_' + id); obj.style.visibility = "visible";
+            }
+            function hide(id) {
+                var obj;
+                obj = document.getElementById('PopMenu_' + id); obj.style.visibility = "hidden";
+            }
+            function hideOthers(id) {
+                var divs;
+                if (document.all) {
+                    divs = document.all.tags('DIV');
+                }
+                else {
+                    divs = document.getElementsByTagName("DIV");
+                }
+
+                for (var i = 0; i < divs.length; i++) {
+                    if (divs[i].id != 'PopMenu_' + id && divs[i].id.indexOf('PopMenu_') >= 0) {
+                        divs[i].style.visibility = "hidden";
+                    }
+                }
+            } </script>
+
+        <input style="display:none" type="text" id="timeTxt" value="30" /><label style="display:none" id="timeUp">30</label>
+        <input type="hidden" value="" id="timeHide" />
+        <table cellspacing="0" cellpadding="0" border="0">
+            <tbody>
+                <tr>
+                    <td colspan="5">
+                        <div id="content">
+                            <div id="logo">
+                                <span id="clock"><span id="clock1" class='date-txt'></span></span>
+                            </div>
+                            <div id="head_middle">
+                                <div id="top_menu">
+                                    <ul id="ChannelMenuItems">
+                                        <li id="Menu0" onclick="ShowHideLayer('ChannelMenu_Menu0')"> </li>
+                                        <li id="Menu1" onclick="ShowHideLayer('ChannelMenu_Menu1')"></li>
+
+                                        <!--
+                                        <li id="Menu3" onclick="ShowHideLayer('ChannelMenu_Menu3')"><a id="AChannelMenu_Menu3"
+                                            href="#"><span id="SpanChannelMenu_Menu3">
+                                                保留菜单</span></a> </li>
+                                        <li id="Menu4" onclick="ShowHideLayer('ChannelMenu_Menu4')"><a id="AChannelMenu_Menu4"
+                                            href="javascript:ShowMain('leftmenu/QuickLinks.htm?t=304','')"><span id="SpanChannelMenu_Menu4">
+                                                样式效果</span></a> </li>
+                                        -->
+                                    </ul>
+                                </div>
+                                <div id="SubMenu">
+                                    <div id="ChannelMenu_">
+                                        <ul>
+
+                                            <li>
+                                                <span id="spSelectLanguage" class="lanico"></span>
+                                                <select class="select_top" id="selChLang">
+                                                    <option value="zh-cn" selected="selected">简体中文</option>
+                                                    <option value="zh-tw">繁體中文</option>
+                                                    <option value="en-us">English</option>
+                                                    <!--
+                                                      <option value="th-th">ภาษาไทย</option>
+                                                      <option value="vi-vn">Tiếng Việt</option>
+                                                      -->
+                                                </select>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="Announce">
+
+                                    <div id="notic" style=" width:1070px;height:18px;text-align:left;">
+                                        <div style="background:url(/images/default/page_sound.gif) 2px 2px no-repeat;"></div>
+                                        <span style="color:Black; ">
+                                            <!--<script type="text/javascript">
+                                            document.write('<marquee  scrollAmount=2 width=1070 height=18  scrolldelay=77  onmouseout="this.start()"  onmouseover="this.stop()"><span id="notice1" style=" width:1070, height:18"></span></marquee>')</script>-->
+
+                                            <script type="text/javascript">
+
+                                                document.write('<span id="notice1" style=" width:1070;height:18;text-align:left;"></span></marquee>')
+                                            </script>
+
+                                        </span>
+                                    </div>
+
+                                </div>
+                                <div id="admin_box">
+                                    <ul>
+                                        <li><p id="f11">按F11全屏浏览效果更佳！</p></li>
+                                        <li><span class="admin_x" id="spWelcome"></span>,<span id="spManagerId" style="color:Red; font-weight:bold;"></span></li>
+                                        <!-- <li><a href="javascript:void(0)"><span class="repassword" id="updatePwd">修改密码</span></a></li>-->
+                                        <li><a href="javascript:LoginOut()"><span class="exit_x st " id="spSafe"></span></a></li>
+                                    </ul>
+                                </div>
+                                <div id="head_right">
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr style="vertical-align: top" id="middler">
+                    <td id="left_k"></td>
+                    <td id="frmTitle">
+                        <iframe id="left" style="z-index: 2; visibility: inherit; width: 195px; height: 800px"
+                                name="left" src="/RoleRight/MenuManager/LeftMenu.aspx" frameborder="0" tabid="1"></iframe>
+                    </td>
+                    <td class="but" onclick="switchSysBar();">
+                        <div class="btn_close" id="switchPoint" title="" onmouseover="this.className='btn_close_over'"
+                             onmouseout="this.className='btn_close'">
+                        </div>
+                    </td>
+                    <td>
+                        <!-- 书签浏览 书签结束 -->
+                        <div id="FrameTabs" style="overflow: hidden; height:-15px; visibility:hidden; margin-top:-28px">
+                            <div class="tab-right" onmouseover="this.className='tab-right tab-right-over'" onmouseout="this.className='tab-right tab-right-disabled'">
+                            </div>
+                            <div class="tab-left" onmouseover="this.className='tab-left tab-left-over'" onmouseout="this.className='tab-left tab-left-disabled'">
+                            </div>
+                            <div class="tab-strip-wrap" style="width: 8000px">
+                                <ul class="tab-strip" style="float: left">
+                                    <li class="current" id="iFrameTab1">
+                                        <a href="javascript:"><span id="frameTabTitle"></span></a><a class="closeTab"><img alt="" src="/images/default/tab-close.gif" border="0" /></a>
+                                    </li>
+                                    <li id="newFrameTab"><a title="新建标签页" href="javascript:"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div id="main_right_frame">
+                            <iframe id="main_right" src="../../Statistics/userstatistics.aspx" style="z-index: 2; visibility: inherit; overflow-x: hidden;
+                            width: 1280px; height: 800px" name="main_right"
+                                    frameborder="0" scrolling="yes" onload="SetTabTitle(this)" tabid="1"></iframe>
+                            <div class="clearbox2">
+                            </div>
+                        </div>
+                    </td>
+                    <td id="right_k"></td>
+                </tr>
+                <tr style="vertical-align: bottom">
+                    <td colspan="5" id="foot_middle">
+                        <div id="foot_left">
+                        </div>
+                        <div id="foot_right">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div id="iframeGuideTemplate" style="display: none">
+            <iframe style="z-index: 2; visibility: inherit; width: 195px; height: 800px" src="about:blank"
+                    frameborder="0" tabid="0"></iframe>
+        </div>
+        <div id="iframeMainTemplate" style="display: none">
+            <iframe style="z-index: 2; visibility: inherit; overflow-x: hidden; width: 1280px;
+            height: 800px" src="about:blank" frameborder="0" scrolling="yes" onload="SetTabTitle(this)"
+                    tabid="0"></iframe>
+        </div>
+        <script type="text/javascript">
+
+            function onload() {
+                var width = document.body.clientWidth - 223;
+                var lHeight = document.body.clientHeight - 96;
+                var rHeight = lHeight - (jQuery("#FrameTabs").height() || 0);
+                document.getElementById("main_right").style.width = width > 0 ? width : 0;
+                document.getElementById("main_right").style.height = rHeight > 0 ? rHeight : 0;
+                document.getElementById("left").style.height = lHeight > 0 ? lHeight : 0;
+                document.getElementById("switchPoint").style.height = lHeight > 0 ? lHeight : 0;
+                jQuery("#FrameTabs").width(width);
+                if (CheckFramesScroll) { CheckFramesScroll(); }
+            }
+            window.onresize = onload;
+        </script>
+        <div id="divTip">
+
+        </div>
+    </form>
+    <div class="popupTips" id="showPop" title="提示窗口">
+        <dl>
+            <dt>
+                <a class="tips_close" title="不再提示" onclick="javascript:ClosePop();" href="javascript:">
+                </a><a class="tips_fold" title="隐藏" onclick="javascript:$('#showPop').hide('slow');"
+                       href="javascript:"></a>温馨提示
+            </dt>
+            <dd id="info">
+            </dd>
+        </dl>
+    </div>
+    <div class="HelpTips" id="HelpTips" title="帮助窗口">
+        <div class="HelpTitle" id="HelpTitle">
+            <a class="tips_close" title="不再提示" onclick="javascript:dosomething();" href="javascript:">
+            </a><span id="LblHelpTitle">使用帮助</span>
+        </div>
+        <div class="HelpInfo" id="HelpInfo">
+            <!-- <img alt="正在载入......" src="images/loading.gif" />-->
+        </div>
+        <div class="HelpTipsb" id="HelpTipsb">
+            <input onclick="javascript:HelpShowCheck();" type="checkbox" value="true" name="HelpShowFalse" />以后不再显示
+        </div>
+    </div>
+    <div onmousedown="this.style.display='none';document.getElementById('HelpTips').style.display='none';"
+         id="ly" style="display: none; z-index: 1000; filter: alpha(opacity=60); left: 0px;
+        position: absolute; top: 0px; background-color: #777; opacity: 0.5">
+    </div>
+
+    <script type="text/javascript">
+    <!--
+        //移动窗口部份
+
+        var posX;
+        var posY;
+        fdiv = document.getElementById("HelpTips");
+        document.getElementById("HelpTitle").onmousedown = function (e) {
+            if (!e) e = window.event;  //如果是IE
+            posX = e.clientX - parseInt(fdiv.style.left);
+            posY = e.clientY - parseInt(fdiv.style.top);
+            document.onmousemove = mousemove;
+        }
+
+        document.onmouseup = function () {
+            document.onmousemove = null;
+        }
+
+        function mousemove(ev) {
+            if (ev == null) ev = window.event; //如果是IE
+            fdiv.style.left = (ev.clientX - posX) + "px";
+            fdiv.style.top = (ev.clientY - posY) + "px";
+        }
+
+        function CreateSideBarCookie() {
+            var SideBarKey = document.getElementById("left").src.substring(document.getElementById("left").src.lastIndexOf('/') + 1, document.getElementById("left").src.lastIndexOf('.'));
+            var SideBarValue;
+            if (document.getElementById("frmTitle")) {
+                if ( document.getElementById("frmTitle").style.display == "") {
+                    SideBarValue = "block";
+                }
+                else {
+                    SideBarValue = document.getElementById("frmTitle").style.display;
+                }
+            }
+            var existentSideBarCookie = getCookie("SideBarCookie");
+            if (SideBarKey.length != 0 && SideBarValue.length != 0) {
+                var temp = "";
+                var SideBarKV = existentSideBarCookie;
+                if (existentSideBarCookie.length != 0) {
+                    if (SideBarKV.indexOf(SideBarKey) != -1) {
+                        var arrKV = existentSideBarCookie.split("&");
+                        for (var v in arrKV) {
+                            if (arrKV[v].indexOf(SideBarKey) != -1) {
+                                temp = existentSideBarCookie.replace(arrKV[v], SideBarKey + "=" + SideBarValue);
+                            }
+                        }
+                    }
+                    else {
+                        temp = SideBarKey + "=" + SideBarValue + "&" + existentSideBarCookie;
+                    }
+                }
+                else {
+                    temp = SideBarKey + "=" + SideBarValue;
+                }
+                setCookie("SideBarCookie", temp, 300, "/", "", false);
+            }
+            else {
+                return "";
+            }
+        }
+
+
+    </script>
+</body>
+</html>

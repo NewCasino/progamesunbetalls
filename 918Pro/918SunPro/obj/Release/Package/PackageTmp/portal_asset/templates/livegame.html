@@ -1,0 +1,64 @@
+﻿
+<html>
+<head></head>
+<body>
+<div class="banner-block">
+<div class="banner-bg">
+<div class="bannerBg">
+<img class="bannerBg" ng-src="{{bannerPath}}{{banner.background}}">
+</div>
+<div class="banner-content">
+<img class="bannerPic" ng-src="{{bannerPath}}{{banner.image | filterLangImg: banner.filter}}">
+<div class="bannerDesc">
+<h2 data-i18n="{{banner.title}}"></h2>
+<h3 data-i18n="{{banner.desc}}"></h3>
+<a id="sliderBtn" class="ytext" login-text="{{banner.btn_text}}" action-text="{{banner.btn_text_login}}" target="{{banner.target}}" lobby-type="{{banner.lobbyType}}" is-check-login="true" href-link="{{banner.href}}" ng-if="status.isLoaded" my-checklogin=""></a>
+</div>
+</div>
+</div>
+</div>
+<div id="contentWrapper">
+<div id="contentList">
+<div data-ng-repeat="livegameCat in livegameCats">
+<div class="divider"></div>
+<h4>
+<span data-i18n="livegameContent.{{livegameCat}}.subCat"></span>
+<span class="egameType" data-i18n="livegameContent.{{livegameCat}}.gameType"></span>
+</h4>
+<div class="gameImage" ng-mouseleave="isOver=false" ng-mouseover="isOver=true" ng-class="{gameImageLast: $index%4==3}" data-ng-repeat="livegameContent in livegameContents[livegameCat]">
+<div class="overlayWrapper" ng-show="isOver && {{livegameContent.isReleased}}">
+<div class="overlay"></div>
+<a class="contentBtn ytext" data-i18n="livegameContent.btn_text_login" ng-click="showGameRule(livegameContent.gameCd)" ng-href=""></a>
+</div>
+<img ng-src="{{livegameImagePath}}{{livegameContent.image | filterLangImg: livegameContent.filter}}">
+<div class="gameName" data-i18n="{{livegameContent.game_name}}"></div>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+
+<div class="modal-overlay" ng-show="isShowGameRule">
+<div class="mask" ng-click="closeGameRule()"></div>
+<div id="gameRuleDetail" class="general-modal-detail">
+<div id="gameRuleModal" class="modal-content">
+<div class="btn-close" ng-click="closeGameRule()"></div>
+<div class="clearfix"></div>
+<div class="modal-title" data-i18n="gameRules.gameRule"></div>
+<div class="clearfix"></div>
+<div id="gameRuleContent" class="modal-inner-content">
+<div my-hymn=""></div>
+</div>
+<div class="clearfix"></div>
+<div class="modal-btn">
+<a class="btn-first button left" ng-click="openGameUrl()" ng-show="isAuthorized" data-i18n="button.enterNow"> </a>
+<a class="btn-first button left" ng-click="showLoginBox()" ng-hide="isAuthorized" data-i18n="button.signIn"> </a>
+<a class="btn-second button left" ng-click="closeGameRule()" data-i18n="button.close"></a>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

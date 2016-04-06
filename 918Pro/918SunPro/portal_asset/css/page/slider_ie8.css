@@ -1,0 +1,8 @@
+﻿div.slider-block div.slider-page div.slider-content div.slider-images ul {
+  position: relative;
+  z-index: 0;
+  width: 940px;
+  height: 400px;
+  white-space: nowrap;
+  margin-top: -11px;
+}

@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C10E6E4C-70C4-487B-944D-5E7E3CBF070E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DAL</RootNamespace>
+    <AssemblyName>DAL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountService.cs" />
+    <Compile Include="AgentAccountService.cs" />
+    <Compile Include="AgentserversService.cs" />
+    <Compile Include="AgentService.cs" />
+    <Compile Include="BankhistoryService.cs" />
+    <Compile Include="BankInfoService.cs" />
+    <Compile Include="BanklistcService.cs" />
+    <Compile Include="BankService.cs" />
+    <Compile Include="BetaccountcopyService.cs" />
+    <Compile Include="BetaccountlogService.cs" />
+    <Compile Include="BetaccountmaxService.cs" />
+    <Compile Include="BetaccountService.cs" />
+    <Compile Include="BetgamesService.cs" />
+    <Compile Include="BetlogService.cs" />
+    <Compile Include="BillLogService.cs" />
+    <Compile Include="CasinologinserversService.cs" />
+    <Compile Include="CasinoService.cs" />
+    <Compile Include="ConfigService.cs" />
+    <Compile Include="DBUtil\ModelConvertHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBUtil\MySqlCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBUtil\MySqlConnection.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBUtil\MySqlDataReader.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBUtil\MySqlHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBUtil\MySqlHelper1.cs" />
+    <Compile Include="DBUtil\MySqlHelper2.cs" />
+    <Compile Include="MySqlHelper3.cs" />
+    <Compile Include="DBUtil\MySqlModelHelper.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DBUtil\MySqlModelHelper1.cs" />
+    <Compile Include="DBUtil\MySqlModelHelper2.cs" />
+    <Compile Include="DBUtil\ObjectToJson.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DomainService.cs" />
+    <Compile Include="Ezun\BankService.cs" />
+    <Compile Include="Ezun\UserServices.cs" />
+    <Compile Include="GradeService.cs" />
+    <Compile Include="JsnService.cs" />
+    <Compile Include="LoginserversService.cs" />
+    <Compile Include="ManagerService.cs" />
+    <Compile Include="MatchesService.cs" />
+    <Compile Include="Matches_copyService.cs" />
+    <Compile Include="NoticeService.cs" />
+    <Compile Include="OperateLog.cs" />
+    <Compile Include="Orderdetail1x2hflService.cs" />
+    <Compile Include="Orderdetail1x2hfService.cs" />
+    <Compile Include="Orderdetail1x2lService.cs" />
+    <Compile Include="Orderdetail1x2Service.cs" />
+    <Compile Include="OrderdetailhdphflService.cs" />
+    <Compile Include="OrderdetailhdphfService.cs" />
+    <Compile Include="OrderdetailhdplService.cs" />
+    <Compile Include="OrderdetailhdpService.cs" />
+    <Compile Include="OrderdetailliveService.cs" />
+    <Compile Include="OrderdetailouhflService.cs" />
+    <Compile Include="OrderdetailouhfService.cs" />
+    <Compile Include="OrderdetailoulService.cs" />
+    <Compile Include="OrderdetailouService.cs" />
+    <Compile Include="OrderhistoryService.cs" />
+    <Compile Include="OrderotherhistoryService.cs" />
+    <Compile Include="OrderotherService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PTgame.cs" />
+    <Compile Include="RatehistoryService.cs" />
+    <Compile Include="RateService.cs" />
+    <Compile Include="ReasonService.cs" />
+    <Compile Include="RefusedListService.cs" />
+    <Compile Include="RoleService.cs" />
+    <Compile Include="Roteds1x21Service.cs" />
+    <Compile Include="Roteds1x2hf1Service.cs" />
+    <Compile Include="Rotedshdp1Service.cs" />
+    <Compile Include="Rotedshdphf1Service.cs" />
+    <Compile Include="Rotedsou1Service.cs" />
+    <Compile Include="Rotedsouhf1Service.cs" />
+    <Compile Include="Serverlog.cs" />
+    <Compile Include="ServerService.cs" />
+    <Compile Include="System_moduleService.cs" />
+    <Compile Include="System_module_operateService.cs" />
+    <Compile Include="System_module_rightService.cs" />
+    <Compile Include="System_role_rightService.cs" />
+    <Compile Include="Sys_moduleService.cs" />
+    <Compile Include="Sys_module_operateService.cs" />
+    <Compile Include="Sys_module_rightService.cs" />
+    <Compile Include="Sys_role_rightService.cs" />
+    <Compile Include="TestlogService.cs" />
+    <Compile Include="UpdatematchesService.cs" />
+    <Compile Include="UserService.cs" />
+    <Compile Include="VRoleRightService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{B0935ADE-1F9F-4991-81E4-FBFA0AE91208}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

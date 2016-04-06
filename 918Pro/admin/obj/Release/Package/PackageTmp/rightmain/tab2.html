@@ -1,0 +1,172 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link href="/css/Default/globle.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/right_main.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/tab.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/jquery-1.4.1.min.js"></script>
+
+    
+    <title>RightMain</title>
+</head>
+<body >
+<table  id="right_main" border="0" width="100%" cellpadding="0" cellspacing="0">
+<thead>
+<tr class="h30">
+<th width="12" class="tab_top_l"></th>
+<th width="*" class="tab_top_m"><p><font class="st"> 您当前的位置：</font><a href="javascript:void(0)"><span> 首页</span></a><a href="javascript:void(0)"><span>公共样式调用</span></a><span>右边页面模板</span></p></th>
+<th width="16" class="tab_top_r"></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="tab_middle_l"></td>
+<td >
+<div id="main">
+<!--主题部分开始=========================================================================================-->
+
+<script type="text/javascript">
+$(document).ready(function(){
+$(".stripe_tb tr").mouseover(function(){ //如果鼠标移到class为stripe_tb的表格的tr上时，执行函数
+$(this).addClass("over");}).mouseout(function(){ //给这行添加class值为over，并且当鼠标一出该行时执行函数
+$(this).removeClass("over");}) //移除该行的class
+$(".stripe_tb tr:even").addClass("alt"); //给class为stripe_tb的表格的偶数行添加class值为alt
+});
+</script>
+
+<style>
+.stripe_tb th{background:#B5CBE6; color:#039; line-height:20px; height:30px}
+.stripe_tb td{padding:6px 11px; border-bottom:1px solid #95bce2; vertical-align:top; text-align:center}
+.stripe_tb td *{padding:6px 11px}
+.stripe_tb tr.alt td{background:#ecf6fc} /*这行将给所有偶数行加上背景色*/
+.stripe_tb tr.over td{background:#FEF3D1} /*这个将是鼠标高亮行的背景色*/
+
+</style>
+
+<table id="tab2" class="stripe_tb" width=100% cellpadding=0 cellspacing="0" border=0 >
+
+<thead> 
+<tr>
+<th><input  type="checkbox" value="" name="test" title="全选/取消"/></th>
+<th>姓名</th>
+<th>性别</th>
+<th>年龄</th>
+<th>生日</th>
+<th>住址</th>
+<th>电话</th>
+<th>电邮</th>
+<th>网址</th>
+</tr>
+</thead> 
+<tbody id="tab">
+<tr>
+<td><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td ><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+</tbody> 
+
+<tfoot>
+<tr>
+<td><input onclick="if(this.checked==true) { checkAll('test'); } else { clearAll('test'); }" type="checkbox" value="" name="test" title="全选/取消"/></td>
+<td colspan="8">
+
+<div class="grayr"><span class="disabled"> < </span><span class="current">1</span><a href="#?page=2">2</a><a href="#?page=3">3</a><a href="#?page=4">4</a><a href="#?page=5">5</a><a href="#?page=6">6</a><a href="#?page=7">7</a>...<a href="#?page=199">199</a><a href="#?page=200">200</a><a href="#?page=2"> > </a></div>
+
+</td>
+</tr>
+</tfoot>
+</table>
+
+
+
+
+
+
+
+
+
+
+<!--主题部分结束=========================================================================================-->
+</div>
+</td>
+<td class="tab_middle_r"></td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr class="h35">
+<td width="12" class="tab_foot_l"></td>
+<td width="*" class="tab_foot_m">
+
+</td>
+<td width="16" class="tab_foot_r"></td>
+</tr>
+</tfoot>
+</table>
+</body>
+</html>

@@ -1,0 +1,113 @@
+/* 
+===================全局公共样式表===================
+
+   * Filename:        style.css
+   * Version:         (2010-03-11) YYYY-MM-DD
+   * Website:         
+   * @ 全局调用  
+  == SITE BY:Vispeace========================
+===================================================
+*/
+.text_01{ background:url(/images/default/main/textbg.gif) repeat-x top #fff; border:1px solid #98d0ff; padding:0 3px; }
+.text_01_h{ background:url(/images/default/main/textbg_h.gif) repeat-x top  #e5f2ff; border:1px solid #68baff; padding:0 3px;   }
+.input_out{padding:2px 8px 0pt 3px; height:18px; border:1px solid #89c0f2;  line-height:18px;background:url(/images/default/main/textbg.gif) repeat-x top  #fff;  }
+.onFocus{ border:1px solid #4ac0f8;background:url(/images/default/main/textbg_h.gif) repeat-x top  #e5f2ff; }
+.onError {border:1px solid #e60012; background:url(/images/default/main/textbg_e.gif) repeat-x top  #e5f2ff; color:#f30; }
+ #tip {position:absolute; background:url(/images/icon/Icon326.png) no-repeat 0 4px; margin-left:20px; display:none; border:1px dotted #f30; padding:3px 5px 3px 20px; text-align:center;vertical-align:middle; word-spacing:2px; }
+
+/* ------------蓝色系--------------*/
+.btn_darkblue,.btn_darkblue:hover,.btn_darkblue span,.btn_darkblue span:hover,
+.btn_Lakeblue,.btn_Lakeblue:hover,.btn_Lakeblue span,.btn_Lakeblue span:hover,
+.btn_skyblue,.btn_skyblue:hover,.btn_skyblue span,.btn_skyblue span:hover,
+.btn_Cobaltblue,.btn_Cobaltblue:hover,.btn_Cobaltblue span,.btn_Cobaltblue span:hover,
+.btn_Isblue,.btn_Isblue:hover,.btn_Isblue span,.btn_Isblue span:hover,
+.btn_Seablue,.btn_Seablue:hover,.btn_Seablue span,.btn_Seablue span:hover,
+.btn_indigo,.btn_indigo:hover,.btn_indigo span,.btn_indigo span:hover,
+.btn_peacock,.btn_peacock:hover,.btn_peacock span,.btn_peacock span:hover
+{display:inline-block; cursor:pointer; text-decoration:none; text-align:center; background:url(/images/btn/Btn_Blue_All.png); }
+
+.btn_darkblue{ padding-left:15px; height:22px; background-position:left 0;  }
+.btn_darkblue:hover{ background-position:left -44px;}
+.btn_darkblue span{ padding-right:15px; height:22px; line-height:22px;  color:White; background-position:right -22px;   }
+.btn_darkblue span:hover{ background-position:right -66px;}
+
+.btn_skyblue{ padding-left:15px; height:26px; background-position:left -88px; }
+.btn_skyblue:hover{ background-position:left -140px;}
+.btn_skyblue span{ padding-right:15px; height:26px; font-weight:bold; line-height:26px; color:#00a0e9;  background-position:right -114px;  }
+.btn_skyblue span:hover{ background-position:right -166px;}
+
+.btn_Lakeblue{ padding-left:15px; height:20px; background-position:left -192px;  }
+.btn_Lakeblue:hover{ background-position:left -232px;}
+.btn_Lakeblue span{ padding-right:15px; height:20px; line-height:20px; background-position:right -212px; color:#004975;   }
+.btn_Lakeblue span:hover{ background-position:right -252px; color:White;}
+
+.btn_Cobaltblue{ padding-left:15px; height:22px; background-position:left -272px;  }
+.btn_Cobaltblue:hover{ background-position:left -316px;}
+.btn_Cobaltblue span{ padding-right:15px; height:22px; line-height:22px; background-position:right -294px; color:White;   }
+.btn_Cobaltblue span:hover{ background-position:right -338px; color:White;}
+
+.btn_Isblue{ padding-left:15px; height:29px; background-position:left -360px;  }
+.btn_Isblue:hover{ background-position:left -418px;}
+.btn_Isblue span{ padding-right:15px; height:29px; line-height:29px; background-position:right -389px; color:White;   }
+.btn_Isblue span:hover{ background-position:right -447px; color:White;}
+
+.btn_Seablue{ height:34px; background-position:left -476px; padding:0px 0 0px 15px;  }
+.btn_Seablue:hover{ background-position:left -544px;}
+.btn_Seablue span{ padding:2px 15px 4px 0px;height:28px; font-weight:bold; line-height:28px; background-position:right -510px; color:White;   }
+.btn_Seablue span:hover{ background-position:right -578px; color:White;}
+.btn_Seablue input{ padding:2px 15px 4px 0px;height:28px; font-weight:bold; line-height:28px; background-position:right -510px; color:White; border:none;   }
+.btn_Seablue input:hover{ background-position:right -578px; color:White;}
+
+.btn_indigo{ padding-left:15px; height:26px; background-position:left -612px;  }
+.btn_indigo:hover{ background-position:left -664px;}
+.btn_indigo span{ padding-right:15px; height:26px; font-weight:bold; line-height:26px; background-position:right -638px; color:White;   }
+.btn_indigo span:hover{ background-position:right -690px; color:White;}
+
+.btn_peacock{ padding-left:15px; height:28px; background-position:left -716px;  }
+.btn_peacock:hover{ background-position:left -772px;}
+.btn_peacock span{ padding-right:20px; height:28px; font-weight:bold; line-height:28px; background-position:right -744px; color:#22517b;  }
+.btn_peacock span:hover{ background-position:right -800px; color:#00bc2c;}
+
+
+
+.btn_01{ width:71px; height:22px; background:url(/images/default/main/btn_01.gif) no-repeat; border:none; line-height:22px; color:#fff; font-weight:bolder; cursor:pointer;}
+.btn_01_h{ width:71px; height:22px; background:url(/images/default/main/btn_01.gif) no-repeat 0 -22px; border:none; line-height:22px; color:#fff; font-weight:bolder; cursor:pointer;}
+.btnblue{ display:inline-block; padding-left:10px; height:22px; background:url(/images/default/main/btn_01.gif) no-repeat 0 -44px; border:none; line-height:22px; color:#fff; font-weight:bolder; cursor:pointer;}
+.btnblue span{ display:inline-block; padding-right:10px; height:22px; background:url(/images/default/main/btn_01.gif) no-repeat right -66px; border:none; line-height:22px; color:#fff; font-weight:bolder; cursor:pointer;}
+.btnblue a{ text-decoration:none;}
+
+.btn_02{ width:90px; height:26px; background:url(/images/default/main/btn_02.gif) 0 0px no-repeat; border:none; line-height:26px; color:#0282c2;font-weight:bolder;cursor:pointer;}
+.btn_02_h{ width:90px; height:26px; background:url(/images/default/main/btn_02.gif) 0 -27px no-repeat; border:none; line-height:26px; color:#0282c2;font-weight:bolder;cursor:pointer;}
+
+.btn_04{ width:90px; height:32px; background:url(/images/default/main/btn_04.gif) 0 0px no-repeat; padding-bottom:3px; border:none; color:#fff;font-weight:bolder;cursor:pointer;}
+.btn_04_h{ width:90px; height:32px; background:url(/images/default/main/btn_04.gif) 0 -32px no-repeat; padding-bottom:3px;  border:none; line-height:32px; color:#fff;font-weight:bolder;cursor:pointer;}
+
+
+.btn_05{ width:90px; height:32px; background:url(/images/default/style/btn/btn_02.gif) no-repeat; border:none; line-height:32px; color:#fff; font-weight:bolder; cursor:pointer; font-size:14px;}
+.btn_06{ width:90px; height:32px; background:url(/images/default/style/btn/btn_02.gif) 0 -32px no-repeat; border:none; line-height:32px; color:#fff;font-weight:bolder;cursor:pointer;font-size:14px;}
+.btn_07{ width:90px; height:32px; background:url(/images/default/style/btn/btn_02.gif) -90px 0 no-repeat; border:none; line-height:32px; color:#fff;font-weight:bolder;cursor:pointer;font-size:14px;}
+.btn_08{ width:90px; height:32px; background:url(/images/default/style/btn/btn_02.gif) -90px -32px no-repeat; border:none; line-height:32px; color:#fff;font-weight:bolder;cursor:pointer;font-size:14px;}
+.hemai_btn{ width:95px; height:24px;  color:#FFF; font-weight:bolder; border:0px; line-height:24px; background:url(/images/default/mainbg.png) no-repeat -200px -200px;}
+
+
+
+
+
+.top_add{ height:30px; width:121px; background:url(/images/default/main/add_btn.gif) no-repeat; border:0; line-height:30px; cursor:pointer; }
+.top_add_h{ height:30px; width:121px; background:url(/images/default/main/add_btn.gif) no-repeat 0 -30px; border:0; line-height:30px; cursor:pointer; }
+.fa_add{ height:24px; padding-left:24px; color:#105b91; background:url(/images/default/main/fa_btn.gif) no-repeat left 0;  line-height:24px; cursor:pointer; display:inline-block; text-decoration:none;  }
+.fa_add_in{ height:24px; color:#105b91;  background:url(/images/default/main/fa_btn.gif) no-repeat right -24px; padding-right:10px;  line-height:24px; cursor:pointer;display:inline-block; text-decoration:none; }
+.fa_saurch{ height:24px; padding-left:24px; background:url(/images/default/main/fa_btn.gif) no-repeat left -48px;  line-height:24px; cursor:pointer; display:inline-block; text-decoration:none; color:#FFF;  }
+.fa_saurch_in{ height:24px;  background:url(/images/default/main/fa_btn.gif) no-repeat right -72px; padding-right:10px;  line-height:24px; cursor:pointer;display:inline-block; text-decoration:none;color:#FFF; }
+.edit_01{ padding-left:15px; background:url(/images/icon/Icon167.png) 0 4px no-repeat; }
+.delet_01{ padding-left:15px; background:url(/images/icon/Icon141.png) 0 4px no-repeat;}
+.edit_02{ width:16px; height:16px; background:url(/images/icon/Icon388.png) 0 0px no-repeat; border:0px; cursor:pointer; margin:7px 2px;}
+.save_01{ width:16px; height:16px; background:url(/images/icon/Icon316.png) 0 0px no-repeat; border:0px; cursor:pointer; margin:7px 2px;}
+.imgShow{ width:16px; height:16px; background:url(/images/icon/Icon302.png) 0 0px no-repeat; border:0px; cursor:pointer;}
+.delet_02{ width:16px; height:16px; background:url(/images/icon/note_delete.gif) 0 0px no-repeat; border:0px; cursor:pointer;  }
+.editCss{ width:57px; height:20px; background:url(/images/default/main/btn_03.gif) no-repeat; border:0px; cursor:pointer;  padding-left:10px;; color:#0075a9;}
+.editCss_l{ width:57px; height:20px; background:url(/images/default/main/btn_03.gif) -57px 0 no-repeat; border:0px; cursor:pointer; padding-left:10px;; color:#fff;}
+
+
+
+

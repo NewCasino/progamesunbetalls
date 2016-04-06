@@ -1,0 +1,65 @@
+﻿
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link href="/css/Default/globle.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/right_main.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/tab.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/jquery-1.4.1.min.js"></script>
+
+    <script src="/js/jquery-ui.min.js" type="text/javascript"></script>
+   
+    <script src="/js/jquery-ui-1.8.2.custom.min.js" type="text/javascript"></script>
+    <script src="/js/webBasicInfo/zh-CN.js" type="text/javascript"></script>
+
+     <script src="/js/jQueryCommon.js" type="text/javascript"></script>
+ 
+     <script type="text/javascript" >
+         $(function () {
+             var num = 22.127456;
+             alert(Math.round(num * 100) / 100);
+             //浏览器判断对象　
+             browserName = navigator.userAgent.toLowerCase();
+             browser = {
+                 version: (browserName.match(/.+(?:rv|it|ra|ie)[\/: ]([\d.]+)/) || [0, '0'])[1],
+                 safari: /webkit/i.test(browserName) && !this.chrome,
+                 opera: /opera/i.test(browserName),
+                 firefox: /firefox/i.test(browserName),
+                 ie: /msie/i.test(browserName) && !/opera/.test(browserName),
+                 mozilla: /mozilla/i.test(browserName) && !/(compatible|webkit)/.test(browserName) && !this.chrome,
+                 chrome: /chrome/i.test(browserName) && /webkit/i.test(browserName) && /mozilla/i.test(browserName)
+             };
+
+             if (browser.ie) {
+                 //alert(44);
+                 $('#bgs').attr("src", "http://admin.10sun.com/425.wav");
+             }
+             else {
+                 $('#bgs2').attr("src", "http://admin.10sun.com/425.wav");
+             }
+
+
+
+
+             $('a.click').click(function () {
+                 $('embed').remove();
+                 $('body').append('<embed src="http://admin.10sun.com/425.wav" loop=2 width="0" height="0" id="bgs2" controls="controlpanel">');
+                 
+             });
+
+             $('a.hover').mouseover(function () {
+                 $('embed').remove();
+                 $('body').append('<embed src="http://admin.10sun.com/425.wav" loop=2 width="0" height="0" id="bgs2" controls="controlpanel">');
+             });
+         });
+        </script>
+    </head>
+    <body>
+    <embed src="http://admin.10sun.com/425.wav" />
+        <!--<p><a href="#" class="click">点击后发声提示</a></p>-->
+        <p><a href="#" class="hover">鼠标在上面发声提示</a></p>
+    </body>
+</html>

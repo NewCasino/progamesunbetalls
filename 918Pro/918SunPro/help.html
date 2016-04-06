@@ -1,0 +1,386 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>常见问题</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="index.css" />
+    <link type="text/css" rel="stylesheet" href="css/zuce.css" />
+    <link type="text/css" rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" type="text/css" href="/portal_asset/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/portal_asset/css/page/slider.css" />
+    <link rel="stylesheet" type="text/css" href="/portal_asset/css/module/jquery.jscrollpane.css" />
+    <link href="portal_asset/css/jquery-ui.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div xmlns:my="ignored" id="ng-app" ng-app="ctrlApp">
+        <div class="nav">
+            <div class="nav_small">
+                <ul style="float:left">
+                    <li><a href="help.html">常见问题</a></li>
+                    <li><span>&nbsp;|</span><a href="freePay.html">&nbsp;免费参观</a></li>
+                    <li><span>&nbsp;|</span><a href="about.html">&nbsp;关于我们</a></li>
+                    <!--<li><a href="">手机投注<span>|</span></a></li>-->
+                    <li><span>&nbsp;|</span><a href="zhaopai.html">&nbsp;牌照展示</a></li>
+                    <li><span>&nbsp;|&nbsp;</span><a my-checklogin="" href="javascript:void(0)" class="over" ng-if="status.isLoaded" href-link="#" is-check-login="true" lobby-type="live" target="_blank" action-text="banners.liveGame.btn_text_login" login-text="banners.liveGame.btn_text">登陆游戏</a></li>
+
+                </ul>
+
+                <ul style="float:right">
+
+                    <li class="userInfo left" ng-show="isAuthorized">
+                        <div>
+
+                            <p class="userInfo left white">欢迎您：{{username}} &nbsp;&nbsp;<a href="memberCenter.aspx">【会员中心】</a> &nbsp;&nbsp;</p>
+                            <div class="clearFix"></div>
+                        </div>
+                    </li>
+
+
+                    <li class="LS-service" ng-show="isAuthorized" ng-click="tgpLogout(true)">
+                        <span style=" font-weight: 800; font-size: 14px; color: #3B240B;">【</span><a href="" class="over" id="tgpLogout" data-i18n="button.logout" style=" font-weight: 800; font-size: 14px; color: #3B240B;"></a><span style=" font-weight: 800; font-size: 14px; color: #3B240B;">】</span>
+                        </>
+                    </li>
+                    <!--<li><a href="">会员中心<span>|</span></a></li>-->
+
+                    <li><a id ="pro_setup" href="http://www.11psb.com/air/air-bin/SunbetGameSetup3.4.0.exe">&nbsp;客户端下载</aid></li>
+                    <li><span>&nbsp;|</span><a href="appGame.html" target="_blank">&nbsp;手机APP版</a></li>
+                    <li>
+                        <div ng-hide="isAuthorized">
+                            <span>&nbsp;|</span><a href="#" onclick="AddFavorite(window.location,document.title)">&nbsp;&nbsp;加入收藏</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div ng-hide="isAuthorized">
+                            <span>&nbsp;|</span><a href="javascript:void(0)" onclick="SetHome(this,window.location)">&nbsp;&nbsp;设为首页</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="yuan"></div>
+            </div>
+        </div>
+
+        <div class="nav_bottm">
+            <div class="logo">
+                <a href=""><img src="images/logo.png" alt="" /></a>
+            </div>
+            <div class="kaitong">
+                <a href="register.html"><img src="images/logo_icon_06.png" alt="" /></a>
+            </div>
+
+            <div class="login"><a my-checklogin="" id="sliderBtn" href="javascript:void(0)" class="over" ng-if="status.isLoaded" href-link="#" is-check-login="true" lobby-type="live" target="_blank" action-text="banners.liveGame.btn_text_login" login-text="banners.liveGame.btn_text"></a> </div>
+
+            <div class="pelope">
+                <a href="javascript:void(0);" onclick="openwin()"><img src="images/logo_icon_03.png" alt="" /></a>
+            </div>
+        </div>
+
+
+        <div class="modal-overlay my-hidden" ng-show="isShowTnc">
+            <div class="mask"></div>
+            <div id="tncDetail" class="tnc-modal-detail">
+                <div id="tncModal" class="modal-content">
+                    <div class="modal-title" data-i18n="login.userTnC"></div>
+                    <div class="clearfix"></div>
+                    <div id="tncContent" class="modal-inner-content">
+                        <div my-tnc=my-tnc></div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="modal-btn">
+                        <a data-i18n="button.agree" ng-click="closeTnc()" class="btn-first button left"> </a>
+                        <a data-i18n="button.disagree" ng-click="disagreeTnc()" class="btn-second button left"></a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay my-hidden" ng-show="isShowConfirmLogout">
+            <div class="mask" ng-click="cancelLogout()"></div>
+            <div class="logout-modal-detail" ng-hide="logoutTGPLoading">
+                <div class="modal-content">
+                    <div>
+                        <div class="btn-close" ng-click="cancelLogout()"></div>
+                        <div class="clearfix"></div>
+                        <div class="modal-title" data-i18n="login.confirmLogout"></div>
+                        <div class="modal-btn">
+                            <a data-i18n="button.confirm" ng-click="confirmLogout()" class="btn-first button "> </a>
+                            <a data-i18n="button.cancel" ng-click="cancelLogout()" class="btn-second button "></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logoutLoading" ng-show="logoutTGPLoading">
+                <img src="/portal_asset/images/loading.gif" />
+            </div>
+        </div>
+
+
+        <div class="modal-overlay my-hidden" ng-show="isShowPopupGame" style=" display:none">
+            <div class="mask" ng-click="cancelPopupGame()"></div>
+            <div class="logout-modal-detail">
+                <div class="modal-content">
+                    <div>
+                        <div class="btn-close" ng-click="isShowPopupGame = false"></div>
+                        <div class="clearfix"></div>
+                        <div class="modal-title" data-i18n="button.enterNowConfirm"></div>
+                        <div class="modal-btn">
+                            <a data-i18n="button.confirm" ng-click="openUrl(currentPage)" class="btn-first button left"> </a>
+                            <a data-i18n="button.cancel" ng-click="isShowPopupGame = false" class="btn-second button left"></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <my-hidden></my-hidden>
+    </div><ul>
+        <li><a href="index.html" class="a"></a></li>
+        <li><a href="gameProject.html" class="b"></a></li>
+        <li><a href="transfers.aspx" class="c"></a></li>
+        <li><a href="promotion.html" class="d"></a></li>
+        <li><a href="agent.html" class="f"></a></li>
+        <li><a href="transfers1.aspx" class="e" target="_blank"></a></li>
+
+    </ul>
+    <div class="content" style="height: 1180px">
+        <div class="cent_nav">
+            <ul>
+                <li><a href="index.html" class="a"></a></li>
+                <li><a href="gameProject.html" class="b"></a></li>
+                <li><a href="transfers.aspx" class="c"></a></li>
+                <li><a href="promotion.html" class="d"></a></li>
+                <li><a href="agent.html" class="f"></a></li>
+                <li><a href="transfers1.aspx" class="e" target="_blank"></a></li>
+
+            </ul>
+        </div>
+        <p class="tishi">
+            <marquee behavior="scroll" scrolldelay="200" onmouseout="this.start()" onmouseover="this.stop()" id="demo2"></marquee>
+
+        </p>
+        <div class="main" style="height:1000px">
+            <div class="title"> 常见问题 </div>
+            <div class="">
+                <div class="contentss">                  
+                    <!--<h1 style="color:red">常见问题</h1>-->
+                    <ul class="faqlist">
+                        <li class="">
+                            <h4><span>无法登陆游戏，怎么办?</span><div class="switch"></div></h4>
+                            <p style="display: none;">
+                                如果您使用的是网页版登陆游戏，请尝试更换您的浏览器再进行登陆游戏。<br /><br />
+                                建议使用谷歌、火狐浏览器。或者点击网站左上角的客户端下载，安装客户端进行游戏，客户端游戏更稳定，游戏画面更加清晰流畅。<br /><br />
+                                谷歌浏览器下载地址：<a href="http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html" style="color:green" target="_blank">http://www.google.cn/intl/zh-CN/chrome/browser/desktop/index.html</a><br/><br />
+                                火狐浏览器下载地址：<a href="https://www.mozilla.org/zh-CN/firefox/new" style="color: green" target="_blank" >https://www.mozilla.org/zh-CN/firefox/new</a><br /><br />
+                                如果您使用的是客户端登陆游戏，您可尝试关闭防火墙和防毒软件，由于它们当中有些程序或与我们的软件有冲突，因而导致这种情况。<br /><br />
+                                此外，您亦可刪除浏览器中的小型文字档案(cookies)和历史记录，=如果您使用的是客户端登陆游戏，您可尝试关闭防火墙和防毒软件，由于它们当中有些程序或与我们的软件有冲突，因而导致这种情况。<br /><br />
+                                此外，您亦可刪除浏览器中的小型文字档案(Cookies)和历史记录， 然后重启电脑，再尝试登录。<br /><br />
+                                如果问题仍旧继续，请联系在线客服为您解决。=然后重启电脑，再尝试登录。如果问题仍旧继续，请联系在线客服为您解决。</p><br />
+                        </li>
+                        <li class="">
+                            <h4><span>为什么在输入正确帐户名称和密码后，系统提示出用户名或密码发生错误?</span><div class="switch"></div></h4>
+                            <p style="display: none;">
+                            一般来说，这种情况是由于在输入的帐户名称或密码不正确导致的。<br /><br />
+                            特此，提醒在输入帐户资料时，请留意是否已开启了大写输入及已选择正确的输入法。<br /><br />
+                            为保障客户安全， 当用户名称或密码输错3次，该帐户将被系统锁住，遇到这种情况请及时联系我们在线客服解决。</p>
+                          
+                        </li>
+
+                        <li class="">
+                            <h4><span>网站突然打不开?</span><div class="switch"></div></h4>
+                            <p style="display: none;">
+                            可能因为不同地区的网络波动，以致阁下无法成功浏览相关资讯。如遇此类情况，您可与我们的客服人员联络。<br /><br />
+                            稍后，我们会为您提供备用网址，助您成功登入网站，浏览相关內容及参与娱乐活动。</strong></p>
+                          
+                        </li>
+                        <li class="">
+                            <h4><span>如何更改游戏密码?</span><div class="switch"></div></h4>
+                            <p style="display: none;">成功登陆游戏后，点击游戏右上角的齿轮图标→个人资料设定→更改密码</p>                            
+                        </li>
+                        <li class="">
+                            <h4><span>如何开户？</span><div class="switch"></div></h4>
+                            <p style="display: none;">
+                                请您点击主页导航右上角中的“立即开户”按钮，根据提示填写正确有效的注册信息，点击“提交”即可注册成功。<br /><br />
+                                注册成功后请您及时联系在线客服进行账号激活。<br /><br />
+                                会员账号：用来识別帐户登入者的身份，填写2-6个数字或字母即可。
+                            </p>                          
+                        </li>
+                        <li class="">
+                            <h4><span>如何存款?</span><div class="switch"></div></h4>
+                            <p style="display: none;">
+                            点击主页导航中的“存款提款”，选择您所需要的存款方式，根据提示进行存款操作。<br /><br />
+                            特提供“银行转账汇款”和“在线支付”“支付宝转账”三种方式供玩家选择。<br /><br />
+                            确认提交后，财务部门会在2分钟内为您添加到账。最低存款金额为100元。</p>
+                        </li>
+                        <li class="">
+                            <h4><span>如何提款？</span><div class="switch"></div></h4>
+                            <p style="display: none;">
+                            点击主页导航中的“存款取款”选项，选择“申请提款”填写正确的“提款金额”“提款会员账号” 以及填写您真实有效的相关银行信息点击提交即可完成提款。<br /><br />
+                            提款申请成功后，财务部门会在30分钟内为您出款，最低提款金额为100元。</p>
+                        </li>
+                        <li class="">
+                            <h4><span>进行游戏时，如突然出现断线的情况，应怎么办?</span><div class="switch"></div></h4>
+                            <p style="display: none;">
+                            由于国际网络的连接故障引起的多种原因的短线情况，618集团特地开发了一套成熟的非正常断网处理机制。<br /><br />
+                            当出现突然断线时，玩家的利益也受到保障。若因为个別原因， 令游戏在进行期间突然中断，则可尝试重新连线到618集团。<br /><br />
+                            您亦可以等待数分钟，再连接到618集团，并进行正常的登录程序。如果在退出登录之前重新连接， 您将可看到中断连接时所玩的游戏。<br /><br />
+                            在线百家乐游戏中如出现了断线问题，若然投注成功，在重新登录并恢复连接后，将直接出现相关结果，而玩家亦可在游戏记录中查看。 <br /><br />
+                            如果投注没有被确认，那么将会返还本金。</p>
+                          
+                        </li>
+                        <li>
+                            <h4><span>如何使用截取屏幕?</span><div class="switch"></div></h4>
+                            <p style="display: none;">
+                            请把鼠标指向并单击网址窗口位置，之后再于键盘上找寻Prtscn Sysrq的按钮，并同时按下PrtscnSysrq键，接着打开“附件”中的"画图“，<br /><br />
+                            点击上方的“编辑”选择“粘贴”， 截取需要的屏幕并保存在桌面上。</p>
+                           
+                        </li>
+                        <li>
+                            <h4><span>如何清除浏览器缓存?</span><div class="switch"></div></h4>
+                            <p style="display: none;">请于网站的栏目位置，选取工具项，再选取清单选项，您会看到游览器纪录，然后按删除按钮，再选取您想删除的项目后，再按删除按钮即可</p>
+                        </li>
+
+
+                        <h1 style="color:red">网站相关问题</h1>
+
+                        <li>
+
+                            <h4><span>618集团会提供哪些游戏?</span><div class="switch"></div></h4>
+                            <p style="display: none;">
+                                618集团目前已为客户提供全世界所有体育赛事的投注，真人娱乐场游戏和过百款电子游戏。<br /><br />
+                                同时，我们正积极开发多元化精采娱乐游戏。如有任何更新，玩家将会自动获得通知。
+                            </p>
+                        </li>
+                        <li>
+
+                            <h4><span>618集团的现场游戏是不是录像来的?</span><div class="switch"></div></h4>
+                            <p style="display: none;">绝对不是。我们透过网络传输，直接使用摄录器把游戏现场的真实情况即时传送给客户，保证一切在百分百公平及公正的情况下进行，更增加了游戏的娱乐性。</p>
+                        </li>
+                        <li>
+
+                            <h4><span>我可以从哪里看到各种游戏的详细说明?</span><div class="switch"></div></h4>
+                            <p style="display: none;">您可通过618集团网站的首页，点击对应的游戏平台，进入游戏场馆进行详细了解即可。</p>
+                        </li>
+                        <li>
+
+                            <h4><span>在618集团进行的所有游戏程序是否公正? 你们公司是有牌照的公司吗?</span><div class="switch"></div></h4>
+                            <p style="display: none;">
+                                618集团是在菲律宾合法注册的公司并由First Cagayan公司进行监管。 这样您可以相信游戏是公正和诚实的。<br /><br />
+                                618.com Sportsbook, HG Casino 及 TTG 是依照马恩岛政府的牌照合法运营的。马恩岛监督委员会是含有一个有高标准监管制度的机构。
+                            </p>
+                        </li>
+                    </ul>
+
+               
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-text"><img src="images/bg.jpg" alt=""></div>
+    </div>
+    <div class="footer11">
+        <div class="footer_column">
+            <div class="column01">
+                <div class="info_title01">信息</div>
+                    <div class="line"></div>
+                    <p>
+                        <span> 注册</span>
+                        点击立即开户即可享受所有的精彩游戏，更有机会获取高达100%的开户红利，最高可送￥18,888。
+                    </p>
+                    <p>
+                        <span>协议条款</span>
+                        我们提供最优秀的真人视讯平台，拥有正规牌照，并设置相关安全设施，确保游戏的公平。
+                    </p>
+                    <p>
+                        <span>游客参观</span>
+                        游戏平台全面开放，让您无需注册也可以一饱眼福。联系在线客服索要试玩账号
+                    </p>
+                </div>
+                <div class="column02">
+                    <div class="info_title02">产品</div>
+                    <div class="line"></div>
+                    <p>
+                        <span> 现场娱乐</span>
+                        我们强力首推，您可饱览整个游戏大厅和靓丽的SUNGIRL荷官。玩法众多,花样百变，赶快注册属于自己的账号吧！
+                    </p>
+                    <p>
+                        <span>电子游戏</span>
+                        我们拥有多种精彩电子游艺种类，画质精美，运行流畅，使您最大限度的拥有完美游戏体验
+                    </p>
+                    <p>
+                        <span>体育竞技</span>
+                        我们为您提供最专业的体育平台。每天多达300多场体育赛事，足球、篮球、网球等应有尽有，玩家可尽情享受体育投注乐趣。
+                    </p>
+                </div>
+                <div class="column03">
+                    <div class="info_title03">星级服务</div>
+                    <div class="line"></div>
+                    <p>
+                        <span>联系我们</span>
+                        如果您有任何关于游戏或者是娱乐场方面的疑问，您随时可通过在线客服、QQ客服或者电话客服获取帮助。
+                    </p>
+                    <p>
+                        <span>优质服务承诺</span>
+                        自成立至今，我们致力提供多元化的体育竞技及网上娱乐，让客户能每天24小时体验到最精采刺激的休闲享受，更藉以丰富奖赏，以回馈所有大众对我们的支持及热烈参与
+                    </p>
+                    <p>
+                        <span>快速存取款</span>
+                        我们提供各种安全简便的存款及提款选择给客户。我们希望所有的客户能够在一个安全愉快的环境中，享受本公司精心设计的产品和服务，并能够从中获利。我们欢迎如有需要，请通过电子邮件方式将相关讯息发送至电子邮箱：9790181@qq.com 我们将认真听取客户对我们提出的任何意见。
+                    </p>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+<div class="kefuBox33" id="" style="left: 20px; width: 133px; height: 150px; "><a style="color: #fbe7aa">+ 扫一扫 添加微信号</a> </div>
+    <!--客服弹出框-->
+    <div class="kefuBox" id="kefuBox" style="right: -190px;">
+        <div class="kefu_left">
+            <a href="javascript:void(0);"><img style="border:0;height: 293px" alt="" src="images/kefu_on.gif" /></a>
+        </div>
+        <div class="kefu_right">
+            <div class="kefu_top">
+                <a target="_blank" href="transfers1.aspx"><img style="border: 0; margin-left: -22px;margin-top:11px " alt="" src="images/chongzhi_on.png" /></a>
+            </div>
+            <div class="kefu_bot">
+                <a onclick="openwin()" href="javascript:void(0);"><img style="border: 0; margin-left:-22px; margin-top:5px  " alt="" src="images/zaixian_on.png" /></a>
+            </div>
+            <div class="kefu_bot">
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=9790181&amp;site=qq&amp;menu=yes"><img style="border: 0; margin-left: -22px; margin-top:5px " alt="" src="images/chongzhi_on2.png" /></a>
+            </div>
+            <div class="kefu_bot">
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=9790581&amp;site=qq&amp;menu=yes"><img style="border: 0; margin-left:-22px; margin-top:5px " alt="" src="images/chongzhi_on3.png" /></a>
+            </div>
+            <div class="kefu_bot">
+                <a href="javascript:void(0);"><img style="border: 0; margin-left: -22px; margin-top:11px" alt="" src="images/chongzhi_on4.png" /></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/portal_asset/js/libs/tgp.js?clientId=a8hHfj3ckdk4Djfi&t=20140930173901"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/i18next-1.7.3.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/angular.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/angular-route.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/angular-cookies.js"></script>
+    <script src="/portal_asset/js/libs/jquery.cookie.js" type="text/javascript"></script>
+    <script src="portal_asset/js/jQueryCommon.min.js?t=201505161111111111111"></script>
+    <script src="js/618sun/about.js"></script>
+    <script src="js/util.js"></script>
+    <!-- Live800默认跟踪代码: 开始-->
+    <script language="javascript" src="http://f18.livechatvalue.com/chat/chatClient/monitor.js?jid=1206637488&companyID=493978&configID=53742&codeType=custom"></script>
+    <!-- Live800默认跟踪代码: 结束-->
+    <script language="javascript" type="text/javascript" src="http://js.users.51.la/17747998.js"></script>
+</body>
+
+</html>

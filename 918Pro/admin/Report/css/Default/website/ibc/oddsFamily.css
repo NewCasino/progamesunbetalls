@@ -1,0 +1,437 @@
+.HalfTime
+{
+	font-family: Tahoma;
+	font-size: 9px;
+	font-weight: bold;
+	color: #0000FF;
+}
+
+.IsLive
+{
+	font-family: Tahoma;
+	font-size: 9px;
+	/*font-weight: bold;*/
+	color: #FF0000;
+}
+
+.LiveTime
+{
+	font-family: Tahoma;
+	font-size: 9px;
+	/*font-weight: bold;*/
+	color: #FF0000;
+}
+
+.text_time
+{
+	font-size: 10px;
+	color: #000000;
+	text-align: center;
+}
+.text_time a
+{
+	font-size: 10px;
+	color: #000000;
+	text-align: center;
+}
+.text_timeR
+{
+	font-size: 11px;
+	color: #FF0000;
+	text-align: center;
+}
+
+.BetprocessMinBet
+{
+	font-size: 11px;
+	height: 20px;
+	color: #003399;
+}
+
+
+.BetprocessMaxBet
+{
+	font-size: 11px;
+	height: 20px;
+	color: #FF0000;
+}
+
+.OddsDiv
+{
+	width:50%;
+	text-align: right;
+	white-space: nowrap;
+	font-weight: normal;
+}
+
+.FavOddsClass, .FavOddsClass a{ color: #B50000; font-weight: bold;}
+.FavOddsClass span{ color: #B50000; font-weight: bold;}
+.FavTeamClass, .FavTeamClass a{ color: #B50000; font-weight: bold;}
+.FavTeamClass span{ color: #B50000; font-weight: bold;}
+
+.UdrDogOddsClass, .UdrDogOddsClass a{ color: #01122B; font-weight: bold;}
+.UdrDogOddsClass span{ color: #01122B; font-weight: bold;}
+.UdrDogTeamClass, .UdrDogTeamClass a{ color: #01122B; font-weight: bold;}
+.UdrDogTeamClass span{ color: #01122B; font-weight: bold;}
+
+.HdpGoalClass, .HdpGoalClass a{ color: #606060; font-weight: bold; font-size: 10px !important;}
+.HdpGoalClass span{ color: #606060; font-weight: bold; font-size: 10px !important;} 
+
+.FavOddsClassBetProcess, .FavOddsClassBetProcess a{ color: #B50000; font-weight: bold; font-size: 15px;}
+.FavOddsClassBetProcess span{ color: #B50000; font-weight: bold; font-size: 15px;}
+.FavTeamClassBetProcess, .FavTeamClassBetProcess a{ color: #B50000; font-weight: bold; font-size: 15px;}
+.FavTeamClassBetProcess span{ color: #B50000; font-weight: bold; font-size: 15px;}
+
+.UdrDogOddsClassBetProcess, .UdrDogOddsClassBetProcess a{ color: #01122B; font-weight: bold; font-size: 15px;}
+.UdrDogOddsClassBetProcess span{ color: #01122B; font-weight: bold; font-size: 15px;}
+.UdrDogTeamClassBetProcess, .UdrDogTeamClassBetProcess a{ color: #01122B; font-weight: bold; font-size: 15px;}
+.UdrDogTeamClassBetProcess span{ color: #01122B; font-weight: bold; font-size: 15px;}
+
+
+.ScoreClass {
+	font-size: 10px;
+	color: #000000;
+	font-weight:bold;	
+	font-family:Tahoma;
+}
+
+.styleblack
+{
+	font-family: Tahoma;
+	font-size: 12px;
+}
+
+
+/* all icon*/
+.tvicon{
+	background-image: url(/images/website/ibc/all_menu.gif);
+	background-position: -8px -95px;
+	height: 15px;
+	width: 15px;
+}
+.tv_gicon{
+	background-image: url(/images/website/ibc/all_menu.gif);
+	background-position: -8px -78px;
+	height: 15px;
+	width: 15px;
+}
+.plusicon{
+	background-image: url(/images/website/ibc/all_menu.gif);
+	background-position: -31px -51px;
+	height: 15px;
+	width: 15px;
+}
+.graphicon{
+	background-image: url(/images/website/ibc/all_menu.gif);
+	background-position: -52px -51px;
+	height: 15px;
+	width: 15px;
+}
+.redcard{
+	background-image: url(/images/website/ibc/all_menu.gif);
+	background-position: -31px -34px;
+	height: 15px;
+	width: 13px;
+}
+.L_icon{
+	background-image: url(/images/website/ibc/all_menu.gif);
+	background-position: -31px -71px;
+	height: 15px;
+	width: 13px;
+}
+.F_icon{
+	background-image: url(/images/website/ibc/all_menu.gif);
+	background-position: -53px -71px;
+	height: 15px;
+	width: 13px;
+}
+.calendar_icon{
+	background-image: url(/images/website/ibc/all_menu.gif);
+	background-position: -33px -90px;
+	height: 18px;
+	width: 15px;
+}
+.arrowR_icon{
+	background-image: url(/images/website/ibc/all_menu.gif);
+	background-position: -7px -34px;
+	height: 13px;
+	width: 13px;
+}
+.arrowL_icon{
+	background-image: url(/images/website/ibc/all_menu.gif);
+	background-position: -7px -45px;
+	height: 13px;
+	width: 13px;
+}
+.arrowRB_icon{
+	background-image: url(/images/website/ibc/all_menu.gif);
+	background-position: -10px -123px;
+	height: 20px;
+	width: 20px;
+}
+.close_icon{
+	background-image: url(/images/website/ibc/all_menu.gif);
+	background-position: -10px -147px;
+	height: 15px;
+	width: 15px;
+}
+
+.linethrough{ text-decoration: line-through; }
+
+/* sport icon*/
+.w1{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -20px 0px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w2{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -40px 0px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w3{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -60px 0px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w4{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -80px 0px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w5{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: 0px -20px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w6{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -20px -20px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w7{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -40px -20px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w8{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -60px -20px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w9{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -80px -20px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w10{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: 0px -40px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w11{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -20px -40px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w12{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -40px -40px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w13{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -60px -40px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w14{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -80px -40px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w15{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: 0px -60px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w16{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -20px -60px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w17{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -40px -60px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w18{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -60px -60px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w19{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -80px -60px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+
+.w20{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: 0px -80px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w21{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -20px -80px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w22{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -40px -80px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w23{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -60px -80px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w24{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: -80px -80px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+.w99{
+	background-image: url(/images/website/ibc/sport_icon.gif);
+	background-position: 0px -100px;
+	height: 15px;	width: 15px;
+	float: left;
+	display: block;
+}
+
+
+/*20091028 Europe*/
+.odds{
+	margin: 3px;
+	*margin: 5px;
+}
+.odds td{
+	border-right-width: 4px;
+	border-right-style: solid;
+	border-right-color: #FFFFFF;
+	border-bottom-width: 4px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+}
+.odds FavOddsClass, .odds FavOddsClass a{ color: #000000; font-weight: bold;}
+.odds FavOddsClass span{ color: #000000; font-weight: bold;}
+.odds FavTeamClass, .odds FavTeamClass a{ color: #000000; font-weight: bold;}
+.odds FavTeamClass span{ color: #000000; font-weight: bold;}
+
+.odds1x2Team, .odds1x2Team a{
+	color: #000000;
+	font-weight: bold!important;
+}
+.odds1x2Team span{	color: #000000;
+	font-weight: normal!important;}
+	
+.more, .more a{color: #ff9a00!important;font-weight: bold;}
+.more span{	color: #ff9a00!important;
+	font-weight: normal!important;}
+
+.Odds_Upd {
+	background-image: url(/images/website/ibc/update_odds20090910.gif);
+}
+
+
+/**1005*/
+.Q_live{
+	color: #FF0000!important;
+	font-weight: bold;
+	font-size: 10px;
+}
+.Q_live .line_divR{
+	color: #000000;
+	background-color: #FFCCBC;
+	font-weight: bold;
+}
+
+.Q_start{
+	color: #999999;
+	font-weight: bold;
+	font-size: 10px;
+}
+.Q_start .line_divR{
+	color: #CCCCCC;
+	background-color: #999999;
+	font-weight: bold;
+}
+
+.Q_end{
+	color: #999999;
+	font-weight: bold;
+	font-size: 10px;
+}
+.Q_end .line_divR{
+	color: #000000;
+	background-color: #66CC66;
+	font-weight: bold;
+}
+
+.Q_TG{
+	color: #000000;
+	font-weight: bold;
+	font-size: 10px;
+}
+.Q_TG .line_divR{
+	color: #000000;
+	background-color: #FFCCBC;
+	font-weight: bold;
+}

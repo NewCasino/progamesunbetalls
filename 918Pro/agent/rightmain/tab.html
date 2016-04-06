@@ -1,0 +1,437 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link href="/css/Default/globle.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/right_main.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/tab.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../js/jquery-1.4.1.min.js"></script>
+    <script src="/js/jQueryCommon.js" type="text/javascript"></script><!--表格2须调用-->
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+//=============================================表格1,须和jQueryCommon-min.js一起调用
+jQuery(".tab1").alterBgColor({ odd: "odd", even: "even", selected: "selected", moveOver: "over", tdCss: "tdCss", istdClick: true });
+
+//=============================================表格2,须和jQueryCommon-min.js一起调用
+jQuery(".tab2").alterBgColor({ odd: "odd", even: "even", selected: "selected", moveOver: "over" });
+});
+</script>    
+       
+</head>
+<body onload="tab_3();">
+<table  id="right_main" border="0" width="100%" cellpadding="0" cellspacing="0">
+<thead>
+<tr class="h30">
+<th width="12" class="tab_top_l"></th>
+<th width="*" class="tab_top_m"><p><font class="st"> 您当前的位置：</font><a href="javascript:void(0)"><span> 首页</span></a><a href="javascript:void(0)"><span>公共样式调用</span></a><span>右边页面模板</span></p></th>
+<th width="16" class="tab_top_r"></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="tab_middle_l"></td>
+<td >
+<div id="main">
+
+
+<h6>表格样式一</h6>
+<!--表格调用-->
+<table class="tab1" width=100% cellpadding=0 cellspacing="0" border=0 >
+
+<thead> 
+<tr>
+<th>姓名</th>
+<th>性别</th>
+<th>年龄</th>
+<th>生日</th>
+<th>住址</th>
+<th>电话</th>
+<th>电邮</th>
+<th>网址</th>
+</tr>
+</thead> 
+<tbody id="Tbody2">
+<tr>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+</tbody> 
+
+<tfoot>
+<tr>
+<td colspan="8">
+
+<div class="grayr"><span class="disabled"> < </span><span class="current">1</span><a href="#?page=2">2</a><a href="#?page=3">3</a><a href="#?page=4">4</a><a href="#?page=5">5</a><a href="#?page=6">6</a><a href="#?page=7">7</a>...<a href="#?page=199">199</a><a href="#?page=200">200</a><a href="#?page=2"> > </a></div>
+
+</td>
+</tr>
+</tfoot>
+</table>
+
+<!--表格调用END=========================================================================================-->
+
+
+
+
+<h6>表格样式二</h6>
+<table class="tab2" width=100% cellpadding=0 cellspacing="0" border=0 >
+
+<thead> 
+<tr>
+<th><input  type="checkbox" value="" name="test" title="全选/取消"/></th>
+<th>姓名</th>
+<th>性别</th>
+<th>年龄</th>
+<th>生日</th>
+<th>住址</th>
+<th>电话</th>
+<th>电邮</th>
+<th>网址</th>
+</tr>
+</thead> 
+<tbody id="tab">
+<tr>
+<td><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+</tbody> 
+
+<tfoot>
+<tr>
+<td><input  type="checkbox" value="" name="test" title="全选/取消"/></td>
+<td colspan="8">
+
+<div class="grayr"><span class="disabled"> < </span><span class="current">1</span><a href="#?page=2">2</a><a href="#?page=3">3</a><a href="#?page=4">4</a><a href="#?page=5">5</a><a href="#?page=6">6</a><a href="#?page=7">7</a>...<a href="#?page=199">199</a><a href="#?page=200">200</a><a href="#?page=2"> > </a></div>
+
+</td>
+</tr>
+</tfoot>
+</table>
+
+
+<h6>表格样式三</h6>
+<!--===================================================================================================-->
+<table id="tab3" width=100% cellpadding=0 cellspacing="0" border=0 >
+<caption>表格三,用此表格BODY须加载tab_3的方法,js调用需放TAB之后</caption>
+<thead> 
+<tr>
+<th><input  type="checkbox" value="" name="test" title="全选/取消"/></th>
+<th>姓名</th>
+<th>性别</th>
+<th>年龄</th>
+<th>生日</th>
+<th>住址</th>
+<th>电话</th>
+<th>电邮</th>
+<th>网址</th>
+</tr>
+</thead> 
+<tbody id="Tbody1">
+<tr>
+<td><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="a" name="test"/> </td>
+<td>水手辛巴德</td>
+<td>男</td>
+<td>27</td>
+<td>1983/6/18</td>
+<td>深圳</td>
+<td>13480832521</td>
+<td>peace_y@126.com</td>
+<td>http://www.vispeace.com</td>
+</tr>
+</tbody> 
+
+<tfoot>
+<tr>
+<td><input  type="checkbox" value="" name="test" title="全选/取消"/></td>
+<td colspan="8">
+
+<div class="grayr"><span class="disabled"> < </span><span class="current">1</span><a href="#?page=2">2</a><a href="#?page=3">3</a><a href="#?page=4">4</a><a href="#?page=5">5</a><a href="#?page=6">6</a><a href="#?page=7">7</a>...<a href="#?page=199">199</a><a href="#?page=200">200</a><a href="#?page=2"> > </a></div>
+
+</td>
+</tr>
+</tfoot>
+</table>
+<script src="/js/tab3.js" type="text/javascript"></script>
+
+
+<h6>表格样式三</h6>
+<!--===================================================================================================-->
+<script src="/js/tab1.js" type="text/javascript"></script>
+<table class="pickme" caption="Top Grossing Movies" width="100%" cellpadding="0" cellspacing="0">
+  <thead>
+    <tr>
+      <th>&nbsp;</th>
+      <th>Category</th>
+      <th>Movie</th>
+      <th>Gross</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><input type="radio" name="choice" value="walalala" /></td>
+      <td>Domestic</td>
+      <td>Titanic</td>
+      <td>$600,788,188</td>
+    </tr>
+    <tr>
+<td><input type="radio" name="choice" value="walalala" /></td>
+      <td>Adjusted for Inflation</td>
+      <td>Gone with the Wind</td>
+      <td>$1,329,453,600</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="choice" value="walalala" /></td>
+      <td>Worldwide</td>
+      <td>Titanic</td>
+      <td>$1,845,034,000</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="choice" value="walalala" /></td>
+      <td>R-Rating</td>
+      <td>The Passion of the Christ</td>
+      <td>$370,274,604</td>
+    </tr>
+    <tr>
+      <td><input type="radio" name="choice" value="walalala" /></td>
+      <td>PG-13 Rating</td>
+      <td>Titanic</td>
+      <td>$600,788,188</td>
+    </tr>
+  
+  </tbody>
+  <tfoot><tr>
+  <td colspan="4" >合计</td>
+  </tr></tfoot>
+</table>
+
+
+
+
+
+<!--===================================================================================-->
+</div>
+</td>
+<td class="tab_middle_r"></td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr class="h35">
+<td width="12" class="tab_foot_l"></td>
+<td width="*" class="tab_foot_m">
+
+</td>
+<td width="16" class="tab_foot_r"></td>
+</tr>
+</tfoot>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

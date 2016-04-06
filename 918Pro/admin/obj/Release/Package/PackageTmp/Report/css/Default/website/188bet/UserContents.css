@@ -1,0 +1,127 @@
+.right_comp{height: 355px; width: 780px;float:left; margin-left:10px;}
+#content-panel{float:left;width:720px;padding:5px 7px 5px 0;}
+.content-header{position:relative;height:27px;margin:0 12px;background:url(/images/website/188bet/img_content_title_bar.jpg) repeat-x left top;line-height:27px;}
+.content-header h3{float:left;height:27px;margin:0;padding-right:12px;border-right:1px solid #fff;font-size:1em;font-weight:bold;color:#fff;line-height:27px;}
+.content-header h3.corp-affairs{background:url(/images/website/188bet/img_content_title_bar.jpg) repeat-x 0 -27px;}
+.content-header h3.info-centre{background:url(/images/website/188bet/img_content_title_bar.jpg) repeat-x 0 -54px;}
+.content-header h3.account-settings{background:url(/images/website/188bet/img_content_title_bar.jpg) repeat-x 0 -81px;}
+.content-header span,.content-header div{position:absolute;width:12px;height:27px;background:url(/images/website/188bet/img_content_title_side.jpg) no-repeat left top;}
+.content-header h3.corp-affairs span{top:0;left:-12px;background-position:0 0;}
+.content-header h3.info-centre span{top:0;left:-12px;background-position:0 -27px;}
+.content-header h3.account-settings span{top:0;left:-12px;background-position:0 -54px;}
+.content-header div{top:0;right:-12px;background-position:-12px 0;}
+.content .clear-list{clear:both!important;height:15px!important;}
+.content .clear-sp{clear:both!important;height:7px!important;}
+.content p strong.betLimit{color:#404040;text-decoration:none;}
+.content p label input.onlyDecimal{color:#404040;text-decoration:none;}
+.content .clear-btm{background:url(/images/website/188bet/img_btm_sh.jpg) repeat-x left bottom;height:5px;clear:both;}
+.data-grid{padding:0!important;}
+p.date-range{height:25px;margin:0;padding:0;line-height:25px;color:#4e4e4e;}
+p.banking-title{height:27px;margin:0;padding:0 12px;background:url(/images/website/188bet/img-date-hdr.jpg) repeat-x left top;line-height:27px;color:#fff;}
+#content-panel .content{padding:0 12px;}
+#content-panel .content h4.sub{font-weight:bold;font-size:11px;background:url(../Images/UserContents/img_header.gif) no-repeat left top;height:30px;margin:0;padding:11px 0 0 11px;position:relative;border:none;z-index:0;}
+#content-panel .content h4.sub a{background:url(../Images/UserContents/icon_hdr_collapse.gif) no-repeat left top;width:auto;padding:0 0 0 14px;text-decoration:none;color:#2e2e2e;display:inline;}
+#content-panel .content h4.sub a.alt{background-position:0 -12px;}
+#content-panel .content h4.sub small{font:normal 11px Tahoma,Arial,Helvetica,sans-serif;margin-bottom:10px;}
+#content-panel .content h4.sub1{font-weight:bold;font-size:11px;background:url(/images/website/188bet/img_header.gif) no-repeat left top;height:30px;margin:0;padding:11px 0 0 11px;position:relative;border:none;z-index:0;}#accHead,#webHead,#bannerHeading,#oddsFeedHeading,#transactionalHeading{cursor:pointer;}
+#content-panel .content h4.sub1 a{background:url(/images/website/188bet/icon_hdr_expand.gif) no-repeat left top;padding:0 0 0 14px;text-decoration:none;display:inline;}
+#content-panel .content h4.sub1 a.collapse{background-position:0 -13px;}
+#content-panel .content h4.sub1 a.alt{background-position:0 -12px;}
+#content-panel .content h4.sub1 small{font:normal 11px Tahoma,Arial,Helvetica,sans-serif;margin-bottom:10px;}
+#content-panel .content h4.help{font-weight:bold;font-size:11px;background:url(/images/website/188bet/rt-l-bar.jpg) repeat-x left top;height:24px;line-height:24px;margin:0;position:relative;border:1px solid #d4d4d4;border-top:none;z-index:0;}
+#content-panel .content h4.help a{background:url(/images/website/188bet/btn_rt_l_col.gif) no-repeat left top;width:auto;padding:0 0 0 23px;text-decoration:none;color:#2e2e2e;display:block;}
+#content-panel .content h4.help a.alt{background-position:0 -24px;}
+#content-panel .content div.help2{font-weight:bold;font-size:11px;background:url(/images/website/188bet/rt-l-bar.jpg) repeat-x left top;height:24px;line-height:24px;margin:0;position:relative;border:1px solid #d4d4d4;border-top:none;z-index:0;}
+#content-panel .content div.help2 a{background:url(/images/website/188bet/btn_rt_l_col.gif) no-repeat left top;width:auto;padding:0 0 0 23px;text-decoration:none;color:#2e2e2e;display:block;}
+#content-panel .content div.help2 a.alt{background-position:0 0;}
+#content-panel .content div.help{font-weight:bold;font-size:11px;background:url(/images/website/188bet/rt-l-bar.jpg) repeat-x left top;height:24px;line-height:24px;margin:0;position:relative;border:1px solid #d4d4d4;border-top:none;z-index:0;}
+#content-panel .content div.help a{background:url(/images/website/188bet/btn_rt_l_col.gif) no-repeat left top;width:auto;padding:0 0 0 23px;text-decoration:none;color:#2e2e2e;display:block;}
+#content-panel .content div.help a.alt{background-position:0 -24px;}
+#content-panel .content h5.sub{background-color:#303030;display:block;position:relative;margin:0;}
+#content-panel .content h5.sub span,#content-panel .content h5.sub div{background:url(/images/website/188bet/img_resgaming_side.jpg) no-repeat left top;width:5px;height:5px;top:0;position:absolute;}
+#content-panel .content h5.sub span{background-position:0 0;left:0;}
+#content-panel .content h5.sub div{background-position:-5px 0;right:0;}
+#content-panel .content h5.sub a{height:24px;font-size:11px;color:#fff;line-height:24px;padding-left:13px;display:block;}#content-panel .content h5.sub a.title{cursor:text;text-decoration:none;}
+#content-panel .content h5.sub a.alt{background-position:10px -24px;}
+#content-panel .content .subitem{border:1px solid #d4d4d4;border-top:none;}
+#content-panel .content h5.help{font:normal 11px Tahoma,Arial,Helvetica,sans-serif;height:24px;line-height:24px;margin:0;z-index:0;}
+#content-panel .content h5.help a{background:url(/images/website/188bet/btn_rt_r_col.gif) no-repeat left top;width:auto;padding:0 0 0 23px;text-decoration:none;color:#2e2e2e;display:block;}
+#content-panel .content h5.help a.alt{background-position:0 -26px;font-weight:bold;}
+#content-panel .content .l0{background-color:#fff;}
+#content-panel .content .l1{background-color:#ececec;}
+#content-panel .content .t-border{border-top:1px solid #d4d4d4!important;}
+#content-panel .content .subitem .help-info{padding:5px 20px 0 23px;}
+#content-panel .content .tutorials{width:623px;}
+#content-panel .content .tut-items .tutorial-info{background-color:#d4d4d4;height:400px;}
+#content-panel .content h6.sub{font:normal 11px Tahoma,Arial,Helvetica,sans-serif;background:url(/images/website/188bet/img_subheader.gif) no-repeat left top;height:40px;margin:0;margin-bottom:-10px;padding:11px 0 0 11px;border:none;z-index:-1;}
+#content-panel .content div.sub{font:normal 11px Tahoma,Arial,Helvetica,sans-serif;background:url(/images/website/188bet/img_subheader.gif) no-repeat left top;height:40px;margin:0;margin-bottom:-10px;padding:11px 0 0 11px;border:none;z-index:-1;}
+#content-panel .content h6.sub img{vertical-align:middle;}.tc-contents{background-color:#f5f5f5;border:1px solid #d4d4d4;border-top:none;height:120px;z-index:100;}
+#res-content{width:100%;height:120px;overflow-y:scroll;}
+#content-panel .data-container{border:1px solid #909090;}
+#content-panel .data-container .data-title{background:url(/images/website/188bet/img_title_bar.jpg) repeat-x left top;height:25px;line-height:25px;display:block;position:relative;}
+#content-panel .data-container .data-title a{cursor:pointer;background:url(/images/website/188bet/btn_title_collapsible.gif) left top no-repeat;padding-left:34px;height:25px;font-size:11px;font-weight:bold;color:#2e2e2e;line-height:25px;text-decoration:none;display:block;}
+#content-panel .data-container .collapsed a.coll0{background:url(/images/website/188bet/btn_title_collapsible.gif) left bottom no-repeat;padding-left:34px;height:25px;font-size:11px;font-weight:bold;color:#2e2e2e;line-height:25px;text-decoration:none;display:block;}
+#content-panel .data-container .data-title a.alt{background-position:0 -25px;}
+#content-panel .data-container .data-title2{background:url(/images/website/188bet/img_title_bar.jpg) repeat-x left top;height:25px;line-height:25px;display:block;position:relative;}
+#content-panel .data-container .data-title2 a{background:url(/images/website/188bet/btn_title_collapsible3.gif) left top no-repeat;padding-left:21px;height:25px;font-size:11px;font-weight:bold;color:#2e2e2e;line-height:25px;text-decoration:none;display:block;}
+#content-panel .data-container .data-title2 a.alt{background-position:0 -25px;}
+#content-panel .content .sub-contents{padding:0 25px;z-index:100!important;}
+#content-panel .content .sub-contents p.dl-gif{background:url(/images/website/188bet/icon_gif.jpg) no-repeat left center;height:30px;line-height:30px;padding:0 30px;float:left;}
+#content-panel .content .sub-contents p.dl-psd{background:url(/images/website/188bet/icon_psd.jpg) no-repeat left center;height:30px;line-height:30px;padding:0 30px;float:left;}
+#content-panel .content .main-contents{padding:0 11px;z-index:100;}
+#content-panel .content .main-contents ul{list-style:disc;margin:0 0 20px 45px;}
+#content-panel .content .main-contents ol{list-style:decimal;margin:0 0 20px 45px;}
+#content-panel .content .main-contents ul li,#content-panel .content .main-contents ol li{line-height:16px;}#content-panel .content .main-contents ol ol{list-style:lower-alpha;margin:20px 0 20px 35px;}
+#content-panel .content .main-contents ol ol ul{list-style:disc;margin:10px 0 10px 35px;}
+#content-panel .content .main-contents ol ol ol{list-style:lower-alpha;margin:10px 0 10px 35px;}
+.content table{margin:1.4em 0;}.content th,.content td{padding:2px 20px 2px 0;}
+#content-panel li{line-height:18px;}
+#content-panel .content .mobile{color:#ff9c00;}
+#content-panel .content .phone{color:#ff9c00;}
+#content-panel .content .back{color:#ff9c00;}
+#content-panel p.error{background:url(/Public/Images/Registration/btn-d-exclaim_small.gif) no-repeat 5px 5px;font-size:9px;line-height:normal;padding:3px 11px 3px 35px;margin:0;text-align:left;width:195px;min-height:22px;}
+#content-panel p.error-t{display:block;margin:0;padding:3px 11px 11px 27px;background:url(/Public/Images/Registration/icon_exclamation_orange.jpg) no-repeat 0 0;line-height:17px;text-align:left;font-size:11px;}
+#content-panel p.error-t a{text-decoration:underline;}
+#content-panel p.error-t a:hover{color:#ff9c00;text-decoration:underline;}
+.st-left .live-chat{height:40px;line-height:40px;}.
+#content-panel .divider{width:486px;height:5px;margin-bottom:7px;border-bottom:1px dashed #2e2e2e;margin-left:20px;}
+#content-panel .divider2{height:10px;margin-bottom:20px;border-bottom:1px dashed #2e2e2e;clear:both;}
+#content-panel .divider3{height:20px;margin-bottom:20px;border-bottom:1px dashed #2e2e2e;clear:both;}
+#content-panel .divider4{height:20px;margin-bottom:10px;border-bottom:1px dashed #2e2e2e;clear:both;}
+#content-panel .spr-divide{height:0;margin-bottom:10px;border-bottom:1px dotted #d4d4d4;clear:both;}
+div.submitbox{width:608px;}
+#err-box{margin-top:14px;padding:0 0 0 10px;line-height:17px;}
+#err-box table{margin:0;padding:0;}
+#err-box td{margin:0;padding:0;}
+.err-icon{display:block;width:22px;height:22px;background:url(/Public/Images/Registration/btn-d-exclaim_small.gif);}
+#content-panel .result-header{background:url(/images/website/188bet/img_result_header.gif) repeat-x left top;margin:7px 7px 0 7px;height:61px;border-bottom:1px solid #d4d4d4;position:relative;z-index:15;}
+#content-panel .result-header span.lt,#content-panel .result-header div.rt{background:url(/images/website/188bet/img_result_header_side.gif) no-repeat left top;width:7px;height:61px;border-bottom:1px solid #d4d4d4;position:absolute;}
+#content-panel .result-header span.lt{background-position:0 0;top:0;left:-7px;}
+#content-panel .result-header div.rt{background-position:-7px 0;top:0;right:-7px;}
+#content-panel .result-header .sports-menu{margin-bottom:1px;border:none;position:relative;display:block;z-index:10;}
+#content-panel .result-header .sports-menu,#content-panel .result-header .date-menu{background:none;width:100%;height:30px;top:0;left:0;position:relative;}
+#content-panel .result-header .sports-menu ul.sub-menu{list-style:none;margin:0;padding:0;}
+#content-panel .result-header .sports-menu ul.sub-menu li{width:auto;height:30px;padding-right:7px;line-height:30px;float:left;}
+#content-panel .result-header .sports-menu ul.sub-menu li.dd-list a.sel{margin:6px auto;}
+#content-panel .result-header .sports-menu ul.sub-menu li.dd-list a.sports{width:auto;min-width:80px;}
+#content-panel .result-header .sports-menu ul.sub-menu li.dd-list a.comp{width:205px;}
+#content-panel .result-header .sports-menu ul.sub-menu li h3{font-weight:bold;font-size:11px;color:#fff;line-height:30px;float:left;}
+#content-panel .result-header .sports-menu ul.sub-menu li select{font-size:11px;padding:1px;border:1px solid #b8b8b6;margin-top:5px;}
+#content-panel .result-header .sports-menu ul.sub-menu li.fr{line-height:30px;padding:0;float:left;}
+#content-panel .result-header .date-menu{z-index:0;}
+#content-panel .result-header .date-menu ul{list-style:none;margin:0;padding:0;}
+#content-panel .result-header .date-menu ul li{min-width:50px;height:30px;padding-right:1px;float:left;}
+#content-panel .result-header .date-menu ul li.sgl{line-height:24px;}
+#content-panel .result-header .date-menu ul li.dbl{line-height:12px;}
+#content-panel .result-header .date-menu ul li a,#content-panel .result-header .date-menu ul li a.today{background:url(/images/website/188bet/img_result_date_tab.jpg) repeat-x left top;padding:3px 8px 3px 8px;color:#fff;text-align:center;text-decoration:none;line-height:inherit;display:block;min-width:62px;}
+#content-panel .result-header .date-menu ul li a.today{font-weight:bold;}
+#content-panel .result-header .date-menu ul li a:hover{background-position:0 -31px;color:#000;}
+#content-panel .result-header .date-menu ul li a.today:hover,#content-panel .result-header .date-menu ul li a.today-focus,#content-panel .result-header .date-menu ul li a.tab-focus{background-position:0 -31px;color:#000;font-weight:bold;padding-left:5px;padding-right:5px;}
+#content-panel .result-header .date-menu ul li a.outright{width:auto;background:url(/images/website/188bet/img_result_outright_tab.jpg) repeat-x right top;padding:3px 30px 3px 10px;color:#fff;text-align:center;font-weight:bold;text-decoration:none;line-height:inherit;display:block;}
+#content-panel .result-header .date-menu ul li a.outright:hover,#content-panel .result-header .date-menu ul li a.outright-focus{background-position:left -31px;color:#000;font-weight:bold;}
+#dd-comp-menu .rt-cpt{border-bottom:1px solid #d4d4d4;background:url(/images/website/188bet/rt-l-bar.jpg) repeat-x left top;height:24px;line-height:24px;color:#333;font-weight:bold;}
+#dd-comp-menu .rt-cpt input{vertical-align:middle;width:14px;margin:0 3px 0 6px;padding:0;}
+#dd-comp-menu .rt-cpt label{vertical-align:middle;}
+#dd-comp-menu .rt-dt{max-height:319px;overflow:auto;}
+#dd-comp-menu .rt-sbt{border:none;padding:10px;text-align:left;}
+.st{width:100%;border:none;margin:0!important;}.st tr.l0{background-color:#fff;}.st tr.l1{background-color:#ececec;}.st tr.d0{background-color:#fff;}.st tr.d1{background-color:#ececec;}.st tr.st-hdr,.st-hdr-w,.st tr.st-hdr2{border-top:1px solid #909090;}.st tr.st-hdr th,.st-hdr-w th,.st tr.st-hdr2 th{background:url(/Public/Images/UserContents/img-st-hdr.jpg) repeat-x left top #939393;height:20px;padding:1px 15px;font-weight:normal;color:#fff;}.st tr th{white-space:nowrap;}body.th-th .st tr th{white-space:normal;}.st .st-hdr-w th{white-space:pre-wrap;}.st tr.st-tl th{background-color:#dadada;height:25px;color:#2e2e2e;font-weight:normal;padding:0 6px;border-right:1px solid #fff;}.st tr.st-net th{background-color:#ccc;height:25px;color:#2e2e2e;font-weight:bold;padding:0 6px;border-right:1px solid #fff;border-top:1px solid #fff;}.st tr td{border-right:1px solid #fff;border-bottom:1px solid #fff;line-height:18px;color:#2e2e2e;padding:5px 6px;}.st tr td.bet-type{text-align:center;line-height:normal;}.st tr td span.txt_win{color:#529700;}.st tr td span.txt_lose{color:#c00;}.st tr.cancelled td{color:#999;}.st td.no-b,.st th.no-b{border-right:none!important;}.st tr td,.st tr td div{line-height:normal;}.st tr td span.nt{color:#01adff;display:inline-block;overflow:hidden;padding-right:2px;}.st tr td span.nts{color:#01adff;overflow:hidden;padding-right:2px;}.st tr td div.event,.st tr td div.betno{display:block;}.st tr td div.betno span.hd{padding-left:3px;}.st tr td div.betno span.o-v{font-weight:bold;white-space:normal;}.st tr td div.event span.participant{display:inline-block;white-space:normal;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;}.st tr td div.event span.eventname{display:inline-block;white-space:normal;overflow:hidden;text-overflow:ellipsis;-o-text-overflow:ellipsis;}.st tr td div.betno span.bettype{white-space:normal;overflow:hidden;display:inline-block;font-weight:bold;}.st tr.d0 td,.st tr.d1 td{text-align:center;}.st tr td.tal{text-align:left;}span.danger-red{font:bold 9px Tahoma,Arial,Helvetica,sans-serif;color:#f00;}

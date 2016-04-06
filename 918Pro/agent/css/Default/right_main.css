@@ -1,0 +1,31 @@
+#right_main{ padding:5px;  }
+.tab_top_m span{padding-left:15px; background:url(/images/icon/Icon045.png) 6px 3px  no-repeat; font-weight:normal;    }
+.tab_top_m p{ float:left; padding-left:18px; background:url(/images/default/tb.gif) 0 7px  no-repeat;    line-height:30px; }
+.tab_top_m a{ color:#0075a9; }
+.tab_top_l{ background:url(/images/default/tab_03.gif) no-repeat;}
+.tab_top_m{ background:url(/images/default/tab_05.gif) repeat-x;}
+.tab_top_r{ background:url(/images/default/tab_07.gif) no-repeat;}
+.tab_foot_l{ background:url(/images/default/tab_18.gif) no-repeat;}
+.tab_foot_m{ background:url(/images/default/tab_19.gif) repeat-x;}
+.tab_foot_r{ background:url(/images/default/tab_20.gif) no-repeat;}
+.tab_middle_l{ background:url(/images/default/tab_12.gif) repeat-y left;}
+.tab_middle_r{ background:url(/images/default/tab_15.gif) repeat-y right;}
+#main{ min-height:530px;  }
+.top_banner{ background:url(/images/default/topbg.gif) repeat-x; border:1px solid #b4e5f3; margin-bottom:5px; padding:5px 5px;}
+.top_banner input{vertical-align:middle; margin-left:3px;}
+.top_banner a{ text-decoration:none;}
+.top_banner select{ height:22px; vertical-align:middle;margin-left:3px;}
+.showdiv{ width:100%; }
+.showdiv li {  line-height:30px; clear:both;  }
+.showdiv li span{ float:left; width:80px; text-align:right;}
+.showdiv li p{ float:left; margin:0 3px;}
+.wrnning{ padding-left:20px; background:url(/images/icon/Icon218.png) no-repeat 0 1px;}
+.select_box { position:absolute;display:none; background:#00a0e9; }
+.new_line{background:#00a0e9;}
+.new_tr{ margin:1px; padding:18px 0px 0px; border:1px solid #c8eeff; background:url(/images/default/main/new_trbg.gif) repeat-x top #f4fbfd; margin-top:-2px;}
+.new_tr ul{ margin:0 auto;  }
+.new_tr li span{ width:200px; text-align:right; display:inline-block; }
+.new_tr li input{  display:inline-block;}
+.new_tr li select{ width:130px; font-size:11px;}
+.new_tr li label{  display:inline-block; text-align:left; color:Red; width:200px; }
+.new_trfoot{ height:7px; width:100%; clear:both; background:url(/images/default/main/new_trfoot.gif) bottom repeat-x; }

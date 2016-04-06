@@ -1,0 +1,1641 @@
+html {
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+body {
+	margin: 0;
+	font: 11px verdana;
+}
+
+img {
+	border: 0;
+}
+
+a {
+	outline: none;
+	color: #000;
+	text-decoration: none;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+input {
+	border: 0;
+}
+
+form {
+	margin: 0;
+	padding: 0;
+}
+
+td,a,input,span,select{font:11px arial;}
+input{vertical-align:middle;}
+
+span,label {
+	white-space: nowrap;
+}
+
+html {
+	scrollbar-3d-light-color: #f00; /*立体滚动条亮边的颜色（设置滚动条的颜色）*/
+	scrollbar-arrow-color: #999; /*上下按钮上三角箭头的颜色*/
+	scrollbar-base-color: #f9f9f9; /*滚动条的基本颜色*/
+	scrollbar-dark-shadow-color: #b8b8b8; /*立体滚动条强阴影的颜色*/
+	scrollbar-face-color: #f9f9f9; /*立体滚动条凸出部分的颜色*/
+	scrollbar-highlight-color: #cacaca; /*滚动条空白部分的颜色*/
+	scrollbar-shadow-color: #b8b8b8; /*立体滚动条阴影的颜色*/
+}
+
+.contentFrame {
+	margin: 8px;
+	text-align: left;
+	background: #efefef url(/images/website/huangchao/bg.gif) no-repeat;
+}
+
+.leftFrame {
+	margin-left: 11px;
+	text-align: left;
+	background: #efefef;
+}
+
+.notice {
+	border: 1px solid #000;
+	background-color: #252525;
+	height: 13px;
+	line-height: 13px;
+	overflow: hidden;
+}
+
+#noticeMessage {
+	display: block;
+	_padding-top: 1px;
+	height: 12px;
+	line-height: 12px;
+	color: #fff;
+	white-space: nowrap;
+	font: 10px arial;
+}
+
+/*-------------- 081117 ---
+#header
+{
+    background:#181818 url(/images/website/huangchao/headerBg.jpg) no-repeat right top;
+    margin:0;
+    text-align:left;
+    height:37px;
+    padding-left:11px;
+    border-bottom:5px solid #f00;
+}
+--*/
+#header {
+	background: #181818 url(/images/website/huangchao/headerBg.jpg);
+	margin: 0;
+	height: 43px;
+}
+
+.headerTab {
+	display: block;
+	height: 37px;
+	float: left;
+	margin: 0 10px 0 0;
+}
+
+#topMenu {
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	padding: 9px 0;
+	color: #fff;
+	font: 10px verdana;
+}
+
+#topMenu a {
+	font: 10px verdana;
+	color: #fff;
+}
+
+#topMenu a.language {
+	font: 11px Helvetica, sans-serif;
+	line-height: 16px;
+}
+
+#langPanel {
+	position: relative;
+}
+
+#langPanel a {
+	font: 11px verdana;
+}
+
+#langContainer {
+	clear: both;
+	z-index: 1;
+	position: absolute;
+	right: -27px;
+	top: -12px;
+	_top: -13px;
+	display: none;
+	text-align: center;
+}
+
+#langContainer a {
+	display: block;
+	width: 80%;
+	color: #000;
+}
+
+#langContainer a:hover {
+	color: #fff;
+	background-color: #f00;
+}
+
+#langContainer td.langTD {
+	white-space: nowrap;
+	width: 72px;
+	background-color: #fff;
+	border-top: 1px solid #75736a;
+	border-bottom: 1px solid #75736a;
+}
+
+#currentLang {
+	position: absolute;
+	top: -7px;
+	right: -8px;
+	z-index: 99;
+	width: 56px;
+}
+
+#currentLang a {
+	text-decoration: underline;
+	color: #fff;
+}
+
+#main {
+	padding-left: 0px;
+	background: #efefef url(/images/website/huangchao/mainBg.gif) repeat-x;
+}
+
+#nav {
+	background: #fff url(/images/website/huangchao/navBg.jpg) no-repeat right top;
+	height: 39px;
+}
+
+#nav ul {
+	margin: 0;
+	padding: 0px 0 0 10px;
+	list-style: none;
+}
+
+#nav ul li {
+	float: left;
+	/*margin-right:36px;*/
+	margin-right: 10px;
+}
+
+#nav ul li a {
+	display: block;
+	font: 13px arial;
+	line-height: 39px;
+	float: left;
+	color: #666;
+}
+
+#loginBody {
+	background: #181818 url(/images/website/huangchao/loginBg.gif) no-repeat;
+	color: #fff;
+	width: 208px;
+}
+
+#loginBody div.title {
+	font: bold 14px arial;
+	color: #fd9800;
+	padding-bottom: 10px;
+}
+
+#loginBody input.txtBox {
+	border: 1px solid #ccc;
+	font: 12px verdana;
+	margin: 0;
+	padding: 1px;
+	height: 14px;
+	width: 100px;
+}
+
+#loginBody a.forgettenpwd {
+	float: left;
+	padding-top: 4px;
+	font-size: 10px;
+	font-weight: normal;
+	color: #fff;
+	text-decoration: underline;
+}
+
+#loginBody input.btnLogin {
+	float: right;
+	width: 50px;
+	border: 0;
+	background: transparent url(/images/website/huangchao/icoLogin.gif) left center
+		no-repeat;
+	font-size: bold 14px arial;
+	color: #fff;
+}
+
+#registerBody {
+	padding-top: 12px; *
+	padding-top: 13px;
+	width: 208px;
+	height: 47px;
+	background: #666 url(/images/website/huangchao/registerBg.gif) center center no-repeat;
+	text-align: center;
+}
+
+.leftTopBar {
+	position: fixed;
+	top: 0px;
+	left: 11px;
+	height: 14px;
+	width: 208px;
+	background: #dec2a2 url(/images/website/huangchao/leftop.gif) no-repeat left top;
+}
+
+* html .leftTopBar {
+	position: absolute;
+}
+
+#infoBody {
+	padding: 4px 8px 10px;
+	width: 192px;
+	background: transparent url(/images/website/huangchao/loginBg.gif) no-repeat;
+	color: #fff;
+}
+
+#infoBody table td {
+	border-bottom: 1px solid #8c8c8c;
+	font-family: arial;
+	font-size: 8pt;
+	color: #fff;
+}
+
+.line1px {
+	height: 1px;
+	line-height: 1px;
+	overflow: hidden;
+	background-color: #8c8c8c;
+}
+
+#stake {
+	border: 1px solid #666664;
+	width: 93px;
+}
+
+.txtBetSuccessed {
+	font: bold 11px arial;
+	color: #f00;
+}
+
+.txtBold {
+	font-weight: bold;
+}
+
+.txtRed {
+	color: #f00;
+}
+
+#leftMenuTab {
+	background-color: #181818;
+	width: 208px;
+}
+
+#leftMenuTab li {
+	float: left;
+	padding-left: 2px;
+	width: 68px;
+	height: 30px;
+	text-align: center;
+	background: #181818 url(/images/website/huangchao/leftMenuTab.gif) center center
+		no-repeat;
+}
+
+#leftMenuTab li.leftMenuTabOn {
+	padding-left: 0px;
+	text-align: center;
+	background: #fff url(/images/website/huangchao/leftMenuTabOn.gif) center center
+		no-repeat;
+}
+
+#leftMenuTab li a {
+	padding: 17px 0 4px;
+	height: 9px;
+	line-height: 9px;
+	color: #fff;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	display: block;
+}
+
+#leftMenuTab li.leftMenuTabOn a {
+	padding: 12px 0 7px;
+	height: 11px;
+	line-height: 11px;
+}
+
+.leftMenuTabContent {
+	clear: both;
+	width: 208px;
+	background-color: #ab6414;
+	border-bottom: 2px solid #181818;
+}
+
+#menuMoreSports {
+	display: none;
+}
+
+/*
+#moreSports div
+{
+    padding-left:15px;
+    color:#fff;
+    font:bold 12px/27px arial;
+    cursor:pointer;
+    height:27px;
+}
+*/
+.moreSportsOn,.moreSportsOff {
+	display: block;
+	background: transparent url(/images/website/huangchao/more_sports_arrow.gif) no-repeat;
+	width: 208px;
+	height: 13px;
+	line-height: 13px;
+	cursor: pointer;
+}
+
+.moreSportsOn {
+	background-position: 0 -13px;
+}
+
+.menu {
+	background-color: #f7f7f7;
+}
+
+.menu li.item {
+	background: #fff url(/images/website/huangchao/menuBg.gif) no-repeat;
+	overflow: hidden;
+}
+
+.menu li.item a.ia {
+	height: 29px;
+	line-height: 29px;
+	padding-left: 40px;
+	color: #fff;
+	font-family: arial;
+	font-size: 11px;
+	font-weight: bold;
+	display: block;
+	overflow: hidden;
+}
+
+.menu li.item ul.subMenu {
+	margin-left: 8px;
+	/*margin-right:13px;*/
+	display: none;
+}
+
+/*
+.menu li.item ul.subMenu li
+{
+    height:17px;
+    line-height:17px;
+}
+*/
+.menu li.item ul.subMenu li a {
+	color: #333;
+	display: block;
+	height: 17px;
+	border-bottom: 1px solid #aeaeae;
+	font: 11px/ 17px arial;
+}
+
+.menu li.item ul.subMenu li a.noBorder {
+	border: 0;
+}
+
+.menuItemName {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	-moz-binding: url('ellipsis.xml#ellipsis');
+}
+
+/*
+a.iaSoccer            {    background:#ab6414 url(/images/website/huangchao/menuSportsSoccer.gif) no-repeat;}
+a.iaBasketball        {    background:#ab6414 url(/images/website/huangchao/menuSportsBasketball.gif) no-repeat;}
+a.iaHorseRacing       {    background:#ab6414 url(/images/website/huangchao/menuSportsSoccer.gif) no-repeat;}
+a.iaTennis            {    background:#ab6414 url(/images/website/huangchao/menuSportsBasketball.gif) no-repeat;}
+a.iaGolf              {    background:#ab6414 url(/images/website/huangchao/menuSportsBasketball.gif) no-repeat;}
+a.iaCricket           {    background:#ab6414 url(/images/website/huangchao/menuSportsBasketball.gif) no-repeat;}
+a.iaGreyhoundRacing   {    background:#ab6414 url(/images/website/huangchao/menuSportsBasketball.gif) no-repeat;}
+a.iaAmericanFootball  {    background:#ab6414 url(/images/website/huangchao/menuSportsFootball.gif) no-repeat;}
+a.iaBaseball          {    background:#ab6414 url(/images/website/huangchao/menuSportsBasketball.gif) no-repeat;}
+a.iaBoxing            {    background:#ab6414 url(/images/website/huangchao/menuSportsBasketball.gif) no-repeat;}
+a.iaSpecialBets       {    background:#ab6414 url(/images/website/huangchao/menuSportsBasketball.gif) no-repeat;}
+a.iaAustralianRules   {    background:#ab6414 url(/images/website/huangchao/menuSportsBasketball.gif) no-repeat;}
+a.iaColmsHorses       {    background:#ab6414 url(/images/website/huangchao/menuSportsBasketball.gif) no-repeat;}
+a.iaColmsMultiples    {    background:#ab6414 url(/images/website/huangchao/menuSportsBasketball.gif) no-repeat;}
+a.iaFootball          {    background:#ab6414 url(/images/website/huangchao/menuSportsFootball.gif) no-repeat;}
+a.iaIceHockey         {    background:#ab6414 url(/images/website/huangchao/menuSportsIceHockey.gif) no-repeat;}
+a.iaOutright          {    background:#ab6414 url(/images/website/huangchao/menuSportsFinancails.gif) no-repeat;}
+a.iaCanbetCricket     {    background:#ab6414 url(/images/website/huangchao/menuSportsBasketball.gif) no-repeat;}
+a.iaDLawrence         {    background:#ab6414 url(/images/website/huangchao/menuSportsBasketball.gif) no-repeat;}
+*/
+a.ia {
+	background: #ab6414 url(/images/website/huangchao/sportNull.gif) no-repeat;
+}
+
+a.iaSoccer {
+	background: #ab6414 url(/images/website/huangchao/SportsSoccer.gif) no-repeat;
+}
+
+a.iaBasketball {
+	background: #ab6414 url(/images/website/huangchao/SportsBasketball.gif) no-repeat;
+}
+
+a.iaHorseRacing {
+	background: #ab6414 url(/images/website/huangchao/SportsHourseRecing.gif) no-repeat;
+}
+
+a.iaTennis {
+	background: #ab6414 url(/images/website/huangchao/Sportstennis.gif) no-repeat;
+}
+
+a.iaGolf {
+	background: #ab6414 url(/images/website/huangchao/SportsGolf.gif) no-repeat;
+}
+
+a.iaCricket {
+	background: #ab6414 url(/images/website/huangchao/SportsCricket.gif) no-repeat;
+}
+
+a.iaGreyhoundRacing {
+	background: #ab6414 url(/images/website/huangchao/SportsGreyHoundRacing.gif) no-repeat;
+}
+
+a.iaAmericanFootball {
+	background: #ab6414 url(/images/website/huangchao/SportsFootball.gif) no-repeat;
+}
+
+a.iaBaseball {
+	background: #ab6414 url(/images/website/huangchao/SportsBaseball.gif) no-repeat;
+}
+
+a.iaBoxing {
+	background: #ab6414 url(/images/website/huangchao/SportsBoxing.gif) no-repeat;
+}
+
+a.iaIceHockey {
+	background: #ab6414 url(/images/website/huangchao/SportsIceHockey.gif) no-repeat;
+}
+
+a.iaOutright {
+	background: #ab6414 url(/images/website/huangchao/SportsOutright.gif) no-repeat;
+}
+
+a.ianull {
+	background: #ab6414 url(/images/website/huangchao/sportNull.gif) no-repeat;
+}
+
+/*---iBroker Menu----------------------------------------*/
+.iBrokerSport {
+	display: none;
+}
+
+/*--------------------------------iBroker Menu-----------*/
+#accountPanel {
+	background: #666 url(/images/website/huangchao/accountBg.gif) repeat-x;
+	width: 208px;
+	padding-top: 7px;
+}
+
+#accountPanel a.accTitle {
+	color: #fff;
+	padding: 5px 8px;
+	height: 7px;
+	display: block;
+}
+
+#accountPanel .accountCollapsed,#accountPanel .accountExpand {
+	float: right;
+	width: 15px;
+	height: 9px;
+	display: block;
+}
+
+#accountPanel .accountCollapsed {
+	background: transparent url(/images/website/huangchao/accountExpand.gif) no-repeat;
+}
+
+#accountPanel .accountExpand {
+	background: transparent url(/images/website/huangchao/accountCollapsed.gif) no-repeat;
+}
+
+#accountPanel ul {
+	clear: both;
+	/*display:none;*/
+	display: block;
+	margin: 0 8px;
+	border-top: 1px solid #8c8c8c;
+}
+
+#accountPanel ul li {
+	border-bottom: 1px solid #8c8c8c;
+}
+
+#accountPanel ul li a {
+	color: #fff;
+	padding-top: 2px;
+	padding-left: 6px;
+	display: block;
+	height: 17px;
+}
+
+#accountPanel DIV.accBottom {
+	clear: both;
+	background: #666 url(/images/website/huangchao/accountBgBottom.gif) left bottom
+		no-repeat;
+}
+
+#popBanner {
+	z-index: 999999;
+	position: absolute;
+	height: 155px;
+	width: 357px;
+	display: none;
+	left: -1000px;
+	/*background-color:#666;*/
+}
+
+#lastLoginInfo {
+	z-index: 999999;
+	position: absolute;
+	height: 60px;
+	width: 257px;
+	display: none;
+	left: -1000px;
+	top: -1000px;
+	background-color: #666;
+	border: 10px solid #fff;
+	padding: 10px;
+}
+
+/*---Alert Window------------------------------------------*/
+#alertWindow {
+	z-index: 999999;
+	position: fixed;
+	_position: absolute;
+	top: -100px;
+}
+
+.alertWindowTop {
+	background-color: #ab6414;
+}
+
+.alertWindowTopLeft,.alertWindowTopRight {
+	background: transparent url(/images/website/huangchao/alertBgCorner.gif) no-repeat;
+	width: 6px;
+	height: 15px;
+}
+
+.alertWindowTopRight {
+	background-position: -6px 0;
+}
+
+.alertWindowBottom {
+	background-color: #949494;
+}
+
+.alertWindowBottomLeft,.alertWindowBottomRight {
+	background: transparent url(/images/website/huangchao/alertBgCorner.gif) no-repeat 0
+		-15px;
+	width: 6px;
+	height: 7px;
+}
+
+.alertWindowBottomRight {
+	background-position: -6px -15px;
+}
+
+.alertWindowBg {
+	background: #949494 url(/images/website/huangchao/alertBg.gif) repeat-x;
+}
+
+#alertWindow #alertWindowTop {
+	height: 7px;
+	overflow: hidden;
+	background: transparent url(/images/website/huangchao/alertBgTop.gif) no-repeat;
+	border-bottom: 9px solid #ab6414;
+}
+
+#alertWindow #alertNotice {
+	text-align: left;
+	margin-bottom: 12px;
+}
+
+#alertWindow #alertNotice #noticeList {
+	word-wrap: break-word;
+	word-break: break-all;
+	white-space: normal;
+}
+
+#alertWindow #alertNotice #noticeTitle {
+	font: bold 12px arial;
+	text-align: left;
+}
+
+#alertWindow #alertNotice #noticeMore {
+	text-align: right;
+}
+
+#alertWindow #loginInfo {
+	text-align: left;
+	margin-bottom: 12px;
+}
+
+#alertWindow #alertWindowContent {
+	margin: 0;
+	padding: 10px 15px 0;
+	min-height: 50px;
+	_height: 50px;
+	text-align: center;
+	font: 12px arial;
+}
+
+#alertWindow #alertWindowBottom {
+	height: 7px;
+	line-height: 7px;
+	overflow: hidden;
+	background: transparent url(/images/website/huangchao/alertBgBottom.gif) no-repeat;
+}
+
+#alertWindow #alertWindowButton {
+
+}
+
+#alertWindow #alertWindowButton div {
+	margin: 0 auto;
+	width: 93px;
+	height: 24px;
+}
+
+#alertWindow #alertWindowButton div.alertBtn_en {
+	background: transparent url(/images/website/huangchao/alertButton_en.gif) no-repeat;
+}
+
+#alertWindow #alertWindowButton div.alertBtn_zh_tw {
+	background: transparent url(/images/website/huangchao/alertButton_zh_tw.gif) no-repeat;
+}
+
+#alertWindow #alertWindowButton div.alertBtn_zh_cn {
+	background: transparent url(/images/website/huangchao/alertButton_zh_cn.gif) no-repeat;
+}
+
+#alertWindow #alertWindowButton div a {
+	display: block;
+	width: 93px;
+	height: 24px;
+}
+
+/*-------------------------------------------Alert Window-----*/
+.maskLayer,#popup_mask {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	filter: alpha(opacity =   20);
+	opacity: 0.2;
+	z-index: 9999;
+}
+
+#popup_mask {
+	filter: alpha(opacity =   0);
+	opacity: 0;
+}
+
+.betListOn {
+	background: #ab6414 url(/images/website/huangchao/betListOn.gif) center bottom no-repeat
+		;
+}
+
+.betListOn a {
+	color: #fff;
+	height: 22px;
+}
+
+.betListOff a {
+	color: #f1bf87;
+	height: 22px;
+}
+
+.betSlipOn {
+	background: #ab6414 url(/images/website/huangchao/betSlipOn.gif) center bottom no-repeat;
+}
+
+.betSlipOn a {
+	font: bold 11px arial;
+	color: #fff;
+	height: 22px;
+}
+
+.betSlipOff {
+	background: #999;
+}
+
+.betSlipOff a {
+	font: bold 11px arial;
+	color: #b6b6b6;
+	height: 22px;
+}
+
+.displayNone {
+	display: none;
+}
+
+.leftPart {
+	clear: both;
+	margin: 0;
+}
+
+#content {
+	min-height: 330px;
+	height: auto !important;
+	_height: 330px;
+	overflow: visible;
+	width: 736px;
+}
+
+.columnTitle {
+	color: #9cd91d;
+	background-color: #000;
+	font-family: arial;
+	font-size: 13px;
+	font-weight: bold;
+}
+
+#footer {
+	clear: both;
+	width: 736px;
+	color: #666;
+	font: 10px verdana;
+	text-align: left;
+}
+
+#footer td a {
+	font: 11px arial;
+	color: #666;
+	text-decoration: none;
+}
+
+#footer .copyright {
+	font: 10px verdana;
+}
+
+#divTip {
+	position: absolute;
+	display: none;
+	background-color: #fff;
+	border: 1px solid #949494;
+	padding: 5px;
+	max-width: 200px;
+	_width: 200px;
+}
+
+.pageTitleBar {
+	clear: both;
+	height: 13px;
+	padding: 3px 6px 3px 7px;
+	background-color: #000;
+	border-bottom: 2px solid #ab6414;
+}
+
+.pageTitle {
+	float: left;
+	color: #9cd91c;
+	font: bold 12px arial;
+}
+
+.pageTitle span {
+	margin-left: 10px;
+	color: #9cd91c;
+	font: bold 12px arial;
+}
+
+.pageTitleBar span.selection {
+	color: #fff;
+	float: right;
+	display: none;
+}
+
+
+.pageHeaderText {
+	padding: 13px 0 19px;
+	color: #f00;
+	font: 19px/19px arial;
+}
+
+#dataSet,.otherMarket {
+	background-color: #ccc;
+}
+
+#dataSet td div {
+	+width: 100%;
+}
+
+#dataSet td.horseName {
+	text-align: left;
+	font-weight: bold;
+}
+
+#markets {
+	margin-top: 15px;
+}
+
+.marketSection {
+	margin-bottom: 15px;
+}
+
+.marketName {
+	height: 13px;
+	padding: 3px 6px 3px 7px;
+	background-color: #000;
+	border-bottom: 2px solid #ab6414;
+	color: #9cd91c;
+	font: bold 12px arial;
+	cursor: pointer;
+}
+
+.marketName .marketExpand,.marketName .marketCollapsed {
+	margin-left: 6px;
+	background: transparent url(/images/website/huangchao/icoTrigon.gif) no-repeat;
+	height: 20px;
+	width: 7px;
+	background-position: 0px -3px;
+}
+
+.marketName .marketExpand {
+	background-position: 0px -23px;
+}
+
+#countDownTime,#countDown,#showModeId {
+	font-size: 8pt;
+}
+
+#loading {
+	text-align: center;
+	margin-top: 20px;
+}
+
+.queryToday {
+	font-weight: bold;
+	text-decoration: none;
+	color: #000;
+}
+
+.listHeader {
+	color: #333;
+	font: 8pt verdana;
+	background-color: #e8e8e8;
+	text-align: center;
+	white-space: normal;
+}
+
+.listHeaderMarket {
+	white-space: normal;
+	font: 11px verdana;
+	font-weight: bold;
+	color: #9cd91c;
+	background-color: #000;
+	border-bottom: 1px solid #000;
+}
+
+.listHeaderMarketTxt {
+	font: 11px verdana;
+	color: #fff;
+	background-color: #666;
+}
+
+.listOddRow {
+	background-color: #eaeaea;
+}
+
+.listEvenRow {
+	background-color: #efefef;
+}
+
+.runningEvt {
+	background-color: #fdd;
+}
+
+.breakfastEvt {
+	background-color: #eaeaea;
+}
+
+.betDateTime {
+	font: 11px verdana;
+	color: #666;
+}
+
+.betLeague {
+	font: bold 11px verdana;
+	color: #000;
+	white-space: normal;
+}
+
+.betStrongTeam {
+	font: bold 11px verdana;
+	color: #f00;
+	white-space: normal;
+}
+
+.betWeakTeam {
+	font: bold 11px verdana;
+	color: #000;
+	white-space: normal;
+}
+
+.betDrawTeam {
+	font: bold 11px verdana;
+	color: #800;
+	white-space: normal;
+}
+
+.betHandicap,.betOdds,a.betOdds {
+	font: bold 11px verdana;
+	color: #000;
+	letter-spacing: -1px;
+	line-height: 14px;
+	text-decoration: none;
+}
+
+/*.betHandicap                 {     color:#00c;}*/
+a.betOdds {
+	color: #00c;
+	text-decoration: underline;
+}
+
+a.betOdds:hover {
+	color: #028824;
+	text-decoration: underline;
+}
+
+.betNegativeOdds,a.betNegativeOdds {
+	font: bold 11px verdana;
+	color: #c00;
+	letter-spacing: -1px;
+	line-height: 14px;
+	text-decoration: underline;
+}
+
+a.betNegativeOdds:hover {
+	color: #028824;
+	text-decoration: underline;
+}
+
+a.btnPrice {
+	background: url(/images/website/huangchao/horseBet.gif) no-repeat;
+	width: 38px;
+	height: 19px;
+	font: bold 11px/ 18px arial;
+	color: #fff;
+	text-align: center;
+	display: block;
+}
+
+a.btnPrice img {
+	margin-top: 2px;
+}
+
+.horseRacingSilk {
+	height: 25px;
+	width: 34px;
+	display: block;
+}
+
+/* For bet details */
+.teleBetText {
+	color: #f00
+}
+
+.voidBet {
+	background-color: #ffe5e6;
+}
+
+.voidBetAmount {
+	text-decoration: line-through;
+}
+
+.txtTeamText {
+	color: #f00;
+	font-weight: bold;
+}
+
+.betDetails_price {
+	color: #313030;
+	text-decoration: underline;
+}
+
+.betDetails_score,.betDetails_handicap {
+	color: #3365ff;
+	font-weight: bold;
+}
+
+.betDetails_unknown {
+	color: #f00;
+	float: left;
+}
+
+.betDetails_pending {
+	color: #f00;
+	float: left;
+}
+
+.betDetails_confirmed {
+	color: #060;
+	float: left;
+}
+
+.txtVoid {
+	color: #f00;
+}
+
+.txtBetId {
+	color: #053985;
+}
+
+.txtMkt {
+	color: #3365ff;
+}
+
+.txtBetDateTime {
+	color: #656565;
+}
+
+.txtLastEvtDateTime {
+	color: #9a9a9a;
+}
+
+.txtLeagueName {
+	color: #d37f01;
+}
+
+.txtTeam {
+	color: #000;
+	font-weight: bold;
+}
+
+.txtStake {
+	color: #000;
+	font-weight: bold;
+}
+
+.txtResultText {
+	color: #9a9a9a;
+	font-weight: bold;
+}
+
+.txtResultWin {
+	color: #006500;
+	font-weight: bold;
+}
+
+.txtResultLose {
+	color: #f00;
+	font-weight: bold;
+}
+
+.txtmeOverallAmt {
+	color: #800000;
+	font-weight: bold;
+}
+
+.txtHT {
+	color: #313030;
+}
+
+.txtFT {
+	color: #f00;
+}
+
+.smallfont {
+	font: 10px arial;
+}
+
+.txtListLeague {
+	background-color: #c8c8c8;
+}
+
+.listHeader,.bottomLine { /*white-space:nowrap;*/
+	border-bottom: 1px solid #b2b2b2;
+}
+
+.txtNum {
+	color: #fff;
+	font-weight: bold;
+}
+
+/*
+.txtLeague,.txtBetDateTime
+{
+    color:#666;
+}
+.txtHT
+{
+    color:#363231;
+}
+.txtFT
+{
+    color:#fe0002;
+}
+.betDetails_score
+{
+    color:#00f;
+    font-weight:bold;
+}
+*/
+a.refresh {
+	background: url(/images/website/huangchao/icoRefreshWhite.gif) left center no-repeat;
+	padding-left: 12px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.otherMarketTitle {
+	position: relative;
+	height: 18px;
+	line-height: 18px;
+	border-bottom: 1px solid #000032;
+	padding-left: 5px;
+	background-color: #c8c8c8;
+	color: #000;
+}
+
+.otherMarketTitle span {
+	position: absolute;
+	right: 1px;
+}
+
+.overlayTD {
+	height: 18px;
+	border-bottom: 2px solid #000032;
+	padding-left: 5px;
+	background-color: #666;
+	color: #fff;
+}
+
+.recordHeader {
+	font-weight: bold;
+	text-align: left;
+	color: #333;
+	padding-left: 13px;
+}
+
+.refreshDisabled,.btnRedButton,.btnPrint,.btnQuery,.button,.btnRefresh,.btnRefreshDisabled,.btnClear,.btnBet,.btnConfirm,.btnBack
+	{
+	font: 11px verdana;
+	text-align: left;
+	width: 75px;
+	height: 20px;
+	color: #fff;
+	border: 0;
+}
+
+.refreshDisabled {
+	background: url(/images/website/huangchao/btnRefreshDisabled.gif) no-repeat;
+	padding-left: 20px !important;
+	color: #fff;
+	padding-left: 24px;
+}
+
+.btnRedButton {
+	background: url(/images/website/huangchao/btnRedButton.gif) no-repeat;
+	text-align: center;
+}
+
+.btnPrint {
+	background: url(/images/website/huangchao/btnPrint.gif) no-repeat;
+	padding-left: 20px !important;
+	padding-left: 24px;
+}
+
+.btnQuery {
+	background: url(/images/website/huangchao/btnQuery.gif) no-repeat;
+	padding-left: 20px !important;
+	padding-left: 24px;
+}
+
+.button {
+	background: url(/images/website/huangchao/btnRefresh.gif) no-repeat;
+	padding-left: 20px !important;
+	padding-left: 24px;
+}
+
+.btnRefresh {
+	background: url(/images/website/huangchao/btnRefresh.gif) no-repeat;
+	padding-left: 20px !important;
+	padding-left: 24px;
+}
+
+.btnRefreshDisabled {
+	background: url(/images/website/huangchao/btnRefreshDisabled.gif) no-repeat;
+	padding-left: 20px !important;
+	padding-left: 24px;
+}
+
+.btnClear {
+	background: url(/images/website/huangchao/btnClear.gif) no-repeat;
+	padding-left: 20px !important;
+	padding-left: 24px;
+	font-weight: bold;
+}
+
+.btnBet {
+	background: url(/images/website/huangchao/btnBet.gif) no-repeat;
+	padding-left: 24px !important;
+	padding-left: 28px;
+	font-weight: bold;
+}
+
+.btnConfirm {
+	background: url(/images/website/huangchao/btnConfirm.gif) no-repeat;
+	padding-left: 20px !important;
+	padding-left: 20px;
+	font-weight: bold;
+}
+
+.btnBack {
+	background: url(/images/website/huangchao/btnBack.gif) no-repeat;
+	padding-left: 24px;
+}
+
+.btnBackSimple {
+	background: url(/images/website/huangchao/btnBackSimple.gif) no-repeat;
+	font: 9pt verdana;
+	color: #000;
+	width: 60px;
+	height: 20px;
+	border: 0;
+}
+
+#btnSetting {
+	background: url(/images/website/huangchao/btnBet.gif) no-repeat;
+	padding-left: 20px !important;
+	padding-left: 24px;
+}
+
+.btnLogout {
+	height: 14px;
+	background: transparent url(/images/website/huangchao/btnLogout.gif) no-repeat;
+	padding-left: 18px;
+	width: 39px;
+	display: block;
+	color: #fff;
+	text-align: left;
+}
+
+.btnReg {
+	width: 230px;
+	height: 39px;
+	background: transparent url(/images/website/huangchao/btnBigButton.gif) no-repeat;
+	border: 0;
+	color: #fff;
+	font: 18pt arial;
+}
+
+.dateBox {
+	border: 1px solid #666;
+	width: 60px;
+}
+
+.pwdBox {
+	border: 1px solid #ccc;
+	width: 105px;
+}
+
+.function {
+	color: #181818;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.filterLeagueTitle {
+	padding-top: 0;
+	padding-bottom: 0;
+	color: #fff;
+	background-color: #181818;
+	border-bottom: 2px solid #ab6414;
+}
+
+.RoundedCorners {
+	background: transparent;
+}
+
+.xtop,.xbottom {
+	display: block;
+	background: transparent;
+	font-size: 1px;
+}
+
+.xb1,.xb2,.xb3,.xb4 {
+	display: block;
+	overflow: hidden;
+}
+
+.xb1,.xb2,.xb3 {
+	height: 1px;
+}
+
+.xb2,.xb3,.xb4 {
+	background: #181818;
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+}
+
+.xb1 {
+	margin: 0 5px;
+	background: #666;
+}
+
+.xb2 {
+	margin: 0 3px;
+	border-width: 0 2px;
+}
+
+.xb3 {
+	margin: 0 2px;
+}
+
+.xb4 {
+	height: 2px;
+	margin: 0 1px;
+}
+
+.xb5,.xb6,.xb7,.xb8 {
+	display: block;
+	overflow: hidden;
+}
+
+.xb5,.xb6,.xb7 {
+	height: 1px;
+}
+
+.xb6,.xb7,.xb8 {
+	background: #fff;
+	border-left: 1px solid #666;
+	border-right: 1px solid #666;
+}
+
+.xb5 {
+	margin: 0 5px;
+	background: #666;
+}
+
+.xb6 {
+	margin: 0 3px;
+	border-width: 0 2px;
+}
+
+.xb7 {
+	margin: 0 2px;
+}
+
+.xb8 {
+	height: 2px;
+	margin: 0 1px;
+}
+
+.RCcontent {
+	display: block;
+	background: #fff;
+	border: 0px solid #666;
+	border-width: 0 1px;
+}
+
+#setting {
+	display: none;
+	position: absolute;
+	left: 490px;
+	top: 41px;
+	width: 250px;
+}
+
+.section {
+	width: 526px;
+	height: 28px;
+}
+
+.section div.bgl {
+	float: left;
+	height: 28px;
+	width: 9px;
+}
+
+.section div.textWhite,.section div.text {
+	float: left;
+	padding-left: 8px;
+	padding-top: 2px;
+	font: bold 13px arial;
+}
+
+.section div.bgr {
+	position: relative;
+	float: right;
+	height: 28px;
+	width: 9px;
+}
+
+.section div.btn {
+	float: right;
+	padding-top: 5px;
+}
+
+.black {
+	width: 200px;
+	background: transparent url(/images/website/huangchao/sectionBgBlack.gif) 28px -56px;
+}
+
+.black div.text {
+	color: #9dd81e;
+}
+
+.black div.textWhite {
+	color: #fff;
+	font: bold 12px/ 19px arial;
+}
+
+.black div.bgl {
+	background: #000 url(/images/website/huangchao/sectionBgBlack.gif) left top no-repeat;
+}
+
+.black div.bgr {
+	background: #000 url(/images/website/huangchao/sectionBgBlack.gif) no-repeat 0px -28px;
+}
+
+.green {
+	background: transparent url(/images/website/huangchao/sectionBgGreen.gif) 28px -56px;
+}
+
+.green div.text {
+	color: #000;
+}
+
+.green div.bgl {
+	background: #9dd81e url(/images/website/huangchao/sectionBgGreen.gif) left top no-repeat
+		;
+}
+
+.green div.bgr {
+	background: #ffffff url(/images/website/huangchao/sectionBgGreen.gif) no-repeat 0px
+		-28px;
+}
+
+.textField {
+	border: 1px solid #7f9db9;
+	width: 130px;
+	font: 12px arial;
+}
+
+.textFieldOnFocus {
+	border: 1px solid #f00;
+	width: 130px;
+	font: 12px arial;
+}
+
+.bottomIcons {
+	font: bold 13px arial;
+	color: #ad6311;
+	padding-left: 5px;
+}
+
+/*-contact us page------------------------*/
+.contact_section {
+	margin: 15px 0 10px 20px;
+	_margin-left: 15px;
+	background: transparent url(/images/website/huangchao/contactus_vline.gif) right center
+		no-repeat;
+	float: left;
+	/*width:310px;
+    _width:300px;*/
+	height: 113px;
+}
+
+.telIcon {
+	clear: both;
+	float: left;
+	margin-top: 5px;
+	height: 23px;
+	width: 23px;
+}
+
+.telNum,.emailTxt a {
+	margin-top: 5px;
+	margin-left: 3px;
+	float: left;
+	height: 23px;
+	line-height: 23px;
+}
+
+.emailIcon {
+	float: left;
+	margin-top: 5px;
+	height: 23px;
+	width: 23px;
+}
+
+/*-end of contact us page-----------------*/
+.pop_dialog_table {
+	border-collapse: collapse;
+}
+
+.pop_topleft,.pop_topright,.pop_bottomleft,.pop_bottomright {
+	height: 10px;
+	overflow: hidden;
+	padding: 0px !important;
+	padding: 5px;
+	width: 10px !important;
+	width: 0px;
+}
+
+.pop_topleft {
+	background-image: url('/images/website/huangchao/payment/pop_dialog_top_left.png')
+		!important;
+	background-image: none;
+	filter: none !important;
+	filter: progid :   DXImageTransform.Microsoft.AlphaImageLoader (   src =
+
+		 '/images/website/huangchao/payment/pop_dialog_top_left.png', sizingMethod =   'crop'
+		);
+}
+
+.pop_topright {
+	background-image: url('/images/website/huangchao/payment/pop_dialog_top_right.png')
+		!important;
+	background-image: none;
+	filter: none !important;
+	filter: progid :   DXImageTransform.Microsoft.AlphaImageLoader (   src =
+
+		 '/images/website/huangchao/payment/pop_dialog_top_right.png', sizingMethod =   'crop'
+		);
+}
+
+.pop_bottomleft {
+	background-image: url('/images/website/huangchao/payment/pop_dialog_bottom_left.png')
+		!important;
+	background-image: none;
+	filter: none !important;
+	filter: progid :   DXImageTransform.Microsoft.AlphaImageLoader (   src =
+
+		 '/images/website/huangchao/payment/pop_dialog_bottom_left.png', sizingMethod =
+		'crop' );
+}
+
+.pop_bottomright {
+	background-image: url('/images/website/huangchao/payment/pop_dialog_bottom_right.png')
+		!important;
+	background-image: none;
+	filter: none !important;
+	filter: progid :   DXImageTransform.Microsoft.AlphaImageLoader (   src =
+
+		 '/images/website/huangchao/payment/pop_dialog_bottom_right.png', sizingMethod =
+		 'scale' );
+}
+
+.pop_border {
+	background-image: url('/images/website/huangchao/payment/pop_dialog_border.png')
+		!important;
+	background-image: none;
+	filter: none !important;
+	filter: progid :   DXImageTransform.Microsoft.AlphaImageLoader (   src =
+
+		 '/images/website/huangchao/payment/pop_dialog_border.png', sizingMethod =   'scale' )
+		;
+}
+
+.pop_content {
+	padding: 5px;
+	background-color: #eee;
+	_border: #999 1px solid;
+}
+
+.btn {
+	cursor: pointer;
+	border: 1px solid;
+}
+
+.commingSoon {
+	font-size: 11px;
+	color: #FF9933;
+}

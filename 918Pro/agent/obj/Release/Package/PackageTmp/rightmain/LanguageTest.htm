@@ -1,0 +1,334 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link href="../css/Default/cupertino/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/globle.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/right_main.css" rel="stylesheet" type="text/css" />
+     <link href="/css/Default/tab.css" rel="stylesheet" type="text/css" />
+    <script src="../js/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script src="../js/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="../js/jQueryCommon.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        //第一个加载 设置必须放在第一个加载中
+        jQuery(function($) {
+            SetGlobal("");
+        });
+        var languages = "";
+        function SetGlobal(setLang) {
+            $.SetOrGetLanguage(setLang, function() {
+                languages = language;
+                //设置文本的语言  在这里所设置的内容是页面固定的内容
+                $("#lblName").html(languages.用户名);
+                $("#txtPass").html(languages.密码);
+                $("#btnLogin").val(languages.登录);
+                $("#btnSure").val(languages.确定);
+                $("#btnCancel").val(languages.取消);
+                $("#tip").attr("title", languages.标题);
+                $("#ui-dialog-title-tip").text(languages.标题);
+                document.title = languages.环球博彩;
+                //$("#frameTabTitle").text(languages.环球博彩);
+                //设置窗口上的标题
+                window.parent.document.getElementById("frameTabTitle").innerHTML = document.title;
+                window.parent.document.getElementById("frameTabTitle").title = document.title;
+            });
+            //导入相应的js
+            
+        }
+
+
+        jQuery(function($) {
+            $("#btnLogin").click(function() {
+                $("#tip").dialog();
+            });
+            $("#btnSure").click(function() {
+                alert(languages.错误提示);
+            });
+
+
+            // 开始动画
+            $("#go").click(function() {
+                $(".block").animate({ left: '+200px' }, 3000).delay(1000).hide(1000);
+            });
+
+            // 当点击按钮后停止动画
+            $("#stop").click(function() {
+                jQuery.fx.off = true;
+
+                //$(".block").stop();
+            });
+            $(window).resize(function() {
+                $(".block").html("屏幕宽度：" + window.screen.width + ",屏幕高度：" + window.screen.height + "<br>window宽度：" + $(window).width() + ",window高度：" + $(window).height() + "<br> body宽度：" + $("body").width() + ",body高度：" + $("body").height());
+            });
+            $("#move").css("opacity",0);
+            var count=0;
+            $(window).scroll(function() {
+            
+                if ($("#pos").offset().top - $("#move").offset().top<0 &&count<3)
+                {
+                    count++;
+                    var str = "<div>第"+count+"次加载内容<br>fffffffffffffffffffffffffff<br>aaaaaaaaaaaaa<br>aaaaaaaaaaaaa<br>aaaaaaaaaaaaa<br>aaaaaaaaaaaaa<br>aaaaaaaaaaaaa<br>aaaaaaaaaaaaa<br>aaaaaaaaaaaaa<br>aaaaaaaaaaaaa<br>aaaaaaaaaaaaa<br>aaaaaaaaaaaaa<br>aaaaaaaaaaaaa</div>";
+                    $(str).insertBefore("#pos");
+                }
+                $("#move").html("当前坐标：" + $("#move").offset().left + "," + $("#move").offset().top + ",底部层：" + $("#pos").offset().left + "," + Math.ceil($("#pos").offset().top) + " . 距离：" + (Math.ceil($("#pos").offset().top) - $("#move").offset().top));
+                
+
+            });
+
+        });
+        
+        
+        
+    </script>
+  
+  <style type="text/css">
+    #move
+    {
+      position:fixed;
+      width:600px;
+      height:150px;
+      top:95%;
+      background-color:Yellow;
+      z-index:100;	
+    }
+  </style>
+
+</head>
+<body>
+<table  id="right_main" border="0" width="100%" cellpadding="0" cellspacing="0">
+<thead>
+<tr class="h30">
+<th width="12" class="tab_top_l"></th>
+<th width="*" class="tab_top_m"><p><font class="st"> 您当前的位置：</font><a href="javascript:void(0)"><span> 首页</span></a><a href="javascript:void(0)"><span>公共样式调用</span></a><span>Ajax请求</span></p></th>
+<th width="16" class="tab_top_r"></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="tab_middle_l"></td>
+<td >
+<div id="main">
+
+
+   <div id="move"></div>
+  
+    <br />
+    <table width="500">
+    <tr><td style="width:30%; text-align:right;"><label id="lblName">
+    </label></td><td><input type="text" /></td></tr>
+    <tr><td style="width:30%;text-align:right;"><label id="txtPass">
+    </label></td><td><input   type="password"/></td></tr>
+    <tr><td colspan="2"  align="center"><input type="button" value="" id="btnLogin" /></td></tr>
+    </table>
+    
+    <div id="tip" style="display:none;">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<br />bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+    <br />
+    <input type="button" value="" id="btnSure" />&nbsp;<input type="button" id="btnCancel" value="" />
+    </div>
+    
+    
+    <button id="go">Go</button> <button id="stop">STOP!</button>
+    <div class="block" style="  position:absolute; width:300px;height:150px; background-color:Red;"></div>
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <br />dddddddd
+    <div id="pos" style="background-color:green; width:100%">更多</div>
+    </div>
+</td>
+<td class="tab_middle_r"></td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr class="h35">
+<td width="12" class="tab_foot_l"></td>
+<td width="*" class="tab_foot_m">
+
+</td>
+<td width="16" class="tab_foot_r"></td>
+</tr>
+
+</tfoot>
+</table>
+</body>
+</html>

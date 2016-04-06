@@ -1,0 +1,23 @@
+﻿
+<html>
+<head></head>
+<body>
+<div class="contentWrapper">
+<div class="contentList">
+<div id="contentBox">
+<div class="leftPanel">
+<ul id="gameRuleMenu">
+<li id="{{otherRule}}" class="level1" ng-click="showRules('{{otherRule}}', '')" data-i18n="gameRules.{{otherRule}}" ng-class="{'current':otherRule==objId}" data-ng-repeat="otherRule in otherRules"> </li>
+</ul>
+</div>
+<div class="rightPanel">
+<div id="rightContent" ng-include="contentUrl"></div>
+<div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</body>
+</html>

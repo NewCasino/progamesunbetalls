@@ -1,0 +1,1306 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8D41C0B2-1388-431D-9E98-6B573C335346}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>_918SunPro</RootNamespace>
+    <AssemblyName>918SunPro</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="agent.html" />
+    <Content Include="appGame.html" />
+    <Content Include="css\huiyuan.css" />
+    <Content Include="css\slider.css" />
+    <Content Include="css\style.css" />
+    <Content Include="egame.html" />
+    <Content Include="freePay.html" />
+    <Content Include="game.html" />
+    <Content Include="help.html" />
+    <Content Include="huiyuan.html" />
+    <Content Include="images\016.jpg" />
+    <Content Include="images\017.jpg" />
+    <Content Include="images\06.jpg" />
+    <Content Include="images\11.jpg" />
+    <Content Include="images\1234.jpg" />
+    <Content Include="images\16.jpg" />
+    <Content Include="images\17.jpg" />
+    <Content Include="images\2015-11-25.jpg" />
+    <Content Include="images\bigForHappy_sc.jpg" />
+    <Content Include="images\bs_sc.jpg" />
+    <Content Include="images\btn_close_normal.png" />
+    <Content Include="images\choishen_sc.jpg" />
+    <Content Include="images\chongzhi_on.png" />
+    <Content Include="images\chongzhi_on2.png" />
+    <Content Include="images\chongzhi_on3.png" />
+    <Content Include="images\chongzhi_on4.png" />
+    <Content Include="images\chu_han.jpg" />
+    <Content Include="images\club_a_sc.jpg" />
+    <Content Include="images\club_b_sc.jpg" />
+    <Content Include="images\club_c_sc.jpg" />
+    <Content Include="images\co.jpg" />
+    <Content Include="images\content_bg_02.png" />
+    <Content Include="images\di_sc.jpg" />
+    <Content Include="images\dt_sc.jpg" />
+    <Content Include="images\duanwu.jpg" />
+    <Content Include="images\e-game_icon.png" />
+    <Content Include="images\egame_banner.png" />
+    <Content Include="images\egame_banner_bg.jpg" />
+    <Content Include="images\f.png" />
+    <Content Include="images\f1.png" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\fb_sc.jpg" />
+    <Content Include="images\golden_lotus.jpg" />
+    <Content Include="images\great_dragon.jpg" />
+    <Content Include="images\icon_check_account.png" />
+    <Content Include="images\icon_liveodds.png" />
+    <Content Include="images\icon_today_events.png" />
+    <Content Include="images\icon_transactions.png" />
+    <Content Include="images\images\01.jpg" />
+    <Content Include="images\images\016.jpg" />
+    <Content Include="images\images\017.jpg" />
+    <Content Include="images\images\02.jpg" />
+    <Content Include="images\images\03.jpg" />
+    <Content Include="images\images\04.jpg" />
+    <Content Include="images\images\05.jpg" />
+    <Content Include="images\images\06.jpg" />
+    <Content Include="images\images\1.jpg" />
+    <Content Include="images\images\1.png" />
+    <Content Include="images\images\10.jpg" />
+    <Content Include="images\images\11.jpg" />
+    <Content Include="images\images\1234.jpg" />
+    <Content Include="images\images\16.jpg" />
+    <Content Include="images\images\17.jpg" />
+    <Content Include="images\images\2.jpg" />
+    <Content Include="images\images\2.png" />
+    <Content Include="images\images\2015-11-25.jpg" />
+    <Content Include="images\images\3.jpg" />
+    <Content Include="images\images\4.jpg" />
+    <Content Include="images\images\5.jpg" />
+    <Content Include="images\images\6.jpg" />
+    <Content Include="images\images\7.jpg" />
+    <Content Include="images\images\8.jpg" />
+    <Content Include="images\images\800.jpg" />
+    <Content Include="images\images\9.jpg" />
+    <Content Include="images\images\a.png" />
+    <Content Include="images\images\a1.png" />
+    <Content Include="images\images\aing.png" />
+    <Content Include="images\images\b.png" />
+    <Content Include="images\images\b1.png" />
+    <Content Include="images\images\bank_07.png" />
+    <Content Include="images\images\bg.jpg" />
+    <Content Include="images\images\bgs_07.png" />
+    <Content Include="images\images\big.jpg" />
+    <Content Include="images\images\big.png" />
+    <Content Include="images\images\bigForHappy_sc.jpg" />
+    <Content Include="images\images\bs_sc.jpg" />
+    <Content Include="images\images\btn_close_normal.png" />
+    <Content Include="images\images\but_bg.gif" />
+    <Content Include="images\images\c.png" />
+    <Content Include="images\images\c1.png" />
+    <Content Include="images\images\choishen_sc.jpg" />
+    <Content Include="images\images\chongzhi_on.png" />
+    <Content Include="images\images\chongzhi_on2.png" />
+    <Content Include="images\images\chongzhi_on3.png" />
+    <Content Include="images\images\chongzhi_on4.png" />
+    <Content Include="images\images\chu_han.jpg" />
+    <Content Include="images\images\club_a_sc.jpg" />
+    <Content Include="images\images\club_b_sc.jpg" />
+    <Content Include="images\images\club_c_sc.jpg" />
+    <Content Include="images\images\co.jpg" />
+    <Content Include="images\images\content_bg_02.png" />
+    <Content Include="images\images\cont_bg.jpg" />
+    <Content Include="images\images\d.png" />
+    <Content Include="images\images\d1.png" />
+    <Content Include="images\images\daohang_wz_11.png" />
+    <Content Include="images\images\daohang_wz_13.png" />
+    <Content Include="images\images\daohang_wz_15.png" />
+    <Content Include="images\images\daohang_wz_17.png" />
+    <Content Include="images\images\daohang_wz_19.png" />
+    <Content Include="images\images\dd_03.gif" />
+    <Content Include="images\images\dd_05.gif" />
+    <Content Include="images\images\di_sc.jpg" />
+    <Content Include="images\images\dt_sc.jpg" />
+    <Content Include="images\images\duanwu.jpg" />
+    <Content Include="images\images\e-game_icon.png" />
+    <Content Include="images\images\e.png" />
+    <Content Include="images\images\e1.png" />
+    <Content Include="images\images\egame_banner.png" />
+    <Content Include="images\images\egame_banner_bg.jpg" />
+    <Content Include="images\images\f.png" />
+    <Content Include="images\images\f1.png" />
+    <Content Include="images\images\favicon.ico" />
+    <Content Include="images\images\fb_sc.jpg" />
+    <Content Include="images\images\fenge_03.png" />
+    <Content Include="images\images\font_01.png" />
+    <Content Include="images\images\font_02.png" />
+    <Content Include="images\images\font_03.png" />
+    <Content Include="images\images\font_04.png" />
+    <Content Include="images\images\font_05.png" />
+    <Content Include="images\images\foot_bg.jpg" />
+    <Content Include="images\images\foot_text.jpg" />
+    <Content Include="images\images\golden_lotus.jpg" />
+    <Content Include="images\images\great_dragon.jpg" />
+    <Content Include="images\images\icon_check_account.png" />
+    <Content Include="images\images\icon_liveodds.png" />
+    <Content Include="images\images\icon_today_events.png" />
+    <Content Include="images\images\icon_transactions.png" />
+    <Content Include="images\images\iutbg_07.jpg" />
+    <Content Include="images\images\kaitong.jpg" />
+    <Content Include="images\images\kefu.jpg" />
+    <Content Include="images\images\kefu_bg.gif" />
+    <Content Include="images\images\kefu_on.gif" />
+    <Content Include="images\images\live_game_banner.png" />
+    <Content Include="images\images\live_game_banner_bg.jpg" />
+    <Content Include="images\images\live_icon.png" />
+    <Content Include="images\images\loading.gif" />
+    <Content Include="images\images\login.jpg" />
+    <Content Include="images\images\login_10.jpg" />
+    <Content Include="images\images\login_11.jpg" />
+    <Content Include="images\images\login_15.jpg" />
+    <Content Include="images\images\login_type.jpg" />
+    <Content Include="images\images\login_type.png" />
+    <Content Include="images\images\logo.png" />
+    <Content Include="images\images\logo_icon_03.png" />
+    <Content Include="images\images\logo_icon_06.png" />
+    <Content Include="images\images\logo_icon_08.png" />
+    <Content Include="images\images\lt.png" />
+    <Content Include="images\images\middle_bg_03.png" />
+    <Content Include="images\images\mj_sc.jpg" />
+    <Content Include="images\images\money..png" />
+    <Content Include="images\images\money.png" />
+    <Content Include="images\images\ms_sc.jpg" />
+    <Content Include="images\images\MUGAME_sc.jpg" />
+    <Content Include="images\images\mulan_sc.jpg" />
+    <Content Include="images\images\nav_bg.jpg" />
+    <Content Include="images\images\nesgame.png" />
+    <Content Include="images\images\news_bg.jpg" />
+    <Content Include="images\images\ok_btn_11.png" />
+    <Content Include="images\images\opc_1.jpg" />
+    <Content Include="images\images\opc_2.jpg" />
+    <Content Include="images\images\opc_3.jpg" />
+    <Content Include="images\images\panda_sc.jpg" />
+    <Content Include="images\images\paramount_sc.jpg" />
+    <Content Include="images\images\pelope.jpg" />
+    <Content Include="images\images\pic_01.jpg" />
+    <Content Include="images\images\pic_02.jpg" />
+    <Content Include="images\images\pic_03.jpg" />
+    <Content Include="images\images\pic_04.jpg" />
+    <Content Include="images\images\pic_05.jpg" />
+    <Content Include="images\images\pokerKing.jpg" />
+    <Content Include="images\images\prettyGirl.jpg" />
+    <Content Include="images\images\qqCode.jpg" />
+    <Content Include="images\images\quick_bs_sc.jpg" />
+    <Content Include="images\images\redCliff.jpg" />
+    <Content Include="images\images\roller_sc.jpg" />
+    <Content Include="images\images\sex_sc.jpg" />
+    <Content Include="images\images\slot-game-05.jpg" />
+    <Content Include="images\images\slot_bj_tag_sc.jpg" />
+    <Content Include="images\images\slot_dragon_sc.jpg" />
+    <Content Include="images\images\slot_hero_Tag.jpg" />
+    <Content Include="images\images\slot_panda_macao_sc.jpg" />
+    <Content Include="images\images\slot_stone2_sc.jpg" />
+    <Content Include="images\images\sm_all.jpg" />
+    <Content Include="images\images\sportsbook_banner.png" />
+    <Content Include="images\images\sportsbook_banner_bg.jpg" />
+    <Content Include="images\images\sports_book_icon.png" />
+    <Content Include="images\images\switch_off.png" />
+    <Content Include="images\images\switch_on.png" />
+    <Content Include="images\images\sword_sc.jpg" />
+    <Content Include="images\images\swornBrothers.jpg" />
+    <Content Include="images\images\tcx.png" />
+    <Content Include="images\images\text1_11.png" />
+    <Content Include="images\images\text2_07.png" />
+    <Content Include="images\images\text3_09.png" />
+    <Content Include="images\images\TigherFighterIcon_sc.jpg" />
+    <Content Include="images\images\titlebg_03.jpg" />
+    <Content Include="images\images\tk_sc.jpg" />
+    <Content Include="images\images\top_bg_01.png" />
+    <Content Include="images\images\top_icon_03.png" />
+    <Content Include="images\images\ttttbg.png" />
+    <Content Include="images\images\ttt_1.png" />
+    <Content Include="images\images\ttt_2.png" />
+    <Content Include="images\images\ttt_3.png" />
+    <Content Include="images\images\ttt_4.png" />
+    <Content Include="images\images\west.jpg" />
+    <Content Include="images\images\worldcup_sc.jpg" />
+    <Content Include="images\images\youhui_1.jpg" />
+    <Content Include="images\images\youhui_1BF.jpg" />
+    <Content Include="images\images\youhui_2.jpg" />
+    <Content Include="images\images\youhui_21.jpg" />
+    <Content Include="images\images\youhui_2BF.jpg" />
+    <Content Include="images\images\youhui_3.jpg" />
+    <Content Include="images\images\youhui_31.jpg" />
+    <Content Include="images\images\youhui_3BF.jpg" />
+    <Content Include="images\images\youhui_4.jpg" />
+    <Content Include="images\images\youhui_5.jpg" />
+    <Content Include="images\images\youhui_6.jpg" />
+    <Content Include="images\images\yuan.png" />
+    <Content Include="images\images\yuan2.png" />
+    <Content Include="images\images\yx.jpg" />
+    <Content Include="images\images\yx1.png" />
+    <Content Include="images\images\yx2.png" />
+    <Content Include="images\images\yx3.png" />
+    <Content Include="images\images\yxbg_c.gif" />
+    <Content Include="images\images\yxbg_t.gif" />
+    <Content Include="images\images\zaixian_on.png" />
+    <Content Include="images\images\zc1.png" />
+    <Content Include="images\images\zc2.png" />
+    <Content Include="images\images\zc3.png" />
+    <Content Include="images\images\zc4.png" />
+    <Content Include="images\images\zc5.png" />
+    <Content Include="images\images\zc6.png" />
+    <Content Include="images\images\zc7.png" />
+    <Content Include="images\images\zc_01.png" />
+    <Content Include="images\images\zc_02.png" />
+    <Content Include="images\images\zc_03.png" />
+    <Content Include="images\images\zhaopai.jpg" />
+    <Content Include="images\images\zhongqiu.jpg" />
+    <Content Include="images\images\zhucebg.jpg" />
+    <Content Include="images\images\zhucebg_03.jpg" />
+    <Content Include="images\images\zhucebg_07.jpg" />
+    <Content Include="images\images\zj1.jpg" />
+    <Content Include="images\images\zx_bg.jpg" />
+    <Content Include="images\kefu_bg.gif" />
+    <Content Include="images\kefu_on.gif" />
+    <Content Include="images\live_game_banner.png" />
+    <Content Include="images\live_game_banner_bg.jpg" />
+    <Content Include="images\live_icon.png" />
+    <Content Include="images\lt.png" />
+    <Content Include="images\mj_sc.jpg" />
+    <Content Include="images\ms_sc.jpg" />
+    <Content Include="images\MUGAME_sc.jpg" />
+    <Content Include="images\mulan_sc.jpg" />
+    <Content Include="images\nesgame.png" />
+    <Content Include="images\panda_sc.jpg" />
+    <Content Include="images\paramount_sc.jpg" />
+    <Content Include="images\pokerKing.jpg" />
+    <Content Include="images\prettyGirl.jpg" />
+    <Content Include="images\qqCode.jpg" />
+    <Content Include="images\quick_bs_sc.jpg" />
+    <Content Include="images\redCliff.jpg" />
+    <Content Include="images\roller_sc.jpg" />
+    <Content Include="images\sex_sc.jpg" />
+    <Content Include="images\slot-game-05.jpg" />
+    <Content Include="images\slot_bj_tag_sc.jpg" />
+    <Content Include="images\slot_dragon_sc.jpg" />
+    <Content Include="images\slot_hero_Tag.jpg" />
+    <Content Include="images\slot_panda_macao_sc.jpg" />
+    <Content Include="images\slot_stone2_sc.jpg" />
+    <Content Include="images\sm_all.jpg" />
+    <Content Include="images\sportsbook_banner.png" />
+    <Content Include="images\sportsbook_banner_bg.jpg" />
+    <Content Include="images\sports_book_icon.png" />
+    <Content Include="images\switch_off.png" />
+    <Content Include="images\switch_on.png" />
+    <Content Include="images\sword_sc.jpg" />
+    <Content Include="images\swornBrothers.jpg" />
+    <Content Include="images\tcx.png" />
+    <Content Include="images\TigherFighterIcon_sc.jpg" />
+    <Content Include="images\tk_sc.jpg" />
+    <Content Include="images\ttttbg.png" />
+    <Content Include="images\ttt_1.png" />
+    <Content Include="images\ttt_2.png" />
+    <Content Include="images\ttt_3.png" />
+    <Content Include="images\ttt_4.png" />
+    <Content Include="images\west.jpg" />
+    <Content Include="images\worldcup_sc.jpg" />
+    <Content Include="images\youhui_1BF.jpg" />
+    <Content Include="images\youhui_21.jpg" />
+    <Content Include="images\youhui_2BF.jpg" />
+    <Content Include="images\youhui_31.jpg" />
+    <Content Include="images\youhui_3BF.jpg" />
+    <Content Include="images\youhui_4.jpg" />
+    <Content Include="images\youhui_5.jpg" />
+    <Content Include="images\youhui_6.jpg" />
+    <Content Include="images\zaixian_on.png" />
+    <Content Include="images\zc_03.png" />
+    <Content Include="images\zhongqiu.jpg" />
+    <Content Include="images\zj1.jpg" />
+    <Content Include="index.asp" />
+    <Content Include="js\618sun\about.js" />
+    <Content Include="js\618sun\agent.js" />
+    <Content Include="js\618sun\gameProject.js" />
+    <Content Include="js\618sun\index.js" />
+    <Content Include="js\618sun\promo.js" />
+    <Content Include="js\618sun\promotion.js" />
+    <Content Include="js\618sun\register.js" />
+    <Content Include="js\618sun\transfers.js" />
+    <Content Include="js\618sun\transfers1.js" />
+    <Content Include="js\618sun\zhaopai.js" />
+    <Content Include="livegame.html" />
+    <Content Include="portal_asset\css\images\qqCode.jpg" />
+    <Content Include="portal_asset\css\images\ui-bg_diagonals-small_40_db4865_40x40.png" />
+    <Content Include="portal_asset\css\images\ui-bg_diagonals-small_50_93c3cd_40x40.png" />
+    <Content Include="portal_asset\css\images\ui-bg_diagonals-small_50_ff3853_40x40.png" />
+    <Content Include="portal_asset\css\images\ui-bg_diagonals-small_75_ccd232_40x40.png" />
+    <Content Include="portal_asset\css\images\ui-bg_diagonals-thick_75_f3d8d8_40x40.png" />
+    <Content Include="portal_asset\css\images\ui-bg_dots-medium_80_ffff38_4x4.png" />
+    <Content Include="portal_asset\css\images\ui-bg_dots-small_35_35414f_2x2.png" />
+    <Content Include="portal_asset\css\images\ui-bg_dots-small_65_a6a6a6_2x2.png" />
+    <Content Include="portal_asset\css\images\ui-bg_flat_0_333333_40x100.png" />
+    <Content Include="portal_asset\css\images\ui-bg_flat_65_ffffff_40x100.png" />
+    <Content Include="portal_asset\css\images\ui-bg_flat_75_ba9217_40x100.png" />
+    <Content Include="portal_asset\css\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="portal_asset\css\images\ui-bg_glass_55_fbf8ee_1x400.png" />
+    <Content Include="portal_asset\css\images\ui-bg_highlight-hard_100_eeeeee_1x100.png" />
+    <Content Include="portal_asset\css\images\ui-bg_highlight-hard_100_f6f6f6_1x100.png" />
+    <Content Include="portal_asset\css\images\ui-bg_highlight-soft_15_cc0000_1x100.png" />
+    <Content Include="portal_asset\css\images\ui-bg_white-lines_85_f7f7ba_40x100.png" />
+    <Content Include="portal_asset\css\images\ui-icons_004276_256x240.png" />
+    <Content Include="portal_asset\css\images\ui-icons_454545_256x240.png" />
+    <Content Include="portal_asset\css\images\ui-icons_88a206_256x240.png" />
+    <Content Include="portal_asset\css\images\ui-icons_c02669_256x240.png" />
+    <Content Include="portal_asset\css\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="portal_asset\css\images\ui-icons_e1e463_256x240.png" />
+    <Content Include="portal_asset\css\images\ui-icons_ffeb33_256x240.png" />
+    <Content Include="portal_asset\css\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="portal_asset\css\jquery-ui.min.css" />
+    <Content Include="portal_asset\css\mc.css" />
+    <Content Include="portal_asset\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="portal_asset\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="portal_asset\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="portal_asset\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="portal_asset\images\egame\01001.gif" />
+    <Content Include="portal_asset\images\egame\01002.gif" />
+    <Content Include="portal_asset\images\egame\01003.gif" />
+    <Content Include="portal_asset\images\egame\01004.gif" />
+    <Content Include="portal_asset\images\egame\01005.gif" />
+    <Content Include="portal_asset\images\egame\01006.gif" />
+    <Content Include="portal_asset\images\egame\01007.gif" />
+    <Content Include="portal_asset\images\egame\01008.gif" />
+    <Content Include="portal_asset\images\egame\01009.gif" />
+    <Content Include="portal_asset\images\egame\01010.gif" />
+    <Content Include="portal_asset\images\egame\01011.gif" />
+    <Content Include="portal_asset\images\egame\01012.gif" />
+    <Content Include="portal_asset\images\egame\01013.gif" />
+    <Content Include="portal_asset\images\egame\01014.gif" />
+    <Content Include="portal_asset\images\egame\01015.gif" />
+    <Content Include="portal_asset\images\egame\01016.gif" />
+    <Content Include="portal_asset\images\egame\01017.gif" />
+    <Content Include="portal_asset\images\egame\01018.gif" />
+    <Content Include="portal_asset\images\egame\01019.gif" />
+    <Content Include="portal_asset\images\egame\01020.gif" />
+    <Content Include="portal_asset\images\egame\01021.gif" />
+    <Content Include="portal_asset\images\egame\01022.gif" />
+    <Content Include="portal_asset\images\egame\01023.gif" />
+    <Content Include="portal_asset\images\egame\01024.gif" />
+    <None Include="Properties\PublishProfiles\5555.pubxml" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about.html" />
+    <Content Include="css\about.css" />
+    <Content Include="css\zuce.css" />
+    <Content Include="gameProject.html" />
+    <Content Include="images\01.jpg" />
+    <Content Include="images\02.jpg" />
+    <Content Include="images\03.jpg" />
+    <Content Include="images\04.jpg" />
+    <Content Include="images\05.jpg" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\1.png" />
+    <Content Include="images\10.jpg" />
+    <Content Include="images\2.jpg" />
+    <Content Include="images\2.png" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\4.jpg" />
+    <Content Include="images\5.jpg" />
+    <Content Include="images\6.jpg" />
+    <Content Include="images\7.jpg" />
+    <Content Include="images\8.jpg" />
+    <Content Include="images\800.jpg" />
+    <Content Include="images\9.jpg" />
+    <Content Include="images\a.png" />
+    <Content Include="images\a1.png" />
+    <Content Include="images\aing.png" />
+    <Content Include="images\b.png" />
+    <Content Include="images\b1.png" />
+    <Content Include="images\bank_07.png" />
+    <Content Include="images\bg.jpg" />
+    <Content Include="images\bgs_07.png" />
+    <Content Include="images\big.jpg" />
+    <Content Include="images\big.png" />
+    <Content Include="images\but_bg.gif" />
+    <Content Include="images\c.png" />
+    <Content Include="images\c1.png" />
+    <Content Include="images\cont_bg.jpg" />
+    <Content Include="images\d.png" />
+    <Content Include="images\d1.png" />
+    <Content Include="images\daohang_wz_11.png" />
+    <Content Include="images\daohang_wz_13.png" />
+    <Content Include="images\daohang_wz_15.png" />
+    <Content Include="images\daohang_wz_17.png" />
+    <Content Include="images\daohang_wz_19.png" />
+    <Content Include="images\dd_03.gif" />
+    <Content Include="images\dd_05.gif" />
+    <Content Include="images\e.png" />
+    <Content Include="images\e1.png" />
+    <Content Include="images\fenge_03.png" />
+    <Content Include="images\font_01.png" />
+    <Content Include="images\font_02.png" />
+    <Content Include="images\font_03.png" />
+    <Content Include="images\font_04.png" />
+    <Content Include="images\font_05.png" />
+    <Content Include="images\foot_bg.jpg" />
+    <Content Include="images\foot_text.jpg" />
+    <Content Include="images\iutbg_07.jpg" />
+    <Content Include="images\kaitong.jpg" />
+    <Content Include="images\kefu.jpg" />
+    <Content Include="images\loading.gif" />
+    <Content Include="images\login.jpg" />
+    <Content Include="images\login_10.jpg" />
+    <Content Include="images\login_11.jpg" />
+    <Content Include="images\login_15.jpg" />
+    <Content Include="images\login_type.jpg" />
+    <Content Include="images\login_type.png" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo_icon_03.png" />
+    <Content Include="images\logo_icon_06.png" />
+    <Content Include="images\logo_icon_08.png" />
+    <Content Include="images\middle_bg_03.png" />
+    <Content Include="images\money..png" />
+    <Content Include="images\money.png" />
+    <Content Include="images\nav_bg.jpg" />
+    <Content Include="images\news_bg.jpg" />
+    <Content Include="images\ok_btn_11.png" />
+    <Content Include="images\opc_1.jpg" />
+    <Content Include="images\opc_2.jpg" />
+    <Content Include="images\opc_3.jpg" />
+    <Content Include="images\pelope.jpg" />
+    <Content Include="images\pic_01.jpg" />
+    <Content Include="images\pic_02.jpg" />
+    <Content Include="images\pic_03.jpg" />
+    <Content Include="images\pic_04.jpg" />
+    <Content Include="images\pic_05.jpg" />
+    <Content Include="images\text1_11.png" />
+    <Content Include="images\text2_07.png" />
+    <Content Include="images\text3_09.png" />
+    <Content Include="images\titlebg_03.jpg" />
+    <Content Include="images\top_bg_01.png" />
+    <Content Include="images\top_icon_03.png" />
+    <Content Include="images\youhui_1.jpg" />
+    <Content Include="images\youhui_2.jpg" />
+    <Content Include="images\youhui_3.jpg" />
+    <Content Include="images\yuan.png" />
+    <Content Include="images\yuan2.png" />
+    <Content Include="images\yx.jpg" />
+    <Content Include="images\yx1.png" />
+    <Content Include="images\yx2.png" />
+    <Content Include="images\yx3.png" />
+    <Content Include="images\yxbg_c.gif" />
+    <Content Include="images\yxbg_t.gif" />
+    <Content Include="images\zc1.png" />
+    <Content Include="images\zc2.png" />
+    <Content Include="images\zc3.png" />
+    <Content Include="images\zc4.png" />
+    <Content Include="images\zc5.png" />
+    <Content Include="images\zc6.png" />
+    <Content Include="images\zc7.png" />
+    <Content Include="images\zc_01.png" />
+    <Content Include="images\zc_02.png" />
+    <Content Include="images\zhaopai.jpg" />
+    <Content Include="images\zhucebg.jpg" />
+    <Content Include="images\zhucebg_03.jpg" />
+    <Content Include="images\zhucebg_07.jpg" />
+    <Content Include="images\zx_bg.jpg" />
+    <Content Include="index.css" />
+    <Content Include="index.html" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\util.js" />
+    <Content Include="js\zzsc.js" />
+    <Content Include="portal_asset\css\bootstrap.min.css" />
+    <Content Include="portal_asset\css\images\ui-bg_diagonals-medium_20_d34d17_40x40.png" />
+    <Content Include="portal_asset\css\images\ui-bg_flat_30_cccccc_40x100.png" />
+    <Content Include="portal_asset\css\images\ui-bg_flat_50_5c5c5c_40x100.png" />
+    <Content Include="portal_asset\css\images\ui-bg_gloss-wave_45_817865_500x100.png" />
+    <Content Include="portal_asset\css\images\ui-bg_gloss-wave_60_fece2f_500x100.png" />
+    <Content Include="portal_asset\css\images\ui-bg_gloss-wave_70_ffdd57_500x100.png" />
+    <Content Include="portal_asset\css\images\ui-bg_gloss-wave_90_fff9e5_500x100.png" />
+    <Content Include="portal_asset\css\images\ui-bg_highlight-soft_100_feeebd_1x100.png" />
+    <Content Include="portal_asset\css\images\ui-bg_inset-soft_30_ffffff_1x100.png" />
+    <Content Include="portal_asset\css\images\ui-icons_3d3d3d_256x240.png" />
+    <Content Include="portal_asset\css\images\ui-icons_bd7b00_256x240.png" />
+    <Content Include="portal_asset\css\images\ui-icons_d19405_256x240.png" />
+    <Content Include="portal_asset\css\images\ui-icons_eb990f_256x240.png" />
+    <Content Include="portal_asset\css\images\ui-icons_ed9f26_256x240.png" />
+    <Content Include="portal_asset\css\images\ui-icons_fadc7a_256x240.png" />
+    <Content Include="portal_asset\css\images\ui-icons_ffe180_256x240.png" />
+    <Content Include="portal_asset\css\jquery-ui.css" />
+    <Content Include="portal_asset\css\module\jquery.jscrollpane.css" />
+    <Content Include="portal_asset\css\page\slider.css" />
+    <Content Include="portal_asset\css\page\slider_ie8.css" />
+    <Content Include="portal_asset\css\style.css" />
+    <Content Include="portal_asset\favicon.ico" />
+    <Content Include="portal_asset\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="portal_asset\images\arrow_normal.png" />
+    <Content Include="portal_asset\images\arrow_selected.png" />
+    <Content Include="portal_asset\images\banners\banner_bg.png" />
+    <Content Include="portal_asset\images\banners\egame_banner.png" />
+    <Content Include="portal_asset\images\banners\egame_banner_bg.png" />
+    <Content Include="portal_asset\images\banners\index_banner_01_en.jpg" />
+    <Content Include="portal_asset\images\banners\index_banner_01_sc.jpg" />
+    <Content Include="portal_asset\images\banners\index_banner_01_tc.jpg" />
+    <Content Include="portal_asset\images\banners\index_banner_02_en.jpg" />
+    <Content Include="portal_asset\images\banners\index_banner_02_sc.jpg" />
+    <Content Include="portal_asset\images\banners\index_banner_02_tc.jpg" />
+    <Content Include="portal_asset\images\banners\interface_banner_en.jpg" />
+    <Content Include="portal_asset\images\banners\interface_banner_sc.jpg" />
+    <Content Include="portal_asset\images\banners\interface_banner_tc.jpg" />
+    <Content Include="portal_asset\images\banners\live_game_banner.png" />
+    <Content Include="portal_asset\images\banners\live_game_banner_bg.png" />
+    <Content Include="portal_asset\images\banners\lobby_banner_en.jpg" />
+    <Content Include="portal_asset\images\banners\lobby_banner_sc.jpg" />
+    <Content Include="portal_asset\images\banners\lobby_banner_tc.jpg" />
+    <Content Include="portal_asset\images\banners\portsbook_banner.png" />
+    <Content Include="portal_asset\images\banners\portsbook_banner_bg.png" />
+    <Content Include="portal_asset\images\banners\sport_banner_en.jpg" />
+    <Content Include="portal_asset\images\banners\sport_banner_sc.jpg" />
+    <Content Include="portal_asset\images\banners\sport_banner_tc.jpg" />
+    <Content Include="portal_asset\images\banners\style.css" />
+    <Content Include="portal_asset\images\banners\super_baccarat_en.jpg" />
+    <Content Include="portal_asset\images\banners\super_baccarat_sc.jpg" />
+    <Content Include="portal_asset\images\banners\super_baccarat_tc.jpg" />
+    <Content Include="portal_asset\images\banners\vip_baccart_en.jpg" />
+    <Content Include="portal_asset\images\banners\vip_baccart_sc.jpg" />
+    <Content Include="portal_asset\images\banners\vip_baccart_tc.jpg" />
+    <Content Include="portal_asset\images\btn_close_normal.png" />
+    <Content Include="portal_asset\images\content_bg_01.png" />
+    <Content Include="portal_asset\images\content_bg_02.png" />
+    <Content Include="portal_asset\images\content_bg_03.png" />
+    <Content Include="portal_asset\images\cs\women_chat_sc.jpg" />
+    <Content Include="portal_asset\images\cs\women_chat_tw.jpg" />
+    <Content Include="portal_asset\images\egame\bigForHappy_en.jpg" />
+    <Content Include="portal_asset\images\egame\bigForHappy_sc.jpg" />
+    <Content Include="portal_asset\images\egame\bigForHappy_tc.jpg" />
+    <Content Include="portal_asset\images\egame\choishen_en.jpg" />
+    <Content Include="portal_asset\images\egame\choishen_sc.jpg" />
+    <Content Include="portal_asset\images\egame\choishen_tc.jpg" />
+    <Content Include="portal_asset\images\egame\chu_han.jpg" />
+    <Content Include="portal_asset\images\egame\club_a.jpg" />
+    <Content Include="portal_asset\images\egame\club_a_sc.jpg" />
+    <Content Include="portal_asset\images\egame\club_a_tc.jpg" />
+    <Content Include="portal_asset\images\egame\club_b.jpg" />
+    <Content Include="portal_asset\images\egame\club_b_sc.jpg" />
+    <Content Include="portal_asset\images\egame\club_b_tc.jpg" />
+    <Content Include="portal_asset\images\egame\club_c.jpg" />
+    <Content Include="portal_asset\images\egame\club_c_sc.jpg" />
+    <Content Include="portal_asset\images\egame\club_c_tc.jpg" />
+    <Content Include="portal_asset\images\egame\fb_en.jpg" />
+    <Content Include="portal_asset\images\egame\fb_sc.jpg" />
+    <Content Include="portal_asset\images\egame\fb_tc.jpg" />
+    <Content Include="portal_asset\images\egame\golden_lotus.jpg" />
+    <Content Include="portal_asset\images\egame\great_dragon.jpg" />
+    <Content Include="portal_asset\images\egame\ms_en.jpg" />
+    <Content Include="portal_asset\images\egame\ms_sc.jpg" />
+    <Content Include="portal_asset\images\egame\ms_tc.jpg" />
+    <Content Include="portal_asset\images\egame\mulan_en.jpg" />
+    <Content Include="portal_asset\images\egame\mulan_sc.jpg" />
+    <Content Include="portal_asset\images\egame\mulan_tc.jpg" />
+    <Content Include="portal_asset\images\egame\panda_en.jpg" />
+    <Content Include="portal_asset\images\egame\panda_sc.jpg" />
+    <Content Include="portal_asset\images\egame\panda_tc.jpg" />
+    <Content Include="portal_asset\images\egame\paramount_en.jpg" />
+    <Content Include="portal_asset\images\egame\paramount_sc.jpg" />
+    <Content Include="portal_asset\images\egame\paramount_tc.jpg" />
+    <Content Include="portal_asset\images\egame\pokerKing.jpg" />
+    <Content Include="portal_asset\images\egame\prettyGirl.jpg" />
+    <Content Include="portal_asset\images\egame\redCliff.jpg" />
+    <Content Include="portal_asset\images\egame\sex_en.jpg" />
+    <Content Include="portal_asset\images\egame\sex_sc.jpg" />
+    <Content Include="portal_asset\images\egame\sex_tc.jpg" />
+    <Content Include="portal_asset\images\egame\slot-game-05.jpg" />
+    <Content Include="portal_asset\images\egame\slot_bj_tag_en.jpg" />
+    <Content Include="portal_asset\images\egame\slot_bj_tag_sc.jpg" />
+    <Content Include="portal_asset\images\egame\slot_bj_tag_tc.jpg" />
+    <Content Include="portal_asset\images\egame\slot_dragon_en.jpg" />
+    <Content Include="portal_asset\images\egame\slot_dragon_sc.jpg" />
+    <Content Include="portal_asset\images\egame\slot_dragon_tc.jpg" />
+    <Content Include="portal_asset\images\egame\slot_hero_Tag.jpg" />
+    <Content Include="portal_asset\images\egame\slot_panda_macao_en.jpg" />
+    <Content Include="portal_asset\images\egame\slot_panda_macao_sc.jpg" />
+    <Content Include="portal_asset\images\egame\slot_panda_macao_tc.jpg" />
+    <Content Include="portal_asset\images\egame\slot_stone2_en.jpg" />
+    <Content Include="portal_asset\images\egame\slot_stone2_sc.jpg" />
+    <Content Include="portal_asset\images\egame\slot_stone2_tc.jpg" />
+    <Content Include="portal_asset\images\egame\sm_all.jpg" />
+    <Content Include="portal_asset\images\egame\sword_en.jpg" />
+    <Content Include="portal_asset\images\egame\sword_sc.jpg" />
+    <Content Include="portal_asset\images\egame\sword_tc.jpg" />
+    <Content Include="portal_asset\images\egame\swornBrothers.jpg" />
+    <Content Include="portal_asset\images\egame\TigherFighterIcon_en.jpg" />
+    <Content Include="portal_asset\images\egame\TigherFighterIcon_sc.jpg" />
+    <Content Include="portal_asset\images\egame\TigherFighterIcon_tc.jpg" />
+    <Content Include="portal_asset\images\egame\west.jpg" />
+    <Content Include="portal_asset\images\egame\worldcup_en.jpg" />
+    <Content Include="portal_asset\images\egame\worldcup_sc.jpg" />
+    <Content Include="portal_asset\images\egame\worldcup_tc.jpg" />
+    <Content Include="portal_asset\images\egame_banner.png" />
+    <Content Include="portal_asset\images\egame_banner_bg.png" />
+    <Content Include="portal_asset\images\flags\iconCN.png" />
+    <Content Include="portal_asset\images\flags\iconEN.png" />
+    <Content Include="portal_asset\images\flags\iconTW.png" />
+    <Content Include="portal_asset\images\footer\icon_18.png" />
+    <Content Include="portal_asset\images\footer\icon_chat.png" />
+    <Content Include="portal_asset\images\footer\icon_gamcare.png" />
+    <Content Include="portal_asset\images\footer\icon_mail.png" />
+    <Content Include="portal_asset\images\footer\icon_stop.png" />
+    <Content Include="portal_asset\images\footer\icon_tel.png" />
+    <Content Include="portal_asset\images\livegame\bs.jpg" />
+    <Content Include="portal_asset\images\livegame\bs_sc.jpg" />
+    <Content Include="portal_asset\images\livegame\bs_tc.jpg" />
+    <Content Include="portal_asset\images\livegame\di.jpg" />
+    <Content Include="portal_asset\images\livegame\di_sc.jpg" />
+    <Content Include="portal_asset\images\livegame\di_tc.jpg" />
+    <Content Include="portal_asset\images\livegame\dt.jpg" />
+    <Content Include="portal_asset\images\livegame\dt_sc.jpg" />
+    <Content Include="portal_asset\images\livegame\dt_tc.jpg" />
+    <Content Include="portal_asset\images\livegame\mj.jpg" />
+    <Content Include="portal_asset\images\livegame\mj_sc.jpg" />
+    <Content Include="portal_asset\images\livegame\mj_tc.jpg" />
+    <Content Include="portal_asset\images\livegame\MUGAME.jpg" />
+    <Content Include="portal_asset\images\livegame\MUGAME_sc.jpg" />
+    <Content Include="portal_asset\images\livegame\MUGAME_tc.jpg" />
+    <Content Include="portal_asset\images\livegame\quick_bs.jpg" />
+    <Content Include="portal_asset\images\livegame\quick_bs_sc.jpg" />
+    <Content Include="portal_asset\images\livegame\quick_bs_tc.jpg" />
+    <Content Include="portal_asset\images\livegame\roller.jpg" />
+    <Content Include="portal_asset\images\livegame\roller_sc.jpg" />
+    <Content Include="portal_asset\images\livegame\roller_tc.jpg" />
+    <Content Include="portal_asset\images\livegame\tk.jpg" />
+    <Content Include="portal_asset\images\livegame\tk_sc.jpg" />
+    <Content Include="portal_asset\images\livegame\tk_tc.jpg" />
+    <Content Include="portal_asset\images\loading.gif" />
+    <Content Include="portal_asset\images\login_bg42.jpg" />
+    <Content Include="portal_asset\images\main\icon_mobile_selected.png" />
+    <Content Include="portal_asset\images\main\icon_m_app_selected.png" />
+    <Content Include="portal_asset\images\main\icon_online_selected.png" />
+    <Content Include="portal_asset\images\main\icon_on_download_selected.png" />
+    <Content Include="portal_asset\images\main\live_baccarat.jpg" />
+    <Content Include="portal_asset\images\main\sunbet138.png" />
+    <Content Include="portal_asset\images\main\sungame.png" />
+    <Content Include="portal_asset\images\main\y.jpg" />
+    <Content Include="portal_asset\images\profile_pic\pic_000.jpg" />
+    <Content Include="portal_asset\images\profile_pic\pic_001.jpg" />
+    <Content Include="portal_asset\images\promo\main\banner_bg.png" />
+    <Content Include="portal_asset\images\promo\main\bet_area_eng.png" />
+    <Content Include="portal_asset\images\promo\main\bet_area_sch.png" />
+    <Content Include="portal_asset\images\promo\main\bet_area_tch.png" />
+    <Content Include="portal_asset\images\promo\main\content_bg.png" />
+    <Content Include="portal_asset\images\promo\main\icon_chrome.png" />
+    <Content Include="portal_asset\images\promo\main\icon_firefox.png" />
+    <Content Include="portal_asset\images\promo\main\icon_safari.png" />
+    <Content Include="portal_asset\images\promo\main\icon_uc.png" />
+    <Content Include="portal_asset\images\promo\main\mobile_banner_eng.png" />
+    <Content Include="portal_asset\images\promo\main\mobile_banner_sch.png" />
+    <Content Include="portal_asset\images\promo\main\mobile_banner_tch.png" />
+    <Content Include="portal_asset\images\promo\main\qr.png" />
+    <Content Include="portal_asset\images\promo\main\road_map_eng.png" />
+    <Content Include="portal_asset\images\promo\main\road_map_sch.png" />
+    <Content Include="portal_asset\images\promo\main\road_map_tch.png" />
+    <Content Include="portal_asset\images\promo\main\system_bg.png" />
+    <Content Include="portal_asset\images\promo\main\user_info_eng.png" />
+    <Content Include="portal_asset\images\promo\main\user_info_sch.png" />
+    <Content Include="portal_asset\images\promo\main\user_info_tch.png" />
+    <Content Include="portal_asset\images\sportbook\content_bg_03.png" />
+    <Content Include="portal_asset\images\sportbook\icon_check_account.png" />
+    <Content Include="portal_asset\images\sportbook\icon_liveodds.png" />
+    <Content Include="portal_asset\images\sportbook\icon_today_events.png" />
+    <Content Include="portal_asset\images\sportbook\icon_transactions.png" />
+    <Content Include="portal_asset\images\sunbet_logo.png" />
+    <Content Include="portal_asset\images\top1.jpg" />
+    <Content Include="portal_asset\index.html" />
+    <Content Include="portal_asset\js\acs.sunbet.portal.main.min.js" />
+    <Content Include="portal_asset\js\jquery-ui.min.js" />
+    <Content Include="portal_asset\js\jQueryCommon.js" />
+    <Content Include="portal_asset\js\jQueryCommon.min.js" />
+    <Content Include="portal_asset\js\libs\angular-cookies.js" />
+    <Content Include="portal_asset\js\libs\angular-route.js" />
+    <Content Include="portal_asset\js\libs\angular.js" />
+    <Content Include="portal_asset\js\libs\i18next-1.7.3.js" />
+    <Content Include="portal_asset\js\libs\jquery-1.11.1.min.js" />
+    <Content Include="portal_asset\js\libs\jquery.cookie.js" />
+    <Content Include="portal_asset\js\libs\jquery.jscrollpane.min.js" />
+    <Content Include="portal_asset\js\libs\jquery.mousewheel.js" />
+    <Content Include="portal_asset\js\libs\tgp.js" />
+    <Content Include="portal_asset\locales\en-US\translation.js" />
+    <Content Include="portal_asset\locales\zh-CN\translation.js" />
+    <Content Include="portal_asset\locales\zh-TW\translation.js" />
+    <Content Include="portal_asset\templates\deposit1.aspx" />
+    <Content Include="portal_asset\templates\deposit2.aspx" />
+    <Content Include="portal_asset\templates\deposit3.aspx" />
+    <Content Include="portal_asset\templates\egame.html" />
+    <Content Include="portal_asset\templates\index.html" />
+    <Content Include="portal_asset\templates\livegame.html" />
+    <Content Include="memberCenter.aspx" />
+    <Content Include="portal_asset\templates\promo.html" />
+    <Content Include="portal_asset\templates\promotion.aspx" />
+    <Content Include="portal_asset\templates\Register_new.aspx" />
+    <Content Include="portal_asset\templates\rules.html" />
+    <Content Include="portal_asset\templates\rules\en-US\aboutUs.html" />
+    <Content Include="portal_asset\templates\rules\en-US\baccarat.html" />
+    <Content Include="portal_asset\templates\rules\en-US\bs.html" />
+    <Content Include="portal_asset\templates\rules\en-US\bt.html" />
+    <Content Include="portal_asset\templates\rules\en-US\casher.html" />
+    <Content Include="portal_asset\templates\rules\en-US\co.html" />
+    <Content Include="portal_asset\templates\rules\en-US\contactUs.html" />
+    <Content Include="portal_asset\templates\rules\en-US\di.html" />
+    <Content Include="portal_asset\templates\rules\en-US\dt.html" />
+    <Content Include="portal_asset\templates\rules\en-US\mj.html" />
+    <Content Include="portal_asset\templates\rules\en-US\MUBA.html" />
+    <Content Include="portal_asset\templates\rules\en-US\MUGAME.html" />
+    <Content Include="portal_asset\templates\rules\en-US\privacy.html" />
+    <Content Include="portal_asset\templates\rules\en-US\ro.html" />
+    <Content Include="portal_asset\templates\rules\en-US\tk.html" />
+    <Content Include="portal_asset\templates\rules\en-US\tnc.html" />
+    <Content Include="portal_asset\templates\rules\zh-CN\aboutUs.html" />
+    <Content Include="portal_asset\templates\rules\zh-CN\baccarat.html" />
+    <Content Include="portal_asset\templates\rules\zh-CN\bs.html" />
+    <Content Include="portal_asset\templates\rules\zh-CN\bt.html" />
+    <Content Include="portal_asset\templates\rules\zh-CN\casher.html" />
+    <Content Include="portal_asset\templates\rules\zh-CN\co.html" />
+    <Content Include="portal_asset\templates\rules\zh-CN\contactUs.html" />
+    <Content Include="portal_asset\templates\rules\zh-CN\di.html" />
+    <Content Include="portal_asset\templates\rules\zh-CN\dt.html" />
+    <Content Include="portal_asset\templates\rules\zh-CN\mj.html" />
+    <Content Include="portal_asset\templates\rules\zh-CN\MUBA.html" />
+    <Content Include="portal_asset\templates\rules\zh-CN\MUGAME.html" />
+    <Content Include="portal_asset\templates\rules\zh-CN\privacy.html" />
+    <Content Include="portal_asset\templates\rules\zh-CN\ro.html" />
+    <Content Include="portal_asset\templates\rules\zh-CN\tk.html" />
+    <Content Include="portal_asset\templates\rules\zh-CN\tnc.html" />
+    <Content Include="portal_asset\templates\rules\zh-TW\aboutUs.html" />
+    <Content Include="portal_asset\templates\rules\zh-TW\baccarat.html" />
+    <Content Include="portal_asset\templates\rules\zh-TW\bs.html" />
+    <Content Include="portal_asset\templates\rules\zh-TW\bt.html" />
+    <Content Include="portal_asset\templates\rules\zh-TW\casher.html" />
+    <Content Include="portal_asset\templates\rules\zh-TW\co.html" />
+    <Content Include="portal_asset\templates\rules\zh-TW\contactUs.html" />
+    <Content Include="portal_asset\templates\rules\zh-TW\di.html" />
+    <Content Include="portal_asset\templates\rules\zh-TW\dt.html" />
+    <Content Include="portal_asset\templates\rules\zh-TW\mj.html" />
+    <Content Include="portal_asset\templates\rules\zh-TW\MUBA.html" />
+    <Content Include="portal_asset\templates\rules\zh-TW\MUGAME.html" />
+    <Content Include="portal_asset\templates\rules\zh-TW\privacy.html" />
+    <Content Include="portal_asset\templates\rules\zh-TW\ro.html" />
+    <Content Include="portal_asset\templates\rules\zh-TW\tk.html" />
+    <Content Include="portal_asset\templates\rules\zh-TW\tnc.html" />
+    <Content Include="portal_asset\templates\sportbook.html" />
+    <Content Include="portal_asset\templates\tnc\zh-CN.html" />
+    <Content Include="portal_asset\templates\tnc\zh-TW.html" />
+    <Content Include="portal_asset\templates\Withdrawals.aspx" />
+    <Content Include="portal_asset\XDConnect.html" />
+    <Content Include="promo.html" />
+    <Content Include="promotion.html" />
+    <Content Include="register.html" />
+    <Content Include="ServiceFile\AgnetService.asmx" />
+    <Content Include="ServiceFile\BankService.asmx" />
+    <Content Include="ServiceFile\ClientService.asmx" />
+    <Content Include="ServiceFile\LoginService.asmx" />
+    <Content Include="ServiceFile\UserService.asmx" />
+    <Content Include="sportbook.html" />
+    <Content Include="statics\css\images\wrapBg9ee7.html" />
+    <Content Include="statics\css\suncity\images\flash_bg.html" />
+    <Content Include="statics\css\suncity\style.css" />
+    <Content Include="statics\css\suncity\ttstyle.css" />
+    <Content Include="statics\css\suncity\wrapBg.html" />
+    <Content Include="statics\images\banklogo\beijing.gif" />
+    <Content Include="statics\images\banklogo\bohai.gif" />
+    <Content Include="statics\images\banklogo\gongshang.gif" />
+    <Content Include="statics\images\banklogo\huaxia.gif" />
+    <Content Include="statics\images\banklogo\jianshe.gif" />
+    <Content Include="statics\images\banklogo\jiaotong.gif" />
+    <Content Include="statics\images\banklogo\minsheng.gif" />
+    <Content Include="statics\images\banklogo\nanjing.gif" />
+    <Content Include="statics\images\banklogo\nongye.gif" />
+    <Content Include="statics\images\banklogo\pingan.gif" />
+    <Content Include="statics\images\banklogo\pufa.gif" />
+    <Content Include="statics\images\banklogo\xingye.gif" />
+    <Content Include="statics\images\banklogo\youzheng.gif" />
+    <Content Include="statics\images\banklogo\zhaoshang.gif" />
+    <Content Include="statics\images\banklogo\zhejiang.gif" />
+    <Content Include="statics\images\banklogo\zhongguo.gif" />
+    <Content Include="statics\images\banklogo\zhongxin.gif" />
+    <Content Include="statics\images\suncity\1-120GZ02G1P8.jpg" />
+    <Content Include="statics\images\suncity\1-120GZ03041U8.jpg" />
+    <Content Include="statics\images\suncity\1-120GZ03Z9227.jpg" />
+    <Content Include="statics\images\suncity\1-120GZ04000N2.jpg" />
+    <Content Include="statics\images\suncity\1-120GZ05155D2.jpg" />
+    <Content Include="statics\images\suncity\1-120GZ0521E09.jpg" />
+    <Content Include="statics\images\suncity\12533L923-0.jpg" />
+    <Content Include="statics\images\suncity\1421323Q6-1.jpg" />
+    <Content Include="statics\images\suncity\1421325130-2.jpg" />
+    <Content Include="statics\images\suncity\1421325944-3.jpg" />
+    <Content Include="statics\images\suncity\142132AB-4.jpg" />
+    <Content Include="statics\images\suncity\142132H44-0.jpg" />
+    <Content Include="statics\images\suncity\1423052558-2.jpg" />
+    <Content Include="statics\images\suncity\1423052O7-0.jpg" />
+    <Content Include="statics\images\suncity\1423053130-1.jpg" />
+    <Content Include="statics\images\suncity\1423053253-4.jpg" />
+    <Content Include="statics\images\suncity\1423055955-3.jpg" />
+    <Content Include="statics\images\suncity\1424412360-5.jpg" />
+    <Content Include="statics\images\suncity\1424412E1-7.jpg" />
+    <Content Include="statics\images\suncity\1424413336-1.jpg" />
+    <Content Include="statics\images\suncity\1424416406-2.jpg" />
+    <Content Include="statics\images\suncity\142441I14-4.jpg" />
+    <Content Include="statics\images\suncity\142441M15-6.jpg" />
+    <Content Include="statics\images\suncity\142441M35-0.jpg" />
+    <Content Include="statics\images\suncity\1426301018-2.jpg" />
+    <Content Include="statics\images\suncity\14263025K-3.jpg" />
+    <Content Include="statics\images\suncity\14263035K-1.jpg" />
+    <Content Include="statics\images\suncity\1426305R8-0.jpg" />
+    <Content Include="statics\images\suncity\142630N35-4.jpg" />
+    <Content Include="statics\images\suncity\1429112009-3.jpg" />
+    <Content Include="statics\images\suncity\1429112410-0.jpg" />
+    <Content Include="statics\images\suncity\1429112b7-1.jpg" />
+    <Content Include="statics\images\suncity\1429115b7-2.jpg" />
+    <Content Include="statics\images\suncity\14302S0E-0.jpg" />
+    <Content Include="statics\images\suncity\14302U314-3.jpg" />
+    <Content Include="statics\images\suncity\14302U392-4.jpg" />
+    <Content Include="statics\images\suncity\14302V258-1.jpg" />
+    <Content Include="statics\images\suncity\14302V619-2.jpg" />
+    <Content Include="statics\images\suncity\1431441620-0.jpg" />
+    <Content Include="statics\images\suncity\1431442N6-1.jpg" />
+    <Content Include="statics\images\suncity\1431445C2-5.jpg" />
+    <Content Include="statics\images\suncity\14314462c-2.jpg" />
+    <Content Include="statics\images\suncity\143144M11-6.jpg" />
+    <Content Include="statics\images\suncity\143144N21-4.jpg" />
+    <Content Include="statics\images\suncity\1433221064-3.jpg" />
+    <Content Include="statics\images\suncity\14332224K-1.jpg" />
+    <Content Include="statics\images\suncity\1433223A0-2.jpg" />
+    <Content Include="statics\images\suncity\14332240K-5.jpg" />
+    <Content Include="statics\images\suncity\14332255E-0.jpg" />
+    <Content Include="statics\images\suncity\143322OI-4.jpg" />
+    <Content Include="statics\images\suncity\143F11501-0.jpg" />
+    <Content Include="statics\images\suncity\143PQR5-5.jpg" />
+    <Content Include="statics\images\suncity\143PS138-0.jpg" />
+    <Content Include="statics\images\suncity\143PUW5-1.jpg" />
+    <Content Include="statics\images\suncity\143PV012-6.jpg" />
+    <Content Include="statics\images\suncity\143PV0Z-2.jpg" />
+    <Content Include="statics\images\suncity\143PV219-7.jpg" />
+    <Content Include="statics\images\suncity\143PVa7-4.jpg" />
+    <Content Include="statics\images\suncity\14403GJ1-0.jpg" />
+    <Content Include="statics\images\suncity\14403H0J-3.jpg" />
+    <Content Include="statics\images\suncity\14403HQ1-2.jpg" />
+    <Content Include="statics\images\suncity\14403HU4-5.jpg" />
+    <Content Include="statics\images\suncity\14403I221-1.jpg" />
+    <Content Include="statics\images\suncity\14403KB7-4.jpg" />
+    <Content Include="statics\images\suncity\1444461349-2.jpg" />
+    <Content Include="statics\images\suncity\1444461352-1.jpg" />
+    <Content Include="statics\images\suncity\1444461c8-6.jpg" />
+    <Content Include="statics\images\suncity\1444463193-3.jpg" />
+    <Content Include="statics\images\suncity\1444463327-5.jpg" />
+    <Content Include="statics\images\suncity\1444464P9-0.jpg" />
+    <Content Include="statics\images\suncity\1445451205-9.jpg" />
+    <Content Include="statics\images\suncity\14454512O-5.jpg" />
+    <Content Include="statics\images\suncity\1445453048-1.jpg" />
+    <Content Include="statics\images\suncity\14454533B-7.jpg" />
+    <Content Include="statics\images\suncity\14454535G-4.jpg" />
+    <Content Include="statics\images\suncity\1445454236-8.jpg" />
+    <Content Include="statics\images\suncity\14454543Y-14.jpg" />
+    <Content Include="statics\images\suncity\1445454Z2-13.jpg" />
+    <Content Include="statics\images\suncity\1445455544-10.jpg" />
+    <Content Include="statics\images\suncity\1445455a1-0.jpg" />
+    <Content Include="statics\images\suncity\1445455B8-2.jpg" />
+    <Content Include="statics\images\suncity\1445455U9-11.jpg" />
+    <Content Include="statics\images\suncity\14454564H-6.jpg" />
+    <Content Include="statics\images\suncity\144545N16-12.jpg" />
+    <Content Include="statics\images\suncity\144Q010W-1.jpg" />
+    <Content Include="statics\images\suncity\144Q01K0-6.jpg" />
+    <Content Include="statics\images\suncity\144Q042B-8.jpg" />
+    <Content Include="statics\images\suncity\144Q05032-7.jpg" />
+    <Content Include="statics\images\suncity\144Q05495-0.jpg" />
+    <Content Include="statics\images\suncity\144Q05V6-4.jpg" />
+    <Content Include="statics\images\suncity\144Q0Ea-2.jpg" />
+    <Content Include="statics\images\suncity\144Q0F05-9.jpg" />
+    <Content Include="statics\images\suncity\144Q0JV-5.jpg" />
+    <Content Include="statics\images\suncity\144Z42347-2.jpg" />
+    <Content Include="statics\images\suncity\144Z454D-3.jpg" />
+    <Content Include="statics\images\suncity\144Z45962-0.jpg" />
+    <Content Include="statics\images\suncity\144Z45K7-1.jpg" />
+    <Content Include="statics\images\suncity\1450021V9-2.jpg" />
+    <Content Include="statics\images\suncity\1450022145-6.jpg" />
+    <Content Include="statics\images\suncity\14500225H-5.jpg" />
+    <Content Include="statics\images\suncity\1450023L4-0.jpg" />
+    <Content Include="statics\images\suncity\1450025359-4.jpg" />
+    <Content Include="statics\images\suncity\145002EI-1.jpg" />
+    <Content Include="statics\images\suncity\14511025Q-0.jpg" />
+    <Content Include="statics\images\suncity\1451102631-7.jpg" />
+    <Content Include="statics\images\suncity\1451104219-3.jpg" />
+    <Content Include="statics\images\suncity\1451104595-1.jpg" />
+    <Content Include="statics\images\suncity\1451104Q5-2.jpg" />
+    <Content Include="statics\images\suncity\1451105615-5.jpg" />
+    <Content Include="statics\images\suncity\1451105A4-4.jpg" />
+    <Content Include="statics\images\suncity\145110H18-6.jpg" />
+    <Content Include="statics\images\suncity\14522011D-4.jpg" />
+    <Content Include="statics\images\suncity\1452204V9-2.jpg" />
+    <Content Include="statics\images\suncity\1452205S8-6.jpg" />
+    <Content Include="statics\images\suncity\145220E11-0.jpg" />
+    <Content Include="statics\images\suncity\145220E61-7.jpg" />
+    <Content Include="statics\images\suncity\145220H91-5.jpg" />
+    <Content Include="statics\images\suncity\145220JY-1.jpg" />
+    <Content Include="statics\images\suncity\1454011005-3.jpg" />
+    <Content Include="statics\images\suncity\1454012233-9.jpg" />
+    <Content Include="statics\images\suncity\1454012363-5.jpg" />
+    <Content Include="statics\images\suncity\1454014460-1.jpg" />
+    <Content Include="statics\images\suncity\14540150U-8.jpg" />
+    <Content Include="statics\images\suncity\1454015917-7.jpg" />
+    <Content Include="statics\images\suncity\1454015D6-0.jpg" />
+    <Content Include="statics\images\suncity\1454015F1-2.jpg" />
+    <Content Include="statics\images\suncity\145401DP-4.jpg" />
+    <Content Include="statics\images\suncity\1455021550-2.jpg" />
+    <Content Include="statics\images\suncity\1455022044-6.jpg" />
+    <Content Include="statics\images\suncity\14550220G-1.jpg" />
+    <Content Include="statics\images\suncity\1455022E9-3.jpg" />
+    <Content Include="statics\images\suncity\14550230S-7.jpg" />
+    <Content Include="statics\images\suncity\1455026012-0.jpg" />
+    <Content Include="statics\images\suncity\145502I46-8.jpg" />
+    <Content Include="statics\images\suncity\145502J33-4.jpg" />
+    <Content Include="statics\images\suncity\1F23a324-0.jpg" />
+    <Content Include="statics\images\suncity\1F63A544-0.jpg" />
+    <Content Include="statics\images\suncity\a1.jpg" />
+    <Content Include="statics\images\suncity\banner.swf" />
+    <Content Include="statics\images\suncity\bbin_qrcode.html" />
+    <Content Include="statics\images\suncity\bg.jpg" />
+    <Content Include="statics\images\suncity\bg_banner.jpg" />
+    <Content Include="statics\images\suncity\bg_m.jpg" />
+    <Content Include="statics\images\suncity\Box.gif" />
+    <Content Include="statics\images\suncity\Box2.gif" />
+    <Content Include="statics\images\suncity\btn.png" />
+    <Content Include="statics\images\suncity\button_bg.jpg" />
+    <Content Include="statics\images\suncity\cancel.png" />
+    <Content Include="statics\images\suncity\CZ_btn.png" />
+    <Content Include="statics\images\suncity\enter_game.png" />
+    <Content Include="statics\images\suncity\flash_bg.png" />
+    <Content Include="statics\images\suncity\focus.swf" />
+    <Content Include="statics\images\suncity\footer_bg.png" />
+    <Content Include="statics\images\suncity\fwbztitle.jpg" />
+    <Content Include="statics\images\suncity\game\douniu.jpg" />
+    <Content Include="statics\images\suncity\game\huamulan.jpg" />
+    <Content Include="statics\images\suncity\game\huopinzhuangjia.jpg" />
+    <Content Include="statics\images\suncity\game\jisupuke.jpg" />
+    <Content Include="statics\images\suncity\game\lianhuanbaijiale.jpg" />
+    <Content Include="statics\images\suncity\game\longqibaijiale.jpg" />
+    <Content Include="statics\images\suncity\game_list_bg.jpg" />
+    <Content Include="statics\images\suncity\hover.png" />
+    <Content Include="statics\images\suncity\ico.jpg" />
+    <Content Include="statics\images\suncity\ico_more.gif" />
+    <Content Include="statics\images\suncity\index_item_30.png" />
+    <Content Include="statics\images\suncity\index_item_32.png" />
+    <Content Include="statics\images\suncity\index_item_35.png" />
+    <Content Include="statics\images\suncity\iner_wrap.png" />
+    <Content Include="statics\images\suncity\iner_wrap_bg.jpg" />
+    <Content Include="statics\images\suncity\iner_wrap_bottom.jpg" />
+    <Content Include="statics\images\suncity\iner_wrap_top.png" />
+    <Content Include="statics\images\suncity\left-open.png" />
+    <Content Include="statics\images\suncity\left-up.png" />
+    <Content Include="statics\images\suncity\leftmenubg.jpg" />
+    <Content Include="statics\images\suncity\leftmenubga.jpg" />
+    <Content Include="statics\images\suncity\lianhuanbj.jpg" />
+    <Content Include="statics\images\suncity\line.png" />
+    <Content Include="statics\images\suncity\live.png" />
+    <Content Include="statics\images\suncity\live8007.jpg" />
+    <Content Include="statics\images\suncity\login_logo.png" />
+    <Content Include="statics\images\suncity\logo.png" />
+    <Content Include="statics\images\suncity\logoBg.jpg" />
+    <Content Include="statics\images\suncity\main_bg.png" />
+    <Content Include="statics\images\suncity\mar1.jpg" />
+    <Content Include="statics\images\suncity\menubg.png" />
+    <Content Include="statics\images\suncity\menu\nav1.png" />
+    <Content Include="statics\images\suncity\menu\nav11.png" />
+    <Content Include="statics\images\suncity\menu\nav111.png" />
+    <Content Include="statics\images\suncity\menu\nav118.png" />
+    <Content Include="statics\images\suncity\menu\nav2.png" />
+    <Content Include="statics\images\suncity\menu\nav22.png" />
+    <Content Include="statics\images\suncity\menu\nav3.png" />
+    <Content Include="statics\images\suncity\menu\nav33.png" />
+    <Content Include="statics\images\suncity\menu\nav4.png" />
+    <Content Include="statics\images\suncity\menu\nav44.png" />
+    <Content Include="statics\images\suncity\menu\nav5.png" />
+    <Content Include="statics\images\suncity\menu\nav55.png" />
+    <Content Include="statics\images\suncity\menu\nav6.png" />
+    <Content Include="statics\images\suncity\menu\nav66.png" />
+    <Content Include="statics\images\suncity\menu\nav8.png" />
+    <Content Include="statics\images\suncity\menu\nav88.png" />
+    <Content Include="statics\images\suncity\menu\nav9.png" />
+    <Content Include="statics\images\suncity\menu\nav99.png" />
+    <Content Include="statics\images\suncity\menu_1.jpg" />
+    <Content Include="statics\images\suncity\menu_2.jpg" />
+    <Content Include="statics\images\suncity\menu_3.jpg" />
+    <Content Include="statics\images\suncity\menu_bg.png" />
+    <Content Include="statics\images\suncity\menu_bg2.png" />
+    <Content Include="statics\images\suncity\menu_line.jpg" />
+    <Content Include="statics\images\suncity\mfkhtitle.jpg" />
+    <Content Include="statics\images\suncity\mobile_banner_sch.png" />
+    <Content Include="statics\images\suncity\money_save.jpg" />
+    <Content Include="statics\images\suncity\money_save2.jpg" />
+    <Content Include="statics\images\suncity\nav.png" />
+    <Content Include="statics\images\suncity\nav_over.png" />
+    <Content Include="statics\images\suncity\qhcq88.jpg" />
+    <Content Include="statics\images\suncity\qr.png" />
+    <Content Include="statics\images\suncity\qrcode_bg.png" />
+    <Content Include="statics\images\suncity\sabmit_btn.png" />
+    <Content Include="statics\images\suncity\sports_bg.jpg" />
+    <Content Include="statics\images\suncity\swf\co.swf" />
+    <Content Include="statics\images\suncity\swf\di.swf" />
+    <Content Include="statics\images\suncity\swf\dt.swf" />
+    <Content Include="statics\images\suncity\swf\mj.swf" />
+    <Content Include="statics\images\suncity\swf\MUBA.swf" />
+    <Content Include="statics\images\suncity\swf\ro.swf" />
+    <Content Include="statics\images\suncity\swf\tk.swf" />
+    <Content Include="statics\images\suncity\text01.png" />
+    <Content Include="statics\images\suncity\text02.png" />
+    <Content Include="statics\images\suncity\title_first.png" />
+    <Content Include="statics\images\suncity\title_first02.html" />
+    <Content Include="statics\images\suncity\title_zryl.jpg" />
+    <Content Include="statics\images\suncity\vedio_open.gif" />
+    <Content Include="statics\images\suncity\video.png" />
+    <Content Include="statics\images\suncity\video_s.jpg" />
+    <Content Include="statics\images\suncity\video_ss.jpg" />
+    <Content Include="statics\images\suncity\web.png" />
+    <Content Include="statics\images\suncity\wrapBg.jpg" />
+    <Content Include="statics\images\suncity\xiangmubg.png" />
+    <Content Include="statics\images\suncity\youhui02.jpg" />
+    <Content Include="statics\images\suncity\youhui1.jpg" />
+    <Content Include="statics\images\suncity\youhui4.jpg" />
+    <Content Include="statics\images\suncity\zrylBg.jpg" />
+    <Content Include="statics\images\suncity\zryl_title.gif" />
+    <Content Include="statics\images\suncity\zryl_title1.gif" />
+    <Content Include="statics\js\easyui\jquery.easyui.min.js" />
+    <Content Include="statics\js\easyui\locale\easyui-lang-zh_CN.js" />
+    <Content Include="statics\js\easyui\themes\default\easyui.css" />
+    <Content Include="statics\js\easyui\themes\default\images\accordion_arrows.png" />
+    <Content Include="statics\js\easyui\themes\default\images\blank.gif" />
+    <Content Include="statics\js\easyui\themes\default\images\calendar_arrows.png" />
+    <Content Include="statics\js\easyui\themes\default\images\combo_arrow.png" />
+    <Content Include="statics\js\easyui\themes\default\images\datagrid_icons.png" />
+    <Content Include="statics\js\easyui\themes\default\images\datebox_arrow.png" />
+    <Content Include="statics\js\easyui\themes\default\images\layout_arrows.png" />
+    <Content Include="statics\js\easyui\themes\default\images\linkbutton_bg.png" />
+    <Content Include="statics\js\easyui\themes\default\images\loading.gif" />
+    <Content Include="statics\js\easyui\themes\default\images\menu_arrows.png" />
+    <Content Include="statics\js\easyui\themes\default\images\messager_icons.png" />
+    <Content Include="statics\js\easyui\themes\default\images\pagination_icons.png" />
+    <Content Include="statics\js\easyui\themes\default\images\panel_tools.png" />
+    <Content Include="statics\js\easyui\themes\default\images\searchbox_button.png" />
+    <Content Include="statics\js\easyui\themes\default\images\slider_handle.png" />
+    <Content Include="statics\js\easyui\themes\default\images\spinner_arrows.png" />
+    <Content Include="statics\js\easyui\themes\default\images\tabs_icons.png" />
+    <Content Include="statics\js\easyui\themes\default\images\tree_icons.png" />
+    <Content Include="statics\js\easyui\themes\default\images\validatebox_warning.png" />
+    <Content Include="statics\js\suncity\77sunbet.js" />
+    <Content Include="statics\js\suncity\77tc.js" />
+    <Content Include="statics\js\suncity\areaselector.js" />
+    <Content Include="statics\js\suncity\cityData.js" />
+    <Content Include="statics\js\suncity\demo\zDialog.js" />
+    <Content Include="statics\js\suncity\demo\zDrag.js" />
+    <Content Include="statics\js\suncity\expressInstall.swf" />
+    <Content Include="statics\js\suncity\float.js" />
+    <Content Include="statics\js\suncity\jquery-1.4.2.min.js" />
+    <Content Include="statics\js\suncity\jquery-1.7.2.min.js" />
+    <Content Include="statics\js\suncity\jquery.cookie.js" />
+    <Content Include="statics\js\suncity\main.js" />
+    <Content Include="statics\js\suncity\shengbo.js" />
+    <Content Include="statics\js\suncity\swfobject.js" />
+    <Content Include="statics\js\suncity\swfobject_modified.js" />
+    <Content Include="transfers.aspx" />
+    <Content Include="transfers1.aspx" />
+    <Content Include="ValiCode.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="youhui_1.jpg" />
+    <Content Include="zhaopai.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="portal_asset\templates\deposit1.aspx.cs">
+      <DependentUpon>deposit1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal_asset\templates\deposit1.aspx.designer.cs">
+      <DependentUpon>deposit1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal_asset\templates\deposit2.aspx.cs">
+      <DependentUpon>deposit2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal_asset\templates\deposit2.aspx.designer.cs">
+      <DependentUpon>deposit2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal_asset\templates\deposit3.aspx.cs">
+      <DependentUpon>deposit3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal_asset\templates\deposit3.aspx.designer.cs">
+      <DependentUpon>deposit3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="memberCenter.aspx.cs">
+      <DependentUpon>memberCenter.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="memberCenter.aspx.designer.cs">
+      <DependentUpon>memberCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal_asset\templates\promotion.aspx.cs">
+      <DependentUpon>promotion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal_asset\templates\promotion.aspx.designer.cs">
+      <DependentUpon>promotion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal_asset\templates\Register_new.aspx.cs">
+      <DependentUpon>Register_new.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal_asset\templates\Register_new.aspx.designer.cs">
+      <DependentUpon>Register_new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="portal_asset\templates\Withdrawals.aspx.cs">
+      <DependentUpon>Withdrawals.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="portal_asset\templates\Withdrawals.aspx.designer.cs">
+      <DependentUpon>Withdrawals.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ServiceFile\AgnetService.asmx.cs">
+      <DependentUpon>AgnetService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServiceFile\BankService.asmx.cs">
+      <DependentUpon>BankService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServiceFile\ClientService.asmx.cs">
+      <DependentUpon>ClientService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServiceFile\LoginService.asmx.cs">
+      <DependentUpon>LoginService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ServiceFile\UserService.asmx.cs">
+      <DependentUpon>UserService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="transfers.aspx.cs">
+      <DependentUpon>transfers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transfers.aspx.designer.cs">
+      <DependentUpon>transfers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="transfers1.aspx.cs">
+      <DependentUpon>transfers1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="transfers1.aspx.designer.cs">
+      <DependentUpon>transfers1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValiCode.aspx.cs">
+      <DependentUpon>ValiCode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValiCode.aspx.designer.cs">
+      <DependentUpon>ValiCode.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{ad2c59da-5e70-40d0-9472-6efb3ced0717}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{c10e6e4c-70c4-487b-944d-5e7e3cbf070e}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{b0935ade-1f9f-4991-81e4-fbfa0ae91208}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>42043</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:42009/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

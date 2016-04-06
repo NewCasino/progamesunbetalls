@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AD2C59DA-5E70-40D0-9472-6EFB3CED0717}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data">
+      <HintPath>bin\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountManager.cs" />
+    <Compile Include="AgentAccountManager.cs" />
+    <Compile Include="AgentManager.cs" />
+    <Compile Include="AgentserversManager.cs" />
+    <Compile Include="BankhistoryManager.cs" />
+    <Compile Include="BankInfoManager.cs" />
+    <Compile Include="BanklistcManager.cs" />
+    <Compile Include="BankManager.cs" />
+    <Compile Include="BetaccountcopyManager.cs" />
+    <Compile Include="BetaccountlogManager.cs" />
+    <Compile Include="BetaccountManager.cs" />
+    <Compile Include="BetaccountmaxManager.cs" />
+    <Compile Include="BetgamesManager.cs" />
+    <Compile Include="BetlogManager.cs" />
+    <Compile Include="BillLogManager.cs" />
+    <Compile Include="CasinologinserversManager.cs" />
+    <Compile Include="CasinoManager.cs" />
+    <Compile Include="ConfigManager.cs" />
+    <Compile Include="DomainManager.cs" />
+    <Compile Include="Ezun\BankManager.cs" />
+    <Compile Include="Ezun\UserManagers.cs" />
+    <Compile Include="GradeManager.cs" />
+    <Compile Include="JsnManager.cs" />
+    <Compile Include="LoginserversManager.cs" />
+    <Compile Include="ManagerManager.cs" />
+    <Compile Include="MatchesManager.cs" />
+    <Compile Include="Matches_copyManager.cs" />
+    <Compile Include="NoticeManager.cs" />
+    <Compile Include="Orderdetail1x2hflManager.cs" />
+    <Compile Include="Orderdetail1x2hfManager.cs" />
+    <Compile Include="Orderdetail1x2lManager.cs" />
+    <Compile Include="Orderdetail1x2Manager.cs" />
+    <Compile Include="OrderdetailhdphflManager.cs" />
+    <Compile Include="OrderdetailhdphfManager.cs" />
+    <Compile Include="OrderdetailhdplManager.cs" />
+    <Compile Include="OrderdetailhdpManager.cs" />
+    <Compile Include="OrderdetailliveManager.cs" />
+    <Compile Include="OrderdetailouhflManager.cs" />
+    <Compile Include="OrderdetailouhfManager.cs" />
+    <Compile Include="OrderdetailoulManager.cs" />
+    <Compile Include="OrderdetailouManager.cs" />
+    <Compile Include="OrderhistoryManager.cs" />
+    <Compile Include="OrderotherhistoryManager.cs" />
+    <Compile Include="OrderotherManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PTgameManager.cs" />
+    <Compile Include="RatehistoryManager.cs" />
+    <Compile Include="RateManager.cs" />
+    <Compile Include="ReasonManager.cs" />
+    <Compile Include="RefusedListManager.cs" />
+    <Compile Include="RoleManager.cs" />
+    <Compile Include="Roteds1x21Manager.cs" />
+    <Compile Include="Roteds1x2hf1Manager.cs" />
+    <Compile Include="Rotedshdp1Manager.cs" />
+    <Compile Include="Rotedshdphf1Manager.cs" />
+    <Compile Include="Rotedsou1Manager.cs" />
+    <Compile Include="Rotedsouhf1Manager.cs" />
+    <Compile Include="ServerManager.cs" />
+    <Compile Include="System_moduleManager.cs" />
+    <Compile Include="System_module_operateManager.cs" />
+    <Compile Include="System_module_rightManager.cs" />
+    <Compile Include="System_role_rightManager.cs" />
+    <Compile Include="Sys_moduleManager.cs" />
+    <Compile Include="Sys_module_operateManager.cs" />
+    <Compile Include="Sys_module_rightManager.cs" />
+    <Compile Include="Sys_role_rightManager.cs" />
+    <Compile Include="TestlogManager.cs" />
+    <Compile Include="UpdatematchesManager.cs" />
+    <Compile Include="UserManager.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DAL\DAL.csproj">
+      <Project>{C10E6E4C-70C4-487B-944D-5E7E3CBF070E}</Project>
+      <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{B0935ADE-1F9F-4991-81E4-FBFA0AE91208}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

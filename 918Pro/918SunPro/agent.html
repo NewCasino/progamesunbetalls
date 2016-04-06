@@ -1,0 +1,612 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>代理加盟</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="index.css" />
+    <link type="text/css" rel="stylesheet" href="css/zuce.css" />
+    <link type="text/css" rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" type="text/css" href="/portal_asset/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/portal_asset/css/page/slider.css" />
+    <link rel="stylesheet" type="text/css" href="/portal_asset/css/module/jquery.jscrollpane.css" />
+    <link href="portal_asset/css/jquery-ui.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div xmlns:my="ignored" id="ng-app" ng-app="ctrlApp">
+        <div class="nav">
+            <div class="nav_small">
+                <ul style="float:left">
+                    <li><a href="help.html">常见问题<span>&nbsp;|</span></a></li>
+                    <li><a href="freePay.html">免费参观<span>&nbsp;|</span></a></li>
+                    <li><a href="about.html">关于我们<span>&nbsp;|</span></a></li>
+                    <!--<li><a href="">手机投注<span>|</span></a></li>-->
+                    <li><a href="zhaopai.html">&nbsp;牌照展示<span>&nbsp;|</span></a></li>
+                    <li><a my-checklogin="" href="javascript:void(0)" class="over" ng-if="status.isLoaded" href-link="#" is-check-login="true" lobby-type="live" target="_blank" action-text="banners.liveGame.btn_text_login" login-text="banners.liveGame.btn_text">登陆游戏</a></li>
+
+                </ul>
+
+                <ul style="float:right">
+
+                    <li class="userInfo left" ng-show="isAuthorized">
+                        <div>
+
+                            <p class="userInfo left white">欢迎您：{{username}} &nbsp;&nbsp;<a href="memberCenter.aspx">【会员中心】</a> &nbsp;&nbsp;</p>
+                            <div class="clearFix"></div>
+                        </div>
+                    </li>
+
+
+                    <li class="LS-service" ng-show="isAuthorized" ng-click="tgpLogout(true)">
+                        <span style=" font-weight: 800; font-size: 14px; color: #3B240B;">【</span><a href="" class="over" id="tgpLogout" data-i18n="button.logout" style=" font-weight: 800; font-size: 14px; color: #3B240B;"></a><span style=" font-weight: 800; font-size: 14px; color: #3B240B;">】</span>
+                        </>
+                    </li>
+                    <!--<li><a href="">会员中心<span>|</span></a></li>-->
+
+                    <li><a id="pro_setup" href="http://www.11psb.com/air/air-bin/SunbetGameSetup3.4.0.exe">&nbsp;客户端下载</a><span>&nbsp;|</span></li>
+                    <li><a href="appGame.html" target="_blank">&nbsp;手机APP版</a><span>&nbsp;|&nbsp;</span></li>
+                    <li>
+                        <div ng-hide="isAuthorized">
+                            <a href="#" onclick="AddFavorite(window.location,document.title)">加入收藏</a><span>|</span>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div ng-hide="isAuthorized">
+                            <a href="javascript:void(0)" onclick="SetHome(this,window.location)">设为首页</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="yuan"></div>
+            </div>
+        </div>
+
+        <div class="nav_bottm">
+            <div class="logo">
+                <a href=""><img src="images/logo.png" alt="" /></a>
+            </div>
+            <div class="kaitong">
+                <a href="register.html"><img src="images/logo_icon_06.png" alt="" /></a>
+            </div>
+
+            <div class="login"><a my-checklogin="" id="sliderBtn" href="javascript:void(0)" class="over" ng-if="status.isLoaded" href-link="#" is-check-login="true" lobby-type="live" target="_blank" action-text="banners.liveGame.btn_text_login" login-text="banners.liveGame.btn_text"></a> </div>
+
+            <div class="pelope">
+                <a href="javascript:void(0);" onclick="openwin()"><img src="images/logo_icon_03.png" alt="" /></a>
+            </div>
+        </div>
+
+
+        <div class="modal-overlay my-hidden" ng-show="isShowTnc">
+            <div class="mask"></div>
+            <div id="tncDetail" class="tnc-modal-detail">
+                <div id="tncModal" class="modal-content">
+                    <div class="modal-title" data-i18n="login.userTnC"></div>
+                    <div class="clearfix"></div>
+                    <div id="tncContent" class="modal-inner-content">
+                        <div my-tnc=my-tnc></div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="modal-btn">
+                        <a data-i18n="button.agree" ng-click="closeTnc()" class="btn-first button left"> </a>
+                        <a data-i18n="button.disagree" ng-click="disagreeTnc()" class="btn-second button left"></a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay my-hidden" ng-show="isShowConfirmLogout">
+            <div class="mask" ng-click="cancelLogout()"></div>
+            <div class="logout-modal-detail" ng-hide="logoutTGPLoading">
+                <div class="modal-content">
+                    <div>
+                        <div class="btn-close" ng-click="cancelLogout()"></div>
+                        <div class="clearfix"></div>
+                        <div class="modal-title" data-i18n="login.confirmLogout"></div>
+                        <div class="modal-btn">
+                            <a data-i18n="button.confirm" ng-click="confirmLogout()" class="btn-first button "> </a>
+                            <a data-i18n="button.cancel" ng-click="cancelLogout()" class="btn-second button "></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logoutLoading" ng-show="logoutTGPLoading">
+                <img src="/portal_asset/images/loading.gif" />
+            </div>
+        </div>
+
+
+        <div class="modal-overlay my-hidden" ng-show="isShowPopupGame" style=" display:none">
+            <div class="mask" ng-click="cancelPopupGame()"></div>
+            <div class="logout-modal-detail">
+                <div class="modal-content">
+                    <div>
+                        <div class="btn-close" ng-click="isShowPopupGame = false"></div>
+                        <div class="clearfix"></div>
+                        <div class="modal-title" data-i18n="button.enterNowConfirm"></div>
+                        <div class="modal-btn">
+                            <a data-i18n="button.confirm" ng-click="openUrl(currentPage)" class="btn-first button left"> </a>
+                            <a data-i18n="button.cancel" ng-click="isShowPopupGame = false" class="btn-second button left"></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <my-hidden></my-hidden>
+    </div>
+
+    <div class="content" style="height: 1033px">
+        <div class="cent_nav">
+            <ul>
+                <li><a href="index.html" class="a"></a></li>
+                <li><a href="gameProject.html" class="b"></a></li>
+                <li><a href="transfers.aspx" class="c"></a></li>
+                <li><a href="promotion.html" class="d"></a></li>
+                <li><a href="agent.html" class="f11"></a></li>
+                <li><a href="transfers1.aspx" class="e" target="_blank"></a></li>
+
+            </ul>
+        </div>
+        <p class="tishi">
+            <marquee behavior="scroll" scrolldelay="200" onmouseout="this.start()" onmouseover="this.stop()" id="demo2"></marquee>
+
+        </p>
+        <div class="money_t">
+            <ul>
+                <li><a href="javascript:void(0)"><img src="images/ttt_1.png" alt="" /></a></li>
+                <li><a href="javascript:void(0)"><img src="images/ttt_2.png" alt="" /></a></li>
+                <li><a href="javascript:void(0)"><img src="images/ttt_3.png" alt="" /></a></li>
+                <li><a href="javascript:void(0)"><img src="images/ttt_4.png" alt="" /></a></li>
+            </ul>
+            <div class="zx_zhifu_t" style="display:block">
+                <div class="zhifu_title">
+                    *加盟方案*
+                </div>
+                <div class="zhifu_input_t">
+                    <div action="">
+                        <span class="tt_bt">一、占成代理模式</span>
+                        <p><span class="tt_bt1">1.占成代理运营模式简介：</span></p>
+                        <p>
+                            加入我们占成合作伙伴，您需要先缴纳一定数额的保证金，与我们公司共同坐庄承担风险！保证金缴纳后您既可获得和您所占成数比例相应的信用额度（最高可占8成），并可拥有占成代理专属登录后台。您可以通过您的专属管理后台来掌握您下线会员的存取款和盈利状态，并拥有为您的下线会员自主开户和添加额度的权利，公司将按照占成协议与您一起自负盈亏！我们将每周定时按照您下线会员当周的有效投注额度和盈利情况结算洗码和分红！
+                        </p>
+
+
+                        <table width="353" cellpadding="10" cellspacing="1" bgcolor="#666666" style="margin:30px 0 0 180px;">
+                            <tr>
+                                <td width=158 height="30" align="center" bgcolor="#fffcec">存款及占成</td>
+                                <td width=150 align="center" bgcolor="#fffcec">返还洗码比例</td>
+                            </tr>
+                            <tr>
+                                <td width=158 height="30" align="center" bgcolor="#fffcec">1万及以上最高占4成</td>
+                                <td width=150 align="center" bgcolor="#fffcec">返还洗码0.6%</td>
+                            </tr>
+                            <tr>
+                                <td width=158 height="30" align="center" bgcolor="#fffcec">10万及以上最高占5成</td>
+                                <td width=150 align="center" bgcolor="#fffcec">返还洗码0.7%</td>
+                            </tr>
+                            <tr>
+                                <td width=158 height="30" align="center" bgcolor="#fffcec">15万及以上最高占6成</td>
+                                <td width=150 align="center" bgcolor="#fffcec">返还洗码0.8%</td>
+                            </tr>
+                            <tr>
+                                <td width=158 height="30" align="center" bgcolor="#fffcec">20万及以上最高占7成</td>
+                                <td width=150 align="center" bgcolor="#fffcec">返还洗码0.9%</td>
+                            </tr>
+                            <tr>
+                                <td width=158 height="30" align="center" bgcolor="#fffcec">50万及以上最高占8成</td>
+                                <td width=150 align="center" bgcolor="#fffcec">返还洗码1.0%</td>
+                            </tr>
+                        </table>
+
+                        <p><span class="tt_bt1">2.占成代理结算方式及优惠：</span></p>
+                        <p>
+                            占成代理可获得其下线会员单周有效投注0.4%的洗码回馈，我们还将会按照占成合作伙伴每月为公司所创利润给予相应比例的额外回红！我们将每周定时按照您下线会员当周的有效投注额度和盈利情况结算洗码和分红！如果您在和您的下线会员交易时信用额度不够可以在每周对数结算后随时购买信用额度！
+                        </p>
+
+
+                        <p><span class="tt_bt1">3.运营模式特色：</span></p>
+                        <p>
+                            运营该模式您需要有一定的经济实力，良好的信誉，较为广泛的客户群体，独立的收取款程序体制，敢于承担一定的风险，属于风险投资超高回报选择项！
+                        </p>
+                        <p> </p>
+                        <span class="tt_bt">二、洗码代理模式</span>
+                         <!--<table width="353" cellpadding="10" cellspacing="1" bgcolor="#666666" style="margin:30px 0 0 180px;">
+                            <tr>
+                                <td width=158 height="30" align="center" bgcolor="#fffcec">一周投注额 50万及以下</td>
+                                <td width=150 align="center" bgcolor="#fffcec">返还洗码0.4%</td>
+                            </tr>
+                            <tr>
+                                <td width=158 height="30" align="center" bgcolor="#fffcec">一周投注额 50-100万</td>
+                                <td width=150 align="center" bgcolor="#fffcec">返还洗码0.5%</td>
+                            </tr>
+                            <tr>
+                                <td width=158 height="30" align="center" bgcolor="#fffcec">一周投注额 100-200万</td>
+                                <td width=150 align="center" bgcolor="#fffcec">返还洗码0.6%</td>
+                            </tr>
+                            <tr>
+                                <td width=158 height="30" align="center" bgcolor="#fffcec">一周投注额 200-300万</td>
+                                <td width=150 align="center" bgcolor="#fffcec">返还洗码0.7%</td>
+                            </tr>
+                            <tr>
+                                <td width=158 height="30" align="center" bgcolor="#fffcec">一周投注额 300-500万</td>
+                                <td width=150 align="center" bgcolor="#fffcec">返还洗码0.8%</td>
+                            </tr>
+                            <tr>
+                                <td width=158 height="30" align="center" bgcolor="#fffcec">一周投注额 500-700万</td>
+                                <td width=150 align="center" bgcolor="#fffcec">返还洗码0.9%</td>
+                            </tr>
+                            <tr>
+                                <td width=158 height="30" align="center" bgcolor="#fffcec">一周投注额700万及以上</td>
+                                <td width=150 align="center" bgcolor="#fffcec">返还洗码1.0</td>
+                            </tr>
+                        </table>-->
+                        <p>无任何风险，您只需开发客源，其余事情全部交给我们公司！如果您周围的朋友喜爱现场游戏，拥有一定数量的客户群和良好的人际关系，您即可加入我们的洗码代理，会员输赢公司统一结算.您的下线会员投注即可产生相应的洗码返点、利润高。洗码结算比例：0.5%。洗码结算日期：每周一下午16点前添加到代理账号。也可直接提现。</p>
+
+
+                        <p>温馨提示：周活跃会员最少3个。（1.游戏时间超过一周，并且有过存取款记录。2.存款游戏当周洗码量达到50万及以上。注:达到其中一个条件即可算作活跃会员。）</p>
+
+
+
+
+                        <p> </p>
+                        <span class="tt_bt">三、盈利代理模式</span>
+                        <p>我们为您提供市场上最优厚的佣金提成方案。佣金提成级别是按每个月为我们带来的总纯利收入而定</p>
+                        <table width="553" cellpadding="10" cellspacing="1" bgcolor="#666666" style="margin:30px 0 0 80px;">
+                            <tr>
+                                <td width=50 height="30" align="center" bgcolor="#fffcec">级别</td>
+                                <td width=150 align="center" bgcolor="#fffcec">当月总纯利收入（人民币）</td>
+                                <td width=114 align="center" bgcolor="#fffcec">每月最低活跃会员</td>
+                                <td width=117 align="center" bgcolor="#fffcec">当月佣金百分比</td>
+                            </tr>
+
+                            <tr>
+                                <td width=50 height="30" align="center" bgcolor="#FFFCEC">一级</td>
+                                <td width=150 align="center" bgcolor="#FFFCEC">1&nbsp;-&nbsp;10万</td>
+                                <td width=114 align="center" bgcolor="#FFFCEC">&#8805;5个</td>
+                                <td width=117 align="center" bgcolor="#FFFCEC">30%</td>
+                            </tr>
+                            <tr>
+                                <td width=50 height="30" align="center" bgcolor="#FFFCEC">二级</td>
+                                <td width=150 align="center" bgcolor="#FFFCEC">10万&nbsp;-&nbsp;30万</td>
+                                <td width=114 align="center" bgcolor="#FFFCEC">&#8805;10个</td>
+                                <td width=117 align="center" bgcolor="#FFFCEC">35%</td>
+                            </tr>
+                            <tr>
+                                <td width=50 height="30" align="center" bgcolor="#FFFCEC">三级</td>
+                                <td width=150 align="center" bgcolor="#FFFCEC">30万&nbsp;-&nbsp;50万</td>
+                                <td width=114 align="center" bgcolor="#FFFCEC">&#8805;30个</td>
+                                <td width=117 align="center" bgcolor="#FFFCEC">40%</td>
+                            </tr>
+                            <tr>
+                                <td width=50 height="30" align="center" bgcolor="#FFFCEC">四级</td>
+                                <td width=150 align="center" bgcolor="#FFFCEC">50万-100万</td>
+                                <td width=114 align="center" bgcolor="#FFFCEC">&#8805;40&nbsp;个</td>
+                                <td width=117 align="center" bgcolor="#FFFCEC">45%</td>
+                            </tr>
+                            <tr>
+                                <td width=50 height="30" align="center" bgcolor="#FFFCEC">五级</td>
+                                <td width=150 align="center" bgcolor="#FFFCEC">100万</td>
+                                <td width=114 align="center" bgcolor="#FFFCEC">&#8805;50个</td>
+                                <td width=117 align="center" bgcolor="#FFFCEC">50%</td>
+                            </tr>
+                        </table>
+
+
+
+                        <p>1、代理商必须拥有有效推广平台用作宣传，合营部有权延迟批核直到代理商能够提供相关资料。任何被证实不诚实利用代理计划获取利润的代理商，将会被永久取消其代理商身份及利润。</p>
+                        <p>2、只要同时符合支付佣金达到人民币100元和每月达到最少5个活跃会员（一个月内拥有存取额并产生有效投注纪录）的条件，我们将支付佣金。如果当月有佣金，但是下线有效活跃玩家未达到最低标准，佣金将累计，当佣金和有效活跃玩家都达到要求，将按照相应的佣金比例发放佣金(之前未达到最低提佣标准的提成将按最低提佣比例计算)。</p>
+                        <p>佣金提成计算:代理佣金 = 纯利润 × 当月佣金比例</p>
+                        <p><span class="ind">举例1</span>假若您介绍的客户在该月为我们带来 90,000元人民币的纯利，同时您的活跃会员人数也多于5位，即符合了第一级的两个条件, 那么该月的结算则会按照第一级的30%提成去计算。</p>
+                        <p><span class="ind">举例2</span>假若您介绍的客户在该月为我们带来 90,000元人民币的纯利，同时您的活跃会员人数少于5位，即符合了第一级的当月总纯利收入，但不符合第一级每月最低活跃会员，您的该笔佣金提成将累计，当您以后达到提佣要求时，我们在当月会将您之前的佣金累计并按达到的佣金百分比计算佣金提成(之前未达到最低提佣标准的提成将按最低提佣比例计算)。</p>
+                        <p><span class="ind">举例3</span>假若您介绍的客户在该月为我们带来 900,000元人民币的纯利，同时您的活跃会员人数是5至9位之间，即符合了第四级的当月总纯利收入和第一级的每月最低活跃会员，那么该月的结算则会按照第一级的30% 提成去计算。</p>
+                        <p><span class="ind">举例4</span>假若您介绍的客户在该月为我们带来 9,000元人民币的纯利, 同时您的活跃会员人数是50位或以上，即符合了第一级的当月总纯利收入和第五级的每月最低活跃会员，那么该月的结算则会按照第一级的30% 提成计算。</p>
+                        <p><span class="ind">举例5</span>假若您介绍的客户在该月赢得 90,000元人民币，您的佣金会变成负数，该笔负数佣金将会累计，负值佣金会于次月佣金中扣除，如果您下个月佣金为正数并高于人民币100元才发放。</p>
+
+                        <p>3、每个月5号中午12点结算上一个月的佣金。</p>
+                        <p>温馨提示</p>
+                        <p>注意 : 我们会根据联盟协议在每月依照佣金比例支付佣金给代理商，如果正式成为我们的代理合作伙伴后，连续三个月都未能达到我们的第一级代理要求，您的佣金将归零，如果连续六个月都未能达到我们的第一级代理要求，我们将取消您的代理资格。</p>
+                        <p>拨打我们的代理服务洽谈热线：400-6766-836 即可申请加入，审核资格后便可拥有您的占成伙伴专属登录帐户！</p>
+                        <p><span class="tt_bt1">【推展业务】 </span></p>
+                        <p>诚招全国各地代理商，各城市合作伙伴，加盟条件简单，收入回报优厚，多种合作经营方式， 只要您和我们联络，绝对能给您一个最佳方案。您只要开发客源，其余通通交给我们！个人经营、完全自主、利润全掌控，个人创业最佳选择。专业团队，全天候客服，为您排除问题，辅助您顺利成功上轨。个体获利、团体作战！ </p>
+
+                        <p><span class="tt_bt1">【加盟优势】 </span></p>
+                        <p>网络娱乐是当今发展迅速的一大产业，市场发展前景无量，绝对是一个极具开发潜力的新兴市场，我们根据了市场需求，发挥技术优势，已成功地搭建了一个专业化的大型综合性互动游戏平台。 </p>
+
+                        <p><span class="tt_bt1">【品牌优势】 </span></p>
+                        <p>行业知名度高，管理专业性强，资金充沛，是目前亚洲区规模庞大最受玩家欢迎的可靠网络之一，形象及品质有保障。 </p>
+
+                        <p><span class="tt_bt1">【经营优势】 </span></p>
+                        <p>个人经营条件自控，退水空间在您自己的设定里，分层帐号管理设计让您可以轻易发展下线代理，发展空间大，游戏纪录及帐务报表呈现清楚、查询方便，真正拥有属于个人的管理平台。</p>
+
+                        <p><span class="tt_bt1">【技术优势】 </span></p>
+                        <p>有著相关的先进技术和具丰富行业经验的专业团队，不断进取的策划和富于创新，确保服务优质,专业提供了极大的保障，使得代理商能够长期、持续、稳定地发展。 </p>
+
+                        <p><span class="tt_bt1">【广告优势】 </span></p>
+                        <p>积极的市场推广，网络广告宣传投放全面，代理商可坐享强势广告带来的滚滚财源。 </p>
+
+                        <p><span class="tt_bt1">【代理条件】 </span></p>
+                        <p>1.具有便利的电脑上网设备。2.有一定的人际网络或客户群网络。3.须按所佔成数目的比例交纳保证金。4.不得以任何理由拖欠交易所得利闰。5.不能有损坏集团声誉的行为。6.周活跃下线会员最少3个。 </p>
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="zx_zhifu_t">
+                <div class="zhifu_title">
+                    *加盟协议*
+                </div>
+                <div class="zhifu_input_t">
+                    <div action="">
+
+                        <span class="tt_bt">一、918集团对代理联盟的权利与义务</span>
+                        <p>918集团的客服部会登记联盟的会员并会观察他们的投注状况。联盟及会员必须同意并遵守918集团的会员条例，政策及操作程序。918集团保留拒绝或冻结联盟/会员账户权利</p>
+
+                        <p>代理联盟可随时登入接口观察旗下会员的下注状况及会员在网站的活动概况。 918集团的客服部会根据代理联盟旗下的会员计算所得的佣金。</p>
+
+                        <p>918集团保留可以修改合约书上的任何条例，包括: 现有的佣金范围、佣金计划、付款程序、及参考计划条例的权力，918集团会以电邮、网站公告等方法通知代理联盟。 代理联盟对于所做的修改有异议，代理联盟可选择终止合约，或洽客服人员反映意见。 如修改后代理联盟无任何异议，便视作默认合约修改，代理联盟必须遵守更改后的相关规定。</p>
+                        <p></p>
+                        <span class="tt_bt">二、代理联盟对918集团的权力及义务</span>
+                        <p>
+                            代理联盟应尽其所能，广泛地宣传、销售及推广918集团，使代理本身及918集团的利润最大化。代理联盟可在不违反法律下，以正面形象宣传、销售及推广918集团，并有责任义务告知旗下会员所有918集团的相关优惠条件及产品。
+                        </p>
+
+                        <p>
+                            代理联盟选择的918集团推广手法若需付费，则代理应承担该费用。
+                        </p>
+
+                        <p>任何918集团相关信息包括: 标志、报表、游戏画面、图样、文案等，代理联盟不得私自复制、公开、分发有关材料，918集团保留法律追诉权。 如代理在做业务推广有相关需要，请随时洽918集团。</p>
+
+                        <p></p>
+                        <span class="tt_bt">三、规则条款</span>
+                        <p>
+                            各阶层代理联盟不可在未经918集团许可情况下开设双/多个的代理账号，也不可从918集团账户或相关人士赚取佣金。请谨记任何阶层代理不能用代理帐户下注，918集团有权终止并封存账号及所有在游戏中赚取的佣金。
+
+                        </p>
+
+                        <p>
+                            为确保所有918集团会员账号隐私与权益，918集团不会提供任何会员密码，或会员个人资料。各阶层代理联盟亦不得以任何方式取得会员数据，或任意登入下层会员账号，如发现代理联盟有侵害918集团会员隐私行为，918集团有权取消代理联盟红利，并取消代理联盟账号。
+                        </p>
+
+                        <p>
+                            代理联盟旗下的会员不得开设多于一个的账户。918集团有权要求会员提供有效的身份证明以验证会员的身份，并保留以IP判定是否重复会员的权利。如违反上述事项，918集团有权终止玩家进行游戏并封存账号及所有于游戏中赚取的佣金
+                        </p>
+                        <p>
+                            代理联盟不可为自己或其他联盟下的有效投注会员,只能是公司直属下的有效投注会员, 代理每月需有5个下线有效投注（有效投注为每周至少上线3次进行正常投注），如有违反联盟协议威918集团有权终止并封存账号及所有在游戏中赚取的佣金。
+                        </p>
+                        <p>
+                            如代理联盟旗下的会员因为违反条例而被禁止享用918集团的游戏，或被918集团退回存款给会员，918集团将不会分配相应的佣金给代理联盟。如代理联盟旗下会员存款用的信用卡、银行资料须经审核，918集团保留相关佣金直至审核完成。
+                        </p>
+
+                        <p>
+                            合约内的条件会以918集团通知接受代理联盟加入后开始执行918集团及代理联盟可随时终止此合约，在任何情况下，代理联盟如果想终止合约，都必须以书面/电邮方式提早于七日内通知918集团。 代理联盟的表现会3个月审核一次，如代理联盟已不是现有的合作成员则本合约书可以在任何时间终止。如合作伙伴违反合约条例，918集团有权立即终止合约。
+                        </p>
+                        <p>
+                            在没有918集团许可下，代理联盟不能透露及授权918集团相关密数据，包括代理联盟所获得的回馈、佣金报表、计算等;代理联盟有义务在合约终止后仍执行机密文件及数据的保密。
+                        </p>
+                        <p>在合约终止后，代理联盟及918集团将不须要履行双方的权利及义务。终止合约并不会解除代理联盟于终止合约前应履行的义务。</p>
+
+
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="zx_zhifu_t">
+                <div class="zhifu_title">
+                    •代理注册•
+                </div>
+                <div class="zhifu_input_t ">
+                    <div action="">
+
+                        <table>
+                            <tr>
+                                <td height="40" width="80">代理账号:</td>
+                                <td height="40" width="160"><input type="text" id="username"   maxlength="9" name="username"  autocomplete="off"/></td>
+                                <td height="40">*账号由3-9位字母、数字组成</td>
+                            </tr>
+                            <tr>
+                                <td height="40">账号密码:</td>
+                                <td height="40" width="160"><input type="password" id="password" maxlength="12" value="" name="password" autocomplete="off" /></td>
+                                <td height="40">*密码由5-10位字母、数字或符号组成</td>
+                            </tr>
+                            <tr>
+                                <td height="40">确认密码:</td>
+                                <td height="40" width="80"><input id="password2" type="password" maxlength="12" value="" name="password2" autocomplete="off" /></td>
+                                <td height="40">*确认登陆密码</td>
+                            </tr>
+                            <tr>
+                                <td height="40">真实姓名:</td>
+                                <td height="40" width="80"><input id="_name" maxlength="4" name="name" autocomplete="off" /></td>
+                                <td height="40">*必须与提款银行户名一致才能出款</td>
+                                <select style=" width: 212px; display: none" class="" id="question" name="question">
+                                    <option value="我就读的第一所学校的名称？" selected>我就读的第一所学校的名称？</option>
+                                    <option value="我最喜欢的休闲运动是什么？">我最喜欢的休闲运动是什么？</option>
+                                    <option value="我最喜欢的小说的名字？">我最喜欢的小说的名字？</option>
+                                    <option value="我最爱的人的名字？">我最爱的人的名字？</option>
+                                    <option value="我最喜爱的食物？">我最喜爱的食物？</option>
+                                    <option value="我最喜欢的歌曲？">我最喜欢的歌曲？</option>
+                                    <option value="我的座右铭是？">我的座右铭是？</option>
+                                    <option value="我的初恋日期？">我的初恋日期？</option>
+                                    <option value="我最爱的电影？">我最爱的电影？</option>
+                                    <option value="您母亲的姓名是?">您母亲的姓名是?</option>
+                                    <option value="您母亲的生日是?">您母亲的生日是?</option>
+                                    <option value="您母亲的职业是?">您母亲的职业是?</option>
+                                    <option value="您父亲的姓名是?">您父亲的姓名是?</option>
+                                    <option value="您父亲的生日是?">您父亲的生日是?</option>
+                                    <option value="您父亲的职业是?">您父亲的职业是?</option>
+                                    <option value="您初中学校叫什么名字?">您初中学校叫什么名字?</option>
+
+                                </select>
+                                <input type="text" maxlength="25" value="888888888" id="Answer" style=" display:none" autocomplete="off" />
+                            </tr>
+                            <tr>
+                                <td height="40">银行账号:</td>
+                                <td height="40" width="80"><input id="txtCardNo" maxlength="19" onkeyup="value=value.replace(/[^-0-9]+/,'')" name="txtCardNo" autocomplete="off" /></td>
+                                <td height="40">*仔细核对卡号</td>
+                            </tr>
+                            <tr>
+                                <td height="40">开户银行:</td>
+                                <td height="40" width="80"><input type="text" id="txtBank" name="txtBank" maxlength="19" autocomplete="off" /></td>
+                                <td height="40">*xx银行xx省xx市/县， 例：中国银行广东省深圳市</td>
+                            </tr>
+                            <tr>
+                                <td height="40">手机号码:</td>
+                                <td height="40" width="80"><input type="text" id="tell1" maxlength="13" onkeyup="value=value.replace(/[^-0-9]+/,'')" autocomplete="off" /></td>
+                                <td height="40">*以便通知最新消息</td>
+                            </tr>
+                            <tr>
+                                <td height="40">邮箱账号:</td>
+                                <td height="40" width="80"><input type="text" id="email1" maxlength="27" autocomplete="off" /></td>
+                                <td height="40">*以便通知最新消息</td>
+                            </tr>
+                            <tr>
+                                <td height="40">QQ号码:</td>
+                                <td height="40" width="80"><input type="text" id="txtqq" maxlength="13" onkeyup="value=value.replace(/[^-0-9]+/,'')" value="" autocomplete="off" /></td>
+                                <td height="40">*以便通知最新消息</td>
+                            </tr>
+                        </table>
+
+
+                        <div class="zhifu_sure huikuan_sure"><button id="LoinClick" style="cursor: pointer;"><img src="images/ok_btn_11.png" alt="" /></button></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="zx_zhifu_t">
+                <div class="zhifu_title">
+                    •代理登陆•
+                </div>
+                <div class="zhifu_input_t ">
+                    <div action="">
+
+
+                        <p>我们拥有合法的网上娱乐场牌照，由菲律宾政府唯一认可的发牌及监管单位 FCLRC(First Cagayan Leisure and Resort Corporation )签发，牌照号码为Interactive Gaming Licence 021。拥有多元化的产品，使用最公平、公正、公开的系统，在市场上的众多网站中，我们自豪的提供会员最优惠的回馈，给予合作伙伴最优势的营利回报! 无论您拥有的是网路资源，或是人脉资源，都欢迎您来加入我们的合作伙伴行列，我们提供多种合作模式由您选择，绝对是您最聪明的选择!</p>
+                        <p></p>
+                        <span class="tt_bt">我们给予下线的支援和保障：</span>
+
+                        <p>为保障代理利益提供代理一个直接登入游戏之客户端及直接登入后台管理系统的管理端，里面并没有我们公司的联络方式，代理下线客户可直接登入游戏，代理不必担心客户与我们公司直接连络.</p>
+
+
+                        <div class="zhifu_sure huikuan_sure" style="text-indent:0;"><button style="width: 146px; cursor: pointer;" onclick="sbButton1()"><img src="images/lt.png" alt="" /></button><div style="margin-left:0; float:right; width:575px; line-height:50px; color:#900;">点击图片进入代理管理页面</div></div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-text"><img src="images/bg.jpg" alt="" /></div>
+    </div>
+    <div class="footer11">
+        <div class="footer_column">
+            <div class="column01">
+                <div class="info_title01">信息</div>
+                    <div class="line"></div>
+                    <p>
+                        <span> 注册</span>
+                        点击立即开户即可享受所有的精彩游戏，更有机会获取高达100%的开户红利，最高可送￥18,888。
+                    </p>
+                    <p>
+                        <span>协议条款</span>
+                        我们提供最优秀的真人视讯平台，拥有正规牌照，并设置相关安全设施，确保游戏的公平。
+                    </p>
+                    <p>
+                        <span>游客参观</span>
+                        游戏平台全面开放，让您无需注册也可以一饱眼福。联系在线客服索要试玩账号
+                    </p>
+                </div>
+                <div class="column02">
+                    <div class="info_title02">产品</div>
+                    <div class="line"></div>
+                    <p>
+                        <span> 现场娱乐</span>
+                        我们强力首推，您可饱览整个游戏大厅和靓丽的SUNGIRL荷官。玩法众多,花样百变，赶快注册属于自己的账号吧！
+                    </p>
+                    <p>
+                        <span>电子游戏</span>
+                        我们拥有多种精彩电子游艺种类，画质精美，运行流畅，使您最大限度的拥有完美游戏体验
+                    </p>
+                    <p>
+                        <span>体育竞技</span>
+                        我们为您提供最专业的体育平台。每天多达300多场体育赛事，足球、篮球、网球等应有尽有，玩家可尽情享受体育投注乐趣。
+                    </p>
+                </div>
+                <div class="column03">
+                    <div class="info_title03">星级服务</div>
+                    <div class="line"></div>
+                    <p>
+                        <span>联系我们</span>
+                        如果您有任何关于游戏或者是娱乐场方面的疑问，您随时可通过在线客服、QQ客服或者电话客服获取帮助。
+                    </p>
+                    <p>
+                        <span>优质服务承诺</span>
+                        自成立至今，我们致力提供多元化的体育竞技	及网上娱乐，让客户能每天24小时体验到最精采刺激的休闲享受，更藉以丰富奖赏，以回馈所有大众对我们的支持及热烈参与
+                    </p>
+                    <p>
+                        <span>快速存取款</span>
+                        我们提供各种安全简便的存款及提款选择给客户。我们希望所有的客户能够在一个安全愉快的环境中，享受本公司精心设计的产品和服务，并能够从中获利。我们欢迎如有需要，请通过电子邮件方式将相关讯息发送至电子邮箱：9790181@qq.com 我们将认真听取客户对我们提出的任何意见。
+                    </p>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="dialog4" title="温馨提示：">
+        <br/><br/>
+        <p style=" text-align:center"><span style=" font-size:13px; color:red; text-align:center" id="TipData"></span></p>
+
+    </div>  
+<div class="kefuBox33" id="" style="left: 20px; width: 133px; height: 150px; "><a style="color: #fbe7aa">+ 扫一扫 添加微信号</a> </div>
+     <!--客服弹出框-->
+    <div class="kefuBox" id="kefuBox" style="right: -190px;">
+        <div class="kefu_left">
+            <a href="javascript:void(0);"><img style="border:0;height: 293px" alt="" src="images/kefu_on.gif" /></a>
+        </div>
+        <div class="kefu_right">
+            <div class="kefu_top">
+                <a target="_blank" href="transfers1.aspx"><img style="border: 0; margin-left: -22px;margin-top:11px " alt="" src="images/chongzhi_on.png" /></a>
+            </div>
+            <div class="kefu_bot">
+                <a onclick="openwin()" href="javascript:void(0);"><img style="border: 0; margin-left:-22px; margin-top:5px  " alt="" src="images/zaixian_on.png" /></a>
+            </div>
+            <div class="kefu_bot">
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=9790181&amp;site=qq&amp;menu=yes"><img style="border: 0; margin-left: -22px; margin-top:5px " alt="" src="images/chongzhi_on2.png" /></a>
+            </div>
+            <div class="kefu_bot">
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=9790581&amp;site=qq&amp;menu=yes"><img style="border: 0; margin-left:-22px; margin-top:5px " alt="" src="images/chongzhi_on3.png" /></a>
+            </div>
+            <div class="kefu_bot">
+                <a href="javascript:void(0);"><img style="border: 0; margin-left: -22px; margin-top:11px" alt="" src="images/chongzhi_on4.png" /></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/portal_asset/js/libs/tgp.js?clientId=a8hHfj3ckdk4Djfi&t=20140930173901"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/i18next-1.7.3.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/angular.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/angular-route.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/angular-cookies.js"></script>
+    <script src="/portal_asset/js/libs/jquery.cookie.js" type="text/javascript"></script>
+    <script src="portal_asset/js/jQueryCommon.min.js?t=201505161111111111111"></script>
+    <script src="js/618sun/agent.js"></script>
+    <script src="js/util.js"></script>
+    <!-- Live800默认跟踪代码: 开始-->
+    <script language="javascript" src="http://f18.livechatvalue.com/chat/chatClient/monitor.js?jid=1206637488&companyID=493978&configID=53742&codeType=custom"></script>
+    <!-- Live800默认跟踪代码: 结束-->
+    <script language="javascript" type="text/javascript" src="http://js.users.51.la/17747998.js"></script>
+    <script type="text/javascript">
+        function sbButton1() {
+            window.open('http://121.127.248.19/');
+        }
+    </script>
+</body>
+
+</html>

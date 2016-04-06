@@ -1,0 +1,12 @@
+btnBackSimple,
+btnPrint,
+
+.vl_calContainer,
+.vl_calContainerinner,
+.vl_calendar
+{
+    display:none;
+    visibility:hidden;
+    height:0;
+    width:0;
+}

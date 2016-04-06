@@ -1,0 +1,121 @@
+
+.main{
+	width:730px;
+	height:742px;
+	background:#f2f2f2;
+	border-radius:8px;
+	margin:0 auto;
+    position:absolute;
+    top: 152px;
+	left:147px;
+}
+.main .title{
+	width:100%;
+	height:76px;
+	border-top-left-radius:8px;
+	border-top-right-radius:8px;
+	line-height:76px;
+	background:url(../images/titlebg_03.jpg) repeat-x;
+	text-indent:30px;
+	color:#fff;
+	font-family: "微软雅黑";
+	font-size:18px;
+}
+.main .zc_content{
+	padding:30px 0px 0px 55px;
+}
+.main .zc_content input{
+	border:none;
+	border:solid 1px #dfdfdf;
+	background:#efebeb;
+	height:45px;
+	width:318px;
+	line-height:45px;
+	font-size:16px;
+	text-indent:18px;
+	border-radius:4px;
+}
+.main .zc_content .zct{
+	height:56px;
+	line-height:56px;
+	margin-bottom:20px;
+
+}
+.main .zc_content img{
+	margin-right:10px;
+
+}
+
+
+
+
+#contform{
+	position: relative;
+}
+#contform .bgs{
+	display:inline-block;
+	width:130px;
+	height:45px;
+	line-height:45px;
+	color:#fff;
+	font-size: 16px;
+	text-align: center;
+	background:url(../images/iutbg_07.jpg) repeat-x;
+	margin-left:10px;
+	font-family: "微软雅黑";
+	margin-top:22px;
+}
+.main .zc_content input.ptother{
+	width:514px;
+}
+.main .zc_content input.yanzhen{
+	width:244px;
+}
+
+#contform{
+	height:620px;
+}
+#contform button{
+	background:url(../images/iutbg_07.jpg) repeat-x;
+	border:none;
+	width:110px;
+	height:42px;
+	margin-right:20px;
+	font-size:16px;
+	font-family: "微软雅黑";
+	border-radius:5px;
+	position:absolute;
+}
+#contform #button1{
+	color:#fff;
+	right:150px;
+	bottom:20px;
+}
+#contform #button2{
+	color:#b20001;
+	background:#fff;
+	right:20px;
+	bottom:20px;
+	border:solid 1px #b20001;
+}
+#contform span{
+	width:50px;
+	height:50px;
+	display:inline-block;
+	position:absolute;
+}
+.login_one{
+	background:url(../images/login_10.jpg) no-repeat;
+	top:28px;
+	right:195px;
+}
+.login_two{
+	background:url(../images/login_11.jpg) no-repeat;
+	top:181px;
+	right:45px;
+}
+.login_three{
+	background:url(../images/login_15.jpg) no-repeat;
+	top:253px;
+	right:43px;
+}

@@ -1,0 +1,2617 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+您 Web 项目的发布/打包进程将使用此文件。您可以通过编辑此 MSBuild 文件
+来自定义该进程的行为。若要了解与此相关的详细信息，请访问 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\seven\Desktop\发布</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="about.html">
+      <publishTime>09/08/2015 14:45:13</publishTime>
+    </File>
+    <File Include="agent.html">
+      <publishTime>09/08/2015 14:45:28</publishTime>
+    </File>
+    <File Include="appGame.html">
+      <publishTime>09/08/2015 14:20:33</publishTime>
+    </File>
+    <File Include="bin/918SunPro.dll">
+      <publishTime>09/11/2015 15:04:08</publishTime>
+    </File>
+    <File Include="bin/BLL.dll">
+      <publishTime>09/11/2015 15:04:08</publishTime>
+    </File>
+    <File Include="bin/DAL.dll">
+      <publishTime>09/11/2015 15:04:07</publishTime>
+    </File>
+    <File Include="bin/Model.dll">
+      <publishTime>09/11/2015 15:04:06</publishTime>
+    </File>
+    <File Include="bin/MySql.Data.dll">
+      <publishTime>11/08/2012 18:45:12</publishTime>
+    </File>
+    <File Include="css/about.css">
+      <publishTime>06/03/2015 07:43:08</publishTime>
+    </File>
+    <File Include="css/huiyuan.css">
+      <publishTime>04/26/2015 02:35:30</publishTime>
+    </File>
+    <File Include="css/slider.css">
+      <publishTime>05/08/2015 14:07:56</publishTime>
+    </File>
+    <File Include="css/style.css">
+      <publishTime>05/08/2015 23:59:06</publishTime>
+    </File>
+    <File Include="css/zuce.css">
+      <publishTime>06/02/2015 14:56:08</publishTime>
+    </File>
+    <File Include="egame.html">
+      <publishTime>09/08/2015 14:45:46</publishTime>
+    </File>
+    <File Include="freePay.html">
+      <publishTime>09/08/2015 14:46:16</publishTime>
+    </File>
+    <File Include="game.html">
+      <publishTime>09/08/2015 14:20:33</publishTime>
+    </File>
+    <File Include="gameProject.html">
+      <publishTime>09/08/2015 14:46:28</publishTime>
+    </File>
+    <File Include="help.html">
+      <publishTime>09/08/2015 14:46:37</publishTime>
+    </File>
+    <File Include="huiyuan.html">
+      <publishTime>09/08/2015 14:20:33</publishTime>
+    </File>
+    <File Include="images/01.jpg">
+      <publishTime>04/28/2015 21:53:58</publishTime>
+    </File>
+    <File Include="images/02.jpg">
+      <publishTime>05/14/2015 20:35:39</publishTime>
+    </File>
+    <File Include="images/03.jpg">
+      <publishTime>06/24/2015 19:47:24</publishTime>
+    </File>
+    <File Include="images/04.jpg">
+      <publishTime>04/28/2015 21:53:58</publishTime>
+    </File>
+    <File Include="images/05.jpg">
+      <publishTime>04/28/2015 21:53:58</publishTime>
+    </File>
+    <File Include="images/06.jpg">
+      <publishTime>04/28/2015 21:00:46</publishTime>
+    </File>
+    <File Include="images/1.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/1.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/10.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/2.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/2.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/3.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/4.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/5.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/6.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/7.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/8.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/800.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/9.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/a.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/a1.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/aing.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/b.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/b1.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/bank_07.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/bg.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/bgs_07.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/big.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/big.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/bigForHappy_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/bs_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/btn_close_normal.png">
+      <publishTime>05/08/2015 16:27:02</publishTime>
+    </File>
+    <File Include="images/but_bg.gif">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/c.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/c1.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/choishen_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/chongzhi_on.png">
+      <publishTime>04/26/2015 18:36:46</publishTime>
+    </File>
+    <File Include="images/chongzhi_on2.png">
+      <publishTime>04/26/2015 18:36:46</publishTime>
+    </File>
+    <File Include="images/chongzhi_on3.png">
+      <publishTime>04/26/2015 18:36:46</publishTime>
+    </File>
+    <File Include="images/chongzhi_on4.png">
+      <publishTime>04/26/2015 18:36:46</publishTime>
+    </File>
+    <File Include="images/chu_han.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/club_a_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/club_b_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/club_c_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/co.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/content_bg_02.png">
+      <publishTime>05/08/2015 21:32:08</publishTime>
+    </File>
+    <File Include="images/cont_bg.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/d.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/d1.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/daohang_wz_11.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/daohang_wz_13.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/daohang_wz_15.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/daohang_wz_17.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/daohang_wz_19.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/dd_03.gif">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/dd_05.gif">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/di_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/dt_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/duanwu.jpg">
+      <publishTime>06/24/2015 19:54:25</publishTime>
+    </File>
+    <File Include="images/e-game_icon.png">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/e.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/e1.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/egame_banner.png">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/egame_banner_bg.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/f.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/f1.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/favicon.ico">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/fb_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/fenge_03.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/font_01.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/font_02.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/font_03.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/font_04.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/font_05.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/foot_bg.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/foot_text.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/golden_lotus.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/great_dragon.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/icon_check_account.png">
+      <publishTime>05/08/2015 21:31:35</publishTime>
+    </File>
+    <File Include="images/icon_liveodds.png">
+      <publishTime>05/08/2015 21:31:35</publishTime>
+    </File>
+    <File Include="images/icon_today_events.png">
+      <publishTime>05/08/2015 21:31:35</publishTime>
+    </File>
+    <File Include="images/icon_transactions.png">
+      <publishTime>05/08/2015 21:31:35</publishTime>
+    </File>
+    <File Include="images/iutbg_07.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/kaitong.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/kefu.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/kefu_bg.gif">
+      <publishTime>04/26/2015 18:36:46</publishTime>
+    </File>
+    <File Include="images/kefu_on.gif">
+      <publishTime>04/26/2015 18:36:46</publishTime>
+    </File>
+    <File Include="images/live_game_banner.png">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/live_game_banner_bg.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/live_icon.png">
+      <publishTime>05/08/2015 01:26:24</publishTime>
+    </File>
+    <File Include="images/loading.gif">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/login.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/login_10.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/login_11.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/login_15.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/login_type.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/login_type.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/logo.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/logo_icon_03.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/logo_icon_06.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/logo_icon_08.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/lt.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/middle_bg_03.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/mj_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/money..png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/money.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/ms_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/MUGAME_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/mulan_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/nav_bg.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/news_bg.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/ok_btn_11.png">
+      <publishTime>04/26/2015 01:22:20</publishTime>
+    </File>
+    <File Include="images/opc_1.jpg">
+      <publishTime>04/26/2015 01:22:20</publishTime>
+    </File>
+    <File Include="images/opc_2.jpg">
+      <publishTime>04/26/2015 01:22:20</publishTime>
+    </File>
+    <File Include="images/opc_3.jpg">
+      <publishTime>04/26/2015 01:22:20</publishTime>
+    </File>
+    <File Include="images/panda_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/paramount_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/pelope.jpg">
+      <publishTime>04/26/2015 01:22:20</publishTime>
+    </File>
+    <File Include="images/pic_01.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/pic_02.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/pic_03.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/pic_04.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/pic_05.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/pokerKing.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/prettyGirl.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/qqCode.jpg">
+      <publishTime>08/07/2015 21:25:39</publishTime>
+    </File>
+    <File Include="images/quick_bs_sc.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/redCliff.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/roller_sc.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/sex_sc.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/slot-game-05.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/slot_bj_tag_sc.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/slot_dragon_sc.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/slot_hero_Tag.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/slot_panda_macao_sc.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/slot_stone2_sc.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/sm_all.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/sportsbook_banner.png">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/sportsbook_banner_bg.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/sports_book_icon.png">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/switch_off.png">
+      <publishTime>06/02/2015 15:04:48</publishTime>
+    </File>
+    <File Include="images/switch_on.png">
+      <publishTime>06/02/2015 15:04:48</publishTime>
+    </File>
+    <File Include="images/sword_sc.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/swornBrothers.jpg">
+      <publishTime>05/08/2015 00:13:28</publishTime>
+    </File>
+    <File Include="images/tcx.png">
+      <publishTime>04/26/2015 01:22:20</publishTime>
+    </File>
+    <File Include="images/text1_11.png">
+      <publishTime>04/26/2015 01:22:20</publishTime>
+    </File>
+    <File Include="images/text2_07.png">
+      <publishTime>04/26/2015 01:22:20</publishTime>
+    </File>
+    <File Include="images/text3_09.png">
+      <publishTime>04/26/2015 01:22:20</publishTime>
+    </File>
+    <File Include="images/TigherFighterIcon_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/titlebg_03.jpg">
+      <publishTime>04/26/2015 01:22:20</publishTime>
+    </File>
+    <File Include="images/tk_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/top_bg_01.png">
+      <publishTime>04/26/2015 01:22:20</publishTime>
+    </File>
+    <File Include="images/top_icon_03.png">
+      <publishTime>04/26/2015 01:22:20</publishTime>
+    </File>
+    <File Include="images/ttttbg.png">
+      <publishTime>04/26/2015 01:22:20</publishTime>
+    </File>
+    <File Include="images/ttt_1.png">
+      <publishTime>04/26/2015 01:22:20</publishTime>
+    </File>
+    <File Include="images/ttt_2.png">
+      <publishTime>04/26/2015 01:22:20</publishTime>
+    </File>
+    <File Include="images/ttt_3.png">
+      <publishTime>04/26/2015 01:22:20</publishTime>
+    </File>
+    <File Include="images/ttt_4.png">
+      <publishTime>04/26/2015 01:22:20</publishTime>
+    </File>
+    <File Include="images/west.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/worldcup_sc.jpg">
+      <publishTime>05/08/2015 00:13:24</publishTime>
+    </File>
+    <File Include="images/youhui_1.jpg">
+      <publishTime>05/23/2015 22:12:35</publishTime>
+    </File>
+    <File Include="images/youhui_2.jpg">
+      <publishTime>05/15/2015 20:24:20</publishTime>
+    </File>
+    <File Include="images/youhui_3.jpg">
+      <publishTime>05/15/2015 20:24:20</publishTime>
+    </File>
+    <File Include="images/youhui_4.jpg">
+      <publishTime>05/15/2015 20:24:20</publishTime>
+    </File>
+    <File Include="images/youhui_5.jpg">
+      <publishTime>05/15/2015 20:24:20</publishTime>
+    </File>
+    <File Include="images/youhui_6.jpg">
+      <publishTime>05/15/2015 20:24:18</publishTime>
+    </File>
+    <File Include="images/yuan.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/yuan2.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/yx.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/yx1.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/yx2.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/yx3.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/yxbg_c.gif">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/yxbg_t.gif">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/zaixian_on.png">
+      <publishTime>04/26/2015 18:36:46</publishTime>
+    </File>
+    <File Include="images/zc1.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/zc2.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/zc3.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/zc4.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/zc5.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/zc6.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/zc7.png">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/zc_01.png">
+      <publishTime>04/30/2015 21:50:10</publishTime>
+    </File>
+    <File Include="images/zc_02.png">
+      <publishTime>04/30/2015 21:50:10</publishTime>
+    </File>
+    <File Include="images/zc_03.png">
+      <publishTime>04/30/2015 21:49:32</publishTime>
+    </File>
+    <File Include="images/zhaopai.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/zhucebg.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/zhucebg_03.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/zhucebg_07.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="images/zx_bg.jpg">
+      <publishTime>04/26/2015 01:22:18</publishTime>
+    </File>
+    <File Include="index.asp">
+      <publishTime>06/10/2015 21:31:43</publishTime>
+    </File>
+    <File Include="index.css">
+      <publishTime>09/11/2015 14:58:36</publishTime>
+    </File>
+    <File Include="index.html">
+      <publishTime>09/11/2015 14:59:21</publishTime>
+    </File>
+    <File Include="js/618sun/about.js">
+      <publishTime>09/08/2015 16:28:53</publishTime>
+    </File>
+    <File Include="js/618sun/agent.js">
+      <publishTime>09/08/2015 16:30:33</publishTime>
+    </File>
+    <File Include="js/618sun/gameProject.js">
+      <publishTime>09/08/2015 16:30:47</publishTime>
+    </File>
+    <File Include="js/618sun/index.js">
+      <publishTime>09/11/2015 14:48:12</publishTime>
+    </File>
+    <File Include="js/618sun/promo.js">
+      <publishTime>09/08/2015 16:31:39</publishTime>
+    </File>
+    <File Include="js/618sun/promotion.js">
+      <publishTime>09/08/2015 16:31:44</publishTime>
+    </File>
+    <File Include="js/618sun/register.js">
+      <publishTime>09/08/2015 16:31:49</publishTime>
+    </File>
+    <File Include="js/618sun/transfers.js">
+      <publishTime>09/10/2015 11:42:18</publishTime>
+    </File>
+    <File Include="js/618sun/transfers1.js">
+      <publishTime>09/09/2015 16:24:34</publishTime>
+    </File>
+    <File Include="js/618sun/zhaopai.js">
+      <publishTime>09/08/2015 16:32:07</publishTime>
+    </File>
+    <File Include="js/918sun/about.js">
+      <publishTime>04/30/2015 23:21:18</publishTime>
+    </File>
+    <File Include="js/918sun/agent.js">
+      <publishTime>04/30/2015 23:21:40</publishTime>
+    </File>
+    <File Include="js/918sun/gameProject.js">
+      <publishTime>04/30/2015 23:21:52</publishTime>
+    </File>
+    <File Include="js/918sun/index.js">
+      <publishTime>04/30/2015 23:21:58</publishTime>
+    </File>
+    <File Include="js/918sun/promo.js">
+      <publishTime>04/30/2015 23:22:04</publishTime>
+    </File>
+    <File Include="js/918sun/promotion.js">
+      <publishTime>04/30/2015 23:22:10</publishTime>
+    </File>
+    <File Include="js/918sun/register.js">
+      <publishTime>05/27/2015 20:56:12</publishTime>
+    </File>
+    <File Include="js/918sun/transfers.js">
+      <publishTime>05/11/2015 01:01:55</publishTime>
+    </File>
+    <File Include="js/918sun/transfers1.js">
+      <publishTime>05/07/2015 04:35:34</publishTime>
+    </File>
+    <File Include="js/918sun/zhaopai.js">
+      <publishTime>04/30/2015 23:22:34</publishTime>
+    </File>
+    <File Include="js/jquery.min.js">
+      <publishTime>04/19/2015 00:04:46</publishTime>
+    </File>
+    <File Include="js/util.js">
+      <publishTime>09/08/2015 14:48:50</publishTime>
+    </File>
+    <File Include="js/zzsc.js">
+      <publishTime>04/28/2015 20:53:42</publishTime>
+    </File>
+    <File Include="livegame.html">
+      <publishTime>09/08/2015 14:47:22</publishTime>
+    </File>
+    <File Include="memberCenter.aspx">
+      <publishTime>09/08/2015 14:47:39</publishTime>
+    </File>
+    <File Include="portal_asset/css/bootstrap.min.css">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/qqCode.jpg">
+      <publishTime>08/07/2015 21:04:12</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_diagonals-medium_20_d34d17_40x40.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_diagonals-small_40_db4865_40x40.png">
+      <publishTime>04/19/2015 21:10:50</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_diagonals-small_50_93c3cd_40x40.png">
+      <publishTime>04/19/2015 21:10:50</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_diagonals-small_50_ff3853_40x40.png">
+      <publishTime>04/19/2015 21:10:50</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_diagonals-small_75_ccd232_40x40.png">
+      <publishTime>04/19/2015 21:10:50</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_diagonals-thick_75_f3d8d8_40x40.png">
+      <publishTime>04/19/2015 21:15:16</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_dots-medium_80_ffff38_4x4.png">
+      <publishTime>04/19/2015 21:10:50</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_dots-small_35_35414f_2x2.png">
+      <publishTime>04/19/2015 21:10:50</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_dots-small_65_a6a6a6_2x2.png">
+      <publishTime>04/19/2015 21:15:16</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_flat_0_333333_40x100.png">
+      <publishTime>04/19/2015 21:15:16</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_flat_30_cccccc_40x100.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_flat_50_5c5c5c_40x100.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_flat_65_ffffff_40x100.png">
+      <publishTime>04/19/2015 21:15:16</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_flat_75_ba9217_40x100.png">
+      <publishTime>04/19/2015 21:10:50</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_flat_75_ffffff_40x100.png">
+      <publishTime>04/19/2015 21:15:16</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_glass_55_fbf8ee_1x400.png">
+      <publishTime>04/19/2015 21:15:16</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_gloss-wave_45_817865_500x100.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_gloss-wave_60_fece2f_500x100.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_gloss-wave_70_ffdd57_500x100.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_gloss-wave_90_fff9e5_500x100.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_highlight-hard_100_eeeeee_1x100.png">
+      <publishTime>04/19/2015 21:15:16</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_highlight-hard_100_f6f6f6_1x100.png">
+      <publishTime>04/19/2015 21:15:16</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_highlight-soft_100_feeebd_1x100.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_highlight-soft_15_cc0000_1x100.png">
+      <publishTime>04/19/2015 21:15:16</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_inset-soft_30_ffffff_1x100.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-bg_white-lines_85_f7f7ba_40x100.png">
+      <publishTime>04/19/2015 21:10:52</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-icons_004276_256x240.png">
+      <publishTime>04/19/2015 21:15:16</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-icons_3d3d3d_256x240.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-icons_454545_256x240.png">
+      <publishTime>04/19/2015 21:10:52</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-icons_88a206_256x240.png">
+      <publishTime>04/19/2015 21:10:52</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-icons_bd7b00_256x240.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-icons_c02669_256x240.png">
+      <publishTime>04/19/2015 21:10:52</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-icons_cc0000_256x240.png">
+      <publishTime>04/19/2015 21:15:16</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-icons_d19405_256x240.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-icons_e1e463_256x240.png">
+      <publishTime>04/19/2015 21:10:52</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-icons_eb990f_256x240.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-icons_ed9f26_256x240.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-icons_fadc7a_256x240.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-icons_ffe180_256x240.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-icons_ffeb33_256x240.png">
+      <publishTime>04/19/2015 21:10:52</publishTime>
+    </File>
+    <File Include="portal_asset/css/images/ui-icons_ffffff_256x240.png">
+      <publishTime>04/19/2015 21:15:16</publishTime>
+    </File>
+    <File Include="portal_asset/css/jquery-ui.css">
+      <publishTime>04/19/2015 21:15:24</publishTime>
+    </File>
+    <File Include="portal_asset/css/jquery-ui.min.css">
+      <publishTime>04/19/2015 21:02:18</publishTime>
+    </File>
+    <File Include="portal_asset/css/mc.css">
+      <publishTime>04/22/2015 22:41:08</publishTime>
+    </File>
+    <File Include="portal_asset/css/module/jquery.jscrollpane.css">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/page/slider.css">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/page/slider_ie8.css">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/css/style.css">
+      <publishTime>09/09/2015 15:08:34</publishTime>
+    </File>
+    <File Include="portal_asset/favicon.ico">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/fonts/glyphicons-halflings-regular.eot">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/fonts/glyphicons-halflings-regular.svg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/fonts/glyphicons-halflings-regular.woff">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/arrow_normal.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/arrow_selected.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/banner_bg.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/egame_banner.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/egame_banner_bg.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/index_banner_01_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/index_banner_01_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/index_banner_01_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/index_banner_02_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/index_banner_02_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/index_banner_02_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/interface_banner_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/interface_banner_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/interface_banner_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/live_game_banner.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/live_game_banner_bg.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/lobby_banner_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/lobby_banner_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/lobby_banner_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/portsbook_banner.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/portsbook_banner_bg.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/sport_banner_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/sport_banner_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/sport_banner_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/style.css">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/super_baccarat_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/super_baccarat_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/super_baccarat_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/vip_baccart_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/vip_baccart_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/banners/vip_baccart_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/btn_close_normal.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/content_bg_01.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/content_bg_02.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/content_bg_03.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/cs/women_chat_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/cs/women_chat_tw.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/bigForHappy_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/bigForHappy_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/bigForHappy_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/choishen_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/choishen_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/choishen_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/chu_han.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/club_a.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/club_a_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/club_a_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/club_b.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/club_b_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/club_b_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/club_c.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/club_c_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/club_c_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/fb_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/fb_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/fb_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/golden_lotus.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/great_dragon.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/ms_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/ms_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/ms_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/mulan_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/mulan_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/mulan_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/panda_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/panda_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/panda_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/paramount_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/paramount_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/paramount_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/pokerKing.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/prettyGirl.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/redCliff.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/sex_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/sex_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/sex_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/slot-game-05.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/slot_bj_tag_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/slot_bj_tag_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/slot_bj_tag_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/slot_dragon_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/slot_dragon_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/slot_dragon_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/slot_hero_Tag.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/slot_panda_macao_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/slot_panda_macao_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/slot_panda_macao_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/slot_stone2_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/slot_stone2_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/slot_stone2_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/sm_all.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/sword_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/sword_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/sword_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/swornBrothers.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/TigherFighterIcon_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/TigherFighterIcon_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/TigherFighterIcon_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/west.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/worldcup_en.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/worldcup_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame/worldcup_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame_banner.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/egame_banner_bg.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/flags/iconCN.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/flags/iconEN.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/flags/iconTW.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/footer/icon_18.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/footer/icon_chat.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/footer/icon_gamcare.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/footer/icon_mail.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/footer/icon_stop.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/footer/icon_tel.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/bs.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/bs_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/bs_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/di.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/di_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/di_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/dt.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/dt_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/dt_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/mj.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/mj_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/mj_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/MUGAME.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/MUGAME_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/MUGAME_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/quick_bs.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/quick_bs_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/quick_bs_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/roller.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/roller_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/roller_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/tk.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/tk_sc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/livegame/tk_tc.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/loading.gif">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/login_bg42.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/main/icon_mobile_selected.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/main/icon_m_app_selected.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/main/icon_online_selected.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/main/icon_on_download_selected.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/main/live_baccarat.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/main/sunbet138.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/main/sungame.png">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/main/y.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/profile_pic/pic_000.jpg">
+      <publishTime>04/18/2015 21:30:30</publishTime>
+    </File>
+    <File Include="portal_asset/images/profile_pic/pic_001.jpg">
+      <publishTime>04/18/2015 16:51:58</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/banner_bg.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/bet_area_eng.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/bet_area_sch.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/bet_area_tch.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/content_bg.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/icon_chrome.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/icon_firefox.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/icon_safari.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/icon_uc.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/mobile_banner_eng.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/mobile_banner_sch.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/mobile_banner_tch.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/qr.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/road_map_eng.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/road_map_sch.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/road_map_tch.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/system_bg.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/user_info_eng.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/user_info_sch.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/promo/main/user_info_tch.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/sportbook/content_bg_03.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/sportbook/icon_check_account.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/sportbook/icon_liveodds.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/sportbook/icon_today_events.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/sportbook/icon_transactions.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/sunbet_logo.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/images/top1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/index.html">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/js/acs.sunbet.portal.main.min.js">
+      <publishTime>06/04/2015 02:12:13</publishTime>
+    </File>
+    <File Include="portal_asset/js/jquery-ui.min.js">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/js/jQueryCommon.js">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/js/jQueryCommon.min.js">
+      <publishTime>05/16/2015 18:22:25</publishTime>
+    </File>
+    <File Include="portal_asset/js/libs/angular-cookies.js">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/js/libs/angular-route.js">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/js/libs/angular.js">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/js/libs/i18next-1.7.3.js">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/js/libs/jquery-1.11.1.min.js">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/js/libs/jquery.cookie.js">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/js/libs/jquery.jscrollpane.min.js">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/js/libs/jquery.mousewheel.js">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/js/libs/tgp.js">
+      <publishTime>04/30/2015 23:14:56</publishTime>
+    </File>
+    <File Include="portal_asset/locales/en-US/translation.js">
+      <publishTime>06/04/2015 02:12:13</publishTime>
+    </File>
+    <File Include="portal_asset/locales/zh-CN/translation.js">
+      <publishTime>06/04/2015 02:06:24</publishTime>
+    </File>
+    <File Include="portal_asset/locales/zh-TW/translation.js">
+      <publishTime>06/04/2015 02:07:20</publishTime>
+    </File>
+    <File Include="portal_asset/templates/deposit1.aspx">
+      <publishTime>06/04/2015 02:07:38</publishTime>
+    </File>
+    <File Include="portal_asset/templates/deposit2.aspx">
+      <publishTime>06/04/2015 02:07:49</publishTime>
+    </File>
+    <File Include="portal_asset/templates/deposit3.aspx">
+      <publishTime>06/04/2015 02:08:04</publishTime>
+    </File>
+    <File Include="portal_asset/templates/egame.html">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/templates/index.html">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/templates/livegame.html">
+      <publishTime>05/08/2015 16:30:42</publishTime>
+    </File>
+    <File Include="portal_asset/templates/promo.html">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/templates/promotion.aspx">
+      <publishTime>06/04/2015 02:12:13</publishTime>
+    </File>
+    <File Include="portal_asset/templates/Register_new.aspx">
+      <publishTime>06/04/2015 02:12:13</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules.html">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/en-US/aboutUs.html">
+      <publishTime>05/08/2015 16:23:28</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/en-US/baccarat.html">
+      <publishTime>05/08/2015 16:23:28</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/en-US/bs.html">
+      <publishTime>05/08/2015 16:23:28</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/en-US/bt.html">
+      <publishTime>05/08/2015 16:23:24</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/en-US/casher.html">
+      <publishTime>05/08/2015 16:23:26</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/en-US/co.html">
+      <publishTime>05/08/2015 16:23:26</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/en-US/contactUs.html">
+      <publishTime>05/08/2015 16:23:28</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/en-US/di.html">
+      <publishTime>05/08/2015 16:23:28</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/en-US/dt.html">
+      <publishTime>05/08/2015 16:23:28</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/en-US/mj.html">
+      <publishTime>05/08/2015 16:23:28</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/en-US/MUBA.html">
+      <publishTime>05/08/2015 16:23:28</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/en-US/MUGAME.html">
+      <publishTime>05/08/2015 16:23:28</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/en-US/privacy.html">
+      <publishTime>05/08/2015 16:23:28</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/en-US/ro.html">
+      <publishTime>05/08/2015 16:23:28</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/en-US/tk.html">
+      <publishTime>05/08/2015 16:23:28</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/en-US/tnc.html">
+      <publishTime>06/04/2015 02:12:13</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-CN/aboutUs.html">
+      <publishTime>05/08/2015 16:23:32</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-CN/baccarat.html">
+      <publishTime>05/08/2015 16:23:32</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-CN/bs.html">
+      <publishTime>05/08/2015 16:23:32</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-CN/bt.html">
+      <publishTime>05/08/2015 16:23:32</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-CN/casher.html">
+      <publishTime>05/08/2015 16:23:32</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-CN/co.html">
+      <publishTime>05/08/2015 16:23:32</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-CN/contactUs.html">
+      <publishTime>05/08/2015 16:23:32</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-CN/di.html">
+      <publishTime>05/08/2015 16:23:32</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-CN/dt.html">
+      <publishTime>05/08/2015 16:23:32</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-CN/mj.html">
+      <publishTime>05/08/2015 16:23:32</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-CN/MUBA.html">
+      <publishTime>05/08/2015 16:23:32</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-CN/MUGAME.html">
+      <publishTime>05/08/2015 16:23:32</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-CN/privacy.html">
+      <publishTime>05/08/2015 16:23:32</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-CN/ro.html">
+      <publishTime>05/08/2015 16:23:32</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-CN/tk.html">
+      <publishTime>05/08/2015 16:23:32</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-CN/tnc.html">
+      <publishTime>06/04/2015 02:12:13</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-TW/aboutUs.html">
+      <publishTime>05/08/2015 16:23:36</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-TW/baccarat.html">
+      <publishTime>05/08/2015 16:23:36</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-TW/bs.html">
+      <publishTime>05/08/2015 16:23:36</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-TW/bt.html">
+      <publishTime>05/08/2015 16:23:36</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-TW/casher.html">
+      <publishTime>05/08/2015 16:23:36</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-TW/co.html">
+      <publishTime>05/08/2015 16:23:36</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-TW/contactUs.html">
+      <publishTime>05/08/2015 16:23:36</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-TW/di.html">
+      <publishTime>05/08/2015 16:23:36</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-TW/dt.html">
+      <publishTime>05/08/2015 16:23:36</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-TW/mj.html">
+      <publishTime>05/08/2015 16:23:36</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-TW/MUBA.html">
+      <publishTime>05/08/2015 16:23:36</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-TW/MUGAME.html">
+      <publishTime>05/08/2015 16:23:36</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-TW/privacy.html">
+      <publishTime>05/08/2015 16:23:36</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-TW/ro.html">
+      <publishTime>05/08/2015 16:23:36</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-TW/tk.html">
+      <publishTime>05/08/2015 16:23:36</publishTime>
+    </File>
+    <File Include="portal_asset/templates/rules/zh-TW/tnc.html">
+      <publishTime>06/04/2015 02:12:13</publishTime>
+    </File>
+    <File Include="portal_asset/templates/sportbook.html">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/templates/tnc/zh-CN.html">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/templates/tnc/zh-TW.html">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="portal_asset/templates/Withdrawals.aspx">
+      <publishTime>06/04/2015 02:12:13</publishTime>
+    </File>
+    <File Include="portal_asset/XDConnect.html">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="promo.html">
+      <publishTime>09/08/2015 14:47:51</publishTime>
+    </File>
+    <File Include="promotion.html">
+      <publishTime>09/11/2015 15:01:36</publishTime>
+    </File>
+    <File Include="register.html">
+      <publishTime>09/08/2015 14:48:07</publishTime>
+    </File>
+    <File Include="ServiceFile/AgnetService.asmx">
+      <publishTime>04/18/2015 18:32:20</publishTime>
+    </File>
+    <File Include="ServiceFile/BankService.asmx">
+      <publishTime>04/18/2015 18:32:20</publishTime>
+    </File>
+    <File Include="ServiceFile/ClientService.asmx">
+      <publishTime>04/18/2015 18:32:20</publishTime>
+    </File>
+    <File Include="ServiceFile/LoginService.asmx">
+      <publishTime>04/18/2015 18:32:20</publishTime>
+    </File>
+    <File Include="ServiceFile/UserService.asmx">
+      <publishTime>04/18/2015 18:32:20</publishTime>
+    </File>
+    <File Include="sportbook.html">
+      <publishTime>09/08/2015 14:48:13</publishTime>
+    </File>
+    <File Include="statics/css/images/wrapBg9ee7.html">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/css/suncity/images/flash_bg.html">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/css/suncity/style.css">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/css/suncity/ttstyle.css">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/css/suncity/wrapBg.html">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/banklogo/beijing.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/banklogo/bohai.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/banklogo/gongshang.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/banklogo/huaxia.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/banklogo/jianshe.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/banklogo/jiaotong.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/banklogo/minsheng.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/banklogo/nanjing.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/banklogo/nongye.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/banklogo/pingan.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/banklogo/pufa.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/banklogo/xingye.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/banklogo/youzheng.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/banklogo/zhaoshang.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/banklogo/zhejiang.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/banklogo/zhongguo.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/banklogo/zhongxin.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1-120GZ02G1P8.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1-120GZ03041U8.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1-120GZ03Z9227.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1-120GZ04000N2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1-120GZ05155D2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1-120GZ0521E09.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/12533L923-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1421323Q6-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1421325130-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1421325944-3.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/142132AB-4.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/142132H44-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1423052558-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1423052O7-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1423053130-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1423053253-4.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1423055955-3.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1424412360-5.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1424412E1-7.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1424413336-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1424416406-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/142441I14-4.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/142441M15-6.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/142441M35-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1426301018-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14263025K-3.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14263035K-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1426305R8-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/142630N35-4.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1429112009-3.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1429112410-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1429112b7-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1429115b7-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14302S0E-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14302U314-3.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14302U392-4.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14302V258-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14302V619-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1431441620-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1431442N6-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1431445C2-5.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14314462c-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/143144M11-6.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/143144N21-4.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1433221064-3.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14332224K-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1433223A0-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14332240K-5.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14332255E-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/143322OI-4.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/143F11501-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/143PQR5-5.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/143PS138-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/143PUW5-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/143PV012-6.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/143PV0Z-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/143PV219-7.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/143PVa7-4.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14403GJ1-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14403H0J-3.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14403HQ1-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14403HU4-5.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14403I221-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14403KB7-4.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1444461349-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1444461352-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1444461c8-6.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1444463193-3.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1444463327-5.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1444464P9-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1445451205-9.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14454512O-5.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1445453048-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14454533B-7.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14454535G-4.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1445454236-8.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14454543Y-14.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1445454Z2-13.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1445455544-10.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1445455a1-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1445455B8-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1445455U9-11.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14454564H-6.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/144545N16-12.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/144Q010W-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/144Q01K0-6.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/144Q042B-8.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/144Q05032-7.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/144Q05495-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/144Q05V6-4.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/144Q0Ea-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/144Q0F05-9.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/144Q0JV-5.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/144Z42347-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/144Z454D-3.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/144Z45962-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/144Z45K7-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1450021V9-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1450022145-6.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14500225H-5.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1450023L4-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1450025359-4.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/145002EI-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14511025Q-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1451102631-7.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1451104219-3.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1451104595-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1451104Q5-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1451105615-5.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1451105A4-4.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/145110H18-6.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14522011D-4.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1452204V9-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1452205S8-6.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/145220E11-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/145220E61-7.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/145220H91-5.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/145220JY-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1454011005-3.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1454012233-9.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1454012363-5.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1454014460-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14540150U-8.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1454015917-7.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1454015D6-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1454015F1-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/145401DP-4.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1455021550-2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1455022044-6.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14550220G-1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1455022E9-3.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/14550230S-7.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1455026012-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/145502I46-8.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/145502J33-4.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1F23a324-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/1F63A544-0.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/a1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/banner.swf">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/bbin_qrcode.html">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/bg.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/bg_banner.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/bg_m.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/Box.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/Box2.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/btn.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/button_bg.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/cancel.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/CZ_btn.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/enter_game.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/flash_bg.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/focus.swf">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/footer_bg.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/fwbztitle.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/game/douniu.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/game/huamulan.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/game/huopinzhuangjia.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/game/jisupuke.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/game/lianhuanbaijiale.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/game/longqibaijiale.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/game_list_bg.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/hover.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/ico.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/ico_more.gif">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/index_item_30.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/index_item_32.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/index_item_35.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/iner_wrap.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/iner_wrap_bg.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/iner_wrap_bottom.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/iner_wrap_top.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/left-open.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/left-up.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/leftmenubg.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/leftmenubga.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/lianhuanbj.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/line.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/live.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/live8007.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/login_logo.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/logo.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/logoBg.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/main_bg.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/mar1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav1.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav11.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav111.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav118.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav2.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav22.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav3.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav33.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav4.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav44.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav5.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav55.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav6.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav66.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav8.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav88.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav9.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu/nav99.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menubg.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu_1.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu_2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu_3.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu_bg.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu_bg2.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/menu_line.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/mfkhtitle.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/mobile_banner_sch.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/money_save.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/money_save2.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/nav.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/nav_over.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/qhcq88.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/qr.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/qrcode_bg.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/sabmit_btn.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/sports_bg.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/swf/co.swf">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/swf/di.swf">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/swf/dt.swf">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/swf/mj.swf">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/swf/MUBA.swf">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/swf/ro.swf">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/swf/tk.swf">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/text01.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/text02.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/title_first.png">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/title_first02.html">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/title_zryl.jpg">
+      <publishTime>04/18/2015 16:52:00</publishTime>
+    </File>
+    <File Include="statics/images/suncity/vedio_open.gif">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/images/suncity/video.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/images/suncity/video_s.jpg">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/images/suncity/video_ss.jpg">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/images/suncity/web.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/images/suncity/wrapBg.jpg">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/images/suncity/xiangmubg.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/images/suncity/youhui02.jpg">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/images/suncity/youhui1.jpg">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/images/suncity/youhui4.jpg">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/images/suncity/zrylBg.jpg">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/images/suncity/zryl_title.gif">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/images/suncity/zryl_title1.gif">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/jquery.easyui.min.js">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/locale/easyui-lang-zh_CN.js">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/easyui.css">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/accordion_arrows.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/blank.gif">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/calendar_arrows.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/combo_arrow.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/datagrid_icons.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/datebox_arrow.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/layout_arrows.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/linkbutton_bg.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/loading.gif">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/menu_arrows.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/messager_icons.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/pagination_icons.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/panel_tools.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/searchbox_button.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/slider_handle.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/spinner_arrows.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/tabs_icons.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/tree_icons.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/easyui/themes/default/images/validatebox_warning.png">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/suncity/77sunbet.js">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/suncity/77tc.js">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/suncity/areaselector.js">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/suncity/cityData.js">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/suncity/demo/zDialog.js">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/suncity/demo/zDrag.js">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/suncity/expressInstall.swf">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/suncity/float.js">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/suncity/jquery-1.4.2.min.js">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/suncity/jquery-1.7.2.min.js">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/suncity/jquery.cookie.js">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/suncity/main.js">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/suncity/shengbo.js">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/suncity/swfobject.js">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="statics/js/suncity/swfobject_modified.js">
+      <publishTime>04/18/2015 16:52:02</publishTime>
+    </File>
+    <File Include="transfers.aspx">
+      <publishTime>09/09/2015 17:01:25</publishTime>
+    </File>
+    <File Include="transfers1.aspx">
+      <publishTime>09/09/2015 16:25:14</publishTime>
+    </File>
+    <File Include="ValiCode.aspx">
+      <publishTime>04/18/2015 16:55:38</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/11/2015 15:04:12</publishTime>
+    </File>
+    <File Include="youhui_1.jpg">
+      <publishTime>09/08/2015 14:20:34</publishTime>
+    </File>
+    <File Include="zhaopai.html">
+      <publishTime>09/08/2015 14:48:40</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,294 @@
+a.L_button
+    {
+	background: transparent url(/images/website/ibc/button4.gif) no-repeat scroll right top;
+	color: #294983;
+	display: block;
+	float: left;
+	height:21px;
+	padding-right: 2px;
+	_padding-right: 2px;
+	font: normal 11px sans-serif;
+	margin-right:2px;
+	_margin-right:2px;
+	text-decoration: none;
+	font-family: Tahoma;
+    } 
+    a.L_button span
+	{
+	background: transparent url(/images/website/ibc/button3.gif) no-repeat;
+	display: block;
+	line-height: 11px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 2px;
+    }
+    a.L_button:hover
+	{ 
+    background-position: right -21px; 
+    } 
+    a.L_button:hover span 
+	{ 
+    background-position: left -21px; color: #FFFFFF;
+    } 
+    a.L_button:active
+	{ 
+    background-position: right -21px; 
+    } 
+    a.L_button:active span
+	{
+	background-position: left -21px;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 2px;
+    }
+a.R_button
+    { 
+    background: transparent url(/images/website/ibc/button4.gif) no-repeat scroll right top; 
+    color: #294983; 
+    display: block; 
+    float: right; 
+    height:21px; 
+    padding-right: 4px; 
+	_padding-right: 4px;
+    font: normal 11px sans-serif; 
+    margin-right:4px; 
+	_margin-right:4px; 
+    text-decoration: none;
+	font-family: Tahoma;
+    } 
+    a.R_button span
+	{ 
+    background: transparent url(/images/website/ibc/button3.gif) no-repeat; 
+    display: block;     
+    padding: 5px 1px 5px 5px; 
+    line-height: 11px; 
+    }
+    a.R_button:hover
+	{ 
+    background-position: right -21px; 
+    } 
+    a.R_button:hover span 
+	{ 
+    background-position: left -21px; color: #FFFFFF;
+    } 
+    a.R_button:active
+	{ 
+    background-position: right -21px; 
+    } 
+    a.R_button:active span
+	{ 
+    background-position: left -21px; 
+    padding: 5px 1px 5px 5px; 
+    }
+
+
+
+
+
+a.button
+    {
+	color: #666666;
+	display: block;
+	float: right;
+	height:21px;
+	padding-right: 2px;
+	font: normal 11px sans-serif;
+	margin-right:2px;
+	text-decoration: none;
+	font-family: Tahoma;
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(/images/website/ibc/button2.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+    } 
+    a.button span
+	{
+	background: transparent url(/images/website/ibc/button1.gif) no-repeat;
+	display: block;
+	line-height: 11px;
+	padding-top: 5px;
+	padding-right: 1px;
+	padding-bottom: 5px;
+	padding-left: 2px;
+    }
+    a.button:hover
+	{ 
+    background-position: right -21px; color: #FFFFFF;
+    } 
+    a.button:hover span 
+	{ 
+    background-position: left -21px; 
+    } 
+    a.button:active
+	{ 
+    background-position: right -21px; 
+    } 
+    a.button:active span
+	{ 
+    background-position: left -21px; 
+    padding: 5px 1px 5px 2px; 
+    }
+	
+
+a.buttons
+    {
+	color: #FFFFFF;
+	/*height:17px;*/
+	padding-right: 6px;
+	margin-right:2px;
+	text-decoration: none;
+	font-family: Tahoma;
+	/*background-image: url(/images/website/ibc/button1s.gif);
+	background-repeat: no-repeat;
+	background-position: right 0px;*/
+	font-size: 11px;
+	/*padding-bottom: 3px;
+	_padding-bottom: 0px;
+	padding-top: 2px;
+	_padding-top: 0px;
+	*padding-top: 0px;*/
+	font-weight: bold;
+    } 
+    a.buttons span
+	{ 
+    background:  url(/images/website/ibc/button1s1_blue3.gif) no-repeat; 
+	/*height:17px;*/
+	padding: 2px 1px 3px 18px; 
+    _padding: 2px 1px 3px 18px; 
+	*padding: 1px 1px 3px 18px; 
+    }
+    a.buttons:hover
+	{
+	background-position: right -20px;
+	color: #4b5d8f;
+    } 
+    /*a.buttons:hover span 
+	{ 
+    background-position: left -20px; 
+    } 
+    a.buttons:active
+	{ 
+    background-position: right -20px; 
+    } 
+    a.buttons:active span
+	{ 
+    background-position: left -20px; 
+    padding: 2px 1px 3px 8px; 
+	_padding: 2px 1px 3px 8px;
+	*padding: 1px 1px 3px 8px; 
+    }*/
+	
+
+button.button-ovr {	font-family: Tahoma;
+	font-size: 11px;
+	color: #FF6600;
+	background-color: transparent;
+	border-right-style: none;
+	border-bottom-style: none;
+	cursor: hand;
+	margin-right: 2px;
+	margin-left: 2px;
+	height: 15px;
+	border-top-style: none;
+	border-left-style: none;
+	font-weight: normal;
+	width: 53px;
+	background-image: url(/images/website/ibc/sbutton.gif);
+	background-position: center;
+
+}
+
+
+a.button_live
+    {
+	color: #713e3a;
+	display: block;
+	float: right;
+	height:21px;
+	padding-right: 2px;
+	font: normal 11px sans-serif;
+	margin-right:2px;
+	text-decoration: none;
+	font-family: Tahoma;
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(/images/website/ibc/button6.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+    } 
+    a.button_live span
+	{
+	background: transparent url(/images/website/ibc/button5.gif) no-repeat;
+	display: block;
+	line-height: 11px;
+	padding-top: 5px;
+	padding-right: 1px;
+	padding-bottom: 5px;
+	padding-left: 2px;
+    }
+    a.button_live:hover
+	{ 
+    background-position: right -21px; color: #713e3a;
+    } 
+    a.button_live:hover span 
+	{ 
+    background-position: left -21px; 
+    } 
+    a.button_live:active
+	{ 
+    background-position: right -21px; 
+    } 
+    a.button_live:active span
+	{ 
+    background-position: left -21px; 
+    padding: 5px 1px 5px 2px; 
+    }
+	
+
+a.button_login
+    {
+	color: #666666;
+	display: block;
+	float: left;
+	height:21px;
+	padding-right: 2px;
+	font: normal 11px sans-serif;
+	margin-right:2px;
+	text-decoration: none;
+	font-family: Tahoma;
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(/images/website/ibc/button2.gif);
+	background-repeat: no-repeat;
+	background-position: right top;
+    } 
+    a.button_login span
+	{
+	background: transparent url(/images/website/ibc/button1.gif) no-repeat;
+	display: block;
+	line-height: 11px;
+	padding-top: 5px;
+	padding-right: 1px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+    }
+    a.button_login:hover
+	{ 
+    background-position: right -21px; color: #FFFFFF!important;
+    } 
+    a.button_login:hover span 
+	{ 
+    background-position: left -21px; 
+    } 
+    a.button_login:active
+	{ 
+    background-position: right -21px; 
+    } 
+    a.button_login:active span
+	{ 
+    background-position: left -21px; 
+    padding: 5px 1px 5px 5px; 
+    }

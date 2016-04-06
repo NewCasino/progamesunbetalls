@@ -1,0 +1,236 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>show出层</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link href="/css/Default/globle.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/right_main.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/tab.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/jquery-1.4.1.min.js"></script>
+    <script src="/js/tab1.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        jQuery(function () {
+            var $currentHide = "";
+            var $CurrentObj = "";
+            var seriaStr = "";
+            var strInput = "";
+            var preStr = "";
+            jQuery("input.editCss").click(function () {
+
+                if ($currentHide != "") {
+                    //得到原先input的值
+                    for (var i = 1; i <= 4; i++) {
+                        strInput += jQuery("#txtCol" + i).val();
+                    }
+                    if (strInput != preStr) {
+                        if (confirm("是否保存？")) {
+                            alert("执行保存数据的操作");
+                            clearValue();
+                        }
+                        else {
+                            strInput = "";
+
+                            return;
+                        }
+                    }
+                    else {
+                        clearValue();
+                    }
+                }
+                $CurrentObj = jQuery(this);
+                var strHtml = "<tr > <td colspan='6' ><div class='new_tr' ><form><ul><li><span>姓名：</span><input type='text' id='txtCol1'/></li><li><span>地址：</span><input type='text' id='txtCol2'/></li><li><span>电话：</span><input type='text' id='txtCol3'/></li><li><span>电子邮件：</span><input type='text' id='txtCol4'/></li></ul></form><br><input type='button' class='btn_02_h'   value='保存' id='btnSave' />&nbsp;&nbsp;<input type='button' value='取消' id='btnCancel' class='btn_02'  /><div class='new_trfoot'></div></div></td></tr>";
+                var str = "";
+                $CurrentObj.parent().parent().after(jQuery(strHtml));
+                for (var i = 0; i < 4; i++) {
+                    str = $CurrentObj.parent().parent().find("td:eq(" + i + ")").text();
+                    preStr += str;
+                    jQuery("#txtCol" + (i + 1)).val(str);
+                }
+                $CurrentObj.attr("disabled", "disabled");
+                $currentHide = $CurrentObj.parents("tr").next();
+                jQuery("#btnSave").bind("click", function () {
+                    alert("修改成功");
+                    clearValue();
+                });
+                jQuery("#btnCancel").bind("click", function () {
+                    clearValue();
+                });
+
+                //seriaStr = jQuery("form").serialize();
+                //alert(seriaStr);
+            });
+            function clearValue() {
+                $currentHide.remove();
+                $CurrentObj.attr("disabled", "");
+                $currentHide = "";
+                strInput = "";
+                preStr = "";
+            }
+
+            jQuery("img.edit").click(function () {
+                var $curObj = jQuery(this);
+
+                var $nextImg = $curObj.next();
+                $nextImg.css("display", "inline");
+                var $lastImg = $nextImg.next();
+                $lastImg.css("display", "inline");
+                $curObj.hide();
+                jQuery("#" + $nextImg.attr("id")).unbind("click");
+                jQuery("#" + $lastImg.attr("id")).unbind("click");
+                jQuery("#" + $nextImg.attr("id")).bind("click", function () {
+                    alert("执行保存操作");
+                });
+                jQuery("#" + $lastImg.attr("id")).bind("click", function () {
+                    $curObj.show();
+                    $nextImg.css("display", "none");
+                    $lastImg.css("display", "none");
+                });
+
+            });
+            jQuery("input.imgShow").click(function (e) {
+                var position = jQuery(this).position();
+                var left = position.left;
+                var top = position.top;
+
+                jQuery("#show").css({ "display": "block", "left": left + jQuery(this).width(), "top": top - 15 });
+                return false;
+            });
+            jQuery("table").click(function () {
+                if (jQuery("#show:visible")) {
+                    jQuery("#show").hide();
+                }
+            });
+        });
+         function show_list(){
+        document.getElementById("add_list").style.display= "block";
+         }
+         function close_list(){
+        document.getElementById("add_list").style.display= "none";
+         }
+        
+      
+    </script>
+
+</head>
+<body>
+<table  id="right_main" border="0" width="100%" cellpadding="0" cellspacing="0">
+<thead>
+<tr class="h30">
+<th width="12" class="tab_top_l"></th>
+<th width="*" class="tab_top_m"><p><font class="st"> 您当前的位置：</font><a href="javascript:void(0)"><span> 首页</span></a><a href="javascript:void(0)"><span>公共样式调用</span></a><span>右边页面模板</span></p></th>
+<th width="16" class="tab_top_r"></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="tab_middle_l"></td>
+<td >
+<div id="main">
+<div class="top_banner h30">
+<div class="fl">
+按条件查找：
+<input type="text" class="text_01 h20" onmouseover="this.className='text_01_h h20'" onmouseout="this.className='text_01 h20'"  />
+<select  >
+<option>用户名</option>
+<option>邮箱</option>
+<option>国家</option>
+</select>
+<input type="button" class="btn_01" onmouseover="this.className='btn_01_h'" onmouseout="this.className='btn_01'" value="查找用户" />
+</div>
+<div class="fr"><input type="button"  class="top_add" onmouseover="this.className='top_add_h'" onmouseout="this.className='top_add'"  value="增加用户" onclick="show_list()" /></div>
+
+</div>
+<div id="add_list" class="new_tr undis">
+<div align="center">
+<table>
+<tr>
+<td class="tr">用户名：</td>
+<td><input class="text_01" onmousemove="this.className='text_01_h'" onmouseout="this.className='text_01_h'" type="text" /></td>
+</tr>
+<tr>
+<td class="tr">地址：</td>
+<td><input class="text_01" onmousemove="this.className='text_01_h'" onmouseout="this.className='text_01_h'" type="text" /></td>
+</tr>
+<tr>
+<td class="tr">电话：</td>
+<td><input class="text_01" onmousemove="this.className='text_01_h'" onmouseout="this.className='text_01_h'" type="text" /></td>
+</tr>
+<tr>
+<td class="tr">电子邮箱：</td>
+<td><input class="text_01" onmousemove="this.className='text_01_h'" onmouseout="this.className='text_01_h'" type="text" /></td>
+</tr>
+<tr>
+<td align="center" colspan="2">
+<input type="button" class="btn_02" onmouseover="this.className='btn_02_h'" onmouseout="this.className='btn_02'"  value="保存" />
+<input type="button" class="btn_02" onmouseover="this.className='btn_02_h'" onmouseout="this.className='btn_02'" onclick="close_list()" value="取消" />
+</td>
+</tr>
+</table>
+</div>
+<div class="new_trfoot"></div>
+</div>
+
+
+
+<div class="cl"></div>
+
+    <table width="100%" id="tb" cellpadding="0" class="pickme" >
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>地址</th>
+                <th>电话</th>
+                <th>电子邮箱</th>
+                <th>修改</th>
+                <th>删除</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr><td>水手辛巴德</td><td>中国深圳</td><td>13480832521</td><td>peace_y@126.com</td><td><input type="button" value="修改" class="editCss" onmouseover="this.className='editCss_l'" onmouseout="this.className='editCss'" align="middle"   />&nbsp;<input align="middle" type="button"  title="弹出层" class="imgShow" /></td><td><input type=button class="delet_02" title="删除" value=""  /><!--<img src='images/bt_confirm.gif' title='保存' id="imgS1"  class='save' /> &nbsp;&nbsp; <img src='images/bt_del.gif' id="imgC1" title='取消' class='cancel' />--></td></tr>
+           <tr><td>水手辛巴德</td><td>中国深圳</td><td>13480832521</td><td>peace_y@126.com</td><td><input type="button" value="修改" class="editCss" onmouseover="this.className='editCss_l'" onmouseout="this.className='editCss'" align="middle"   />&nbsp;<input align="middle" type="button"  title="弹出层" class="imgShow" /></td><td><input type=button class="delet_02" title="删除"  /><!--<img src='images/bt_confirm.gif' title='保存' id="imgS1"  class='save' /> &nbsp;&nbsp; <img src='images/bt_del.gif' id="imgC1" title='取消' class='cancel' />--></td></tr>
+            <tr><td>水手辛巴德</td><td>中国深圳</td><td>13480832521</td><td>peace_y@126.com</td><td><input type="button" value="修改" class="editCss" onmouseover="this.className='editCss_l'" onmouseout="this.className='editCss'" align="middle"   />&nbsp;<input align="middle" type="button"  title="弹出层" class="imgShow" /></td><td><input type=button class="delet_02" title="删除"  /><!--<img src='images/bt_confirm.gif' title='保存' id="imgS1"  class='save' /> &nbsp;&nbsp; <img src='images/bt_del.gif' id="imgC1" title='取消' class='cancel' />--></td></tr>
+            <tr><td>水手辛巴德</td><td>中国深圳</td><td>13480832521</td><td>peace_y@126.com</td><td><input type="button" value="修改" class="editCss" onmouseover="this.className='editCss_l'" onmouseout="this.className='editCss'" align="middle"   />&nbsp;<input align="middle" type="button"  title="弹出层" class="imgShow" /></td><td><input type=button class="delet_02" title="删除"  /><!--<img src='images/bt_confirm.gif' title='保存' id="imgS1"  class='save' /> &nbsp;&nbsp; <img src='images/bt_del.gif' id="imgC1" title='取消' class='cancel' />--></td></tr>
+            <tr><td>水手辛巴德</td><td>中国深圳</td><td>13480832521</td><td>peace_y@126.com</td><td><input type="button" value="修改" class="editCss" onmouseover="this.className='editCss_l'" onmouseout="this.className='editCss'" align="middle"   />&nbsp;<input align="middle" type="button"  title="弹出层" class="imgShow" /></td><td><input type=button class="delet_02" title="删除"  /><!--<img src='images/bt_confirm.gif' title='保存' id="imgS1"  class='save' /> &nbsp;&nbsp; <img src='images/bt_del.gif' id="imgC1" title='取消' class='cancel' />--></td></tr>
+            <tr><td>水手辛巴德</td><td>中国深圳</td><td>13480832521</td><td>peace_y@126.com</td><td><input type="button" value="修改" class="editCss" onmouseover="this.className='editCss_l'" onmouseout="this.className='editCss'" align="middle"   />&nbsp;<input align="middle" type="button"  title="弹出层" class="imgShow" /></td><td><input type=button class="delet_02" title="删除"  /><!--<img src='images/bt_confirm.gif' title='保存' id="imgS1"  class='save' /> &nbsp;&nbsp; <img src='images/bt_del.gif' id="imgC1" title='取消' class='cancel' />--></td></tr>
+            <tr><td>水手辛巴德</td><td>中国深圳</td><td>13480832521</td><td>peace_y@126.com</td><td><input type="button" value="修改" class="editCss" onmouseover="this.className='editCss_l'" onmouseout="this.className='editCss'" align="middle"   />&nbsp;<input align="middle" type="button"  title="弹出层" class="imgShow" /></td><td><input type=button class="delet_02" title="删除"  /><!--<img src='images/bt_confirm.gif' title='保存' id="imgS1"  class='save' /> &nbsp;&nbsp; <img src='images/bt_del.gif' id="imgC1" title='取消' class='cancel' />--></td></tr>
+            <tr><td>水手辛巴德</td><td>中国深圳</td><td>13480832521</td><td>peace_y@126.com</td><td><input type="button" value="修改" class="editCss" onmouseover="this.className='editCss_l'" onmouseout="this.className='editCss'" align="middle"   />&nbsp;<input align="middle" type="button"  title="弹出层" class="imgShow" /></td><td><input type=button class="delet_02" title="删除"  /><!--<img src='images/bt_confirm.gif' title='保存' id="imgS1"  class='save' /> &nbsp;&nbsp; <img src='images/bt_del.gif' id="imgC1" title='取消' class='cancel' />--></td></tr>
+            </tbody>
+    </table>
+    
+    
+    <div id="show" class="select_box">选择一<br />选择二<br />选择三</div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</div>
+</td>
+<td class="tab_middle_r"></td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr class="h35">
+<td width="12" class="tab_foot_l"></td>
+<td width="*" class="tab_foot_m">
+
+</td>
+<td width="16" class="tab_foot_r"></td>
+</tr>
+</tfoot>
+</table>
+</body>
+</html>

@@ -1,0 +1,48 @@
+﻿
+<html>
+<head></head>
+<body>
+<div class="banner-block">
+<div class="banner-bg">
+<div class="bannerBg">
+<img class="bannerBg" ng-src="{{bannerPath}}{{banner.background}}">
+</div>
+<div class="banner-content">
+<img class="bannerPic" ng-src="{{bannerPath}}{{banner.image | filterLangImg: banner.filter}}">
+<div class="bannerDesc">
+<h2 data-i18n="{{banner.title}}"></h2>
+<h3 data-i18n="{{banner.desc}}"></h3>
+<a id="sliderBtn" class="ytext" login-text="{{banner.btn_text}}" action-text="{{banner.btn_text_login}}" target="{{banner.target}}" lobby-type="{{banner.lobbyType}}" is-check-login="true" href-link="{{banner.href}}" href="javascript:void(0)" ng-if="status.isLoaded" my-checklogin=""></a>
+</div>
+</div>
+</div>
+</div>
+<div class="contentWrapper">
+<div class="contentList">
+<ul id="contentBox">
+<li class="big">
+<div id="box1" class="contentItem">
+<div class="gameText">
+<div class="desc" data-i18n="[html]sportBook.detail"></div>
+</div>
+</div>
+</li>
+<li class="{{sportbookeContent.li_class}} {{sportbookeContent.size}}" ng-mouseleave="isOver=false" ng-mouseover="isOver=true" data-ng-repeat="sportbookeContent in sportbookeContents">
+<div id="box1" class="contentItem">
+<div class="overlayWrapper {{sportbookeContent.size}}" ng-show="isOver">
+<div class="overlay"></div>
+<a class="contentBtn ytext" login-text="{{sportbookeContent.btn_text}}" action-text="{{sportbookeContent.btn_text_login}}" target="{{banner.target}}" lobby-type="{{sportbookeContent.lobbyType}}" is-check-login="true" href-link="{{sportbookeContent.href}}" href="javascript:void(0)" ng-if="status.isLoaded" my-checklogin=""></a>
+</div>
+<img class="{{sportbookeContent.img_class}}" ng-src="{{sportbookImagePath}}{{sportbookeContent.image}}">
+<div class="gameText game {{sportbookeContent.desc_class}}">
+<div class="title" data-i18n="{{sportbookeContent.title}}"></div>
+<div class="desc" data-i18n="{{sportbookeContent.desc}}"></div>
+</div>
+</div>
+</li>
+</ul>
+<div class="clearfix"></div>
+</div>
+</div>
+</body>
+</html>

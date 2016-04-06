@@ -1,0 +1,657 @@
+body {
+    font-family: STHeiti, "Microsoft YaHei", "微软雅黑", "SimSun", "宋体";
+}
+.meCenter {
+    width: 1000px;
+    margin: auto;
+    font-size: 12px;
+    position: relative;
+}
+.meCenter .header {
+    height: 109px;
+    background: #0D0D0D;
+}
+.meCenter .header .logoImg {
+    float: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.meCenter .header .headerR {
+    float: right;
+}
+.meCenter .header .headerR .headerT {
+    color: #fff;
+    width: 300px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+.meCenter .header .headerR .headerB {
+    width: 116px;
+    height: 47px;
+    margin-left: 50px;
+}
+.meCenter .meLeft {
+    float: left;
+    width: 220px;
+    height: 450px;
+    display: block;
+    background: #2F2F2F;
+}
+.meCenter .meLeft .welcome {
+    height: 44px;
+    background: #4B4B4B;
+    color: #F4AE1B;
+    line-height: 44px;
+    text-align: center;
+}
+.meCenter .meLeft .meun {} .meCenter .meLeft .meun .meunBox {} .meCenter .meLeft .meun .meunBox .meunTit {
+    height: 46px;
+    line-height: 46px;
+    text-align: center;
+    background: #BFBFBD;
+    border-bottom: #2F2F2F solid 1px;
+}
+.meCenter .meLeft .meun .meunBox .ajaxLink {
+    height: 42px;
+    color: #BFBFBF;
+    background: #2F2F2F;
+    display: block;
+    line-height: 42px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+}
+.meCenter .meLeft .meun .meunBox a.active, .meCenter .meLeft .meun .meunBox a:hover {
+    color: #000;
+    background: #EFEFEF;
+}
+.meRight {
+    float: left;
+    width: 780px;
+    height: 450px;
+    overflow: scroll;
+    background: #EFEFEF;
+}
+/**MACenterContent**/
+
+#MACenterContent {} #MACenterContent a {
+    text-decoration: none;
+}
+#MACenterContent .dataNav {
+    background: #6F6F6F;
+    position: relative;
+    padding-left: 80px;
+    height: 44px;
+}
+#MACenterContent .dataNav .mbtn {
+    float: left;
+    display: block;
+    width: 100px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    font-weight: bold;
+    color: #EFEFEF;
+    margin-right: 5px;
+}
+#MACenterContent .dataNav span.mbtn, #MACenterContent .dataNav a:hover {
+    color: #000;
+    background: #EFEFEF;
+}
+
+/*會員中心*/
+#MACenter #MALogo {
+    float: left;
+    background: url('/cl/tpl/tianmao/ver2/image/logo_m.png') top left no-repeat;
+    margin: 12px 0 0 30px;
+    width: 170px;
+    height: 80px;
+}
+/*忘記密碼*/
+#forgetPwd {
+    margin: 35px auto;
+    width: 300px;
+    font-size: 12px;
+    color: #000;
+}
+#forgetPwd table,
+#memAccTable table {
+    background-color: #272727;
+}
+#forgetPwd table thead,
+#forgetPwd table tfoot {
+    color: #FFF;
+    text-align: center;
+}
+#forgetPwd table tbody {
+    background-color: #FFF;
+}
+#forgetPwd table td.style1 {
+    text-align: left;
+    text-indent: 1em;
+}
+.error {
+    color: #F00;
+}
+#forgetPwd #bottom-text {
+    color: #960;
+}
+/*修改密碼、修改帳號共用*/
+#memAccTable{
+    border-collapse: collapse;
+    padding-top: 15px;
+    color: #FFF;
+    text-align: center;
+}
+#memAccTable table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: left;
+}
+#memAccTable table tr td{
+    border: 1px solid #0A3353;
+    height: 30px;
+}
+#memAccTable table thead,
+#memAccTable table tfoot {
+    padding-left: 59px;
+    height: 37px;
+    font-size: 12px;
+    text-align: center;
+}
+#memAccTable table thead td {
+    padding-left: 59px;
+    text-align: left;
+}
+#memAccTable table tbody {
+    background-color: #FFF;
+    color: #000;
+    font-size: 12px;
+    text-align: left;
+}
+#memAccTable table .tipText {
+    padding-right: 5px;
+    width: 50%;
+    text-align: right;
+}
+#memAccTable table .tipDwText {
+    width: 40%;
+    text-align: right;
+    padding-right: 5px;
+}
+#memAccTable table .bottomTip {
+    background-color: #DDD;
+    height: 40px;
+    font-size: 11px;
+    text-align: center;
+}
+a.chg_passwd_flag {
+    color: #FFF;
+    text-decoration: none;
+}
+/*額度轉換*/
+#mainContent {
+    border: 1px solid #707161;
+    padding-bottom: 1px;
+    font-size: 12px;
+}
+#pageTitle {
+    background-color: #616A74;
+    padding: 4px 0 0 10px;
+    color: #FFF;
+}
+#tableWrap {
+    background-color: #CBD1D4;
+    border-width: 0 1px 1px;
+    border-color: #707161;
+    border-style: solid;
+    padding: 1px 2px 2px;
+}
+.tableStyle01 {
+    border: 1px solid #666;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+.tableStyle01 th {
+    background-color: #999;
+    border: 1px solid #666;
+    height: 23px;
+    line-height: 23px;
+    color: #000;
+    font-weight: normal;
+    text-align: center;
+}
+.tableStyle01 td {
+    background-color: #FFF;
+    border: 1px solid #666;
+    padding: 2px;
+}
+.tableStyle01 tr .gameLimit {
+    background-color: #FBE9AC;
+    color: #000;
+}
+.za_button {
+    font-size: 12px;
+}
+/*下注狀況*/
+.tableStyle01 .wagers th {
+    background-color: #F1EFEF;
+    text-align: center;
+}
+#pageTitle #pageTitleEx {
+    float: right;
+    color: #FF0000;
+}
+#pageTitle #pageTitleEx a {
+    color: #CC0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.tableStyle01 .b_rig .amountGold {
+    background-color: #CCC;
+    text-align: right;
+}
+.tableStyle01 .b_rig .awinGold {
+    background-color: #900;
+    color: #FFF;
+    text-align: right;
+}
+.tableStyle01 .red_border {
+    border: 2px solid #F00;
+}
+.tableStyle01 .b_rig_mor {
+    background-color: #EDEDED;
+    text-align: right;
+}
+.tableStyle01 .b_rig_mor td {
+    background-color: #EDEDED;
+}
+.tableStyle01 .b_rig {
+    background-color: #FFF;
+    text-align: right;
+}
+.b_cen {
+    background-color: #FFF;
+    height: 70px;
+    text-align: center;
+}
+/*往來紀錄*/
+#mainContent p.subject {
+    width: 82px;
+    height: 18px;
+    line-height: 18px;
+    text-indent: 5px;
+}
+.Wdate {
+    width: 90px;
+}
+.BookTable td {
+    padding: 1px 0;
+}
+#foot {
+    background-color: #FFF;
+    padding-left: 10px;
+    text-align: left;
+    color: #000;
+    font-size: 12px;
+}
+#foot a {
+    color: #CC0000;
+    font-weight: bold;
+    text-decoration: none;
+}/*線上存取款*/
+#bank_body {
+    color:#000;
+    background-color: #0C0606;
+}
+#hide1:hover,
+#hide2:hover {
+    color: #000;
+}
+#ShowBtn {
+    color:#000;
+}
+#bank_header {
+    margin: 0 auto;
+    width: 800px;
+}
+#bank_logo {
+    background: url('/cl/tpl/tianmao/ver2/image/rule_logo.jpg') 50% 0 repeat-x;
+    height: 100px;
+}
+#bank_content {
+    margin: 0 auto;
+    padding-top: 2px;
+    width: 800px;
+    background-color: #FFF;
+}
+#bank_footer {
+    margin: 0 auto;
+    width: 800px;
+    line-height: 52px;
+    text-align: center;
+    color: #FFF;
+    background-color: #4B1E18;
+}
+#pay_system_option a {
+    color: #FF0000;
+    text-decoration: none;
+}
+/*會員註冊*/
+.JoinMemForm {
+    margin: 0 auto;
+}
+#memCash_body {
+    background-color: transparent;
+    font-size: 12px;
+    color: #FFF;
+}
+.JM_content {
+    padding: 10px 10px 10px 20px;
+}
+#memCash_body .JM_content p {
+    line-height: 16px;
+    height: auto;
+}
+#memCash_body .memCash_tit {
+        background: url(/cl/tpl/tianmao/ver2/image/welcome.png) no-repeat;
+    margin-top: 10px;
+    padding-left: 160px;
+    color: #FFF;
+    line-height: 65px;
+    text-align: left;
+    text-transform: capitalize;
+    text-shadow: 2px 1px 1px black;
+    }
+.JM_content ol li {
+    list-style-type: decimal;
+}
+#memCash_body fieldset {
+    border: 1px solid #6E6E6E;
+    margin: 10px;
+    padding: 10px;
+}
+#memCash_body legend {
+    color: #FFF;
+    font-weight: bold;
+}
+#memCash_body .star {
+    color: #F00;
+    font-weight: bold;
+    vertical-align: -2px;
+}
+#memCash_body a {
+    text-decoration: none;
+    color: #F00;
+}
+.striking-red {
+    color: #F00;
+}    @charset "utf-8";
+/*main*/
+body {
+    padding-top: 4px;
+    font-size: 12px;
+}
+#MACenter {
+    margin: 0 auto;
+    width: 1000px;
+    font-size: 12px;
+}
+#MAContent {
+}
+#MALeft {
+    float: left;
+    display: inline;
+    margin-left: 1px;
+    width: 220px;
+}
+#MAMain {
+    float: left;
+    width: 768px;
+}
+#MACenterContent #MMainData {
+    padding: 0 6px;
+}
+
+
+
+
+/*main menual*/
+
+#MACenterContent h2.MSubTitle {
+    position: relative;
+    padding-left: 16px;
+    height: 18px;
+    color: #444;
+}
+#MACenterContent h3.MSubInfo {
+    margin-bottom: 8px;
+    padding-right: 8px;
+    text-align: right;
+    color: #851;
+    font-weight: normal;
+}
+
+/*table*/
+table.MMain {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+    font-size: 12px;
+    color: #FFF;
+}
+table.MMain th {
+    background: #DFDFDF;
+    height: 1.8em;
+    color: #333;
+    font-weight: normal;
+    text-align: center;
+}
+table.MMain td {
+    background: #FFF;
+    line-height: 1.5em;
+    color: #666;
+    padding: 6px 8px;
+}
+table.MMain, table.MMain th, table.MMain td {
+    border: 1px solid #CCC;
+}
+table.MNoBorder, table.MNoBorder th, table.MNoBorder td {
+    background: none;
+    border: none;
+}
+table.MMain th.MContent, table.MMain td.MContent {
+    word-break: break-all;
+    text-align: left;
+}
+table.MMain td.MNumber {
+    text-align: right;
+}
+table.MMain td.MNotice {
+    color: #555;
+}
+table.MMain td.MBgcolor {
+    background: #600;
+    color: #FFF;
+}
+table.MMain td.MBgcolor2 {
+    background: #006;
+    color: #FFF;
+}
+
+/*表格奇偶數行設定*/
+table.MMain tr.MColor1 {
+    /*background: #FFF;*/
+}
+table.MMain tr.MColor2 {
+    /*background: #CCC;*/
+}
+
+/*表格滑鼠滑入效果*/
+table.MMain tbody td.mouseenter {
+    color: #000;
+}
+
+/*次選單*/
+#MNavLv2 {
+    margin-bottom: 8px;
+    padding-left: 5px;
+    line-height: 30px;
+    color: #600;
+}
+#MACenterContent .MTitleName {
+    float: left;
+    padding-left: 30px;
+    width: 106px;
+    height: 37px;
+    line-height: 37px;
+    color: #FC0;
+    font-weight: bold;
+}
+#MACenterContent .MGameType {
+    padding: 0 2px;
+    height: 24px;
+    line-height: 24px;
+    color: #600;
+    cursor: pointer;
+}
+#MACenterContent .MGameType:hover, #MACenterContent .MCurrentType {
+    color: #333;
+}
+#MACenterContent .MControlNav {
+    margin-bottom: 8px;
+    color: #AAA;
+}
+
+/*表單元件*/
+#MACenterContent .MBtnStyle {
+    background: url(../img/btn02.jpg) top left no-repeat;
+    width: 100px;
+    height: 22px;
+    line-height: 22px;
+    border: none;
+    color: #000;
+    cursor: pointer;
+}
+#MACenterContent .MFormStyle {
+    /*background: #000;
+    color: #FFF;*/
+}
+
+/*會員中心個人信息*/
+#general-msg .notRead,
+#general-msg .notRead a,
+#general-msg .notRead span {
+    font-weight: bold;
+    color: #333;
+}
+#general-msg .haveRead,
+#general-msg .haveRead a,
+#general-msg .haveRead span {
+    color: #666;
+}
+#general-msg .msgcontent td{
+    height: auto;
+}
+#msgfoot a.pagelink {
+    margin-right: 8px;
+    color: #12C;
+    font-size: 16px;
+    text-decoration: none;
+}
+#msgfoot a.pagelink:hover {
+    text-decoration: underline;
+}
+#currentpage {
+    margin-right: 8px;
+    color: #333;
+    font-size: 16px;
+}
+#general-msg .haveRead a.mouseenter, #general-msg .notRead a.mouseenter {
+    color: #000;
+}
+
+/*會員中心其它*/
+table.MMain td a.pagelink {
+    color: #004892;
+    font-weight: bold;
+}
+table.MMain td span.MImportant, table.MMain td span.MCashNeg, table.MMain td span#MSwitchResult {
+    color: #922;
+    font-weight: bold;
+}
+#MBlockImg {
+    margin: 0 auto;
+    width: 32px;
+    height: 32px;
+}
+
+/*會員中心彩票帳戶歷史細項*/
+table.MMain span.g-type {
+
+}
+table.MMain span.g-serial {
+
+}
+table.MMain span.g-result {
+
+}
+table.MMain span.g-order-type, table.MMain span.g-real-type, table.MMain span.g-odds {
+    color: #922;
+}
+/*其它*/
+.clear {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+a{
+	text-decoration: none;
+    outline: none; /* for Firefox Google Chrome  */
+    behavior:expression(this.onFocus=this.blur()); /* for IE */
+}
+
+#MACenterContent .MPanel {
+display: none;
+}
+
+/**MACenterContent end**/
+
+.footer {
+    height: 38px;
+    background: #6F6F6F;
+}
+.footer .footerL {
+    width: 220px;
+    height: 38px;
+    display: block;
+    float: left;
+    background: #2F2F2F;
+}
+.footer .footerR {
+    float: right;
+    margin-top: 10px;
+    margin-right: 5px;
+}
+.clear {
+    margin: 0;
+    padding: 0;
+    clear: both;
+}
+.hideBox{
+    width: 1000px;
+    height: 597px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: #ccc;
+    opacity: 0.8;
+    display: none;
+}
+.hideBox img{
+    display: block;
+    margin: 266px auto;
+}

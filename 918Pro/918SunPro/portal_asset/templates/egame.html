@@ -1,0 +1,56 @@
+﻿
+<html>
+<head></head>
+<body>
+<div class="banner-block">
+<div class="banner-bg">
+<div class="bannerBg">
+<img class="bannerBg" ng-src="{{bannerPath}}{{banner.background}}">
+</div>
+<div class="banner-content">
+<img class="bannerPic" ng-src="{{bannerPath}}{{banner.image | filterLangImg: banner.filter}}">
+<div class="bannerDesc">
+<h2 data-i18n="{{banner.title}}"></h2>
+<h3 data-i18n="{{banner.desc}}"></h3>
+<a id="sliderBtn" class="ytext" login-text="{{banner.btn_text}}" action-text="{{banner.btn_text_login}}" target="{{banner.target}}" lobby-type="{{banner.lobbyType}}" is-check-login="true" href-link="{{banner.href}}" href="javascript:void(0)" ng-if="status.isLoaded" my-checklogin=""></a>
+</div>
+</div>
+</div>
+</div>
+<div class="contentWrapper">
+<div class="contentList">
+<div id="contentBox">
+<div id="livegameImage" class="liveImage left" ng-click="changeTab('{{egameClub.tabId}}', {{$index}})" ng-class="{right20: $index<2}" data-ng-repeat="egameClub in egameClubs">
+<div class="overlayWrapper" ng-hide="$index == selectedTab">
+<div class="overlay"></div>
+</div>
+<img ng-class="{true: 'selected'}[$index == selectedTab]" ng-src="{{egameImagePath}}{{egameClub.image | filterLangImg: egameClub.filter}}">
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+<div id="egameDeatailsWrapper">
+<div id="egameTabDetailsInner">
+<div ng-show="tab===egameClub.tabId" data-ng-repeat="egameClub in egameClubs">
+<h4>
+<span data-i18n="egame.{{egameClub.tabId}}.subCat"></span>
+<span class="egameType" data-i18n="egame.{{egameClub.tabId}}.gameType"></span>
+</h4>
+<div data-i18n="egame.commingsoon" ng-hide="egameClub.isReleased"></div>
+</div>
+<div ng-show="tab===egameClub.tabId && egameClub.isReleased" data-ng-repeat="egameClub in egameClubs">
+<div class="gameImage" ng-mouseleave="isOver=false" ng-mouseover="isOver=true" data-ng-repeat="egameList in egameLists" ng-class="{gameImageLast: $index%4==3}">
+<div class="overlayWrapper" ng-show="isOver">
+<div class="overlay"></div>
+<a class="contentBtn ytext" login-text="egame.gamelist_btn_text" action-text="egame.gamelist_btn_text_login" target="{{egameList.target}}" lobby-type="{{egameList.lobbyType}}" is-check-login="true" href-link="{{egameList.href}}" href="javascript:void(0)" ng-if="status.isLoaded" my-checklogin=""></a>
+</div>
+<img ng-src="{{egameImagePath}}{{egameList.image | filterLangImg: egameList.filter}}">
+<div class="gameName" data-i18n="{{egameList.game_name}}"></div>
+</div>
+<div class="clearfix"></div>
+</div>
+</div>
+</div>
+</body>
+</html>

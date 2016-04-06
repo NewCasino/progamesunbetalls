@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<title>Ajax请求测试</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <link href="/css/Default/globle.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/right_main.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/cupertino/jquery.ui.all.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/tab.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/js/jQueryCommon.js"></script>
+    <script type="text/javascript">
+        jQuery(function() {
+
+            jQuery("#btnRequest").button();
+            jQuery("#btnRequest").click(function() {
+                LoadData();
+
+            });
+            
+
+        });
+        
+        function LoadData() {
+            var url = "/ServicesFile/AjaxTestService.asmx/GetLinkman";
+            jQuery.AjaxCommon(url, "", true, false, function (json) {
+                if (json.d != "none") {
+                    var result = jQuery.parseJSON(json.d);
+                    jQuery("#tab3>tbody>tr:gt(0)").remove()
+                    jQuery.each(result, function (i) {
+                        var f = jQuery("#dataRow").clone(true);
+                        f.find("#tdCk").html("<input type='checkbox' id='ck" + result[i].Id + "' />");
+
+                        f.find("#tdName").text(result[i].Name);
+
+                        f.find("#tdSex").text(result[i].Sex);
+                        f.find("#tdAge").text(result[i].Age);
+                        f.find("#tdBirthday").text(result[i].Birthday);
+                        f.appendTo("#tab3>tbody");
+
+                    });
+                    jQuery("#tab3>tbody>tr:eq(0)").remove();
+                }
+                else {
+
+                }
+                jQuery("#tab3").alterBgColor({ odd: "odd", even: "even", selected: "selected", moveOver: "over", tdCss: "tdCss", istdClick: true });
+            }, "#loading", "#btnRequest");
+
+        }
+    </script>
+
+</head>
+<body>
+<table  id="right_main" border="0" width="100%" cellpadding="0" cellspacing="0">
+<thead>
+<tr class="h30">
+<th width="12" class="tab_top_l"></th>
+<th width="*" class="tab_top_m"><p><font class="st"> 您当前的位置：</font><a href="javascript:void(0)"><span> 首页</span></a><a href="javascript:void(0)"><span>公共样式调用</span></a><span>Ajax请求</span></p></th>
+<th width="16" class="tab_top_r"></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="tab_middle_l"></td>
+<td >
+<div id="main">
+
+<input type="button" id="btnRequest" value="请求" />
+<table id="tab3" width="100%" cellpadding="0" cellspacing="0" border="0" >
+<caption>Ajax请求范例，必须结合jQueryCommon.js一起使用</caption>
+<thead >
+    <tr >
+        <th><input type="checkbox" id="ckAll" /></th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>生日</th>
+    </tr>
+</thead>
+<tbody>
+<tr id="dataRow">
+    <td id="tdCk"></td>
+    <td id="tdName"></td>
+    <td id="tdSex"></td>
+    <td id="tdAge"></td>
+    <td id="tdBirthday"></td>
+</tr>
+</tbody>
+</table>
+
+
+<div id="loading"></div>
+
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />ddd
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />ddd
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />ddd
+
+</div>
+</td>
+<td class="tab_middle_r"></td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr class="h35">
+<td width="12" class="tab_foot_l"></td>
+<td width="*" class="tab_foot_m">
+
+</td>
+<td width="16" class="tab_foot_r"></td>
+</tr>
+
+</tfoot>
+</table>
+
+</body>
+</html>

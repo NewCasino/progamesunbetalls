@@ -1,0 +1,11 @@
+.menu_tree{ width:120px;}
+
+.menu_tree li { padding: 3px 0 1px 16px;  width:100px;}
+.menu_tree span.folder,  .file { padding-left: 16px; display: block; height: 15px; }
+.menu_tree span.folder { background: url(/images/folder.gif) 0 0 no-repeat; cursor:pointer;  }
+.menu_tree .file { background: url(/images/file.gif) 0 0 no-repeat; }
+.menu_tree .hoverCss{ background-color:Gray; font-weight:bold;}
+.menu_tree a{ text-decoration:none;}
+.menu_tree a:hover{ text-decoration:underline; color:Red;}
+.menu_tree .selectCss{ background-color:Yellow;}
+.menu_tree .shousuo{ background-color:Green;}

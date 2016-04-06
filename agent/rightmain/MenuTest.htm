@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="/css/Default/globle.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/right_main.css" rel="stylesheet" type="text/css" />
+    <link href="/css/Default/jquery.treeview.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="/js/jquery-1.4.1.min.js"></script>
+    <script src="/js/jQueryCommon.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        (function ($) {
+            
+            $(function () {
+                $("#treeview").treeView({ moveCss: "hoverCss", selectedCss: "selectCss" });
+            });
+            
+        })(jQuery);
+    </script>
+</head>
+<body>
+<table  id="right_main" border="0" width="100%" cellpadding="0" cellspacing="0">
+<thead>
+<tr class="h30">
+<th width="12" class="tab_top_l"></th>
+<th width="*" class="tab_top_m"><p><font class="st"> 您当前的位置：</font><a href="javascript:void(0)"><span> 首页</span></a><a href="javascript:void(0)"><span>公共样式调用</span></a><span>右边页面模板</span></p></th>
+<th width="16" class="tab_top_r"></th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="tab_middle_l"></td>
+<td >
+<div id="main">
+<!--主题部分开始=========================================================================================-->
+    <ul id="treeview" class="menu_tree">
+        <li><span>功能模块1</span>
+            <ul>
+                <li><a href="#">功能页面1-1</a></li><li><a href="#">功能页面1-2</a></li><li><a href="#">功能页面1-3</a></li><li>
+                    <a href="#">功能页面1-4</a></li>
+            </ul>
+        </li>
+        <li><span>功能模块2</span>
+            <ul>
+                <li><a href="#">功能页面2-1</a></li><li><a href="#">功能页面2-2</a></li><li><a href="#">功能页面2-3</a></li><li>
+                    <a href="#">功能页面2-4</a></li>
+            </ul>
+        </li>
+        <li><span>功能模块3</span>
+            <ul>
+                <li><a href="#">功能页面3-1</a></li><li><a href="#">功能页面3-2</a></li><li><a href="#">功能页面3-3</a></li><li>
+                    <a href="#">功能页面3-4</a></li></ul>
+        </li>
+        <li><span>功能模块3</span>
+            <ul>
+                <li><a href="#">功能页面4-1</a></li><li><a href="#">功能页面4-2</a></li><li><a href="#">功能页面4-3</a></li><li>
+                    <a href="#">功能页面4-4</a></li></ul>
+        </li>
+    </ul>
+<!--主题部分结束=========================================================================================-->
+</div>
+</td>
+<td class="tab_middle_r"></td>
+</tr>
+</tbody>
+
+<tfoot>
+<tr class="h35">
+<td width="12" class="tab_foot_l"></td>
+<td width="*" class="tab_foot_m">
+
+</td>
+<td width="16" class="tab_foot_r"></td>
+</tr>
+</tfoot>
+</table>
+</body>
+</html>

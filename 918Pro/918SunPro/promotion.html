@@ -1,0 +1,634 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>特别优惠</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" media="all" href="index.css" />
+    <link type="text/css" rel="stylesheet" href="css/zuce.css" />
+    <link rel="stylesheet" type="text/css" href="/portal_asset/css/style.css?t=20150930164800" />
+    <link rel="stylesheet" type="text/css" href="/portal_asset/css/page/slider.css?t=20150929141600" />
+    <link rel="stylesheet" type="text/css" href="/portal_asset/css/module/jquery.jscrollpane.css?t=20150929141600" />
+    <link href="portal_asset/css/jquery-ui.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div xmlns:my="ignored" id="ng-app" ng-app="ctrlApp">
+        <div class="nav">
+            <div class="nav_small">
+                <ul style="float:left">
+                    <li><a href="help.html">常见问题</a></li>
+                    <li><span>&nbsp;|</span><a href="freePay.html">&nbsp;免费参观</a></li>
+                    <li><span>&nbsp;|</span><a href="about.html">&nbsp;关于我们</a></li>
+                    <!--<li><a href="">手机投注<span>|</span></a></li>-->
+                    <li><span>&nbsp;|</span><a href="zhaopai.html">&nbsp;牌照展示</a></li>
+                    <li><span>&nbsp;|&nbsp;</span><a my-checklogin="" href="javascript:void(0)" class="over" ng-
+
+if="status.isLoaded" href-link="#" is-check-login="true" lobby-type="live" target="_blank" action-
+
+text="banners.liveGame.btn_text_login" login-text="banners.liveGame.btn_text">登陆游戏</a></li>
+
+                </ul>
+
+                <ul style="float:right">
+
+                    <li class="userInfo left" ng-show="isAuthorized">
+                        <div>
+
+                            <p class="userInfo left white">欢迎您：{{username}} &nbsp;&nbsp;<a href="memberCenter.aspx">【会
+
+员中心】</a> &nbsp;&nbsp;</p>
+                            <div class="clearFix"></div>
+                        </div>
+                    </li>
+
+
+                    <li class="LS-service" ng-show="isAuthorized" ng-click="tgpLogout(true)">
+                        <span style=" font-weight: 800; font-size: 14px; color: #3B240B;">【</span><a href="" class="over" 
+
+id="tgpLogout" data-i18n="button.logout" style=" font-weight: 800; font-size: 14px; color: #3B240B;"></a><span style=" font-
+
+weight: 800; font-size: 14px; color: #3B240B;">】</span>
+                        </>
+                    </li>
+                    <!--<li><a href="">会员中心<span>|</span></a></li>-->
+
+                    <li><a id="pro_setup" href="http://www.11psb.com/air/air-bin/SunbetGameSetup3.4.0.exe">&nbsp;客户端下载
+
+</a></li>
+                    <li><span>&nbsp;|</span><a href="appGame.html" target="_blank">&nbsp;手机APP版</a></li>
+                    <li>
+                        <div ng-hide="isAuthorized">
+                            <span>&nbsp;|</span><a href="#" onclick="AddFavorite
+
+(window.location,document.title)">&nbsp;&nbsp;加入收藏</a>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div ng-hide="isAuthorized">
+                            <span>&nbsp;|</span><a href="javascript:void(0)" onclick="SetHome
+
+(this,window.location)">&nbsp;&nbsp;设为首页</a>
+                        </div>
+                    </li>
+                </ul>
+                <div class="yuan"></div>
+            </div>
+        </div>
+
+        <div class="nav_bottm">
+            <div class="logo">
+                <a href=""><img src="images/logo.png" alt="" /></a>
+            </div>
+            <div class="kaitong">
+                <a href="register.html"><img src="images/logo_icon_06.png" alt="" /></a>
+            </div>
+
+            <div class="login"><a my-checklogin="" id="sliderBtn" href="javascript:void(0)" class="over" ng-
+
+if="status.isLoaded" href-link="#" is-check-login="true" lobby-type="live" target="_blank" action-
+
+text="banners.liveGame.btn_text_login" login-text="banners.liveGame.btn_text"></a> </div>
+
+            <div class="pelope">
+                <a href="javascript:void(0);" onclick="openwin()"><img src="images/logo_icon_03.png" alt="" /></a>
+            </div>
+        </div>
+
+
+        <div class="modal-overlay my-hidden" ng-show="isShowTnc">
+            <div class="mask"></div>
+            <div id="tncDetail" class="tnc-modal-detail">
+                <div id="tncModal" class="modal-content">
+                    <div class="modal-title" data-i18n="login.userTnC"></div>
+                    <div class="clearfix"></div>
+                    <div id="tncContent" class="modal-inner-content">
+                        <div my-tnc=my-tnc></div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="modal-btn">
+                        <a data-i18n="button.agree" ng-click="closeTnc()" class="btn-first button left"> </a>
+                        <a data-i18n="button.disagree" ng-click="disagreeTnc()" class="btn-second button left"></a>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-overlay my-hidden" ng-show="isShowConfirmLogout">
+            <div class="mask" ng-click="cancelLogout()"></div>
+            <div class="logout-modal-detail" ng-hide="logoutTGPLoading">
+                <div class="modal-content">
+                    <div>
+                        <div class="btn-close" ng-click="cancelLogout()"></div>
+                        <div class="clearfix"></div>
+                        <div class="modal-title" data-i18n="login.confirmLogout"></div>
+                        <div class="modal-btn">
+                            <a data-i18n="button.confirm" ng-click="confirmLogout()" class="btn-first button "> </a>
+                            <a data-i18n="button.cancel" ng-click="cancelLogout()" class="btn-second button "></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="logoutLoading" ng-show="logoutTGPLoading">
+                <img src="/portal_asset/images/loading.gif" />
+            </div>
+        </div>
+
+
+        <div class="modal-overlay my-hidden" ng-show="isShowPopupGame" style=" display:none">
+            <div class="mask" ng-click="cancelPopupGame()"></div>
+            <div class="logout-modal-detail">
+                <div class="modal-content">
+                    <div>
+                        <div class="btn-close" ng-click="isShowPopupGame = false"></div>
+                        <div class="clearfix"></div>
+                        <div class="modal-title" data-i18n="button.enterNowConfirm"></div>
+                        <div class="modal-btn">
+                            <a data-i18n="button.confirm" ng-click="openUrl(currentPage)" class="btn-first button left"> </a>
+                            <a data-i18n="button.cancel" ng-click="isShowPopupGame = false" class="btn-second button 
+
+left"></a>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <my-hidden></my-hidden>
+    </div>
+    <div class="content_list">
+        <div class="cent_nav" style="height:90px;">
+            <ul>
+                <li><a href="index.html" class="a"></a></li>
+                <li><a href="gameProject.html" class="b"></a></li>
+                <li><a href="transfers.aspx" class="c"></a></li>
+                <li><a href="promotion.html" class="d11"></a></li>
+                <li><a href="agent.html" class="f"></a></li>
+                <li><a href="transfers1.aspx" class="e" target="_blank"></a></li>
+
+            </ul>
+        </div>
+        <p class="tishi">
+            <marquee behavior="scroll" scrolldelay="200" onmouseout="this.start()" onmouseover="this.stop()" 
+
+id="demo2"></marquee>
+
+        </p>
+
+             <div class="cent_conts_list" style="padding-left:20px;">
+	
+			
+			
+			 
+			 
+			 
+			 <p style="cursor:pointer;"><a href="javascript:void(0)" title="点击展开"><img src="images/016.jpg" 
+
+/></a></p>
+            <!--点亮QQ签名-->
+            <div class="cent_conts_text" style="padding-left:20px;">
+<pre>
+<span style="font-size:15px; font-weight:900;">点亮QQ签名，分享微信朋友圈，领取188元现金大奖</span>
+即日起所有618shenbovip的会员，把QQ或微信签名改成指定的内容，并且每天发布说说或微信朋友圈10天以上【不可中断发布日期，
+隔天需重新计算天数】。
+
+<table width="500" height="42" cellspacing="0" cellpadding="0" border="1" style="margin-left: 2px; " class="Tab">
+<tr height="42"><td style="text-align:center;color: white;"><span style=" font-size:16px; font-weight:700;color: white;">QQ/微信好友人数</span></td>
+<td style="text-align:center;color: white;"><span style=" font-size: 14px; font-weight: 700;color: white;">签名时长</span></td>
+<td style="text-align:center;color: white;"><span style=" font-size: 14px; font-weight: 700;color: white;">可获得彩金</span></td></tr>
+<tr height="42"><td style="text-align:center;color: white;">200+</td><td style="text-align:center;color: white;">10天</td>
+<td style="text-align:center;color: white;">30元</td></tr>
+<tr height="42"><td style="text-align:center;color: white;">300+</td><td style="text-align:center;color: white;">18天</td><td 
+
+style="text-align:center;color: white;">66元</td></tr>
+<tr height="42"><td style="text-align:center;color: white;">500+</td><td style="text-align:center;color: white;">30天</td><td 
+
+style="text-align:center;color: white;">188元</td></tr>
+           
+</table>
+
+*温馨提示：
+1、使用QQ参加“分享朋友圈”和会员需要在发布朋友圈之前添加客服QQ：9790181，以便专员审核及派送发彩金。
+2、使用微信参加“分享朋友圈”和会员需要在发布朋友圈之前添加客服微信：9790181，以便专员审核及派送发彩金。
+3、分享朋友圈需全部对外公开，只对部分公开或屏蔽，等……不计算有效分享无法获得分享彩金。
+注：由于活动火爆，申请会员众多，信息发送后，专员将于24小时内派送彩金到会员账户，请会员注意查收；
+
+*申请方式
+符合连续发布10天以上的会员可直接联系QQ/微信专员申请彩金（会员提交申请后，我们专员会在两个小时内审核并给您派送彩金）。
+参加“点亮QQ/微信签名”的会员，需先添加QQ/微信好友后，并向我们专员提供如下信息：
+内容：
+会员账户：718saaa
+真实姓名：******
+电话号码：******
+QQ/微信：******
+（截图）分享日期：***** QQ好友人数：***** 微信好友人数：*****
+
+
+活动细则
+1、所获得彩金需1倍流水方可申请提款，领取彩金的会员需在20天后方可再次参与此活动。
+2、如未添加我们专员QQ/微信，先发布签名的一律无效。
+3、发布QQ/微信签名的天数不可中断，如中途中断需重新计算天数。
+4、专员审核QQ/微信签名天数时，会员需要配合我们专员进行远程审核。
+5、每位会员，每一相同IP，每一电子邮箱，每一电话号码，相同支付方式（借记卡/信用卡/银行账户）及共享计算机环境（例如网吧，其他公用
+   计算机等）只能享受一次优惠； 若会员有重复申请账号行为，公司保留取消或收回会员优惠彩金的权利。
+6、618shenbovip的所有优惠为玩家而设，如发现任何团体或个人，以不诚实方式套取红利或任何威胁，滥用公司优惠等行为公司保留冻结，取消
+   该团体或个人账户结余的权利。
+7、若会员对活动有争议时，为确保双方利益，杜绝身份盗用行为，618shenbovip有权要求会员向我们提供充足有效文件，用以确认是否享有该
+  优惠的资质。
+8、618shenbovip保留对活动最终解释权；以及在无通知的情况下修改，终止活动的权利，适用于所有优惠。
+
+	</pre>
+            </div>
+			
+			
+			 
+			 
+			 
+			 
+			 
+			 
+            <p style="cursor:pointer;"><a href="javascript:void(0)" title="点击展开"><img src="images/11.jpg" /></a></p>
+            <!--无风险投注-->
+            <div class="cent_conts_text" style="padding-left:20px;">
+<pre>
+<span style="font-size:15px; font-weight:900;">无风险投注，您投注，我支付</span>
+存款100元，第一把全额投注（仅限真人娱乐游戏），赢了自由选择直接提款或者继续游戏，输了立即返还100元，返还金额仅需5倍流水即可提款。
+
+活动条款：
+1、活动时间：2016年1月1日00:00至2016年12月31日23:59(北京时间GMT+8) 
+2、活动对象：所有注册未存款的会员。
+3、申请方式：通过400电话或在线客服申请，
+4、说明：第一把只能下注真人百家乐游戏中的“庄”或“闲”，下注到其他游戏，不予返还。
+5、每位会员只能申请一次。申请奖金的玩家请在存款未下注前申请，否则视为放弃申请奖金。
+6、此优惠活动不能与其他优惠同时享用，只针对娱乐性质的会员，如发现用户拥有超过一个账户，包括同一姓名、同一邮件地址、  同一网络
+   环境、同一IP地址、同一借记卡/信用卡、同一银行账户、同一电脑及公用的电脑， 例如网吧及工作场所，只提供一次奖金优惠。
+7、任何个体/团队/组织被怀疑存在使用不诚实方式或欺诈行为骗取/滥用奖金为目的，等其他任何不正常投注行为一经核实，我们将保留冻结
+   相关账户盈利及余额的权利。
+8、此项优惠活动对象为在线娱乐玩家，任何有非娱乐目的利用礼金获利的玩家将可能被取消或拒绝参与或享受本优惠的资格，我们保留所有权利
+   在任何时候都可以停止、取消优惠或索回已支付的全部优惠。
+9、所有享受本优惠的会员需遵守活动条款，本次活动最终解释权归网站所有
+	</pre>
+            </div>
+ </div>
+
+
+
+
+
+
+
+        <div class="cent_conts_list" style="padding-left:20px;">
+            <p style="cursor:pointer;"><a href="javascript:void(0)" title="点击展开"><img src="images/youhui_1.jpg" 
+
+/></a></p>
+            <!--首存-->
+            <div class="cent_conts_text">
+<pre>
+<span style="font-size:15px; font-weight:900;">夏日风暴三重礼，首存即送100%，最高18888送不停</span>
+<table width="500" height="42" cellspacing="0" cellpadding="0" border="1" style="margin-left: " class="Tab">
+<tr height="42"><td style="text-align:center;color: white;"><span style=" font-size:16px; font-weight:700;color: white;">申请重数</span></td>
+<td style="text-align:center;color: white;"><span style=" font-size: 14px; font-weight: 700;color: white;">奖金比例</span></td>
+<td style="text-align:center;color: white;"><span style=" font-size: 14px; font-weight: 700;color: white;">最高奖金</span></td>
+<td style="text-align:center;color: white;"><span style=" font-size: 14px; font-weight: 700;color:white;">流水倍数</span></td></tr>
+<tr height="42"><td style="text-align:center;color: white;">第一重</td><td style="text-align:center;color: white;">100%</td>
+<td style="text-align:center;color: white;">888</td><td style="text-align:center;color: white;">30</td></tr>
+<tr height="42"><td style="text-align:center;color: white;">第二重</td><td style="text-align:center;color: white;">50%</td>
+<td style="text-align:center;color: white;">8888</td><td style="text-align:center;color: white;">28</td></tr>
+<tr height="42"><td style="text-align:center;color: white;">第三重</td><td style="text-align:center;color: white;">30%</td>
+<td style="text-align:center;color: white;">18888</td><td style="text-align:center;color: white;">25</td></tr>
+</table>	
+活动条款：
+1、活动时间：2016年1月1日00:00至2016年12月31日23:59(北京时间GMT+8) 
+2、活动对象：所有注册未存款的会员。
+3、申请方式：通过400电话或在线客服申请，客服人员将会拨打客户注册时的手机号码确认。
+4、说明：优惠期间无洗码返还，必须（存款和奖金）完成以上表格有效流水倍数才可以申请提款。未达到投注要求前，不能提款。
+5、每位会员只能享有一次首存奖金，“首存优惠三重礼”为一个连续三重的活动，礼金不可跨顺序申请，必须从第一重申请的存款次数往下接
+   不能中断。
+6、申请奖金的玩家请在存款未下注前申请，否则视为放弃申请奖金。
+7、此优惠活动不能与其他优惠同时享用。
+8、如在一场游戏中同时投注对等盘口，投注额将不予累计，例如：在一场游戏中同时投注百家乐的庄家及闲家。真人轮盘游戏中同时下注黑、
+   红，单、双，大、小，同时下注三列数字均为对押行为。
+9、此项优惠活动只针对娱乐性质的会员，如发现用户拥有超过一个账户，包括同一姓名、同一邮件地址、同一网络环境、同一IP地址、同一借
+   记卡/信用卡、同一银行账户、同一电脑及公用的电脑，例如网吧及工作场所，只提供一次奖金优惠。
+10、任何个体/团队/组织被怀疑存在使用不诚实方式或欺诈行为骗取/滥用奖金为目的，等其他任何不正常投注行为一经核实，我们将保留冻结
+    相关账户盈利及余额的权利。
+11、此项优惠活动对象为在线娱乐玩家，任何有非娱乐目的利用礼金获利的玩家将可能被取消或拒绝参与或享受本优惠的资格，我们保留所有
+    权利在任何时候都可以停止、取消优惠或索回已支付的全部优惠。
+12、所有享受本优惠的会员需遵守活动条款，本次活动最终解释权归网站所有
+	</pre>
+            </div>
+            <!--<p style="cursor:pointer;"><a href="javascript:void(0)" title="点击展开"><img src="images/zj1.jpg" /></a></p>
+           
+                        <div class="cent_conts_text">
+<pre>
+<span style="font-size:15px; font-weight:900;">金秋迎国庆，豪礼来相送</span>
+金秋迎国庆，豪礼来相送
+单笔存款1000以上即可享受高达20%的存款礼金赠送，你存我就送！
+
+1、活动时间：2016年9月20日00:00至2016年9月30日23:59（北京时间）
+2、活动对象：网站所有会员。
+3、活动要求：单笔存款500元以上的会员
+4、赠送比例如下表：          
+<table width="500" height="42" cellspacing="0" cellpadding="0" border="1" style="margin-left: 2px; " class="Tab">
+<tr height="42"><td style="text-align:center;color: white;"><span style=" font-size:16px; font-weight:700;color: white;">赠送
+
+奖金比例</span></td><td style="text-align:center;color: white;"><span style=" font-size: 14px; font-weight: 700;color: 
+
+white;">提款流水要求</span></td></tr>
+<tr height="42"><td style="text-align:center;color: white;">10%</td><td style="text-align:center;color: white;">6倍</td></tr>
+<tr height="42"><td style="text-align:center;color: white;">15%</td><td style="text-align:center;color: white;">9倍</td></tr>
+<tr height="42"><td style="text-align:center;color: white;">20%</td><td style="text-align:center;color: white;">12倍
+
+</td></tr>
+           
+</table>
+5、申请方式：存款成功后，通过400电话或联系在线客服申请即可。
+6、提款要求：对应的奖金达到对应的流水倍数即可申请提款。例如：存款1000元，有效投注达到,  以下表格的数字即可申请提款
+<table width="500" height="42" cellspacing="0" cellpadding="0" border="1" style="margin-left: 2px;" class="Tab">
+    <tr height="42"><td style="text-align:center;color: white;"><span style=" font-size:16px; font-weight:700;color: white;">
+
+赠送奖金比例</span></td><td style="text-align:center;color: white;"><span style=" font-size: 14px; font-weight: 700;color: 
+
+white;">赠送奖金</span></td><td style="text-align:center;color: white;"><span style=" font-size: 14px; font-weight: 
+
+700;color: white;">提款流水要求</span></td><td style="text-align:center;color: white;"><span style=" font-size: 14px; font-
+
+weight: 700;color: white;">有效投注额</span></td></tr>
+    <tr height="42"><td style="text-align:center;color: white;">10%</td><td style="text-align:center;color: 
+
+white;">100</td><td style="text-align:center;color: white;">6倍</td><td style="text-align:center;color: white;">（1000+100）
+
+*6＝6600</td></tr>
+    <tr height="42"><td style="text-align:center;color: white;">15%</td><td style="text-align:center;color: 
+
+white;">150</td><td style="text-align:center;color: white;">9倍</td><td style="text-align:center;color: white;">（1000+150）
+
+*9＝10350</td></tr>
+    <tr height="42"><td style="text-align:center;color: white;">20%</td><td style="text-align:center;color: 
+
+white;">200</td><td style="text-align:center;color: white;">12倍</td><td style="text-align:center;color: white;">（1000+200）
+
+*12＝14400</td></tr>
+           
+</table>         
+
+           
+    </pre>
+                        </div>-->
+            <!--好友-->
+            <p style="cursor:pointer;"><a href="javascript:void(0)" title="点击展开"><img src="images/youhui_2.jpg" alt="" 
+
+/></a></p>
+            <div class="cent_conts_text">
+<pre>
+<span style="font-size:15px; font-weight:900;">呼朋唤友来游戏，推荐彩金拿不停！</span>
+<br />
+成功推荐有效活跃会员，推荐人可享受被推荐人每次存款金额的1%彩金赠送
+活动规则：
+1、成功推荐有效活跃会员，推荐人可享受被推荐人每次存款金额的1%赠送，赠送金额上不封顶。 
+2、每一位会员注册成功后都会拥有一个游戏账号，当您将您的游戏账号告诉您的朋友，注册游戏账号时将您的游戏账号输入对应的位置即可。
+3、推荐奖金将于北京时间每天24点后派发到对应的游戏账号中。 
+4、好友推荐优惠即日开始，截止时间以网站公告为准。 
+5、推荐人必须在618集团有过一次存款记录。
+6、被推荐人注册时间必须迟于推荐人，一个被推荐人只容许有一个推荐人。
+7、推荐奖无需投注即可提款。
+8、被推荐人与推荐人不能使用相同登陆IP，每位玩家、每户、每台电脑、每一住址、每一电子邮箱地址、每一电话号码、相同支付方式 (相同
+   借记卡/信用卡/银行帐户号码) 及IP地址只能被推荐一次。合作代理商所发展的下线不适用此优惠。
+9、本活动意在答谢真诚推荐朋友的玩家，如发现任何人／团体／组织以不诚实的方式合伙套取红利或其他利益，账号及所有户内余额将被取消。
+10、618集团保留对本次活动的修改、订正和最终解释权。
+11、会员参加任何优惠活动则被视为认同遵守所定的规则以及有关规定并愿意受其约束。
+</pre>
+            </div>
+
+
+            <!--签到-->
+            <p style="cursor:pointer;"><a href="javascript:void(0)" title="点击展开"><img src="images/youhui_3.jpg" alt="" 
+
+/></a></p>
+            <div class="cent_conts_text">
+<pre>
+<span style="font-size:15px; font-weight:900;">天天游戏，周周拿钱，每周送您1888</span>
+
+1、活动开始时间从2016年1月1日00:00至2016年12月31日23:59（北京时间）
+2、活动对象：所有注册会员。
+3、会员只要在连续有6天投注，连续6天内每天累计存款不少于500元以上的即可联系客服申请。如下表：
+<table width="500" height="42" cellspacing="0" cellpadding="0" border="1" style="margin-left: 0px" class="Tab">
+<tr height="42"><td style="text-align:center;color: white;"><span style=" font-size:16px; font-weight:700;color: white;">签到天数</span></td>
+<td style="text-align:center;color: white;"><span style=" font-size: 14px; font-weight: 700;color: white;">每日存款金额</span></td>
+<td style="text-align:center;color: white;"><span style=" font-size: 14px; font-weight: 700;color: white;">全勤奖金上限</span></td>
+</tr>
+<tr height="42"><td style="text-align:center;color: white;">6</td><td style="text-align:center;color: white;">500-2000</td>
+<td style="text-align:center;color: white;">88元</td></tr>
+<tr height="42"><td style="text-align:center;color: white;">6</td><td style="text-align:center;color: white;">2000-5000</td>
+<td style="text-align:center;color: white;">288元</td></tr>
+<tr height="42"><td style="text-align:center;color: white;">6</td><td style="text-align:center;color: white;">5000-10000</td>
+<td style="text-align:center;color: white;">388元</td></tr>
+<tr height="42"><td style="text-align:center;color: white;">6</td><td style="text-align:center;color: white;">10000-50000</td>
+<td style="text-align:center;color: white;">588元</td></tr>
+<tr height="42"><td style="text-align:center;color: white;">6</td><td style="text-align:center;color: white;">50000以上</td>
+<td style="text-align:center;color: white;">1888元</td></tr>
+</table>
+4、符合资格的会员通过400电话或在线客服联系申请即可。
+5、对应的全勤奖金额只需达到2倍流水即可申请提款。
+6、全勤奖活动可同时享受返水。
+7、全勤奖优惠不可与其他优惠同时享有。
+</pre>
+            </div>
+
+            <!--银行-->
+            <p style="cursor:pointer;"><a href="javascript:void(0)" title="点击展开"><img src="images/youhui_4.jpg" alt="" 
+
+/></a></p>
+            <div class="cent_conts_text">
+<pre>
+<span style="font-size:15px; font-weight:900;">银行卡入款即送1%，次次存次次送，无上限！</span>	
+1、618shenbo的会员通过网银转账、ATM存款、ATM转账、手机银行转账以及直接到柜台办理汇款到公司
+   的银行帐号的，一律免费享受当次充值金额1%的彩金 
+2、通过公司帐号汇款的所有会员免费获得的彩金没有任何限制跟本金相同，并且会员存款后系统自动添
+   加1%彩金会员无需申请，会员次次存、次次送没有任何上限要求！
+</pre>
+            </div>
+
+            <!--洗码优惠-->
+            <p style="cursor:pointer;"><a href="javascript:void(0)" alt="点击展开"><img src="images/youhui_5.jpg" /></a></p>
+            <div class="cent_conts_text">
+<pre>洗码优惠
+[洗码优惠]高额洗码1%周周返，返水金额无上限
+
+活动内容
+我们为一直以来支持和关注本公司的新老会员准备了丰厚的洗码回水大礼。洗码是指会员下注有效投注额的返水，不论输赢，只要进行有效投注即可享受
+洗码(返水)优惠。
+
+<table width="500" height="48" cellspacing="0" cellpadding="0" border="1" style="" class="Tab">
+	<tr height="42"><td style="text-align:center;color: white;"><span style=" font-size:16px; font-weight:700;color: white;">有效投注额</span></td><td style="text-align:center;color: white;"><span style=" font-size:16px;font-weight:700;color: white;">洗码比例</span></td></tr>
+	<tr height="42"><td style="text-align:center;color: white;">50万以下</tdstyle></td><td style="text-align:center;color: white;">0.5%</tdstyle></td></tr>
+	<tr height="42"><td style="text-align:center;color: white;">50万-100万</tdstyle></td><td style="text-align:center;color: white;">0.6%</tdstyle></td></tr>
+	<tr height="42"><td style="text-align:center;color: white;">100万-300万</tdstyle></td><td style="text-align:center;color: white;">0.7%</tdstyle></td></tr>
+	<tr height="42"><td style="text-align:center;color: white;">300万-500万</td><td style="text-align:center;color: white;">0.8%</td></tr>
+	<tr height="42"><td style="text-align:center;color: white;">500万以上</td><td style="text-align:center;color: white;">1%</td></tr>
+</tr></table>		
+活动条款
+1.所有在网站注册的真钱会员都享有周有效投注额0.5%的洗码。
+2.一周内有效投注额达到500万（或首次开户存款80000元，并全额投注），即为我们的VIP会员，无论每周投注多少都可终身享受1%的洗码优惠，并享有
+  随时结算洗码的权利。
+3.我们将在每周一中午12点开始对上周符合洗码优惠赠送的会员进行结算，并在16点前自动将达到结算条件的会员洗码返点添加到会员的真钱账号上。
+  添加后会电话短信通知会员。
+4.有效投注额累计时间为一周，一周是以美东时间的礼拜一到礼拜日为准，（北京时间则为周一中午12点到次周一的中午12点），每周一上午12点后开始
+  对上周达到洗码标准的会员进行结算.下周将会从零算起，重新累计。上一周的投注金额不能累计至下一周。
+5.洗码返水优惠以单个会员账号的有效投注额进行结算。只有有效投注额才能享受优惠（无效投注包括在游戏中下注和局、游戏结果为和局、同一局游戏中
+  下注正、反两种结果:如百家乐游戏同一局下注庄闲）
+6.若系统侦测玩家以不正常手段来进行游戏，一经查证属实，会员账号将被永久锁定并取消优惠。
+7.洗码优惠与保险礼金优惠不可在同一天内享受。
+8.如发现玩家使用不正当手段谋取我们的优惠奖励，我们将保留取消该玩家获得促销奖励的权利。
+9.电子游戏洗码统一为0.6%。体育竞技的洗码统一为0.5%。
+10.如出现争执，网站的所有决定将是最终决定，会员参加任何优惠活动则被视为认可并同意遵守规则以及网站有关规定，愿意受其约束 ，
+   本公司保留最终解释权。
+</pre>
+            </div>
+
+            <!--保险-->
+            <p style="cursor:pointer;"><a href="javascript:void(0)" title="点击展开"><img src="images/youhui_6.jpg" alt="" 
+
+/></a></p>
+            <div class="cent_conts_text">
+<pre>
+活动内容：
+1.活动期间，凡充值并全额投注，出现存款负盈利500以上的会员，都会得到4%的存款负盈利返金。
+2.享受了保险礼金赠送，需要礼金达到5倍的有效投注额即可申请提款；如赠送保险礼金100，则需要100*5=500的有效投注额方可申请提款。
+3.网站优惠结算时间都是按照美东时间计算，因此，每天的中午12点之后结算上一天的输值，每单日（周一除外）结算一次。
+  例（21号0点-24点为一天）。
+4.保险礼金每天（周一除外）中午12点系统开始对符合条件的会员一一结算，并且在16点前自动将符合结算条件的会员保险礼金添加到会员的
+  真钱账号上，添加完毕后会致电通知。
+  
+本公司可在任何时候终止或修改所有活动规则及内容，最终解释权归本公司所有。
+</pre>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-text"><img src="images/bg.jpg" alt="" /></div>
+    </div>
+    <div class="footer11">
+        <div class="footer_column">
+            <div class="column01">
+                <div class="info_title01">信息</div>
+                <div class="line"></div>
+                <p>
+                    <span> 注册</span>
+                    点击立即开户即可享受所有的精彩游戏，更有机会获取高达100%的开户红利，最高可送￥18,888。
+                </p>
+                <p>
+                    <span>协议条款</span>
+                    我们提供最优秀的真人视讯平台，拥有正规牌照，并设置相关安全设施，确保游戏的公平。
+                </p>
+                <p>
+                    <span>游客参观</span>
+                    游戏平台全面开放，让您无需注册也可以一饱眼福。联系在线客服索要试玩账号
+                </p>
+            </div>
+            <div class="column02">
+                <div class="info_title02">产品</div>
+                <div class="line"></div>
+                <p>
+                    <span> 现场娱乐</span>
+                    我们强力首推，您可饱览整个游戏大厅和靓丽的SUNGIRL荷官。玩法众多,花样百变，赶快注册属于自己的账号吧！
+                </p>
+                <p>
+                    <span>电子游戏</span>
+                    我们拥有多种精彩电子游艺种类，画质精美，运行流畅，使您最大限度的拥有完美游戏体验
+                </p>
+                <p>
+                    <span>体育竞技</span>
+                    我们为您提供最专业的体育平台。每天多达300多场体育赛事，足球、篮球、网球等应有尽有，玩家可尽情享受体育投注
+
+乐趣。
+                </p>
+            </div>
+            <div class="column03">
+                <div class="info_title03">星级服务</div>
+                <div class="line"></div>
+                <p>
+                    <span>联系我们</span>
+                    如果您有任何关于游戏或者是娱乐场方面的疑问，您随时可通过在线客服、QQ客服或者电话客服获取帮助。
+                </p>
+                <p>
+                    <span>优质服务承诺</span>
+                    自成立至今，我们致力提供多元化的体育竞技及网上娱乐，让客户能每天24小时体验到最精采刺激的休闲享受，更藉以
+
+丰富奖赏，以回馈所有大众对我们的支持及热烈参与
+                </p>
+                <p>
+                    <span>快速存取款</span>
+                    我们提供各种安全简便的存款及提款选择给客户。我们希望所有的客户能够在一个安全愉快的环境中，享受本公司精心
+
+设计的产品和服务，并能够从中获利。我们欢迎如有需要，请通过电子邮件方式将相关讯息发送至电子邮箱：9790181@qq.com 我们将认真听取
+
+客户对我们提出的任何意见。
+                </p>
+
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="kefuBox33" id="" style="left: 20px; width: 133px; height: 150px; "><a style="color: #fbe7aa">+ 扫一扫 添加微
+
+信号</a> </div>
+    <!--客服弹出框-->
+    <div class="kefuBox" id="kefuBox" style="right: -190px;">
+        <div class="kefu_left">
+            <a href="javascript:void(0);"><img style="border:0;height: 293px" alt="" src="images/kefu_on.gif" /></a>
+        </div>
+        <div class="kefu_right">
+            <div class="kefu_top">
+                <a target="_blank" href="transfers1.aspx"><img style="border: 0; margin-left: -22px;margin-top:11px " alt="" 
+
+src="images/chongzhi_on.png" /></a>
+            </div>
+            <div class="kefu_bot">
+                <a onclick="openwin()" href="javascript:void(0);"><img style="border: 0; margin-left:-22px; margin-top:5px  " 
+
+alt="" src="images/zaixian_on.png" /></a>
+            </div>
+            <div class="kefu_bot">
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=9790181&amp;site=qq&amp;menu=yes"><img 
+
+style="border: 0; margin-left: -22px; margin-top:5px " alt="" src="images/chongzhi_on2.png" /></a>
+            </div>
+            <div class="kefu_bot">
+                <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=9790581&amp;site=qq&amp;menu=yes"><img 
+
+style="border: 0; margin-left:-22px; margin-top:5px " alt="" src="images/chongzhi_on3.png" /></a>
+            </div>
+            <div class="kefu_bot">
+                <a href="javascript:void(0);"><img style="border: 0; margin-left: -22px; margin-top:11px" alt="" 
+
+src="images/chongzhi_on4.png" /></a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="/portal_asset/js/libs/tgp.js?clientId=a8hHfj3ckdk4Djfi&t=20140930173901"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/i18next-1.7.3.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/jquery.jscrollpane.min.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/jquery.mousewheel.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/angular.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/angular-route.js"></script>
+    <script type="text/javascript" src="/portal_asset/js/libs/angular-cookies.js"></script>
+    <script src="/portal_asset/js/libs/jquery.cookie.js" type="text/javascript"></script>
+    <script src="portal_asset/js/jQueryCommon.min.js?t=201505161111111111111"></script>
+    <script src="js/618sun/promotion.js"></script>
+    <script src="js/util.js"></script>
+    <!-- Live800默认跟踪代码: 开始-->
+    <script language="javascript" src="http://f18.livechatvalue.com/chat/chatClient/monitor.js?
+
+jid=1206637488&companyID=493978&configID=53742&codeType=custom"></script>
+    <!-- Live800默认跟踪代码: 结束-->
+    <script language="javascript" type="text/javascript" src="http://js.users.51.la/17747998.js"></script>
+
+</body>
+</html>

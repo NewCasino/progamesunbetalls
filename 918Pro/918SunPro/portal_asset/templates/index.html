@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+<div class="slider-block">
+    <div class="slider-page">
+      <div class="slider-left"></div>
+      <div class="slider-content">
+        <div class="slider-images">
+          <ul id="slider-wrapper">
+            <li data-ng-repeat="sliderContent in sliderContents" class="slider-image">
+                <a sliderlogin ng-href="{{sliderContent.href}}{{defaultLanguage}}" target="{{sliderContent.target}}" uid="{{sliderContent.uid}}">
+                  <img ng-src="{{bannerPath}}{{sliderContent.image | filterLangImg: sliderContent.filter}}" />
+                  <div class="sliderDesc">
+                    <h3 data-i18n="[html]{{sliderContent.title}}"></h3>
+                    <h1 data-i18n="[html]{{sliderContent.desc}}"></h1>
+                  </div>
+                </a>
+            </li>
+          </ul>
+        </div>
+
+         
+        <div class="slider-menus">
+          <ul id="slider-menu-wrapper">
+            <li class="slider-menu" ng-class="{current: $index+1==1}" data-ng-repeat="sliderContent in sliderContents" slider-js-directive>{{$index+1}}</li>
+          </ul>
+        </div>
+      </div>
+      <div class="slider-right"></div>
+    </div>
+  </div>
+
+  <div class="contentWrapper">
+    <div class="contentList" id="loginBoxContainer">
+        <ul id="contentBox">
+          <li data-ng-repeat="indexContent in indexContents" ng-mouseover="isOver=true" ng-mouseleave="isOver=false" class="{{indexContent.li_class}} {{indexContent.size}}">
+              <div class="contentItem" id="box1">
+                  <div class="overlayWrapper {{indexContent.size}}" ng-show="isOver">
+                    <div class="overlay"></div>
+                    <a my-checklogin is-authorized="{{isAuthorized}}" ng-if="status.isLoaded" href="javascript:void(0);" class="contentBtn ytext" href-link="{{indexContent.href | filterIndexLinkLang}}" is-check-login="{{indexContent.needLogin}}" login-page="livegame" lobby-type="{{indexContent.lobbyType}}" login-text="{{indexContent.btn_text}}" action-text="{{indexContent.btn_text_login}}" alert-text="{{indexContent.alertText}}" target="{{indexContent.target}}" uid="{{indexContent.uid}}"></a>
+                  </div>
+                  <img ng-src="{{indexImagePath}}{{indexContent.image}}" class="{{indexContent.img_class}}"/>
+                  <div class="gameText game {{indexContent.desc_class}}">
+                      <div class="title" data-i18n="{{indexContent.title}}"></div>
+                      <div class="desc" data-i18n="[html]{{indexContent.desc}}"></div>
+                  </div>
+              </div>
+          </li>
+        </ul>
+        <div class="clearfix"></div>
+
+  </div>
+     
+</div>
+</body>
+</html>

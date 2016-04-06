@@ -1,0 +1,844 @@
+
+
+.regcont {
+    background: none repeat scroll 0 0 #292929;
+    color: #ffe5a6;
+    font-size: 14px;
+    margin-top: 2px;
+    padding: 20px;
+    width: 685px;
+}
+.live {
+    background: url("../../images/suncity/live.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: right;
+    height: 120px;
+    width: 553px;
+}
+.live li a {
+    display: block;
+    float: left;
+    height: 90px;
+    width: 276px;
+}
+.item {
+    float: right;
+    margin-top: -5px;
+    width: 550px;
+}
+.rollBox {
+    font-size: 14px;
+    margin: 0;
+    overflow: hidden;
+    width: 550px;
+}
+.rollBox .LeftBotton {
+    background: url("../../images/suncity/index_item_30.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 122px;
+    margin: 3px 0 0;
+    width: 29px;
+}
+.rollBox .LeftBotton:hover {
+    background: url("../../images/suncity/index_item_30.png") no-repeat scroll 0 -122px rgba(0, 0, 0, 0);
+}
+.rollBox .RightBotton {
+    background: url("../../images/suncity/index_item_35.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    display: block;
+    float: right;
+    height: 122px;
+    margin: 3px 0 0;
+    width: 29px;
+}
+.rollBox .RightBotton:hover {
+    background: url("../../images/suncity/index_item_35.png") no-repeat scroll 0 -122px rgba(0, 0, 0, 0);
+}
+.rollBox .Cont {
+    float: left;
+    margin: 0 0 0 5px;
+    overflow: hidden;
+    position: relative;
+    width: 480px;
+}
+.rollBox .ScrCont {
+    width: 1e+7px;
+}
+.rollBox #List1, .rollBox #List2 {
+    float: left;
+}
+.rollBox .pl {
+    background: url("../../images/suncity/index_item_32.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    display: block;
+    float: left;
+    height: 122px;
+    margin: 4px 0 0 7px;
+    text-decoration: none;
+    width: 152px;
+}
+.rollBox .pl:hover {
+    background: url("../../images/suncity/index_item_32.png") no-repeat scroll 0 -122px rgba(0, 0, 0, 0);
+}
+.rollBox .pl img {
+    margin: 9px;
+    width: 135px;
+}
+
+.announ2 li {
+    float: left;
+}
+#mobile-top {
+    margin: 0 auto 3px;
+    width: 1000px;
+}
+#nav li {
+    float: left;
+    height: 32px;
+    line-height: 32px;
+}
+#nav li.nav-line {
+    background: url("../../images/suncity/nav.png") no-repeat scroll 0 100% rgba(0, 0, 0, 0);
+    height: 32px;
+    margin: 0 5px;
+    padding-top: 9px;
+    width: 4px;
+}
+#nav a {
+    background-position: 50% -12px;
+    color: #fff;
+    display: inline-block;
+    height: 32px;
+    padding-top: 9px;
+    text-decoration: none;
+}
+#nav a:hover, #nav a.active {
+    background: url("../../images/suncity/nav_over.png") no-repeat scroll 50% 0 rgba(0, 0, 0, 0);
+    color: #ff9;
+    transition: color 0.8s ease 0s, background 0.2s ease 0s;
+}
+#mobile-content .mcontent {
+    display: none;
+    min-height: 578px;
+    position: relative;
+}
+.ad-wrap {
+    height: 560px;
+    overflow: hidden;
+    width: 100%;
+}
+.ad {
+    height: 460px;
+    left: 50%;
+    margin: 0 auto 0 -575px;
+    position: relative;
+    right: 50%;
+    width: 1150px;
+}
+.mobile-ad {
+    background: url("../../images/suncity/title_first.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.text-wrap {
+    height: 80px;
+    margin: -70px auto 0;
+    position: relative;
+    width: 1000px;
+}
+.text-mobile {
+    background: url("../../images/suncity/text01.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 60px;
+    margin: 10px 5px 0;
+    width: 92px;
+}
+.text-url {
+    background: url("../../images/suncity/web.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #666;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 15px;
+    padding-left: 40px;
+    width: 232px;
+}
+.text-line {
+    background: url("../../images/suncity/line.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 80px;
+    margin: 0 10px;
+    width: 4px;
+}
+.text-qr {
+    background: url("../../images/suncity/text02.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 66px;
+    margin: 7px 5px 0;
+    width: 66px;
+}
+.qr-bg {
+    background: url("../../images/suncity/qrcode_bg.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    float: left;
+    height: 66px;
+    padding: 7px;
+    width: 66px;
+}
+.text-browser {
+    float: left;
+    height: 54px;
+    padding-top: 28px;
+    vertical-align: middle;
+    width: 400px;
+}
+.text-browser img {
+    vertical-align: text-bottom;
+}
+.text-bbinqr {
+    float: left;
+    height: 80px;
+    width: 290px;
+}
+.swf-wrap {
+    background: url("../../images/suncity/flash_bg.png") no-repeat scroll 50% 0 rgba(0, 0, 0, 0);
+    height: 445px;
+    margin: 0 auto;
+    padding: 44px 86px 51px;
+    width: 688px;
+}
+.bbin-ad {
+    background: url("../../images/suncity/title_first02.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+.text-bbinqr {
+    background: url("../../images/suncity/bbin_qrcode.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+#mobile-footer {
+    margin: 30px auto 0;
+    text-align: left;
+    width: 980px;
+}
+#mobile-footer a {
+    color: #fff;
+}
+.reg {
+    background: none repeat scroll 0 0 #222;
+    border-bottom: 1px solid #222222;
+    color: #ffe5a6;
+    height: auto;
+    margin: 40px auto auto;
+    padding: 5px 30px 50px;
+    width: 920px;
+}
+.reghead {
+    background: none repeat scroll 0 0 #181818;
+    border-bottom: 1px solid #4b4b4b;
+    height: 30px;
+    margin: auto;
+    width: 920px;
+}
+.reg h2 {
+    color: #edde85;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 30px;
+}
+.homere {
+    background: url("../../images/suncity/ico.jpg") no-repeat scroll left center rgba(0, 0, 0, 0);
+    color: #666;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 25px;
+    width: 105px;
+}
+.text_width_200 {
+    background: url("../../images/suncity/Box.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    padding-top: 3px;
+    vertical-align: middle;
+    width: 190px;
+}
+.text_width_100 {
+    background: url("../../images/suncity/Box2.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 28px;
+    line-height: 28px;
+    padding-left: 10px;
+    padding-top: 3px;
+    vertical-align: middle;
+    width: 90px;
+}
+.text {
+    color: #ffe5a6;
+    font-size: 14px;
+}
+.text2 {
+    color: #666;
+    font-size: 14px;
+}
+.text2 option {
+    color: #666;
+}
+.reset_button {
+    background: url("../../images/suncity/CZ_btn.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 42px;
+    overflow: hidden;
+    width: 89px;
+}
+.tijiao_button {
+    background: url("../../images/suncity/sabmit_btn.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+    height: 42px;
+    overflow: hidden;
+    width: 89px;
+}
+.tips_error {
+    background: none repeat scroll 0 0 #181818;
+    color: #ff6600;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 0 0 5px;
+    padding: 0 28px 0 18px;
+    position: absolute;
+    vertical-align: middle;
+    white-space: nowrap;
+    z-index: 999;
+}
+.img-png-l, .img-png-l-up {
+    background-repeat: no-repeat;
+    display: block;
+}
+.img-png-l-up {
+    background-image: url("../../images/suncity/left-up.png");
+    width: 151px;
+}
+.img-png-l {
+    background-image: url("../../images/suncity/left-open.png");
+    width: 151px;
+}
+.kf-top {
+    background-position: center 0;
+    height: 45px;
+}
+.kf-server {
+    background-position: center -45px;
+    height: 43px;
+}
+.kf-reg {
+    background-position: center -88px;
+    height: 46px;
+}
+.kf-freeReg {
+    background-position: center -134px;
+    height: 45px;
+}
+.kf-pre {
+    background-position: center -178px;
+    height: 44px;
+}
+.kf-phone {
+    background-position: center -224px;
+    height: 55px;
+}
+.kf-qq1 {
+    background-position: center -278px;
+    height: 33px;
+}
+.kf-close {
+    background-position: center 100%;
+    height: 30px;
+}
+.kf-goTop {
+    background-position: center -92px;
+    height: 43px;
+}
+.promo_content {
+    margin: 20px auto;
+    width: 880px;
+}
+.promo_content UL {
+    padding-left: 20px;
+}
+.promo_content LI {
+    font-size: 12px;
+    line-height: 24px;
+    list-style-type: decimal;
+    margin-left: 20px;
+    max-width: 580px;
+    padding-left: 20px;
+}
+.promo_content H3 {
+    color: #edde85;
+    float: left;
+    font-size: 16px;
+    line-height: 50px;
+}
+.promo_content P {
+    color: #d3d3d3;
+    font-size: 12px;
+    line-height: 22px;
+    margin: 10px auto;
+}
+.promo_box {
+    background: none repeat scroll 0 0 #272727;
+    border-color: #212121;
+    border-style: solid;
+    border-width: 1px;
+    margin: 20px 0;
+    padding: 20px 60px;
+}
+.promo_box:hover {
+    background: none repeat scroll 0 0 #272727;
+    border-color: #333;
+    border-style: solid;
+    border-width: 1px;
+}
+.promo_box .promo_discription {
+    color: #999 !important;
+    font-size: 14px !important;
+}
+.promo_box .promo_time {
+    color: #edde85 !important;
+    font-size: 14px !important;
+}
+.PromoContent {
+    line-height: 22px !important;
+    margin: 20px;
+}
+.PromoContent H2 {
+    color: #edde85;
+    font-size: 14px;
+}
+.promo_box UL {
+    padding: 20px;
+}
+.promo_box table {
+    background: none repeat scroll 0 0 #43165f;
+    border: 0 none;
+    color: #241304;
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+}
+.promo_box table th {
+    border: 0 none currentcolor;
+    color: white;
+}
+.promo_box table td {
+    background-color: #10051b;
+    border: 0 none currentcolor;
+    color: #ffe2a5;
+    height: 25px;
+    line-height: 25px;
+}
+.button {
+   
+    border-color: #5a5a5a;
+    border-style: solid;
+    border-width: 1px;
+    color: #ffffff;
+    display: inline-block;
+  
+    font-size: 14px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 15px;
+    
+}
+.button:hover {
+   
+    border-color: #b11515;
+    border-style: solid;
+    border-width: 1px;
+}
+.clear {
+    clear: both;
+}
+.jihuo table {
+    background: none repeat scroll 0 0 #43165f;
+    border: 0 none;
+    color: #241304;
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+}
+.jihuo table th {
+    border: 0 none currentcolor;
+    color: white;
+}
+.jihuo table td {
+    background-color: #10051b;
+    border: 0 none currentcolor;
+    color: #ffe2a5;
+    height: 25px;
+    line-height: 25px;
+}
+.youhui77 h2 {
+    color: #ffe5a6;
+    font-size: 14px;
+    margin: 5px 0;
+}
+.youhui77 p {
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+.youhui77 table {
+    background: none repeat scroll 0 0 #43165f;
+    border: 0 none;
+    color: #241304;
+    font-size: 14px;
+    margin: 10px 0;
+    padding: 0;
+    text-align: center;
+}
+.youhui77 table th {
+    border: 0 none currentcolor;
+    color: white;
+}
+.youhui77 table td {
+    background-color: #10051b;
+    border: 0 none currentcolor;
+    color: #ffe2a5;
+    height: 25px;
+    line-height: 25px;
+}
+.cbody {
+    margin: 0 auto;
+    width: 980px;
+}
+.sun_title {
+    height: 60px;
+    position: relative;
+}
+.iner_wrap_top {
+    background: url("../../images/suncity/iner_wrap_top.png") no-repeat scroll center top rgba(0, 0, 0, 0);
+}
+.iner_wrap {
+    background: url("../../images/suncity/iner_wrap.png") repeat-y scroll 0 0 rgba(0, 0, 0, 0);
+}
+.iner_wrap_bg {
+    background: url("../../images/suncity/iner_wrap_bg.jpg") repeat-y scroll 0 0 rgba(0, 0, 0, 0);
+}
+.iner_wrap_bottom {
+    background: url("../../images/suncity/iner_wrap_bottom.jpg") no-repeat scroll center top rgba(0, 0, 0, 0);
+    height: 2px;
+    width: 980px;
+}
+.ico_fire {
+    background: url("../../images/suncity/title_zryl.jpg") no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: block;
+    height: 53px;
+    left: 26px;
+    position: absolute;
+    width: 70px;
+    z-index: 20;
+}
+.zryl_title {
+    background: url("../../images/suncity/zryl_title.gif") no-repeat scroll center top rgba(0, 0, 0, 0);
+    height: 60px;
+    left: 108px;
+    position: absolute;
+    text-indent: -998em;
+    top: 1px;
+    width: 150px;
+}
+.zryl_title1 {
+    background: url("../../images/suncity/zryl_title1.gif") no-repeat scroll center top rgba(0, 0, 0, 0);
+    height: 60px;
+    left: 108px;
+    position: absolute;
+    text-indent: -998em;
+    top: 1px;
+    width: 150px;
+}
+.enter-games {
+    background: url("../../images/suncity/enter_game.png") no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: block;
+    height: 45px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    width: 166px;
+    z-index: 20;
+}
+.rules_iner {
+    padding-left: 22px;
+    padding-top: 15px;
+    width: 960px;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    width: 0;
+}
+.clearfix {
+}
+* html .clearfix {
+    height: 1%;
+}
+.game_list_bg {
+    background: url("../../images/suncity/game_list_bg.jpg") no-repeat scroll center center rgba(0, 0, 0, 0);
+    float: left;
+    height: 143px;
+    margin-bottom: 10px;
+    margin-right: 6px;
+    width: 467px;
+}
+.game_list_bg dl {
+    height: 126px;
+    padding: 12px 10px 0 36px;
+    width: 421px;
+}
+.game_list_bg dl dt {
+    float: left;
+    height: 126px;
+    width: 240px;
+}
+.game_list_bg dl dd {
+    float: right;
+    height: 126px;
+    width: 176px;
+}
+.game_list_title {
+    color: #fdfdfd;
+    font-size: 30px;
+    height: 40px;
+    margin-top: 7px;
+    width: 240px;
+}
+.regtit {
+    background: none repeat scroll 0 0 #494949;
+    height: 65px;
+    padding-top: 10px;
+    width:735px;
+}
+.regmb {
+    background: none repeat scroll 0 0 #232323;
+    height: 50px;
+    padding: 0 15px;
+    width: 695px;
+}
+.regmb span {
+    background: url("../../images/suncity/mfkhtitle.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    color: #ffe5a6;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    height: 49px;
+    line-height: 43px;
+    padding-left: 23px;
+    width: 76px;
+}
+.mbxdh {
+    color: #999;
+    float: right;
+    font-size: 14px;
+    height: 49px;
+    line-height: 49px;
+}
+.regcont {
+    background: none repeat scroll 0 0 #292929;
+    color: #ffe5a6;
+    font-size: 14px;
+    margin-top: 2px;
+    padding: 20px;
+    width: 695px;
+}
+.regbt {
+    border-bottom: 1px dotted #494949;
+    color: #ffe5a6;
+    height: 25px;
+    line-height: 25px;
+    margin-bottom: 2px;
+    width: 100%;
+}
+.left20 {
+    color: #999;
+    font-size: 14px;
+    height: 25px;
+    line-height: 25px;
+    margin-left: 20px;
+}
+.regtop {
+    margin-top: 10px;
+}
+.regcont li {
+    margin-left: 30px;
+    margin-top: 10px;
+    padding-left: 110px;
+    text-align: left;
+    list-style-type:none;
+}
+.read_more {
+    background: url("../../images/suncity/ico_more.gif") no-repeat scroll center center rgba(0, 0, 0, 0);
+    display: block;
+    height: 22px;
+    margin-top: 12px;
+    width: 79px;
+}
+.yureg {
+    margin: 3px auto auto;
+    width: 980px;
+}
+
+.regcen {
+    background: none repeat scroll 0 0 #494949;
+    border-bottom: 10px solid #494949;
+    height: auto;
+    margin: auto;
+    padding-top: 10px;
+    width: 220px;
+ margin-top:8px;
+}
+.fwbz {
+    background: url("../../images/suncity/fwbztitle.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 49px;
+    text-align: center;
+    width: 220px;
+}
+.fwbz2 {
+    background-color: #494949;
+    height: auto;
+    margin-top: 10px;
+    overflow: hidden;
+    padding: 5px;
+    text-align: center;
+    width: 210px;
+}
+.fwbz2 a {
+    border: 1px solid #494949;
+    display: block;
+    margin-top: 5px;
+}
+.fwbz2 a:hover {
+    border: 1px solid #ffe5a6;
+    display: block;
+    margin-top: 5px;
+}
+.regcen li {
+    background: url("../../images/suncity/leftmenubg.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 35px;
+    line-height: 35px;
+    margin-left: 5px;
+    margin-top: 8px;
+    width: 212px;
+}
+.regcen li a {
+    color: #ffe5a6;
+    display: block;
+    height: 35px;
+    line-height: 35px;
+    width: 212px;
+}
+.regcen li a:hover {
+    color: #fff;
+}
+.regcen li:hover {
+    background: url("../../images/suncity/leftmenubga.jpg") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+#select7 {
+    margin-right: 147px;
+}
+#tijiao8 {
+    margin-left: 220px;
+    margin-top: 30px;
+}
+.regguiz {
+    padding-bottom: 60px;
+    text-align: center;
+}
+.textarea {
+    background-color: #000;
+    border: 2px solid #393939;
+    color: #c0c0c0;
+    height: 400px;
+    line-height: 15px;
+    margin: 5px;
+    padding: 10px;
+    width: 650px;
+}
+#wrapper {
+    color: #000000;
+    font-family: tahoma;
+    font-size: 14px;
+    margin: 50px auto 0;
+    width: 800px;
+}
+#wrapper a {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+.box {
+    background-color: #000;
+    border-radius: 10px;
+    height: 230px;
+    left: 100%;
+    padding: 20px;
+    position: fixed;
+    right: 30%;
+    top: 25%;
+    width: 560px;
+    z-index: 101;
+}
+.overlay {
+    bottom: 0;
+    left: 0;
+    opacity: 0.8;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 100;
+}
+a.boxclose {
+    background: url("../../images/suncity/cancel.png") repeat scroll left top transparent;
+    cursor: pointer;
+    float: right;
+    height: 26px;
+    left: 32px;
+    position: relative;
+    top: -33px;
+    width: 26px;
+}
+.agent_title {
+    margin: 0;
+    padding: 0;
+}
+.agent_title ul {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+}
+.agent_title li {
+    float: left;
+    margin: 10px 10px 10px 0;
+    padding: 0;
+}
+body, p, h1, h2, h3, h4, h5, h6, dd, dl, dt, th, td, ul, li, ol, form, input, select, textarea, button, pre, legend, img {
+    border: 0 none;
+    list-style: outside none none;
+    margin: 0;
+    padding: 0;
+    font-family: "STHeiti",Arial,"Î¢Ü›ÕýºÚów","Microsoft JhengHei","simsun",Verdana,"Helvetica","sans-serif";
+}
+
+.bctext {
+ 
+  margin-top: 5px;
+}
+.bctextspan {
+    font-size£º11px;
+    font-family: "STHeiti",Arial,"Î¢Ü›ÕýºÚów","Microsoft JhengHei","simsun",Verdana,"Helvetica","sans-serif";
+}

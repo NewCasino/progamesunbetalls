@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="yafa">
+</Property><Property Name="解决方案文件" Value="C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\yafa.sln">
+</Property><Property Name="Date" Value="2014年7月3日">
+</Property><Property Name="Time" Value="17:18:22">
+</Property></Properties><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\YeePay_HTMLcommon.csproj" Description="项目文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\YeePay_HTMLcommon.csproj">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\YeePay_HTMLcommon.csproj.user" Description="项目用户文件成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\YeePay_HTMLcommon.csproj.user">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\QueryOrderStatus.aspx.cs" Description="文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\QueryOrderStatus.aspx.cs">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\QueryOrderStatus.aspx.designer.cs" Description="文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\QueryOrderStatus.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\Refund.aspx.cs" Description="文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\Refund.aspx.cs">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\Refund.aspx.designer.cs" Description="文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\Refund.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\Req.aspx.cs" Description="文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\Req.aspx.cs">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\Req.aspx.designer.cs" Description="文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\Req.aspx.designer.cs">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\Callback.aspx.cs" Description="文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\Callback.aspx.cs">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\Properties\AssemblyInfo.cs" Description="文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\Callback.aspx" Description="文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\Callback.aspx">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\Index.html" Description="文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\Index.html">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\pay.html" Description="文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\pay.html">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\query.html" Description="文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\query.html">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\QueryOrderStatus.aspx" Description="文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\QueryOrderStatus.aspx">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\Refund.aspx" Description="文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\Refund.aspx">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\refund.html" Description="文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\refund.html">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\Req.aspx" Description="文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\Req.aspx">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\Web.config" Description="文件已成功备份为 C:\Users\seven\Desktop\10sun\10sun\10sun\yafa\Backup\Web.config">
+</Event><Event ErrorLevel="1" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\YeePay_HTMLcommon.csproj" Description="您的项目以 .NET Framework 2.0 或 3.0 为目标。如果您的项目使用的程序集需要更新的 .NET Framework，则项目生成将失败。通过单击项目菜单上的“属性”，然后在“.NET Framework”下拉框中选择一个新版本，可以更改 .NET Framework 的版本。(在 Visual Basic 中，可在单击“高级编辑器选项...”按钮时显示的“编译”选项卡上找到此下拉框。)">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\YeePay_HTMLcommon.csproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\YeePay_HTMLcommon.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="YeePay_HTMLcommon" Source="YeePay_HTMLcommon_V3.1\C#\c#(vs08)\YeePay_HTMLcommon.csproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>

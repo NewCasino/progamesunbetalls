@@ -1,0 +1,371 @@
+.right_comp body	{font-family: Arial,Verdana; font-size: 12px}
+.right_comp td		{font-family: Arial,Verdana; font-size: 12px}
+.right_comp form	{border: 0; padding: 0; margin: 0}
+.right_comp input	{font-family: Arial,Verdana; font-size: 12px}
+.right_comp select	{font-family: Arial,Verdana; font-size: 12px}
+.right_comp textarea{font-family: Arial,Verdana; font-size: 12px}
+
+.right_comp aaa {
+	border-top-width: 1pt;
+	border-right-width: 1pt;
+	border-bottom-width: 1pt;
+	border-left-width: 1pt;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #0066CC;
+	border-right-color: #0066CC;
+	border-bottom-color: #0066CC;
+	border-left-color: #0066CC;
+}
+
+.right_comp hr		{height: 1px}
+.right_comp table	{border: 1px}
+
+.right_comp td		{border-color: black}
+.right_comp ul		{margin-left: 20}
+
+.right_comp .black			{text-decoration: none; color: #000000}
+.right_comp .black:hover	{text-decoration: underline;}
+.right_comp .white			{text-decoration: none; color: #FFFFFF}
+.right_comp .white:hover	{text-decoration: underline;}
+.right_comp .yellow			{text-decoration: none; color: #FFFFCC}
+.right_comp .yellow:hover	{text-decoration: underline;}
+.right_comp .black			{text-decoration: none; color: #000000}
+.right_comp .linkcolor		{text-decoration: none; color: #000000}
+.right_comp .linkcolor:hover{text-decoration: none; color: #FF6600}
+.right_comp .red			{text-decoration: none; color: #FF0000}
+.right_comp .red:hover		{text-decoration: underline}
+.right_comp .blue			{text-decoration: none; color: #0000FF}
+.right_comp .blue:hover		{text-decoration: underline;}
+.right_comp .green			{text-decoration: none; color: green}
+.right_comp .title_001 {
+	PADDING-LEFT: 42px; FONT-SIZE: 13px; COLOR: #990000
+}
+.right_comp .title_002 {
+	PADDING-LEFT: 42px; FONT-SIZE: 13px; COLOR: #000099
+}
+.right_comp .title_003 {
+	PADDING-RIGHT: 32px; PADDING-LEFT: 42px
+}
+.right_comp .title_004 {
+	PADDING-LEFT: 42px; FONT-SIZE: 13px; COLOR: red
+}
+.right_comp .title_005 {
+	FONT-SIZE: 13px; COLOR: #000099
+}
+
+.right_comp .odds {
+	text-decoration: none;
+	font-family: Arial,Verdana;
+	color: FireBrick;
+	font-weight: bold
+}
+.right_comp .odds2 {
+	text-decoration: none;
+	font-family: Arial,Verdana;
+	color: red;
+	background-color: #F9F111;
+	font-weight: bold
+}
+.right_comp .odds:hover {text-decoration: none; background-color: #FFFF99}
+.right_comp .odds2:hover {text-decoration: none; background-color: #FFFF99}
+
+.right_comp .odds_black {
+	text-decoration: none;
+	font-family: Arial,Verdana;
+	color: black;
+	font-weight: bold
+}
+
+.right_comp .odds_gray {
+	text-decoration: none;
+	font-family: Arial,Verdana;
+	color: #343333;
+	font-weight: bold
+}
+.right_comp .odds_gray:hover {text-decoration: none; background-color: #FFFF99}
+
+.right_comp .odds_black:hover {text-decoration: none; background-color: #FFFF99}
+.right_comp .odds_red {
+	text-decoration: none;
+	font-family: Arial,Verdana;
+	color: red;
+	font-weight: bold
+}
+.right_comp .odds_red:hover {text-decoration: none; background-color: #FFFF99}
+
+.right_comp .odds2_black {
+	text-decoration: none;
+	font-family: Arial,Verdana;
+	color: black;
+	background-color: #F9F111;
+	font-weight: bold
+}
+.right_comp .odds2_gray {
+	text-decoration: none;
+	font-family: Arial,Verdana;
+	color: #343333;
+	background-color: #F9F111;
+	font-weight: bold
+}
+.right_comp .odds2_gray:hover {text-decoration: none; background-color: #FFFF99}
+.right_comp .odds2_black:hover {text-decoration: none; background-color: #FFFF99}
+.right_comp .odds2_red {
+	text-decoration: none;
+	font-family: Arial,Verdana;
+	color: red;
+	background-color: #F9F111;
+	font-weight: bold
+}
+.right_comp .odds2_red:hover {text-decoration: none; background-color: #FFFF99}
+
+.right_comp .table-scedule_font_size{
+	font-size: 26px;
+	letter-spacing: 0px;
+	color: #000000;
+}
+.right_comp .uline {
+	color: FireBrick;
+	font-weight: bold;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #FFFFFF;
+}
+.right_comp .utext {
+	border-width: 1px;
+	border-style: solid;
+	border-color: #000000;
+}
+.right_comp .table-title {
+	font-size: 12px;
+	letter-spacing: 0px;
+	color: #000000;
+	background-image: url(/images/website/a1a888/2t_1.gif);
+}
+
+.right_comp .button1 { 
+	color: #FFFFFF;
+	background-color: #677DD9;
+	border: 1px solid #000099;
+	padding-top:3px;
+	padding-bottom:0px;
+	background-image: url(/images/website/a1a888/button_bg.jpg);
+}
+.right_comp .button_del { 
+	font-size: 10px;
+	color: #FFFFFF;
+	background-color: #677DD9;
+	border: 1px solid #000099;
+	padding-top:3px;
+	padding-bottom:0px;
+	background-image: url(/images/website/a1a888/button_bg.jpg);
+}
+.right_comp .button2 { 
+	color: #FFFFFF;
+	background-color: #4673B4;
+	border: 1px solid #000099;
+	padding-top:3px;
+	padding-bottom:0px;
+	background-image: url(/images/website/a1a888/button_bg.jpg);
+}
+.right_comp .button3 { 
+
+	color: #FFFFFF;
+	border: 1px solid black;
+	background-color: red;
+	padding-top:3px;
+	padding-bottom:0px;
+	background-image: url(/images/website/a1a888/button_bg_red.jpg);
+}
+.right_comp .button4 {
+
+	color: #FFFFFF;
+	border: 1px solid black;
+	background-color: green;
+	padding-top:3px;
+	padding-bottom:0px;
+	background-image: url(/images/website/a1a888/button_bg_green.jpg);
+}
+
+.right_comp .button5 {
+
+	color: #000000;
+	border: 1px solid black;
+	background-color: #CAD99E;
+	padding-top:3px;
+	padding-bottom:0px;	
+}
+.right_comp .button6 {
+
+	color: #000000;
+	border: 1px solid black;
+	background-color: #ffffff;
+	padding-top:3px;
+	padding-bottom:0px;	
+}
+.right_comp .show_tr {
+	display: block;
+}
+
+.right_comp .css {
+	font-size: 9pt;
+	line-height: 17px;
+}
+.right_comp .top a:visited {
+	font-size: 9pt;
+	line-height: 18px;
+	color: #000000;
+	text-decoration: none;
+}
+.right_comp .top a:hover {
+	font-size: 9pt;
+	line-height: 17px;
+	color: #FF0000;
+	text-decoration: underline;
+}
+.right_comp .top a:link {
+	font-size: 9pt;
+	line-height: 18px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.right_comp .menu a:visited {
+	font-size: 9pt;
+	line-height: 18px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.right_comp .menu a:hover {
+	font-size: 9pt;
+	line-height: 17px;
+	color: #FFFF33;
+	text-decoration: underline;
+}
+.right_comp .menu a:link {
+	font-size: 9pt;
+	line-height: 18px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.right_comp .menu1 a:visited {
+	font-size: 9pt;
+	line-height: 14px;
+	color: #000000;
+	text-decoration: none;
+}
+.right_comp .menu1 a:hover {
+	font-size: 9pt;
+	line-height: 14px;
+	color: #FF0000;
+	text-decoration: underline;
+}
+.right_comp .menu1 a:link {
+	font-size: 9pt;
+	line-height: 14px;
+	color: #000000;
+	text-decoration: none;
+}
+
+.right_comp .copyright a:visited {
+	font-size: 9pt;
+	line-height: 18px;
+	color: #ffffff;
+	text-decoration: none;
+}
+.right_comp .copyright a:hover {
+	font-size: 9pt;
+	line-height: 17px;
+	color: #FF0000;
+	text-decoration: underline;
+}
+.right_comp .copyright a:link {
+	font-size: 9pt;
+	line-height: 18px;
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.right_comp .login-bj {
+	background-image: url(/images/website/a1a888/bj.gif);
+	background-repeat: repeat-x;
+	background-position: top;
+}
+
+.right_comp .login-title {
+	font-size: 12pt;
+	line-height: 18px;
+}
+.right_comp .login-box1 {
+	font-size: 9pt;
+	background-color: #FFFFFF;
+	height: 18px;
+	width: 90px;
+	border: 1pt solid #7F9DB9;
+}
+.right_comp .login-box2 {
+	font-size: 9pt;
+	background-color: #FFFFFF;
+	height: 18px;
+	width: 40px;
+	border: 1pt solid #7F9DB9;
+}
+
+.right_comp #downloading {
+	WIDTH: 100%;
+	HEIGHT: 100%;
+	POSITION: absolute;
+	BACKGROUND-COLOR: white;
+}
+
+.right_comp .alla:link {
+	font-family: Arial, Verdana;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+}
+.right_comp .alla:visited {
+	font-family: Arial, Verdana;
+	font-size: 12px;
+	color: #333333;
+	text-decoration: none;
+}
+.right_comp .alla:hover {
+	font-family: Arial, Verdana;
+	font-size: 12px;
+	color: #CC6600;
+	text-decoration: underline;
+}
+.right_comp .gunqiu
+{
+	color: #FFFFFF;
+	background-color: #FF0000;
+}
+.right_comp .timer
+{
+	color: #000000;
+	background-color: #E6E6E6;
+}
+.right_comp .btn_depressed
+{
+	border-style: inset;
+	border-width: 1px;
+	border-color: #CCCCCC;
+	color: red;
+	background-color: #E0E0E0;
+	padding: 1px 4px 1px 4px;
+	text-decoration: none;
+}
+.right_comp .btn_raised
+{
+	border-style: outset;
+	border-width: 1px;
+	border-color: #CCCCCC;
+	color: blue;
+	background-color: #F0F0F0;
+	padding: 1px 4px 1px 4px;
+	text-decoration: none;
+}

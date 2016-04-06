@@ -1,0 +1,46 @@
+/* 
+===================环球博彩===================
+
+   * Filename:        globle.css
+   * Version:         (2009-10-08) YYYY-MM-DD
+   * Website:         
+   * @ 环球博彩全局调用，首页样式  
+  == SITE BY:Vispeace========================
+   * www.vispeace.com
+===================================================
+   
+*/
+*,body,form,ul,li,p,h1,h2,h3,h4,h5,h6 {margin:0px;padding:0px;}
+body{background:url(/images/Login/bg.jpg) repeat-x; }
+body, td, th, input, select,p,span{font-family:"微软雅黑",Arial, Helvetica, sans-serif;}
+body{font-size:12px;color:#333; line-height:150%;-webkit-text-size-adjust:none;}
+a {blr:expression(this.onFocus=this.blur()); font-family:"微软雅黑",Arial, Helvetica, sans-serif; font-size:12px; }
+a:link, a:visited {text-decoration:none;color:#333;}
+a:hover, a:active {text-decoration:underline;color:#F00;}
+ul,li,ol{list-style-type:none;}img {border:none;}
+
+.tc{text-align:center;}.tl{text-align:left;}.tr{text-align:right;}.dis{display:block;}.undis{display:none;}.fl{float:left;}.fr{float:right;}.cl{clear:both;}
+.fb{font-weight:bold;}.xue{ font-style:oblique;}
+
+.ccc{ color:#ccc;}
+/*----------------------------------------------------------------------------------------------------------*/
+.main_box{ width:900px; background:url(/images/Login/mainbg.jpg) no-repeat; height:350px; margin:auto; margin-top:160px; }
+.login_box{ width:245px; height:235px; padding:100px 0 0 0; color:#fff; margin:auto;}
+.login_box ul{ height:180px; clear:both;}
+.login_box li{ padding:5px 0 0; width:100%; clear:both;}
+.login_box span{ float:left; width:80px; text-align:right; margin-right:5px;}
+.login_box p{ float:left; width:150px;}
+.yzm{width:52px; height:20px; background:url(/images/Login/inputbg.gif) repeat-x #fff; font-size:12px; border:solid 1px #02ccff; color:#004475; line-height:20px; padding:0 3px;}
+.yzm_img img{ width:52px; height:20px; border:solid 1px #02ccff;}
+.text_01{width:112px; height:20px; background:url(/images/Login/inputbg.gif) repeat-x #fff; font-size:12px; border:solid 1px #02ccff; color:#004475;line-height:20px;padding:0 3px;}
+.btn_l{width:100px;height: 35px;border: none;background: url(/images/Login/login_09.gif) no-repeat;line-height: 35px;color: #fff;font-weight: bold;cursor: pointer;}
+
+.login_btn{ padding-top:0px; clear:both;}
+.btn_h{width: 100px;height: 35px;border: none;background: url(/images/Login/login_09_1.gif) no-repeat;line-height: 35px;color: #fff;font-weight: bold;cursor: pointer;}
+
+.red_x{ color:Red; font-weight:700; margin-right:3px;}
+.text_02{width:40px; height:20px; background:url(/images/Login/inputbg.gif) repeat-x #fff; font-size:12px; border:solid 1px #02ccff; color:#004475;line-height:20px;padding:0 3px;}
+
+.btn21{ width:100px; height:40px; color:#fff; border:0px; padding-bottom:10px; background:url(/images/Login/btn22.gif);cursor: pointer;  }
+.select_lan{ width:120px; height:22px;}
+#divTip{-moz-border-radius:5px;border:1px solid #C4C4C4;text-align:center;-moz-box-shadow:4px 4px 8px #CAC8C8;background-color:#FFFFFF;position:absolute;z-index:20;display:none;font-size:16px;font-weight:bold;color:Red;}

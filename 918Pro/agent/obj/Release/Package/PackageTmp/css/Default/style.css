@@ -1,0 +1,74 @@
+/* 
+===================环球博彩代理平台系统登录===================
+
+   * Filename:        globle.css
+   * Version:         (2010-03-11) YYYY-MM-DD
+   * Website:         
+   * @ 全局调用  
+  == SITE BY:Vispeace========================
+   * www.vispeace.com
+===================================================
+
+/*弹出层浮动层样式----------------------------------------------------------------------------------------------*/
+
+
+/*弹出层浮动层样式----------------------------------------------------------------------------------------------*/	
+
+
+/*text样式----------------------------------------------------------------------------------------------*/
+
+.text_01{ background:url(/images/default/main/textbg.gif) repeat-x top #fff; border:1px solid #98d0ff; padding:0 3px; }
+.text_01_h{ background:url(/images/default/main/textbg_h.gif) repeat-x top  #e5f2ff; border:1px solid #68baff; padding:0 3px;   }
+.input_out{padding:2px 8px 0pt 3px; height:18px; border:1px solid #89c0f2;  line-height:18px;background:url(/images/default/main/textbg.gif) repeat-x top  #fff;  }
+.onFocus{ border:1px solid #4ac0f8;background:url(/images/default/main/textbg_h.gif) repeat-x top  #e5f2ff; }
+.onError {border:1px solid #e60012; background:url(/images/default/main/textbg_e.gif) repeat-x top  #e5f2ff; color:#f30; }
+ #tip {position:absolute; background:url(/images/icon/Icon326.png) no-repeat 0 4px; margin-left:20px; display:none; border:1px dotted #f30; padding:3px 5px 3px 20px; text-align:center;vertical-align:middle; word-spacing:2px; }
+
+
+/*btn样式----------------------------------------------------------------------------------------------*/
+
+
+.btn_01{ width:71px; height:22px; background:url(/images/default/main/btn_01.gif) no-repeat; border:none; line-height:22px; color:#fff; font-weight:bolder; cursor:pointer;}
+.btn_01_h{ width:71px; height:22px; background:url(/images/default/main/btn_01.gif) no-repeat 0 -22px; border:none; line-height:22px; color:#fff; font-weight:bolder; cursor:pointer;}
+.btnblue{ display:inline-block; padding-left:10px; height:22px; background:url(/images/default/main/btn_01.gif) no-repeat 0 -44px; border:none; line-height:22px; color:#fff; font-weight:bolder; cursor:pointer;}
+.btnblue span{ display:inline-block; padding-right:10px; height:22px; background:url(/images/default/main/btn_01.gif) no-repeat right -66px; border:none; line-height:22px; color:#fff; font-weight:bolder; cursor:pointer;}
+.btnblue a{ text-decoration:none;}
+
+.btn_02{ width:90px; height:26px; background:url(/images/default/main/btn_02.gif) 0 0px no-repeat; border:none; line-height:26px; color:#0282c2;font-weight:bolder;cursor:pointer;}
+.btn_02_h{ width:90px; height:26px; background:url(/images/default/main/btn_02.gif) 0 -27px no-repeat; border:none; line-height:26px; color:#0282c2;font-weight:bolder;cursor:pointer;}
+
+.btn_04{ width:90px; height:32px; background:url(/images/default/main/btn_04.gif) 0 0px no-repeat; padding-bottom:3px; border:none; color:#fff;font-weight:bolder;cursor:pointer;}
+.btn_04_h{ width:90px; height:32px; background:url(/images/default/main/btn_04.gif) 0 -32px no-repeat; padding-bottom:3px;  border:none; line-height:32px; color:#fff;font-weight:bolder;cursor:pointer;}
+
+
+.btn_05{ width:90px; height:32px; background:url(/images/default/style/btn/btn_02.gif) no-repeat; border:none; line-height:32px; color:#fff; font-weight:bolder; cursor:pointer; font-size:14px;}
+.btn_06{ width:90px; height:32px; background:url(/images/default/style/btn/btn_02.gif) 0 -32px no-repeat; border:none; line-height:32px; color:#fff;font-weight:bolder;cursor:pointer;font-size:14px;}
+.btn_07{ width:90px; height:32px; background:url(/images/default/style/btn/btn_02.gif) -90px 0 no-repeat; border:none; line-height:32px; color:#fff;font-weight:bolder;cursor:pointer;font-size:14px;}
+.btn_08{ width:90px; height:32px; background:url(/images/default/style/btn/btn_02.gif) -90px -32px no-repeat; border:none; line-height:32px; color:#fff;font-weight:bolder;cursor:pointer;font-size:14px;}
+.hemai_btn{ width:95px; height:24px;  color:#FFF; font-weight:bolder; border:0px; line-height:24px; background:url(/images/default/mainbg.png) no-repeat -200px -200px;}
+
+
+
+
+/*--删除修改--*/
+.top_add{ height:30px; width:121px; background:url(/images/default/main/add_btn.gif) no-repeat; border:0; line-height:30px; cursor:pointer; }
+.top_add_h{ height:30px; width:121px; background:url(/images/default/main/add_btn.gif) no-repeat 0 -30px; border:0; line-height:30px; cursor:pointer; }
+.fa_add{ height:24px; padding-left:24px; color:#105b91; background:url(/images/default/main/fa_btn.gif) no-repeat left 0;  line-height:24px; cursor:pointer; display:inline-block; text-decoration:none;  }
+.fa_add_in{ height:24px; color:#105b91;  background:url(/images/default/main/fa_btn.gif) no-repeat right -24px; padding-right:10px;  line-height:24px; cursor:pointer;display:inline-block; text-decoration:none; }
+.fa_saurch{ height:24px; padding-left:24px; background:url(/images/default/main/fa_btn.gif) no-repeat left -48px;  line-height:24px; cursor:pointer; display:inline-block; text-decoration:none; color:#FFF;  }
+.fa_saurch_in{ height:24px;  background:url(/images/default/main/fa_btn.gif) no-repeat right -72px; padding-right:10px;  line-height:24px; cursor:pointer;display:inline-block; text-decoration:none;color:#FFF; }
+.edit_01{ padding-left:15px; background:url(/images/icon/Icon167.png) 0 4px no-repeat; }
+.delet_01{ padding-left:15px; background:url(/images/icon/Icon141.png) 0 4px no-repeat;}
+.edit_02{ width:16px; height:16px; background:url(/images/icon/Icon388.png) 0 0px no-repeat; border:0px; cursor:pointer; margin:7px 2px;}
+.save_01{ width:16px; height:16px; background:url(/images/icon/Icon316.png) 0 0px no-repeat; border:0px; cursor:pointer; margin:7px 2px;}
+.imgShow{ width:16px; height:16px; background:url(/images/icon/Icon302.png) 0 0px no-repeat; border:0px; cursor:pointer;}
+.delet_02{ width:16px; height:16px; background:url(/images/icon/note_delete.gif) 0 0px no-repeat; border:0px; cursor:pointer;  }
+.editCss{ width:57px; height:20px; background:url(/images/default/main/btn_03.gif) no-repeat; border:0px; cursor:pointer;  padding-left:10px;; color:#0075a9;}
+.editCss_l{ width:57px; height:20px; background:url(/images/default/main/btn_03.gif) -57px 0 no-repeat; border:0px; cursor:pointer; padding-left:10px;; color:#fff;}
+
+
+
+
+
+/*后台公共样式调用部分*/
+/*---------------top----------------*/

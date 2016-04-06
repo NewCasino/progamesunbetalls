@@ -1,0 +1,1559 @@
+.right_comp {
+	/*width: 770px;
+	font-family: Tahoma;
+	/*background: url(/images/website/ibc/tab_bg.gif) repeat-x;*/
+	margin-top: 5px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 10px;
+	background-color: #e8eff5;width: 776px;
+}
+.tabthdwn {
+	background: url(/images/website/ibc/tab_th03_1.gif) repeat-x;
+	background-position: bottom;
+}
+table {
+	border-collapse:collapse;
+}
+table td {
+	padding:0px;
+}
+a {
+	text-decoration: none;
+}
+.select_Line, input {
+	font-size: 11px;
+	font-family: Tahoma;
+}
+.button {
+	display: inline;
+	height: 100px;
+}
+
+.Soccer {
+	font-size: 13px;
+	font-weight: bold;
+	color: #1a335c;
+	background: url(/images/website/ibc/title_soccer.gif) no-repeat 0 0;
+	height: 21px;
+	margin-top: 5px;
+	margin-bottom: 1px;
+	float: left;
+	text-indent: 20px;
+	padding-right: 1px;
+	float: left;
+	margin-left: -1px;
+}
+.Soccer1 {
+	background: url(/images/website/ibc/title_bg1.gif) no-repeat -4 0;
+	height: 21px;
+	margin-top: 5px;
+	margin-bottom: 0px;
+	float: left;
+	width: 4px;
+	padding-bottom: 0px;
+}
+
+.Soccer1 span{
+	display: none;
+}
+.tabstyle01 td {
+	background-color: #f1f2fe;
+	padding-top: 2px;
+	padding-right: 4px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+}
+.tabstyle01 a:link, .tabstyle01 a:visited {
+	color: #003399;
+}
+.tabstyle01 a:hover {
+	color: #ff6600;
+}
+.tabstyle02 {
+	font-size: 11px;
+	color: #000000;
+	border: 1px solid #b1b1b1;
+	margin: 0px;
+}
+.tabstyle02 th {
+	padding: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #C8C8C8;
+	background: url(/images/website/ibc/tab_th01.gif) repeat-x;
+	text-align: center;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #C8C8C8;
+}
+.tabstyle03 th {
+	padding: 2px;
+	background: url(/images/website/ibc/tab_th03.gif) repeat-x;
+	text-align: center;
+	font-size: 10px;
+	color: #FFFFFF;
+	font-weight: normal;
+	background-color: #4F586F;
+}
+.tabthdwn {
+	background: url(/images/website/ibc/tab_th03.gif) repeat-x;
+	background-position: 15px;
+}
+/*table line un*/
+.tabt_L {
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-left-color: #b1b1b1;
+}
+.tabt_L2 {
+	border-left-width: 2px;
+	border-left-style: solid;
+	border-left-color: #b1b1b1;
+}
+.tabt_D {
+	border-top-width: 2px;
+	border-top-style: solid;
+	border-top-color: #b1b1b1;
+}
+.tabt_unR {
+	border-right-style: none;
+}
+.tabt_unL {
+	border-left-style: solid;
+	border-left-width: 1px;
+	border-left-color: #333333;
+}
+.line_unR {
+	border-right-style: none !important;
+}
+.tabbox {
+	width: 774px;
+	clear: both;
+	border: 1px solid #cbcbcb;
+	padding: 2px;
+	background-color: #cbcbcb;
+}
+.tabbox_F {
+	border: 2px solid #FFFFFF;
+}
+.tabbox_FB {
+	border: 2px solid #FFFFFF;
+	background: url(/images/website/ibc/boxbg.gif) repeat-x;
+}
+.tabbox_F1 {
+	border-top-width: 2px;
+	border-right-width: 2px;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-top-color: #FFFFFF;
+	border-right-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+}
+
+.msgtabbox {
+	width: 820px;
+	clear: both;
+	border: 1px solid #cbcbcb;
+	padding: 2px;
+	background-color: #cbcbcb;
+}
+.tabt_R {
+	border-right-width: 3px!important;
+	border-right-style: solid!important;
+	border-right-color: #b1b1b1!important;
+}
+/*[--end--*/
+
+
+
+.tabstyle02 td {
+	/*padding: 2px;*/
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #b1b1b1;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #b1b1b1;
+	padding-top: 1px;
+	padding-right: 2px;
+	padding-bottom: 1px;
+	padding-left: 2px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #b1b1b1;
+}
+/*.tabstyle02 a:link, .tabstyle01 a:visited {color: #003399;}
+.tabstyle02 a:hover {color: #ff6600;}*/
+
+.bgcpe {
+	background-color: #c6d4f1;
+}
+.bgcpelight {
+	background-color: #e4e4e4;
+}
+.trbgov {
+	background-color: #fff5a5;
+}
+.bgwhite {
+	background-color: #FFFFFF;
+}
+.bgcpepk {
+	background-color: #FFCECE;
+}
+.tableline_1 {
+	border-right-style: none;
+	border-left-style: none;
+}
+.live {
+	background-color: #FFCCBC;
+}
+.liveligh {
+	background-color: #ffddd2;
+}
+.ch_Point {
+	color: #8E8E8E !important;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: center;
+	padding: 0px !important;
+	line-height: 2ex !important;
+}
+.en_Point {
+	color: #8E8E8E !important;
+	font-weight: bold;
+	font-size: 11px;
+	text-align: center;
+	padding: 0px !important;
+	line-height: 1ex !important;
+}
+.tabcontbubig, .tabcontbubig a {
+	font-size: 11px;
+	color: #003399 !important;
+	font-weight: bold;
+	text-align: center;
+}
+.tabcontbkbig, .tabcontbkbig a {
+	font-size: 11px;
+	color: #000000 !important;
+	font-weight: bold;
+	text-align: center;
+}
+.tabcontrdbig, .tabcontrdbig a {
+	font-size: 11px;
+	color: #FF0000 !important;
+	font-weight: bold;
+	text-align: center;
+}
+.tabstyle04 {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7899ce;
+	width: 181px;
+	_width: 182px;
+	margin-left: 1px;
+	_margin-left: 0px;
+}
+.tabstyle04 th {
+	font-size: 10px;
+	font-weight: normal;
+	color: #000000;
+	background-color: #dfdfdf;
+	padding: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+	margin: 0px;
+	text-align: left;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #7899ce;
+}
+.tabstyle04 td {
+	font-size: 10px;
+	font-weight: normal;
+	color: #0066cc;
+	background-color: #FFFFFF;
+	padding: 2px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+	text-align: right;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #7899ce;
+}
+.tabstyle05 {
+	font-size: 11px;
+	color: #434343;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-color: #7c88a3;
+	border-right-color: #7c88a3;
+	border-left-color: #7c88a3;
+}
+.tabstyle05 th {
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7c88a3;
+	font-size: 12px;
+	color: #000000;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #7c88a3;
+	font-weight: normal;
+	background-color: #a3b3d9;
+	padding-top: 2px;
+	padding-right: 4px;
+	padding-bottom: 2px;
+	padding-left: 4px;
+}
+.tabstyle05 td {
+	padding: 4px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #7c88a3;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #7c88a3;
+}
+.tabstyle06 th {
+	vertical-align: top;
+	font-size: 11px;
+	font-weight: bold;
+	color: #4c4c4c;
+	text-align: left;
+	padding: 4px;
+}
+.tabstyle06 td {
+	vertical-align: top;
+	font-size: 11px;
+	color: #4c4c4c;
+	text-align: left;
+	padding: 4px;
+}
+.cont12oe {
+	color: #FF6600 !important;
+	font-size: 12px !important;
+	padding: 4px Opx 4px Opx !important;
+}
+.td_left {
+	display: inline-table;
+	float:left;
+}
+.td_right {
+	display: inline;
+	float:right;
+}
+.EarlyMarket_top_bg {
+	font-size: 11px;
+	height: 16px;
+	/*background-position: top;
+	background: url(/images/website/ibc/EarlyMarket_top_bg.gif);
+	background-repeat: repeat-x;*/
+	width: 100%;
+	padding-top: 4px;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left: 2px;
+}
+/*DBetlist*/
+
+.DBetlist {
+	font-size: 11px;
+	height: 20px;
+}
+.DBetlist1 {
+	font-size: 11px;
+	height: 20px;
+	background-color: #DFEEFF;
+}
+/*odd*/
+
+.tabcontbu, .tabcontbu a {
+	color: #003399;
+	font-weight: bold;
+}
+.tabcontbu {
+	color: #003399;
+	font-weight: bold;
+}
+.tabcontrd, .tabcontrd a, .tabcontrd span {
+	color: #B50000;
+	font-weight: bold;
+}
+.tabcontrd span {
+	color: #B50000;
+	font-weight: bold;
+}
+.tabcontbk, .tabcontrd a {
+	color: #606060;
+	font-weight: bold;
+}
+.tabcontbk span {
+	color: #606060;
+	font-weight: bold;
+}
+.tabcontwh, .tabcontwh a {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.tabcontwh span {
+	color: #FFFFFF;
+	font-weight: bold;
+}
+.b11_bl {
+	font-size: 11px;
+	color: #1A335C;
+	font-family: Tahoma;
+}
+/*AJX*/
+
+.ajxbox {
+	border: 2px solid #2e4c82;
+	background: url(/images/website/ibc/ajx_bg.jpg) repeat-x;
+	background-position: top;
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+}
+.ajxbox h1 {
+	background: url(/images/website/ibc/ajx_icon.gif) no-repeat;
+	background-position: left top;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: bold;
+	color: #022352;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #bacde1;
+	text-indent: 20px;
+	display: block;
+	margin-top: 0px;
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+}
+.Odds_Upd {
+	background: url(/images/website/ibc/update_odds20090910.gif);
+}
+.ipColor {
+	font-size: 10px;
+	color: #6076b5;
+	font-weight:bold;
+	font-family:Tahoma;
+}
+.text_blue11 {
+	font-size: 11px;
+	color: #003399;
+}
+.MessageHistory {
+	font-size:12px;
+	font-family:Tahoma;
+}
+
+
+
+/*odds mini version*/
+/*en*/
+.miniver_en a {
+	background: url(/images/website/ibc/oddmini.gif) no-repeat;
+	height: 18px;
+	width: 80px;
+	background-position: -3px -2px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 6px;
+}
+.miniver_en a:hover {
+	background-position: -86px -2px;
+}
+.miniver_en a span {
+	display: none;
+}
+.maxiver_en a {
+	background: url(/images/website/ibc/oddmini.gif) no-repeat -3px -21px;
+	height: 18px;
+	width: 80px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 6px;
+}
+.maxiver_en a:hover {
+	background-position: -86px -21px;
+}
+.maxiver_en a span {
+	display: none;
+}
+/*it*/
+.miniver_it a {
+	background: url(/images/website/ibc/oddmini.gif) no-repeat -3px -2px;
+	height: 18px;
+	width: 80px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 6px;
+}
+.miniver_it a:hover {
+	background-position: -86px -2px;
+}
+.miniver_it a span {
+	display: none;
+}
+.maxiver_it a {
+	background: url(/images/website/ibc/oddmini.gif) no-repeat -3px -21px;
+	height: 18px;
+	width: 80px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 6px;
+}
+.maxiver_it a:hover {
+	background-position: -86px -21px;
+}
+.maxiver_it a span {
+	display: none;
+}
+/*jp*/
+.miniver_jp a {
+	background: url(/images/website/ibc/oddmini.gif) no-repeat -3px -2px;
+	height: 18px;
+	width: 80px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 6px;
+}
+.miniver_jp a:hover {
+	background-position: -86px -2px;
+}
+.miniver_jp a span {
+	display: none;
+}
+.maxiver_jp a {
+	background: url(/images/website/ibc/oddmini.gif) no-repeat -3px -21px;
+	height: 18px;
+	width: 80px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 6px;
+}
+.maxiver_jp a:hover {
+	background-position: -86px -21px;
+}
+.maxiver_jp a span {
+	display: none;
+}
+/*ch*/
+.miniver_ch a {
+	background: url(/images/website/ibc/oddmini.gif) no-repeat -3px -40px;
+	height: 18px;
+	width: 64px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 6px;
+}
+.miniver_ch a:hover {
+	background-position: -86px -40px;
+}
+.miniver_ch a span {
+	display: none;
+}
+.maxiver_ch a {
+	background: url(/images/website/ibc/oddmini.gif) no-repeat -3px -59px;
+	height: 18px;
+	width: 64px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 6px;
+}
+.maxiver_ch a:hover {
+	background-position: -86px -59px;
+}
+.maxiver_ch a span {
+	display: none;
+}
+/*cs*/
+.miniver_cs a {
+	background: url(/images/website/ibc/oddmini.gif) no-repeat -3px -78px;
+	height: 18px;
+	width: 64px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 6px;
+}
+.miniver_cs a:hover {
+	background-position: -86px -78px;
+}
+.miniver_cs a span {
+	display: none;
+}
+.maxiver_cs a {
+	background: url(/images/website/ibc/oddmini.gif) no-repeat -3px -59px;
+	height: 18px;
+	width: 64px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 6px;
+}
+.maxiver_cs a:hover {
+	background-position: -86px -59px;
+}
+.maxiver_cs a span {
+	display: none;
+}
+/*th*/
+.miniver_th a {
+	background: url(/images/website/ibc/oddmini.gif) no-repeat -3px -116px;
+	height: 18px;
+	width: 64px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 6px;
+}
+.miniver_th a:hover {
+	background-position: -86px -116px;
+}
+.miniver_th a span {
+	display: none;
+}
+.maxiver_th a {
+	background: url(/images/website/ibc/oddmini.gif) no-repeat -3px -135px;
+	height: 18px;
+	width: 64px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 6px;
+}
+.maxiver_th a:hover {
+	background-position: -86px -135px;
+}
+.maxiver_th a span {
+	display: none;
+}
+
+/*sorting*/
+
+.en_sorting a {
+	background: url(/images/website/ibc/sorting_icon.gif) no-repeat 0px 0px;
+	height: 18px;
+	width: 98px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 2px;
+	_margin-right: 0px;
+}
+.en_sorting a:hover {background-position: -100px 0px;display: inline;}
+
+.en_normal a {
+	background: url(/images/website/ibc/sorting_icon.gif) no-repeat 0px -19px;
+	height: 18px;
+	width: 98px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 2px;
+	_margin-right: 0px;
+}
+.en_normal a:hover {background-position: -100px -19px;}
+
+.ch_sorting a {
+	background: url(/images/website/ibc/sorting_icon.gif) no-repeat 0px -38px;
+	height: 18px;
+	width: 81px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 2px;
+	_margin-right: 0px;
+}
+.ch_sorting a:hover {background-position: -100px -38px;}
+
+.ch_normal a {
+	background: url(/images/website/ibc/sorting_icon.gif) no-repeat 0px -57px;
+	height: 18px;
+	width: 81px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 2px;
+	_margin-right: 0px;
+}
+.ch_normal a:hover {background-position: -100px -57px;}
+
+.cs_sorting a {
+	background: url(/images/website/ibc/sorting_icon.gif) no-repeat 0px -76px;
+	height: 18px;
+	width: 81px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 2px;
+	_margin-right: 0px;
+}
+.cs_sorting a:hover {background-position: -100px -76px;}
+
+.cs_normal a {
+	background: url(/images/website/ibc/sorting_icon.gif) no-repeat 0px -95px;
+	height: 18px;
+	width: 81px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 2px;
+	_margin-right: 0px;
+}
+.cs_normal a:hover {background-position: -100px -95px;}
+
+.th_sorting a {
+	background: url(/images/website/ibc/sorting_icon.gif) no-repeat 0px -114px;
+	height: 18px;
+	width: 98px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 2px;
+	_margin-right: 0px;
+}
+.th_sorting a:hover {background-position: -100px -114px;}
+
+.th_normal a {
+	background: url(/images/website/ibc/sorting_icon.gif) no-repeat 0px -133px;
+	height: 18px;
+	width: 98px;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 2px;
+	_margin-right: 0px;
+}
+.th_normal a:hover {background-position: -100px -133px;}
+
+.ko_sorting a {
+	background: url(/images/website/ibc/sorting_icon.gif) no-repeat 0px -152px;
+	height: 18px;
+	width: 98px;
+	background-position: 
+	background-repeat: ;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 2px;
+	_margin-right: 0px;
+}
+.ko_sorting a:hover {
+	background-position: -100px -152px;
+}
+
+.ko_normal a {
+	background: url(/images/website/ibc/sorting_icon.gif);
+	height: 18px;
+	width: 98px;
+	background-position: 0px -171px;
+	background-repeat: no-repeat;
+	display: block;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+	margin-left: 0px;
+	margin-right: 2px;
+	_margin-right: 0px;
+}
+.ko_normal a:hover {background-position: -100px -171px;}
+
+/*message icon*/
+
+.message{
+	font-size: 11px;
+}
+.message a{
+	text-decoration: none!important;
+	color: #213164!important;
+	padding-bottom: 4px;
+}
+.message a:hover{
+	color: #b00a00!important;
+}
+.message .active{
+	color: #b00a00!important;
+	background: url(/images/website/ibc/msg_arr.gif);
+	background-repeat: no-repeat;
+	background-position: center 13px;
+}
+
+/*Horse*/
+.Horse_Head {
+	background: url(/images/website/ibc/reslut_bg.gif);
+	height: 40px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	float: left;
+	background-repeat: repeat-x;
+	width: 776px;
+}
+.tvicon {
+	background: url(images/layout/tv.gif);
+	height: 15px;
+	width: 15px;
+	float: left;
+	display: block;
+}
+/*.tabbox0 {
+	width: 770px;
+	clear: both;
+	background-color: #cbcbcb;
+	margin: 0px;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 0px;
+	padding-left: 2px;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: solid;
+	border-right-color: #cbcbcb;
+	border-left-color: #cbcbcb;
+	border-top-width: 1px;
+	border-top-color: #cbcbcb;
+}*/
+.tabbox_F0 {
+	border-right-width: 2px;
+	border-left-width: 2px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #FFFFFF;
+	border-left-color: #FFFFFF;
+	padding-bottom: 0px;
+	border-top-width: 2px;
+	border-top-color: #FFFFFF;
+	border-bottom-width: 2px;
+	border-bottom-color: #FFFFFF;
+}
+
+/*.tabbox2 {
+	width: 770px;
+	clear: both;
+	background-color: #cbcbcb;
+	margin: 0px;
+	padding-top: 0px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	border-right-width: 2px;
+	border-left-width: 2px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #cbcbcb;
+	border-left-color: #cbcbcb;
+	border-bottom-width: 1px;
+	border-bottom-color: #cbcbcb;
+}*/
+.tabbox_d{
+	border-bottom-style: solid!important;
+	padding-bottom: 0px!important;
+	border-bottom-width: 1px!important;
+	border-bottom-color: #b1b1b1!important;
+}
+
+.tabbox_L_b{
+	padding-bottom: 0px!important;
+	border-left-width: 2px!important;
+	border-left-style: solid!important;
+	border-left-color: #53699b!important;
+}
+
+.tabbox_R_b{
+	padding-bottom: 0px!important;
+	border-right-width: 2px!important;
+	border-right-style: solid!important;
+	border-right-color: #53699b!important;
+}
+
+.tabbox_D_b{
+	padding-bottom: 0px!important;
+	border-bottom-width: 2px!important;
+	border-bottom-style: solid!important;
+	border-bottom-color: #53699b!important;
+}
+
+.tabbox_F12 {
+	border-right-style: solid;
+	border-right-width: 1px;
+	border-right-color: #FFFFFF;
+	padding: 0px;
+}
+.tabbox_F11 {
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #FFFFFF;
+	text-align: center;
+	padding: 0px;
+}
+.tabbox_F14 {
+	text-align: center;
+	padding: 0px;
+	border-bottom-width: 1px!important;
+	border-bottom-style: solid!important;
+	border-bottom-color: #FFFFFF!important;
+}
+.tabbox_F10 {
+	text-align: center;
+	padding: 0px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #FFFFFF;
+}
+.boxLeague {
+	font-size: 13px;
+	color: #ffffff;
+	padding: 2px;
+}
+
+.boxLeague td{
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #b1b1b1;
+	background-color: #53699b;
+	height: 15px;
+}
+.boxLeague th{
+	background-color: #53699b;
+	padding: 2px;
+	height: 15px;
+	font-weight: normal;
+}
+.boxEvent {
+	text-align: center;
+	font-size: 13px;
+	padding: 2px;
+}
+.boxEvent td{
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #b1b1b1;
+	height: 20px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #b1b1b1;
+}
+
+.boxEvent th{
+	font-size: 13px;
+	padding: 2px;
+	font-weight: normal;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #b1b1b1;
+}
+
+.bgcolor{font-size:11px;
+	background-color: #999999;
+}
+
+.textor a{
+	font-weight: bold;
+	color: #D55500;
+}
+.textor {
+	font-weight: bold;
+	color: #D55500;
+}
+
+.border-L{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #b1b1b1;
+}
+.RaceTime_tb{
+	font-size:13px;
+	font-family:Tahoma;
+}
+.RaceTime_tb td{
+	height: 20px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #b1b1b1;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #b1b1b1;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #b1b1b1;
+}
+.RaceTime_tb th{
+	font-weight: bold;
+	background-color: #E4E4E4;
+		border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #b1b1b1;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #b1b1b1;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #b1b1b1;
+}
+
+.none_rline{
+	border-right-style: none!important;
+}
+.none_dline{
+	border-bottom-style: none!important;
+}
+.none_tline{
+	border-top-style: none!important;
+}
+
+.NoNewline
+{
+	white-space:nowrap!important;
+	border: 1px solid #000033;
+}
+
+.info a{
+	color: #FFFFFF!important;
+	height: 12px;
+	width: 22px!important;
+	padding-right: 5px;
+	background: url(/images/website/ibc/horse_info2.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	padding-left: 10px!important;
+	margin-left: 10px;
+	margin-top: 2px;
+	background-position: 1px;
+}
+.info a:hover{
+	color: #FFFFFF!important;
+	height: 12px;
+	width: 22px!important;
+	padding-right: 5px;
+	background: url(/images/website/ibc/horse_info1.gif);
+	background-repeat: no-repeat;
+	font-size: 12px;
+	padding-left: 10px!important;
+	margin-left: 10px;
+	margin-top: 2px;
+	background-position: 1px;
+}
+/*.info a span{
+	display: none;
+}
+*/
+
+/*20091028*/
+/*League select*/
+
+.league02 {
+	font-size: 11px;
+	color: #000000;
+	border: 1px solid #cbcbcb;
+	margin: 0px;
+	background-color: #FFFFFF;
+}
+.league02 th {
+	padding: 5px;
+/*	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #4a5e90;*/
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+/*	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #4a5e90;*/
+}
+.league03 th {
+	font-size: 13px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background-color: #4a5e90;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 20px;
+}
+.Leaguename a{
+	font-size: 11px;
+	font-family:Tahoma;
+	/*font-weight:bold;*/
+	color: #000000;
+	display: block;
+	width: 97%;
+	padding: 0px;
+}
+
+.Leaguename a:hover{
+	color: #FFFFFF;
+	background-color: #4a5e90;
+}
+
+.Leaguename span{
+	/*padding-left: 5px;*/
+	font-weight: normal;
+}
+
+/*date*/
+.date_close{
+	display: block;
+	background: url(/images/website/ibc/date_close.gif);
+	background-repeat: no-repeat;
+	text-indent: 20px;
+	background-position: 5px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #4A5E90;
+	height: 20px;
+	padding-top: 5px;
+}
+.date_close a{
+	color: #9ab9d7!important;
+}
+.date_close a:hover{
+	color: #FFFFFF!important;
+	margin-top: 10px;
+}
+.date_open{
+	display: block;
+	background: url(/images/website/ibc/date_open.gif);
+	background-repeat: no-repeat;
+	text-indent: 20px;
+	background-position: 5px;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #4A5E90;
+	color: #FFFFFF;
+	height: 20px;
+	padding-top: 5px;
+}
+.date_open a{
+	color: #FFFFFF!important;
+}
+.date_open a:hover{
+	color: #FFFFFF!important;
+}
+/*team name*/
+.teamname_bg{
+	display: block;
+	background: url(/images/website/ibc/teamname_bg.gif);
+	color: #1d2b4d;
+	background-repeat: repeat-x;
+	font-size: 12px;
+	font-family:Tahoma;
+	font-weight:bold;
+	height: 22px;
+	text-indent: 5px;
+	padding-top: 6px;
+}
+.time{
+	font-size: 10px;
+	font-family:Tahoma;
+	color: #818181;
+	text-align: center;
+}
+/*Europe odds*/
+.odds_bg{
+	background-color: #D2D2D2;
+	padding-right: 4px!important;
+	padding-left: 4px!important;
+	height: 10px;
+}
+
+.oddslive_bg{
+	background-color: #FFCCBC;
+	padding-right: 4px!important;
+	padding-left: 4px!important;
+	height: 10px;
+}
+
+
+
+.odds_bg td{
+	color: #FFFFFF!important;
+	background-color: #4a5e90!important;
+	font-weight: bold!important;
+}
+.bb123{	display: block!important;}
+.bb123 a:hover{
+	color: #FFFFFF!important;
+	background-color: #4a5e90!important;
+	font-weight: bold!important;
+}
+
+
+.OEteam_name{
+	display: block;
+	color: #336699!important;
+	background-color: #ffffff!important;
+	font-weight: bolder!important;
+	height: 15px;
+	text-indent: 0px;
+	padding-top: 3px;
+	margin: 5px;
+	padding-right: 20px;
+	width: 500px;
+}
+.oddslive{
+	color: #B50000!important;
+
+}
+
+/*.mixparlay_top_bg {
+	font-size: 12px;
+	background-position: top;
+	background: url(/images/website/ibc/EarlyMarket_top_bg.gif);
+	background-repeat: repeat-x;
+	width: 770px;
+	padding-top: 4px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #c8cac6;
+	padding-bottom: 4px;
+	padding-left: 10px;
+}
+.mixparlay_top_bg td{
+	margin: 0px!important;
+	padding: 0px!important;
+	height: 10px;
+}	
+.mixparlay_top_bg {
+    background: url(/images/website/ibc/reslut_bg.gif);
+	margin-top: 0px;
+	margin-bottom: 0px;
+	float: left;
+	background-repeat: repeat-x;
+	width: 780px;
+	background-color: #d0d0d0!important;
+}*/
+.mixparlay_line{
+	border-bottom-width: 1px!important;
+	border-bottom-style: dotted!important;
+	border-bottom-color: #999999!important;
+}
+.mixparlay_title{
+	font-size: 14px;
+	color: #666666;
+}
+
+
+
+/*2010_05_27  Time Range*/
+.TimeRange{
+	margin-top: 5px;
+}
+.TimeRange a:hover{
+	color: #FF6600;
+}
+.TimeRange_y{
+	font-size: 10px;
+	color: #ffff00;
+	padding-right: 1px;
+	padding-left: 1px;
+	background-color: #3077dd;
+}
+.TimeRange_w{
+	font-size: 10px;
+	color: #ffffff;
+	padding-right: 3px;
+	padding-left: 0px;
+	background-color: #3077dd;
+	white-space:nowrap;
+}
+.TimeRange_More
+{
+	font-size: 10px;
+	color: #ffffff;
+	background: url(/images/website/ibc/time_moreM.gif);
+	padding-right: 1px;
+	padding-left: 1px;
+}
+.allTimebg {
+	background-color: #FFFFFF;
+	height: 20px;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #3077dd;
+	/*width: 600px;*/
+	overflow: visible;
+	padding-left: 10px;
+	padding-top: 2px;
+	display: block;
+	position: relative;
+	/*left: 100px;
+	*left: 100px;
+	_left: 100px;*/
+	/*top: 23px;*/
+	padding-right: 10px;
+	margin-top: 2px;
+}
+.allTimebg a{
+	font-size: 11px;
+	color: #000000!important;
+	line-height:20px;
+	/**display: block;*/
+	padding-top: 5px;font-weight: bold;
+}
+.allTimebg a:hover{
+	font-size: 11px!important;
+	color: #3077dd!important;
+	background: url(/images/website/ibc/time_arr.gif);
+	background-repeat: no-repeat;
+	background-position: center -1px;
+	font-weight: bold;
+}
+.allTimebg span{	padding-right: 10px;font-size: 9px;
+	padding-left: 10px;}
+	
+/*div.autosize { display: table; width: 1px; }
+div.autosize > div { display: table-cell; }*/
+
+/*ScoreMsg*/
+.popUO3{
+	background-color: #FFFFFF;
+	width: 250px;
+	overflow: hidden;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #FFFFFF;
+}
+.popUO3 td{
+	font-size: 11px;
+	color: #ffffff;
+	font-weight: bold;
+	padding: 5px;
+}
+
+.popUO3tab td{
+	line-height: 15px;
+	background-color: #ffaf8c;
+	height: 20px;
+	vertical-align: middle;
+	color: #000000;
+	}
+.popUO3tab th{
+	line-height: 20px;
+	}
+.popUO3tab {
+	/*margin-bottom: 5px;*/
+	}
+.popUO3tb{
+	background-color: #000000;
+	height: auto;
+}
+
+.font14_r{
+	font-size: 14px;
+	color: #B50000;
+	text-align: center!important;
+	font-weight: bold;
+}
+
+.displayOff{
+    display: none;
+}
+
+/*live score 1014*/
+
+.Livescore_close{
+	background: url(/images/website/ibc/iconLive_score.gif);
+	height: 12px;
+	width: 12px;
+	background-position: 0px 0px;
+	background-repeat: no-repeat;
+	/*margin-right: 5px;*/
+	display: inline;
+}
+/*.Livescore_close span{display: none;!important}*/
+
+.Livescore_open {
+	background: url(/images/website/ibc/iconLive_score.gif);
+	height: 14px;
+	width: 12px;
+	background-position: 0px -16px;
+	background-repeat: no-repeat;
+	/*margin-left: 5px;*/
+	display: inline;
+}
+
+/*.Livescore_close span{display: none;!important}*/
+
+.Livescore_open {
+	background: url(/images/website/ibc/iconLive_score.gif);
+	height: 14px;
+	width: 12px;
+	background-position: 0px -16px;
+	background-repeat: no-repeat;
+	/*margin-left: 5px;*/
+	display: inline;
+}
+
+/*.Livescore_open span{display: none;!important}*/
+
+.score_box{
+	font-size: 10px;
+	color: #000000;
+	font-weight: normal;
+	background-color: #cecece!important;
+	border-collapse:collapse!important;
+	padding: 0px!important;
+/*	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #b1b1b1;*/
+}
+.score_box td{
+	border-top-style: none!important;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+
+}
+.score_box .box01 {
+	text-align: center;
+	display: inline;
+    }
+    .score_box .box01 .border{
+	background-color: #d9c2ba;
+	text-align: center;
+	padding: 0px;width: 37px;
+	border: 1px solid #919390;
+    }
+
+
+
+.score_box .box02 {
+	text-align: center;
+	display: inline;
+	color: #B00000;
+    }
+    .score_box .box02 .border{
+	background-color: #d99d9d;
+	text-align: center;
+	padding: 0px;width: 37px;
+	border: 1px solid #919390;
+    }
+
+.score_box .box03 {
+	text-align: center;
+	display: inline;
+    }
+/*   .score_box .box03 span{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #919390;
+	display: block;
+	padding-bottom: 2px;
+	padding-top: 2px;
+    }*/
+    .score_box .box03 .border{
+	background-color: #bfbfbf;
+	text-align: center;
+	padding: 0px;width: 37px;
+	border: 1px solid #919390;
+    }
+
+
+.score_box .line_b{
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #919390;
+}
+.score_box .line_r{
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #919390;
+}
+
+
+/*nb game*/
+.text16{
+	padding-right: 5px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+	text-align: center;
+}
+.ou_box{
+	font-weight: bold;
+	text-align: center;
+	border: 1px solid #566c9e;
+	margin-top: 5px;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	margin-left: 2px;
+}
+.ou_10{
+	font-size: 10px;
+	color: #FFFFFF;
+	background-color: #566c9e;
+}
+.ou_16{
+	font-size: 16px;
+	color: #000000;
+}
+.ou_rightline{
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #999999;
+}

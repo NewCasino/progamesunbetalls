@@ -1,0 +1,13 @@
+C:\Users\asus\Desktop\918sun\918Pro\HCPro\bin\HCPro.dll.config
+C:\Users\asus\Desktop\918sun\918Pro\HCPro\bin\HCPro.dll
+C:\Users\asus\Desktop\918sun\918Pro\HCPro\bin\HCPro.pdb
+C:\Users\asus\Desktop\918sun\918Pro\HCPro\bin\BLL.dll
+C:\Users\asus\Desktop\918sun\918Pro\HCPro\bin\DAL.dll
+C:\Users\asus\Desktop\918sun\918Pro\HCPro\bin\Model.dll
+C:\Users\asus\Desktop\918sun\918Pro\HCPro\bin\MySql.Data.dll
+C:\Users\asus\Desktop\918sun\918Pro\HCPro\bin\BLL.pdb
+C:\Users\asus\Desktop\918sun\918Pro\HCPro\bin\DAL.pdb
+C:\Users\asus\Desktop\918sun\918Pro\HCPro\bin\Model.pdb
+C:\Users\asus\Desktop\918sun\918Pro\HCPro\obj\Release\HCPro.csprojResolveAssemblyReference.cache
+C:\Users\asus\Desktop\918sun\918Pro\HCPro\obj\Release\HCPro.dll
+C:\Users\asus\Desktop\918sun\918Pro\HCPro\obj\Release\HCPro.pdb
