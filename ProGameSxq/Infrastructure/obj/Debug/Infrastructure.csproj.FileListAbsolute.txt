@@ -1,0 +1,11 @@
+C:\Users\seven\Documents\GitHub\progamesxq\gamesxq\Infrastructure\obj\Debug\Infrastructure.csprojResolveAssemblyReference.cache
+C:\Users\seven\Documents\GitHub\progamesxq\gamesxq\Infrastructure\bin\Debug\Infrastructure.dll
+C:\Users\seven\Documents\GitHub\progamesxq\gamesxq\Infrastructure\bin\Debug\Infrastructure.pdb
+C:\Users\seven\Documents\GitHub\progamesxq\gamesxq\Infrastructure\bin\Debug\AutoMapper.dll
+C:\Users\seven\Documents\GitHub\progamesxq\gamesxq\Infrastructure\bin\Debug\log4net.dll
+C:\Users\seven\Documents\GitHub\progamesxq\gamesxq\Infrastructure\bin\Debug\Newtonsoft.Json.dll
+C:\Users\seven\Documents\GitHub\progamesxq\gamesxq\Infrastructure\bin\Debug\AutoMapper.xml
+C:\Users\seven\Documents\GitHub\progamesxq\gamesxq\Infrastructure\bin\Debug\log4net.xml
+C:\Users\seven\Documents\GitHub\progamesxq\gamesxq\Infrastructure\bin\Debug\Newtonsoft.Json.xml
+C:\Users\seven\Documents\GitHub\progamesxq\gamesxq\Infrastructure\obj\Debug\Infrastructure.dll
+C:\Users\seven\Documents\GitHub\progamesxq\gamesxq\Infrastructure\obj\Debug\Infrastructure.pdb

@@ -1,0 +1,4 @@
+C:\Users\seven\Documents\GitHub\progamesxq\gamesxq\OpenAuth.Domain\bin\Debug\OpenAuth.Domain.dll
+C:\Users\seven\Documents\GitHub\progamesxq\gamesxq\OpenAuth.Domain\bin\Debug\OpenAuth.Domain.pdb
+C:\Users\seven\Documents\GitHub\progamesxq\gamesxq\OpenAuth.Domain\obj\Debug\OpenAuth.Domain.dll
+C:\Users\seven\Documents\GitHub\progamesxq\gamesxq\OpenAuth.Domain\obj\Debug\OpenAuth.Domain.pdb
